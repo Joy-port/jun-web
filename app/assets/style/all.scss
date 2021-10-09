@@ -1,6 +1,21 @@
+@font-face {
+    font-family: "TaipeiSansTCBeta", sans-serif ;
+    src: url(../fonts/TaipeiSansTCBeta/eot/TaipeiSansTCBeta-Light.eot),
+    url(../fonts/TaipeiSansTCBeta/eot/TaipeiSansTCBeta-Regular.eot),
+    url(../fonts/TaipeiSansTCBeta/eot/TaipeiSansTCBeta-Bold.eot),
+    url(../fonts/TaipeiSansTCBeta/ttf/TaipeiSansTCBeta-Light.ttf),
+    url(../fonts/TaipeiSansTCBeta/ttf/TaipeiSansTCBeta-Regular.ttf),
+    url(../fonts/TaipeiSansTCBeta/ttf/TaipeiSansTCBeta-Bold.ttf),
+    url(../fonts/TaipeiSansTCBeta/woff/TaipeiSansTCBeta-Light.woff),
+    url(../fonts/TaipeiSansTCBeta/woff/TaipeiSansTCBeta-Regular.woff),
+    url(../fonts/TaipeiSansTCBeta/woff/TaipeiSansTCBeta-Bold.woff);
+}
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "utilities/bootstrapMap";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
+@import "./helpers/base";
 @import './layout/index.scss'
