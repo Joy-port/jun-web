@@ -252,7 +252,6 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  0: 0,
   1: $spacer / 4,  //4
   2: $spacer / 2,  //8
   3: $spacer * .75, //12 
@@ -272,7 +271,7 @@ $spacers: (
   17: $spacer * 5, //80
   18: $spacer * 5.5, //88
   19: $spacer * 6, //96
-  20: $spacer * 6.5, //104
+  20: $spacer * 6.5 //104
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -452,6 +451,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-md:              600 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
@@ -663,6 +663,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-md:        $border-radius-md !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
@@ -723,6 +724,7 @@ $input-box-shadow:                      $box-shadow-inset !default;
 
 $input-border-radius:                   $border-radius !default;
 $input-border-radius-sm:                $border-radius-sm !default;
+$input-border-radius-md:                $border-radius-md !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 
 $input-focus-bg:                        $input-bg !default;

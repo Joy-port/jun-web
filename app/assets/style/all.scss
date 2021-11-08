@@ -14,8 +14,9 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/utilities";
-@import "utilities/bootstrapMap";
+@import "./utilities/bootstrapMap";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import "./helpers/base";
-@import './layout/index.scss'
+@import "./components/tableContents";
+@import './layout/index.scss';
