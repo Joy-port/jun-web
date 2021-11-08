@@ -1,6 +1,6 @@
 .header-container{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
     display: flex;
     flex-direction: column;
@@ -29,3 +29,16 @@
     color: $gray-500;
     font-size: 0.875rem;
 }
+.body{
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid $secondary;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.body-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
