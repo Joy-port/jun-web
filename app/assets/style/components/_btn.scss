@@ -28,3 +28,15 @@
     opacity: 4;
     color: $secondary;
 }
+
+.logo-title{
+    font-size: 1.125rem;
+}
+.search-input{
+    border-radius: 10rem;
+
+    &::placeholder{
+        color: $gray-400;
+        font-size: 0.875rem;
+    }
+}

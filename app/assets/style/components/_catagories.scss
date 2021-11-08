@@ -1,11 +1,9 @@
 .catagory-header-container{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }   
 .catagory-logo-icon{
     width: 76px;
@@ -14,6 +12,8 @@
 .catagory-header-icon{
     width: 52px;
     height: 52px;
+    filter: invert(74%) sepia(47%) saturate(2533%) hue-rotate(333deg) brightness(92%) contrast(90%);
+    //generator https://codepen.io/sosuke/pen/Pjoqqp
 }
 
 .catagory-header-title{
@@ -28,6 +28,7 @@
     font-weight: normal;
     color: $gray-500;
     font-size: 0.875rem;
+    text-align: center;
 }
 .catagory-body{
     border-top: 1px solid $secondary;
