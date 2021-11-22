@@ -7,11 +7,11 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #f6f6f6 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default; 
-$gray-400: #D9D9D9 !default; //ced4da
-$gray-500: #bfbfbf !default;  //adb5bd
+$gray-400: #ced4da !default;
+$gray-500: #BFBFBF !default;  //adb5bd
 $gray-600: #797979 !default;  //6c757d
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
@@ -61,8 +61,16 @@ $colors: (
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "black":      $black,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,  
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900
 ) !default;
 // scss-docs-end colors-map
 
@@ -255,23 +263,25 @@ $spacers: (
   1: $spacer / 4,  //4
   2: $spacer / 2,  //8
   3: $spacer * .75, //12 
-  4: $spacer ,        //16
-  5: $spacer * 1.125,  // 18
-  6: $spacer * 1.25,  // 20
-  7: $spacer * 1.5, //24 
-  8: $spacer * 1.75, // 28
-  9: $spacer * 1.875, // 30
-  10: $spacer * 2,   // 32
-  11: $spacer * 2.25,  //36
-  12: $spacer * 2.5, // 40 
-	13: $spacer * 3, // 48 
-	14: $spacer * 3.5, // 56 
-  15: $spacer * 3.75, //60
-  16: $spacer * 4, //64
-  17: $spacer * 5, //80
-  18: $spacer * 5.5, //88
-  19: $spacer * 6, //96
-  20: $spacer * 6.5 //104
+  4: $spacer * .875, //14
+  5: $spacer ,        //16
+  6: $spacer * 1.125,  // 18
+  7: $spacer * 1.25,  // 20
+  8: $spacer * 1.5, //24 
+  9: $spacer * 1.75, // 28
+  10: $spacer * 1.875, // 30
+  11: $spacer * 2,   // 32
+  12: $spacer * 2.25,  //36
+  13: $spacer * 2.5, // 40 
+	14: $spacer * 3, // 48 
+	15: $spacer * 3.5, // 56 
+  16: $spacer * 3.75, //60
+  17: $spacer * 4, //64
+  18: $spacer * 5, //80
+  19: $spacer * 5.5, //88
+  20: $spacer * 6, //96
+  21: $spacer * 6.5, //104
+  22: $spacer * 7.5 //120
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -392,7 +402,7 @@ $border-color:                $gray-300 !default;
 $border-radius:               .25rem !default;
 $border-radius-sm:            .2rem !default;
 $border-radius-md:            .3rem !default;
-$border-radius-lg:            .75rem !default; //edit
+$border-radius-lg:            10rem !default; //edit
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 
@@ -467,8 +477,9 @@ $h3-font-size:                $font-size-base * 2 !default;    //32
 $h4-font-size:                $font-size-base * 1.75 !default; //28
 $h5-font-size:                $font-size-base * 1.5 !default; //24
 $h6-font-size:                $font-size-base * 1.25 !default;  //20
-$h7-font-size:                $font-size-base  !default; //16 edit
-$h8-font-size:                $font-size-base * 0.875 !default; // 14 edit
+$h7-font-size:                $font-size-base * 1.125 !default; //18 edit
+$h8-font-size:                $font-size-base  !default; //16 edit
+$h9-font-size:                $font-size-base * 0.875 !default; // 14 edit
 // scss-docs-end font-variables
 // scss-docs-end font-variables
 
@@ -481,7 +492,8 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size,
-  8: $h8-font-size
+  8: $h8-font-size,
+  9: $h9-font-size
 ) !default;
 // scss-docs-end font-sizes
 
