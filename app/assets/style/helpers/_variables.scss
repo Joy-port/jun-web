@@ -88,12 +88,13 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
-  "secondary":  $secondary,
+  "secondary":  $secondary, //gray-600
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
+  "danger":     $danger, //gray-100
+  "light":      $light, //gray-900
+  "gray-500": $gray-500,  //adb5bd
   "dark":       $dark,
   "white":      $white,
   "black":      $black
@@ -225,7 +226,7 @@ $escaped-characters: (
 
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
-$enable-shadows:              false !default;
+$enable-shadows:              true !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
@@ -234,7 +235,7 @@ $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -480,6 +481,7 @@ $h6-font-size:                $font-size-base * 1.25 !default;  //20
 $h7-font-size:                $font-size-base * 1.125 !default; //18 edit
 $h8-font-size:                $font-size-base  !default; //16 edit
 $h9-font-size:                $font-size-base * 0.875 !default; // 14 edit
+$h10-font-size:                $font-size-base * 0.625 !default; // 14 edit
 // scss-docs-end font-variables
 // scss-docs-end font-variables
 
@@ -493,7 +495,8 @@ $font-sizes: (
   6: $h6-font-size,
   7: $h7-font-size,
   8: $h8-font-size,
-  9: $h9-font-size
+  9: $h9-font-size,
+  10: $h10-font-size
 ) !default;
 // scss-docs-end font-sizes
 
