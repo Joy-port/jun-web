@@ -5,10 +5,15 @@
     box-shadow: 0 1px 8px 1px rgba(215,215,215,.5);
 }
 &card-img-top {
-    height: 135px;
+    height: 140px;
     width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 }
 
+.card-inside-img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

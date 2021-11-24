@@ -1,0 +1,10 @@
+.shadow{
+    box-shadow: 2px 0 8px 0 rgba(251,251,251,.4) ;
+}
+.rotate-180{
+    transform: rotate(180deg);
+    transition: all .3s;
+}
+.h-1{
+    height: 600px;
+}
