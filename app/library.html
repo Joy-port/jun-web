@@ -258,12 +258,16 @@ mb-4">
         </ul>
     </nav>
     <div class="col-md-10">
-        <ul class="row py-15 px-10">
-            <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8">
+      <!-- data-target 用來開啟modal id="gallery" data-bs-toggle="modal" data-bs-target="#exampleModalwithCarousel" -->
+      <!--  data-bs-toggle="modal" data-bs-target="#libraryContentModal" -->
+        <ul class="row py-15 px-10" data-bs-toggle="modal" data-bs-target="#ModalwithCarousel"> 
+            <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8" >
               <div class="card content-card">
-                <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#libraryContentModal">
+                <!-- 用來開啟modal 內的carousel -->
+                <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
+                <a href="#" class="d-block"  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" >
   
-                  <img src="https://images.unsplash.com/photo-1637683558217-bf59e163750e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="card img" class="card-img-top content-card-img-top">
+                  <img src="https://images.unsplash.com/photo-1637683558217-bf59e163750e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="card img" class="card-img-top content-card-img-top card-inside-img" >
                 </a>
                 <div class="py-3 px-5">
                   <h3 class="fs-6 text-primary fw-bold mb-2">文章標題<span class="text-gray-500 fw-normal fs-10 ms-3"> 9 天前</span></h3> 
@@ -275,17 +279,71 @@ mb-4">
     
     
             </li>
+            <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8" >
+              <div class="card content-card">
+                <!-- 用來開啟modal 內的carousel -->
+                <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
+                <a href="#" class="d-block" alt="Second slide" data-bs-target="#carouselExample" data-bs-slide-to="1" >
+  
+                  <img src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="card img" class="card-img-top content-card-img-top card-inside-img" >
+                </a>
+                <div class="py-3 px-5">
+                  <h3 class="fs-6 text-primary fw-bold mb-2">文章標題<span class="text-gray-500 fw-normal fs-10 ms-3"> 9 天前</span></h3> 
+                  <p class="text-secondary hide-row-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil a, perspiciatis molestiae ullam eveniet magni quo blanditiis quibusdam incidunt ipsum repellendus eaque iure non odit? Impedit, sunt. Asperiores, maiores!</p>
+      
+                </div>
+    
+              </div>
+    
+    
+            </li>
+            <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8" >
+              <div class="card content-card">
+                <!-- 用來開啟modal 內的carousel -->
+                <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
+                <a href="#" class="d-block"  alt="Third slide" data-bs-target="#carouselExample" data-bs-slide-to="2" >
+  
+                  <img src="https://images.unsplash.com/photo-1546111380-cfca9a43dd85?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="card img" class="card-img-top content-card-img-top card-inside-img">
+                </a>
+                <div class="py-3 px-5">
+                  <h3 class="fs-6 text-primary fw-bold mb-2">文章標題<span class="text-gray-500 fw-normal fs-10 ms-3"> 9 天前</span></h3> 
+                  <p class="text-secondary hide-row-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil a, perspiciatis molestiae ullam eveniet magni quo blanditiis quibusdam incidunt ipsum repellendus eaque iure non odit? Impedit, sunt. Asperiores, maiores!</p>
+      
+                </div>
+    
+              </div>
+    
+    
+            </li>
+            <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8" >
+              <div class="card content-card">
+                <!-- 用來開啟modal 內的carousel -->
+                <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
+                <a href="#" class="d-block"  alt="Fourth slide" data-bs-target="#carouselExample" data-bs-slide-to="3" >
+  
+                  <img src="https://images.unsplash.com/photo-1547288242-f3d375fc7b5f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="card img" class="card-img-top content-card-img-top card-inside-img">
+                </a>
+                <div class="py-3 px-5">
+                  <h3 class="fs-6 text-primary fw-bold mb-2">文章標題<span class="text-gray-500 fw-normal fs-10 ms-3"> 9 天前</span></h3> 
+                  <p class="text-secondary hide-row-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil a, perspiciatis molestiae ullam eveniet magni quo blanditiis quibusdam incidunt ipsum repellendus eaque iure non odit? Impedit, sunt. Asperiores, maiores!</p>
+      
+                </div>
+    
+              </div>
+    
+    
+            </li>
+            
         </ul>
  
     </div>
 </section>
 
-<!-- modal 顯示 -->
+<!-- modal 版型 顯示 -->
 <div class="modal fade" id="libraryContentModal" tabindex="-1" aria-labelledby="libraryContentModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="text-end">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
-
     <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
  
       <div class="modal-content">
@@ -328,11 +386,10 @@ mb-4">
             
           
         </div>
-<!--         <div class="modal-footer">
+        <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
+        </div>
       </div>
     </div>
-  </div>
-  
+</div>

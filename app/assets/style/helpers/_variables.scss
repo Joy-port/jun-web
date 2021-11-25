@@ -7,7 +7,7 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f6f6f6 !default;
+$gray-100: #f8f8f8 !default; //f6f6f6
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default; 
 $gray-400: #ced4da !default;
@@ -42,7 +42,7 @@ $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
 $orange:  #DF8A39 !default; //fd7e14
-$yellow:  #ffc107 !default;
+$yellow:  #FEFE54 !default; //#ffc107
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
@@ -78,7 +78,7 @@ $colors: (
 $primary:       $orange; // $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $blue !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
@@ -92,10 +92,10 @@ $theme-colors: (
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger, //gray-100
-  "light":      $light, //gray-900
+  "danger":     $danger, 
+  "light":      $light, //gray-100
   "gray-500": $gray-500,  //adb5bd
-  "dark":       $dark,
+  "dark":       $dark, //gray-900
   "white":      $white,
   "black":      $black
 ) !default;
@@ -446,7 +446,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:     "TaipeiSansTCBeta", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:     "TaipeiSansTCBeta",'Josefin Sans','Nunito' , system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
