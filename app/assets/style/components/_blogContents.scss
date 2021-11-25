@@ -1,7 +1,7 @@
 .title{
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     color: $black;
 }
 
@@ -19,22 +19,45 @@
     font-family: 'TaipeiSansTCBeta','Josefin Sans','Nunito', sans-serif;
     font-size: 1.125rem;
     letter-spacing: 1.5px;
+    color: $gray-800;
+    font-weight:300;
+    
 
-    & >p{
+    &>p{
         margin-bottom: 2rem;
+        line-height:1.5;
+    }
+    &>img{
+        display:block;
     }
 
-    & >a{
+    &-link{
+        line-height: 1.5;
         text-decoration: underline;
         color: $info;
     }
 
-    &.highlight{
+    &-highlight{
         background-color: $warning
     }
-    &.hover-highlight{
+    &-hover-highlight{
         &:hover{
             background-color: $warning
         }
+    }
+    &-h1{
+        background: $light;
+        padding: 4px;
+        font-size: 2rem;
+    }
+    &-h3{
+        font-weight:bold;
+        font-size: 26px;
+        color:$info;
+    }
+    &-callout{
+        padding: 0.875rem;
+        font-size: 2rem;
+        line-height: 1.5;
     }
 }
