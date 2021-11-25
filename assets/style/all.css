@@ -43,7 +43,7 @@
   --bs-dark: #212529;
   --bs-white: #fff;
   --bs-black: #000;
-  --bs-font-sans-serif: "TaipeiSansTCBeta", "Josefin Sans", "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "TaipeiSansTCBeta", "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -88,6 +88,7 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-family: "TaipeiSansTCBeta", "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.5;
 }
@@ -23375,7 +23376,6 @@ ul, ol {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
   margin-bottom: 0;
-  line-height: 1.5rem;
 }
 
 a {
@@ -23621,6 +23621,14 @@ input:focus, input:active {
   line-height: 1.5;
 }
 
+.text-content > p::-moz-selection {
+  background-color: #fff5d8;
+}
+
+.text-content > p::selection {
+  background-color: #fff5d8;
+}
+
 .text-content > img {
   display: block;
 }
@@ -23655,6 +23663,36 @@ input:focus, input:active {
   padding: 0.875rem;
   font-size: 2rem;
   line-height: 1.5;
+}
+
+.text-content-quote {
+  color: #DF8A39;
+  border-left: 5px solid #DF8A39;
+  padding-left: 2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.text-content-quote > p:first-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+}
+
+.text-content-quote > p:last-child {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: right;
+}
+
+.btn-icon {
+  -webkit-filter: invert(74%) sepia(47%) saturate(2533%) hue-rotate(333deg) brightness(92%) contrast(90%);
+          filter: invert(74%) sepia(47%) saturate(2533%) hue-rotate(333deg) brightness(92%) contrast(90%);
+}
+
+.btn-parent-icon-hover:hover > img {
+  -webkit-filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(103%);
+          filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(103%);
 }
 
 /*# sourceMappingURL=all.css.map */
