@@ -245,9 +245,9 @@ var data = [{
   linkUrl: ""
 }];
 var filterData = [];
-var sortType = 'time';
+var sortType = 'timeSort';
 
-function renderAllContentList(contentList) {
+function renderContentList(contentList) {
   var str = '';
   if (!contentList.dataset.listType) return;
 
@@ -279,11 +279,11 @@ function renderAllContentList(contentList) {
         })] === '資源整理';
       });
       break;
-  } //依照時間排序預設
+  } //依照時間排序預設 ＋ id
 
 
-  if (sortType === 'time') {
-    sortByTime(filterData);
+  if (sortType === 'timeSort') {
+    sortByTime(filterData, sortType);
   } else {
     console.log(sortType, 'hot');
   }
@@ -295,18 +295,54 @@ function renderAllContentList(contentList) {
     str += content;
   });
   contentList.innerHTML = str;
-} //渲染到有監聽的頁面上
+} //tags
 
+
+function renderTagsList(theme, content, data) {
+  theme.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.setAttribute('disabled', '');
+    data.forEach(function (item) {
+      item.tagsByTheme.forEach(function (themeName) {
+        if (themeName === inputItem.name) {
+          inputItem.removeAttribute('disabled', '');
+        }
+      });
+    });
+  });
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.setAttribute('disabled', '');
+    data.forEach(function (item) {
+      item.tagsByContent.forEach(function (themeName) {
+        if (themeName === inputItem.name) {
+          inputItem.removeAttribute('disabled', '');
+        }
+      });
+    });
+  });
+}
+
+function activeTags() {
+  console.log('success');
+}
+
+; //渲染到有監聽的頁面上
 
 function autoRenderByPage() {
   if (document.querySelector('.js-content-list')) {
     var contentList = document.querySelector('.js-content-list');
-    renderAllContentList(contentList);
+    renderContentList(contentList);
   } else {
     console.log('nothing');
   }
 
   ;
+
+  if (document.querySelectorAll('.js-tags-list')) {
+    var tagsListTheme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+    var tagsListContent = document.querySelector('.js-tags-list[data-tags-type="content"]');
+    renderTagsList(tagsListTheme, tagsListContent, filterData);
+    console.log('success');
+  }
 } //顯示上架距離現今的時間
 
 
@@ -340,21 +376,29 @@ function regTime(time) {
 } // 依照上架日期排序
 
 
-function sortByTime(data) {
+function sortByTime(data, sortType) {
+  data.forEach(function (item) {
+    var nowTime = new Date().getTime();
+    item[sortType] = nowTime - item.id;
+  });
+  data.sort(function (a, b) {
+    return b[sortType] - a[sortType];
+  });
+} //data 綁id
+
+
+function setDataId() {
   data.forEach(function (item) {
     var year = Number(item.time.split('-')[0]);
     var month = Number(item.time.split('-')[1]) - 1;
     var day = Number(item.time.split('-')[2]);
-    var beforeTime = new Date(year, month, day).getTime();
-    var nowTime = new Date().getTime();
-    item.timeSort = beforeTime - nowTime;
-  });
-  data.sort(function (a, b) {
-    return b['timeSort'] - a['timeSort'];
+    var time = new Date(year, month, day).getTime();
+    item.id = time;
   });
 }
 
 function init() {
+  setDataId();
   autoRenderByPage();
 }
 
