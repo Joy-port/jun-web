@@ -23472,24 +23472,6 @@ input:focus, input:active {
   color: #fff;
 }
 
-.btn-catagory {
-  color: #797979;
-  border-radius: 0.25rem;
-  font-size: 0.875rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
-}
-
-.btn-catagory:hover {
-  background-color: #DF8A39;
-  color: #fff;
-}
-
-.btn-disabled {
-  opacity: 4;
-  color: #797979;
-}
-
 .logo-title {
   font-size: 1.125rem;
 }
@@ -23844,6 +23826,38 @@ input:focus, input:active {
 
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #797979;
+}
+
+.checkbox-outline-primary {
+  background-color: #fff;
+  border: 1px solid #DF8A39;
+  color: #797979;
+  padding: .25rem .75rem;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: default;
+}
+
+.checkbox-outline-primary:hover {
+  background-color: #DF8A39;
+  color: #fff;
+}
+
+.checkbox-hide {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.checkbox-checked:checked + label[class*="checkbox-outline-primary"] {
+  background-color: #DF8A39;
+  color: #fff;
+}
+
+.checkbox-checked:disabled + label[class*="checkbox-outline-primary"] {
+  opacity: .4;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=all.css.map */
