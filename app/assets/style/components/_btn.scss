@@ -34,7 +34,10 @@
 }
 .search-input{
     border-radius: 10rem;
-
+    padding-left: 1rem;
+    caret-color: $primary;
+    font-weight: 400;
+    color: $gray-800;
     &::placeholder{
         color: $gray-400;
         font-size: 0.875rem;

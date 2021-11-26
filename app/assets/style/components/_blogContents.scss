@@ -21,7 +21,7 @@
     letter-spacing: 1.5px;
     color: $gray-800;
     font-weight:300;
-    
+    margin-bottom: 1rem;
 
     &>p{
         margin-bottom: 2rem;
@@ -97,5 +97,51 @@
     &.active{
         color: $primary;
         font-weight: 400;
+    }
+}
+
+.text-footer{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: 2.25rem;
+    &-tags{
+        margin-left: 1rem;
+        display: flex;
+        &>li + li{
+            margin-left: 0.5rem;
+        }
+        &>li>a{
+            display: block;
+            color: $secondary;
+            border: 1px solid $secondary;
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            font-size: 14px;
+            &:hover{
+                color: $info;
+                border: 1px solid $info;
+            }
+            &::before{
+                content:'#';
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.ig-content{
+    &-tag{
+        margin-bottom: 1rem;
+        &>a{
+            color: $info;
+            &:hover{
+                color: $black;
+            }
+            &::before{
+                content:'#';
+                margin-right: 2px;
+            }
+        }
     }
 }
