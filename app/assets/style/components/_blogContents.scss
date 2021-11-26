@@ -51,12 +51,14 @@
     }
     &-h1{
         background: $light;
+        color: $black;
         padding: 4px;
-        font-size: 2rem;
+        font-size: 2.25rem;
+        font-weight: 700;
     }
-    &-h3{
+    &-h2{
         font-weight:bold;
-        font-size: 26px;
+        font-size: 1.25rem;
         color:$info;
     }
     &-callout{
@@ -81,5 +83,19 @@
             font-weight: normal;
             text-align: right;
         }
+    }
+}
+
+.table-content{
+    color: $info;
+    font-weight: 300;
+
+    &:hover{
+        color: $black;
+    }
+
+    &.active{
+        color: $primary;
+        font-weight: 400;
     }
 }
