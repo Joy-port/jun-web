@@ -43,7 +43,7 @@
   --bs-dark: #212529;
   --bs-white: #fff;
   --bs-black: #000;
-  --bs-font-sans-serif: "TaipeiSansTCBeta", Roboto, "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "TaipeiSansTCBeta", Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -88,7 +88,7 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "TaipeiSansTCBeta", Roboto, "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "TaipeiSansTCBeta", Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.5;
 }
@@ -23496,6 +23496,10 @@ input:focus, input:active {
 
 .search-input {
   border-radius: 10rem;
+  padding-left: 1rem;
+  caret-color: #DF8A39;
+  font-weight: 400;
+  color: #373737;
 }
 
 .search-input::-webkit-input-placeholder {
@@ -23553,6 +23557,14 @@ input:focus, input:active {
   width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.content-card-img-top-sm {
+  height: 110px;
 }
 
 .card-inside-img {
@@ -23618,6 +23630,7 @@ input:focus, input:active {
   letter-spacing: 1.5px;
   color: #373737;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .text-content > p {
@@ -23705,6 +23718,64 @@ input:focus, input:active {
   font-weight: 400;
 }
 
+.text-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  margin-bottom: 2.25rem;
+}
+
+.text-footer-tags {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-footer-tags > li + li {
+  margin-left: 0.5rem;
+}
+
+.text-footer-tags > li > a {
+  display: block;
+  color: #797979;
+  border: 1px solid #797979;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.text-footer-tags > li > a:hover {
+  color: #5D7E93;
+  border: 1px solid #5D7E93;
+}
+
+.text-footer-tags > li > a::before {
+  content: '#';
+  padding-right: 5px;
+}
+
+.ig-content-tag {
+  margin-bottom: 1rem;
+}
+
+.ig-content-tag > a {
+  color: #5D7E93;
+}
+
+.ig-content-tag > a:hover {
+  color: #000;
+}
+
+.ig-content-tag > a::before {
+  content: '#';
+  margin-right: 2px;
+}
+
 .btn-icon {
   -webkit-filter: invert(74%) sepia(47%) saturate(2533%) hue-rotate(333deg) brightness(92%) contrast(90%);
           filter: invert(74%) sepia(47%) saturate(2533%) hue-rotate(333deg) brightness(92%) contrast(90%);
@@ -23757,7 +23828,7 @@ input:focus, input:active {
   z-index: 100;
   width: 25px;
   height: 25px;
-  background-color: #ffffff60;
+  background-color: #ffffff10;
   -webkit-filter: invert(100%) sepia(63%) saturate(218%) hue-rotate(234deg) brightness(114%) contrast(101%);
           filter: invert(100%) sepia(63%) saturate(218%) hue-rotate(234deg) brightness(114%) contrast(101%);
   border-radius: 100%;
@@ -23772,7 +23843,7 @@ input:focus, input:active {
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: #ffffff60;
+  background-color: #797979;
 }
 
 /*# sourceMappingURL=all.css.map */
