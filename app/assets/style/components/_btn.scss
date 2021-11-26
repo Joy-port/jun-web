@@ -10,25 +10,6 @@
         color: #fff;
     }
 }
-
-.btn-catagory{
-    color: $secondary;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
-
-    &:hover{
-        background-color: $primary;
-        color: #fff;
-    }
-}
-
-.btn-disabled{
-    opacity: 4;
-    color: $secondary;
-}
-
 .logo-title{
     font-size: 1.125rem;
 }
