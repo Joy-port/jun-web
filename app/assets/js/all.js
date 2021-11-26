@@ -278,9 +278,9 @@ let data =[
     }
 ];
 let filterData = [];
-let sortType = 'time';
+let sortType = 'timeSort';
 
-function renderAllContentList(contentList){
+function renderContentList(contentList){
     let str = '';
 
     if(!contentList.dataset.listType) return ;
@@ -299,9 +299,9 @@ function renderAllContentList(contentList){
         break;
      }
     
-    //依照時間排序預設
-    if(sortType === 'time'){
-        sortByTime(filterData);
+    //依照時間排序預設 ＋ id
+    if(sortType === 'timeSort'){
+        sortByTime(filterData , sortType);
     }else{
         console.log( sortType,'hot');
     };
@@ -323,15 +323,49 @@ function renderAllContentList(contentList){
     });
     contentList.innerHTML = str;
 }
+//tags
+function renderTagsList(theme, content ,data){
+    theme.querySelectorAll('li input').forEach(inputItem =>{
+        inputItem.setAttribute('disabled', '');
+        data.forEach(item =>{
+            item.tagsByTheme.forEach(themeName =>{
+                if(themeName === inputItem.name){
+                    inputItem.removeAttribute('disabled', '');
+                }
+            })
+        })
+    });
+    content.querySelectorAll('li input').forEach(inputItem =>{
+        inputItem.setAttribute('disabled', '');
+        data.forEach(item =>{
+            item.tagsByContent.forEach(themeName =>{
+                if(themeName === inputItem.name){
+                    inputItem.removeAttribute('disabled', '');
+                }
+            })
+        })
+    });
+}
+
+function activeTags(){
+    console.log('success');
+};
 
 //渲染到有監聽的頁面上
 function autoRenderByPage(){
     if (document.querySelector('.js-content-list')){
         const contentList = document.querySelector('.js-content-list');
-        renderAllContentList(contentList);
+        renderContentList(contentList);
     }else{
         console.log('nothing');
     };
+    if(document.querySelectorAll('.js-tags-list')){
+    const tagsListTheme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+    const tagsListContent = document.querySelector('.js-tags-list[data-tags-type="content"]');
+    renderTagsList(tagsListTheme,tagsListContent , filterData);
+       
+       console.log('success');
+    }
 }
 
 //顯示上架距離現今的時間
@@ -360,24 +394,34 @@ function regTime(time){
 
 }
 // 依照上架日期排序
-function sortByTime(data){
+function sortByTime(data, sortType){
+    data.forEach(function(item){
+        let nowTime = new Date().getTime();
+        item[sortType] = nowTime - item.id;
+    });
+
+    data.sort((a,b)=> b[sortType] - a[sortType]);
+}
+
+//data 綁id
+function setDataId(){
     data.forEach(function(item){
         let year = Number(item.time.split('-')[0]);
-        let month = Number(item.time.split('-')[1])-1;
+        let month = Number(item.time.split('-')[1]) - 1;
         let day = Number(item.time.split('-')[2]);
 
-        let beforeTime = new Date(year, month ,day).getTime();
-        let nowTime = new Date().getTime();
-        
-        item.timeSort = beforeTime - nowTime;
+        let time = new Date(year, month ,day).getTime();
+        item.id = time ;
     });
-    data.sort((a,b)=> b['timeSort'] - a['timeSort']);
 }
 
 
 
+
 function init(){
+    setDataId();
     autoRenderByPage();
+
 }
 
 init();
