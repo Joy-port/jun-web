@@ -43,7 +43,7 @@
   --bs-dark: #212529;
   --bs-white: #fff;
   --bs-black: #000;
-  --bs-font-sans-serif: "TaipeiSansTCBeta", "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "TaipeiSansTCBeta", Roboto, "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -88,7 +88,7 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "TaipeiSansTCBeta", "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "TaipeiSansTCBeta", Roboto, "Nunito", "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.5;
 }
@@ -23579,6 +23579,10 @@ input:focus, input:active {
   font-family: 'Roboto Slab', serif;
 }
 
+.font-Roboto {
+  font-family: Roboto, sans-serif;
+}
+
 .letter-spacing-1 {
   letter-spacing: 2px;
 }
@@ -23709,6 +23713,66 @@ input:focus, input:active {
 .btn-parent-icon-hover:hover > img {
   -webkit-filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(103%);
           filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(103%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 0;
+  opacity: 0.5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.carousel-control-prev-icon::before, .carousel-control-next-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff60;
+  -webkit-filter: invert(100%) sepia(63%) saturate(218%) hue-rotate(234deg) brightness(114%) contrast(101%);
+          filter: invert(100%) sepia(63%) saturate(218%) hue-rotate(234deg) brightness(114%) contrast(101%);
+  border-radius: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #ffffff60;
 }
 
 /*# sourceMappingURL=all.css.map */
