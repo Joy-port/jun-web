@@ -278,9 +278,12 @@ let data =[
     }
 ];
 let filterData = [];
+let tagsData = [];
 let sortType = 'timeSort';
 
-function renderContentList(contentList){
+//contentList
+function renderContentList(){
+    const contentList = document.querySelector('.js-content-list');
     let str = '';
 
     if(!contentList.dataset.listType) return ;
@@ -323,51 +326,134 @@ function renderContentList(contentList){
     });
     contentList.innerHTML = str;
 }
+function updateContentList(inputData){
+    const contentList = document.querySelector('.js-content-list');
+    let str = '';
+    inputData.forEach(item =>{
+        //要加上 item.time 排序時間
+        let content=`<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent.join('_')}>
+        <div class="card content-card h-100">
+          <a href="${item.linkUrl}" class="d-block">
+            <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" alt="card img" class="card-img-top content-card-img-top">
+          </a>
+          <div class="py-5 px-6 h-100">
+            <h3 class="fs-7 text-primary fw-md mb-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
+            <p class="text-secondary hide-row-2 fs-8">${item.description}</p>
+          </div>
+        </div>
+      </li>`;
+      str+= content;
+    });
+    contentList.innerHTML = str;
+}
 //tags
 function renderTagsList(theme, content ,data){
+
     theme.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.setAttribute('disabled', '');
+        
         data.forEach(item =>{
             item.tagsByTheme.forEach(themeName =>{
                 if(themeName === inputItem.name){
                     inputItem.removeAttribute('disabled', '');
-                }
-            })
-        })
+                    inputItem.dataset.num ++ ;
+                };
+            });
+        });
+        
     });
+
+    theme.querySelectorAll('li input').forEach(inputItem=>{
+        theme.querySelectorAll('li label').forEach(labelItem =>{
+            if(labelItem.getAttribute('for') === inputItem.getAttribute('id')){
+                labelItem.querySelector('span').textContent = inputItem.dataset.num;
+            };
+        });
+    })
+
     content.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.setAttribute('disabled', '');
         data.forEach(item =>{
             item.tagsByContent.forEach(themeName =>{
                 if(themeName === inputItem.name){
                     inputItem.removeAttribute('disabled', '');
+                    inputItem.dataset.num ++ ;
                 }
             })
         })
     });
+
+    content.querySelectorAll('li input').forEach(inputItem=>{
+        content.querySelectorAll('li label').forEach(labelItem =>{
+            if(labelItem.getAttribute('for') === inputItem.getAttribute('id')){
+                labelItem.querySelector('span').textContent = inputItem.dataset.num;
+            };
+        });
+    })
+
+
 }
 
-function activeTags(){
-    console.log('success');
-};
+function checkboxSelected(e){
+    // console.log(e.target.name,e.target.closest('input').checked);
+    //新增點擊過的tags
+    data.forEach((item) => {
+        item.tagsByTheme.forEach(tagsName =>{
+            // console.log(e.target.name === tagsName, e.target.closest('input').checked===true);
+            if(e.target.name === tagsName && e.target.closest('input').checked===true){
+                tagsData.unshift(item);
+            };
+        });
+        item.tagsByContent.forEach(tagsName =>{
+            // console.log(e.target.name === tagsName, e.target.closest('input').checked===true);
+            if(e.target.name === tagsName && e.target.closest('input').checked===true){
+                tagsData.unshift(item);
+            };
+        })
+    });
+    //刪除點擊取消的tags
+    if(e.target.closest('input').checked === false){
+     tagsData.forEach(function(updateType){
+            updateType.tagsByTheme.forEach(updateTagsName =>{
+               if(e.target.name === updateTagsName){
+                //console.log(tagsData.indexOf(updateType), e.target.dataset.num);
+                tagsData.splice(tagsData.indexOf(updateType),e.target.dataset.num);
+               }
+            })
+        })
+        tagsData.forEach(function(updateType){
+            updateType.tagsByContent.forEach(updateTagsName =>{
+               if(e.target.name === updateTagsName){
+                //console.log(tagsData.indexOf(updateType), e.target.dataset.num);
+                tagsData.splice(tagsData.indexOf(updateType),e.target.dataset.num);
+               }
+            })
+        })
+    }
+
+    updateContentList(tagsData);
+
+}
 
 //渲染到有監聽的頁面上
 function autoRenderByPage(){
     if (document.querySelector('.js-content-list')){
-        const contentList = document.querySelector('.js-content-list');
-        renderContentList(contentList);
-    }else{
-        console.log('nothing');
+        
+        renderContentList();
+        
+        if(document.querySelectorAll('.js-tags-list')){
+        const tagsListTheme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+        const tagsListContent = document.querySelector('.js-tags-list[data-tags-type="content"]');
+        renderTagsList(tagsListTheme,tagsListContent , filterData);
+
+        tagsListTheme.addEventListener('change', checkboxSelected);
+        tagsListContent.addEventListener('change', checkboxSelected);
+        };
     };
-    if(document.querySelectorAll('.js-tags-list')){
-    const tagsListTheme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
-    const tagsListContent = document.querySelector('.js-tags-list[data-tags-type="content"]');
-    renderTagsList(tagsListTheme,tagsListContent , filterData);
-       
-       console.log('success');
-    }
 }
 
+
+//content
 //顯示上架距離現今的時間
 function regTime(time){
     let year = time.split('-')[0];
@@ -394,13 +480,13 @@ function regTime(time){
 
 }
 // 依照上架日期排序
-function sortByTime(data, sortType){
-    data.forEach(function(item){
+function sortByTime(inputData, sortType){
+    inputData.forEach(function(item){
         let nowTime = new Date().getTime();
         item[sortType] = nowTime - item.id;
     });
 
-    data.sort((a,b)=> b[sortType] - a[sortType]);
+    data.sort((a,b)=> a[sortType] - b[sortType]);
 }
 
 //data 綁id
