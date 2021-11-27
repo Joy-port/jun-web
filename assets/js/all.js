@@ -270,7 +270,7 @@ var data = [{
   type: ["學習思考", "好書推薦"],
   time: '2020-08-09',
   imgUrl: "",
-  tagsByTheme: ["學習方法"],
+  tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: ""
 }, {
@@ -279,7 +279,7 @@ var data = [{
   type: ["學習思考", "好書推薦"],
   time: '2020-09-27',
   imgUrl: "",
-  tagsByTheme: ["學習方法"],
+  tagsByTheme: ["學習方法", "工作術"],
   tagsByContent: "文章",
   linkUrl: ""
 }, {
@@ -306,7 +306,7 @@ var data = [{
   type: ["學習思考", "好書推薦"],
   time: '2021-06-24',
   imgUrl: "",
-  tagsByTheme: ["職涯思考", "自我成長"],
+  tagsByTheme: ["職涯思考", "自我成長", "人生思考"],
   tagsByContent: "文章",
   linkUrl: ""
 }, {
@@ -331,6 +331,8 @@ var data = [{
 var pageData = [];
 var themeData = [];
 var contentData = [];
+var newestData1 = [];
+var newestData2 = [];
 var pageName = '';
 var sortType = 'timeSort'; //預設渲染畫面
 
@@ -366,7 +368,14 @@ function autoRenderByPage() {
     }
 
     ;
+
+    if (document.querySelector('.js-refresh-btn')) {
+      var refreshBtn = document.querySelector('.js-refresh-btn');
+      refreshBtn.addEventListener('click', refreshContent);
+    }
   }
+
+  ;
 } //渲染卡片
 
 
@@ -383,8 +392,27 @@ function renderContentList() {
   }
 
   ;
-  str = renderCardsList(pageData);
-  contentList.innerHTML = str;
+
+  if (contentList.dataset.listType === 'newestData') {
+    console.log(pageData);
+    var thoughtsList = document.querySelector('.js-data-list');
+    pageData.forEach(function (item, index) {
+      if (index >= 0 && index < 3) {
+        newestData1.push(item);
+      } else if (index >= 3 && index < 6) {
+        newestData2.push(item);
+      }
+
+      ;
+    });
+    str = newPostCardList(newestData1);
+    contentList.innerHTML = str;
+    str = newPostCardList(newestData2);
+    thoughtsList.innerHTML = str;
+  } else {
+    str = renderCardsList(pageData);
+    contentList.innerHTML = str;
+  }
 } //篩選後重新渲染card
 
 
@@ -404,6 +432,7 @@ function renderTagsList() {
 
   theme.querySelectorAll('li input').forEach(function (inputItem) {
     inputItem.setAttribute('disabled', '');
+    inputItem.dataset.num = 0;
     pageData.forEach(function (item) {
       item.tagsByTheme.forEach(function (themeName) {
         if (themeName === inputItem.name) {
@@ -426,6 +455,7 @@ function renderTagsList() {
 
   content.querySelectorAll('li input').forEach(function (inputItem) {
     inputItem.setAttribute('disabled', '');
+    inputItem.dataset.num = 0;
     pageData.forEach(function (item) {
       if (item.tagsByContent === inputItem.name) {
         inputItem.removeAttribute('disabled', '');
@@ -445,10 +475,21 @@ function renderTagsList() {
   });
 }
 
+function refreshThemeTagsList() {
+  var theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+  var content = document.querySelector('.js-tags-list[data-tags-type="content"]'); //移除 checkbox checked  狀態
+
+  theme.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.checked = false;
+  });
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.checked = false;
+  });
+}
+
 function updateContentTagsList(inputData) {
   var content = document.querySelector('.js-tags-list[data-tags-type="content"]'); //更新content 標籤 數量dataset
 
-  var num = 0;
   content.querySelectorAll('li input').forEach(function (inputItem) {
     inputItem.dataset.num = 0;
     inputData.forEach(function (item) {
@@ -466,6 +507,14 @@ function updateContentTagsList(inputData) {
 
       ;
     });
+  }); //如果content dataset num =0 -> disabled
+
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.setAttribute('disabled', '');
+
+    if (inputItem.dataset.num > 0) {
+      inputItem.removeAttribute('disabled');
+    }
   });
 } //get pageData
 
@@ -512,6 +561,15 @@ function getPageData(contentList) {
         })] === '好書推薦';
       });
       break;
+
+    case 'newestData':
+      pageName = 'newPosts';
+      pageData = data.filter(function (item) {
+        return item.type[item.type.findIndex(function (typename) {
+          return typename === '學習思考';
+        })] === '學習思考';
+      });
+      break;
   }
 } //renderCards
 
@@ -521,9 +579,7 @@ function renderCardsList(pageData) {
 
   if (pageName === 'library') {
     str = libraryCardList(pageData);
-  } else if (pageName === 'newPosts') {
-    str = newPostCardList();
-  } else {
+  } else if (pageName === 'newPosts') {} else {
     str = normalCardList(pageData);
   }
 
@@ -553,7 +609,14 @@ function libraryCardList(pageData) {
 } //newPost content Card list
 
 
-function newPostCardList() {} //渲染調整時間顯示方式
+function newPostCardList(pageData) {
+  var str = '';
+  pageData.forEach(function (item) {
+    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-0\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), " data-tags-content=\"").concat(item.tagsByContent, ">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" class=\"d-block\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" class=\"card-img-top content-card-img-top card-inside-img\">\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"fs-6 text-primary fw-bold mb-2 hide-row-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n            <p class=\"text-secondary hide-row-2\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
+    str += content;
+  });
+  return str;
+} //渲染調整時間顯示方式
 //顯示上架距離現今的時間
 
 
@@ -648,11 +711,12 @@ function checkboxSelected(e) {
     updateContentList(contentData);
     addClickCheckboxStyle(this);
   }
-}
+} //tags title 加上效果
+
 
 function addClickCheckboxStyle(vm) {
-  var themeTitle = document.querySelector('[data-title="theme"]');
-  var contentTitle = document.querySelector('[data-title= "content"]');
+  var num = 0;
+  var type = vm.dataset.tagsType;
   vm.querySelectorAll('li input').forEach(function (inputItem) {
     if (inputItem.checked === true) {
       num++;
@@ -660,19 +724,21 @@ function addClickCheckboxStyle(vm) {
 
     ;
   });
+  var titleSelected = document.querySelector("[data-title =\"".concat(type, "\"]"));
 
-  if (num1 > 0) {
-    themeTitle.classList.remove('link-secondary');
+  if (num > 0) {
+    titleSelected.classList.remove('link-secondary');
   } else {
-    themeTitle.classList.add('link-secondary');
+    titleSelected.classList.add('link-secondary');
   }
 
   ;
+} //重新篩選按鈕
 
-  if (num2 > 0) {
-    contentTitle.classList.remove('link-secondary');
-  } else {
-    contentTitle.classList.add('link-secondary');
-  }
+
+function refreshContent(e) {
+  e.preventDefault();
+  autoRenderByPage();
+  refreshThemeTagsList();
 }
 //# sourceMappingURL=all.js.map

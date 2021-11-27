@@ -23465,6 +23465,9 @@ input:focus, input:active {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   white-space: nowrap;
+  -webkit-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
 }
 
 .btn-outline-primary:hover {
@@ -23763,6 +23766,14 @@ input:focus, input:active {
           filter: invert(74%) sepia(47%) saturate(2533%) hue-rotate(333deg) brightness(92%) contrast(90%);
 }
 
+.btn-parent-icon-hover > img {
+  -webkit-transition: -webkit-filter .25s ease-in;
+  transition: -webkit-filter .25s ease-in;
+  -o-transition: filter .25s ease-in;
+  transition: filter .25s ease-in;
+  transition: filter .25s ease-in, -webkit-filter .25s ease-in;
+}
+
 .btn-parent-icon-hover:hover > img {
   -webkit-filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(103%);
           filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(103%);
@@ -23837,6 +23848,9 @@ input:focus, input:active {
   border-radius: 0.25rem;
   font-size: 0.875rem;
   cursor: default;
+  -webkit-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
 }
 
 .checkbox-outline-primary:hover {
@@ -23844,10 +23858,31 @@ input:focus, input:active {
   color: #fff;
 }
 
+.checkbox-link-secondary {
+  color: #797979;
+  cursor: default;
+  -webkit-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.checkbox-link-secondary:hover {
+  color: #DF8A39;
+}
+
 .checkbox-hide {
   opacity: 0;
   width: 0;
   margin: 0;
+  display: none;
 }
 
 .checkbox-checked:checked + label[class*="checkbox-outline-primary"] {
@@ -23856,6 +23891,15 @@ input:focus, input:active {
 }
 
 .checkbox-checked:disabled + label[class*="checkbox-outline-primary"] {
+  opacity: .4;
+  pointer-events: none;
+}
+
+.checkbox-checked:checked + label[class*="checkbox-link-secondary"] {
+  color: #DF8A39;
+}
+
+.checkbox-checked:disabled + label[class*="checkbox-link-secondary"] {
   opacity: .4;
   pointer-events: none;
 }
