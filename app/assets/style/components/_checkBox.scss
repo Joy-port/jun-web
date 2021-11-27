@@ -7,6 +7,7 @@
     border-radius: 0.25rem;
     font-size: 0.875rem;
     cursor: default;
+    transition: all .15s;
 
     &:hover{
         background-color: $primary;
@@ -14,11 +15,27 @@
     }
 
 }
+.checkbox-link-secondary{
+    color: $secondary;
+    cursor: default;
+    transition: all .15s;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding: 0.5rem 0;
+
+    &:hover{
+        color: $primary;
+    }
+
+}
+
 
 .checkbox-hide{
     opacity: 0;
     width: 0;
     margin: 0;
+    display: none;
 }
 
 .checkbox-checked:checked + label[class *= "checkbox-outline-primary"]{
@@ -27,6 +44,15 @@
 }
 
 .checkbox-checked:disabled + label[class *= "checkbox-outline-primary"]{
+    opacity: .4;
+    pointer-events: none;
+}
+
+.checkbox-checked:checked + label[class *= "checkbox-link-secondary"]{
+    color: $primary;
+}
+
+.checkbox-checked:disabled + label[class *= "checkbox-link-secondary"]{
     opacity: .4;
     pointer-events: none;
 }

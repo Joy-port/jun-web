@@ -4,6 +4,10 @@
     brightness(92%) contrast(90%);
   //generator https://codepen.io/sosuke/pen/Pjoqqp
 }
+.btn-parent-icon-hover >img {
+  transition: filter .25s ease-in;
+  
+}
 
 .btn-parent-icon-hover:hover > img{
     filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(43deg)

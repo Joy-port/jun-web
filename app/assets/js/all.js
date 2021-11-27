@@ -292,7 +292,7 @@ let data =[
         type:["學習思考","好書推薦"],
         time: '2020-08-09',
         imgUrl:"",
-        tagsByTheme:["學習方法"],
+        tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
         linkUrl:""
     },
@@ -302,7 +302,7 @@ let data =[
         type:["學習思考","好書推薦"],
         time: '2020-09-27',
         imgUrl:"",
-        tagsByTheme:["學習方法"],
+        tagsByTheme:["學習方法","工作術"],
         tagsByContent:"文章",
         linkUrl:""
     },
@@ -332,7 +332,7 @@ let data =[
         type:["學習思考","好書推薦"],
         time: '2021-06-24',
         imgUrl:"",
-        tagsByTheme:["職涯思考","自我成長"],
+        tagsByTheme:["職涯思考","自我成長","人生思考"],
         tagsByContent:"文章",
         linkUrl:""
     },
@@ -360,6 +360,8 @@ let data =[
 let pageData = [];
 let themeData = [];
 let contentData = [];
+let newestData1 = [];
+let newestData2 = [];
 let pageName = '';
 let sortType = 'timeSort';
 
@@ -394,7 +396,12 @@ function autoRenderByPage(){
         if(document.querySelectorAll('.js-tags-list')){
             renderTagsList(); //渲染標籤數量＋disabled
         };
-    }
+        if(document.querySelector('.js-refresh-btn')){
+            const refreshBtn = document.querySelector('.js-refresh-btn');
+            refreshBtn.addEventListener('click', refreshContent);
+        }
+    };
+
 }
 
 //渲染卡片
@@ -411,8 +418,26 @@ function renderContentList(){
     }else{
         console.log( sortType,'hot');
     };
-    str = renderCardsList(pageData);
-    contentList.innerHTML = str;
+    if(contentList.dataset.listType==='newestData'){
+        console.log(pageData);
+        const thoughtsList = document.querySelector('.js-data-list');
+        pageData.forEach((item,index) =>{
+                if(index >= 0 && index < 3){
+                    newestData1.push(item);
+                }else if(index >= 3 && index < 6){
+                    newestData2.push(item);
+                };
+        });
+
+        str = newPostCardList(newestData1);
+        contentList.innerHTML = str;
+        str = newPostCardList(newestData2);
+        thoughtsList.innerHTML = str;
+       
+    }else{
+        str = renderCardsList(pageData);
+        contentList.innerHTML = str;
+    }
 }
 
 //篩選後重新渲染card
@@ -433,6 +458,7 @@ function renderTagsList(){
     //更新theme 標籤 disabled 樣式
     theme.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.setAttribute('disabled', '')
+        inputItem.dataset.num = 0 ;
             pageData.forEach(item =>{
                 item.tagsByTheme.forEach(themeName =>{
                     if(themeName === inputItem.name){
@@ -456,6 +482,7 @@ function renderTagsList(){
     //更新content 標籤 disabled 樣式
     content.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.setAttribute('disabled', '')
+        inputItem.dataset.num = 0 ;
             pageData.forEach(item =>{
                 if(item.tagsByContent === inputItem.name){
                     inputItem.removeAttribute('disabled', '');
@@ -473,11 +500,21 @@ function renderTagsList(){
         });
     })
 }
+function refreshThemeTagsList(){
+    const theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+    const content = document.querySelector('.js-tags-list[data-tags-type="content"]');
+   //移除 checkbox checked  狀態
+   theme.querySelectorAll('li input').forEach(inputItem =>{
+       inputItem.checked = false;
+   });
+   content.querySelectorAll('li input').forEach(inputItem =>{
+    inputItem.checked = false;
+});
+}
 
 function updateContentTagsList(inputData){
     const content = document.querySelector('.js-tags-list[data-tags-type="content"]');
      //更新content 標籤 數量dataset
-     let num = 0;
      content.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.dataset.num = 0 ;
             inputData.forEach(item =>{
@@ -493,7 +530,15 @@ function updateContentTagsList(inputData){
                 labelItem.querySelector('span').textContent = inputItem.dataset.num;
             };
         });
-    })
+    });
+
+    //如果content dataset num =0 -> disabled
+    content.querySelectorAll('li input').forEach(inputItem =>{
+        inputItem.setAttribute('disabled', '');
+            if(inputItem.dataset.num >0 ){
+                inputItem.removeAttribute('disabled');
+            }
+    });
 }
 
 //get pageData
@@ -519,6 +564,10 @@ function getPageData(contentList){
         pageName = 'library';
         pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '好書推薦'))] === '好書推薦');
         break;
+        case 'newestData':
+        pageName = 'newPosts';
+        pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '學習思考'))] === '學習思考');
+        break;
      }
 
 }
@@ -528,7 +577,7 @@ function renderCardsList(pageData){
     if(pageName === 'library'){
         str = libraryCardList(pageData);
     }else if(pageName === 'newPosts'){
-        str = newPostCardList();
+        
     }else{
         str = normalCardList(pageData);
     };
@@ -593,8 +642,24 @@ function libraryCardList(pageData) {
 }
 
 //newPost content Card list
-function newPostCardList(){
+function newPostCardList(pageData){
+    let str = '';
+    pageData.forEach(item =>{
+        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-0" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+        <div class="card content-card h-100">
+          <a href="${item.linkUrl}" class="d-block">
+            <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" class="card-img-top content-card-img-top card-inside-img">
+          </a>
+          <div class="py-3 px-5 h-100">
+            <h3 class="fs-6 text-primary fw-bold mb-2 hide-row-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
+            <p class="text-secondary hide-row-2">${item.description}</p>
+          </div>
+        </div>
+      </li>`;
+      str += content;
+    });
 
+    return str ;
 }
 
 //渲染調整時間顯示方式
@@ -683,26 +748,30 @@ function checkboxSelected(e){
 } 
 
 }
-
+//tags title 加上效果
 function addClickCheckboxStyle(vm){
-    const themeTitle = document.querySelector('[data-title="theme"]');
-    const contentTitle = document.querySelector('[data-title= "content"]');
+    let num = 0;
+    let type = vm.dataset.tagsType;
     vm.querySelectorAll('li input').forEach(inputItem=>{
         if(inputItem.checked === true){
             num++;
         };
     });
 
+    let titleSelected = document.querySelector(`[data-title ="${type}"]`);
 
-    if(num1 >0){
-        themeTitle.classList.remove('link-secondary');
+    if(num >0){
+        titleSelected.classList.remove('link-secondary');
     }else{
-        themeTitle.classList.add('link-secondary');
+        titleSelected.classList.add('link-secondary');
     };
-    if(num2 >0){
-        contentTitle.classList.remove('link-secondary');
-    }else{
-        contentTitle.classList.add('link-secondary');
-    }
+
+}
+
+//重新篩選按鈕
+function refreshContent(e){
+    e.preventDefault();
+    autoRenderByPage();
+    refreshThemeTagsList();
 
 }
