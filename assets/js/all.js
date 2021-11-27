@@ -1,5 +1,17 @@
 "use strict";
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 var data = [{
   title: "icon 網站大集合",
   description: "你知道 icon 有分很多類型嗎？外框線、色塊、混合、等等，但要怎麼依照自己的需求尋找 icon？文章整理不同網站的特色，分成單色、彩色、可不可以編輯，及不同主題的 icon，趕快來找找看有沒有你想要的icon！",
@@ -186,7 +198,7 @@ var data = [{
   type: ["學習思考"],
   time: '2020-11-10',
   imgUrl: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-  tagsByTheme: ["日常反思"],
+  tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: ""
 }, {
@@ -195,7 +207,7 @@ var data = [{
   type: ["學習思考"],
   time: '2021-06-04',
   imgUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-  tagsByTheme: [],
+  tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: ""
 }, {
@@ -231,22 +243,95 @@ var data = [{
   type: ["學習思考"],
   time: '2021-08-11',
   imgUrl: "https://i2.wp.com/junlearning.com/wp-content/uploads/2021/08/97421060_2621642168124981_7721735136688996352_n.jpg?resize=690%2C550&ssl=1",
-  tagsByTheme: ["日常反思"],
+  tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: ""
 }, {
   title: "《B型選擇》你永遠都有選擇",
   description: "很多時候，我們都會認為自己只有一種選擇，比如說畢業後只能趕快找工作，找到工作之後只能趕快想辦法拚升遷、拚加薪，但除了這些選擇以外，其實還有各種不同的可能。",
-  type: ["學習思考"],
+  type: ["學習思考", "好書推薦"],
   time: '2021-09-23',
   imgUrl: "https://images.unsplash.com/photo-1531347118459-c3ea7a5ac61e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-  tagsByTheme: ["職涯思考"],
+  tagsByTheme: ["職涯思考", "學習方法"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "《設計生意經》會做設計，還不足以讓你養活自己！",
+  description: "懂得經營和了解設計同等重要。設計美麗的東西是一種藝術，但能從中找到獲利的空間，則是一種技能。了解營運一家公司的各種面向，才能讓你更自由的去做設計。",
+  type: ["好書推薦"],
+  time: '2020-04-15',
+  imgUrl: "",
+  tagsByTheme: ["設計", "學習方法"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "《精準成長》",
+  description: "反思才會成長！如果沒有經過反思，所有的努力不一定能成為你學習的養分，花下的時間也不一定能讓你發揮最大的潛力。想要成長，你必須學會有意地暫停，理解經驗帶給你的啟發，才能從人生體驗當中學到東西。",
+  type: ["學習思考", "好書推薦"],
+  time: '2020-08-09',
+  imgUrl: "",
+  tagsByTheme: ["學習方法"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "《清單革命》",
+  description: "不犯錯的秘密武器！清單不能教會我們專業知識，但清單能幫助我們免於犯錯。就像一個機器需要零件，但如果沒有好的系統，也無法讓零件發揮效用，我們光擁有知識還不夠，清單就是能幫助我們有效運用知識的系統。",
+  type: ["學習思考", "好書推薦"],
+  time: '2020-09-27',
+  imgUrl: "",
+  tagsByTheme: ["學習方法"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "《最高學習法》",
+  description: "想學會「教」，就要先知道怎麼「學」。透過了解大腦的運作，學著如何順著天性，更有效率地學習，也學著如何克服本能，選擇更有成效的方式教學。",
+  type: ["學習思考", "好書推薦"],
+  time: '2021-10-01',
+  imgUrl: "",
+  tagsByTheme: ["學習方法", "自我成長"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
+  description: "作者把如何成功的重點放在「看待事情的角度」之上，是一本心態和方法並重的書，不只用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」。書中不斷提及的「心智」，指的就是面對事情心態",
+  type: ["學習思考", "好書推薦"],
+  time: '2021-05-28',
+  imgUrl: "",
+  tagsByTheme: ["職涯思考", "學習方法", "自我成長"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "怎麼達到工作與生活的平衡？",
+  description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
+  type: ["學習思考", "好書推薦"],
+  time: '2021-06-24',
+  imgUrl: "",
+  tagsByTheme: ["職涯思考", "自我成長"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
+  description: "遠距在家忙到生活失衡？《搞定》教你管理自己的行動，就會自然而然地做好時間管理了！",
+  type: ["學習思考", "好書推薦"],
+  time: '2021-07-03',
+  imgUrl: "",
+  tagsByTheme: ["職涯思考", "學習方法"],
+  tagsByContent: "文章",
+  linkUrl: ""
+}, {
+  title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
+  description: "第一次接觸統計思維，是在 2020 年商業思維學院裡劉奕酉老師的一堂課，那是我第一次用「思維」的角度理解一個學門，也讓我開始想更深入了解統計學。這堂課不只是教統計概念，也帶給我很多想法上的轉變",
+  type: ["學習思考", "好書推薦"],
+  time: '2021-07-31',
+  imgUrl: "",
+  tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: ""
 }];
 var pageData = [];
-var tagsData = [];
+var themeData = [];
 var contentData = [];
+var pageName = '';
 var sortType = 'timeSort'; //預設渲染畫面
 
 function init() {
@@ -274,84 +359,201 @@ function setDataId() {
 
 function autoRenderByPage() {
   if (document.querySelector('.js-content-list')) {
-    renderContentList(); // if(document.querySelectorAll('.js-tags-list')){
-    // renderTagsList(filterData);
-    // };
+    renderContentList(); //渲染卡片資料
+
+    if (document.querySelectorAll('.js-tags-list')) {
+      renderTagsList(); //渲染標籤數量＋disabled
+    }
+
+    ;
   }
 } //渲染卡片
 
 
 function renderContentList() {
   var contentList = document.querySelector('.js-content-list');
-  if (!contentList.dataset.listType) return;
   var str = '';
+  if (!contentList.dataset.listType) return;
+  getPageData(contentList); //依照時間排序
 
-  var normalCardList = function normalCardList() {
+  if (sortType === 'timeSort') {
+    sortByTime(pageData, sortType);
+  } else {
+    console.log(sortType, 'hot');
+  }
+
+  ;
+  str = renderCardsList(pageData);
+  contentList.innerHTML = str;
+} //篩選後重新渲染card
+
+
+function updateContentList(inputData) {
+  var contentList = document.querySelector('.js-content-list');
+  var str = '';
+  str = renderCardsList(inputData);
+  contentList.innerHTML = str;
+} //渲染tags 標籤＋disable 效果 + 綁監聽
+
+
+function renderTagsList() {
+  var theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+  var content = document.querySelector('.js-tags-list[data-tags-type="content"]');
+  theme.addEventListener('change', checkboxSelected);
+  content.addEventListener('change', checkboxSelected); //更新theme 標籤 disabled 樣式
+
+  theme.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.setAttribute('disabled', '');
     pageData.forEach(function (item) {
-      //要加上 item.time 排序時間
-      var content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), " data-tags-content=\"").concat(item.tagsByContent, ">\n            <div class=\"card content-card h-100\">\n              <a href=\"").concat(item.linkUrl, "\" class=\"d-block\">\n                <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" alt=\"card img\" class=\"card-img-top content-card-img-top\">\n              </a>\n              <div class=\"py-5 px-6 h-100\">\n                <h3 class=\"fs-7 text-primary fw-md mb-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n                <p class=\"text-secondary hide-row-2 fs-8\">").concat(item.description, "</p>\n              </div>\n            </div>\n          </li>");
-      str += content;
+      item.tagsByTheme.forEach(function (themeName) {
+        if (themeName === inputItem.name) {
+          inputItem.removeAttribute('disabled', '');
+          inputItem.dataset.num++;
+        }
+      });
     });
-  };
+  }); //更新theme 標籤 數量
 
-  var libraryCardList = function libraryCardList() {
+  theme.querySelectorAll('li input').forEach(function (inputItem) {
+    theme.querySelectorAll('li label').forEach(function (labelItem) {
+      if (labelItem.getAttribute('for') === inputItem.getAttribute('id')) {
+        labelItem.querySelector('span').textContent = inputItem.dataset.num;
+      }
+
+      ;
+    });
+  }); //更新content 標籤 disabled 樣式
+
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.setAttribute('disabled', '');
     pageData.forEach(function (item) {
-      //要加上 item.time 排序時間
-      var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), " data-tags-content=\"").concat(item.tagsByContent, ">\n            <div class=\"card content-card\">\n              <!-- \u7528\u4F86\u958B\u555Fmodal \u5167\u7684carousel -->\n              <!--  alt=\"First slide\" data-bs-target=\"#carouselExample\" data-bs-slide-to=\"0\" -->\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#libraryContentModal\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5\">\n                <h3 class=\"fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
-      str += content;
+      if (item.tagsByContent === inputItem.name) {
+        inputItem.removeAttribute('disabled', '');
+        inputItem.dataset.num++;
+      }
     });
-  };
+  }); //更新content 標籤 數量
 
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    content.querySelectorAll('li label').forEach(function (labelItem) {
+      if (labelItem.getAttribute('for') === inputItem.getAttribute('id')) {
+        labelItem.querySelector('span').textContent = inputItem.dataset.num;
+      }
+
+      ;
+    });
+  });
+}
+
+function updateContentTagsList(inputData) {
+  var content = document.querySelector('.js-tags-list[data-tags-type="content"]'); //更新content 標籤 數量dataset
+
+  var num = 0;
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.dataset.num = 0;
+    inputData.forEach(function (item) {
+      if (item.tagsByContent === inputItem.name) {
+        inputItem.dataset.num++;
+      }
+    });
+  }); //更新content 標籤 數量
+
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    content.querySelectorAll('li label').forEach(function (labelItem) {
+      if (labelItem.getAttribute('for') === inputItem.getAttribute('id')) {
+        labelItem.querySelector('span').textContent = inputItem.dataset.num;
+      }
+
+      ;
+    });
+  });
+} //get pageData
+
+
+function getPageData(contentList) {
   switch (contentList.dataset.listType) {
     case 'all':
+      pageName = 'all';
       pageData = data;
-      normalCardList();
       break;
 
     case 'learning':
+      pageName = 'learning';
       pageData = data.filter(function (item) {
         return item.type[item.type.findIndex(function (typename) {
           return typename === '學習思考';
         })] === '學習思考';
       });
-      normalCardList();
       break;
 
     case 'architecture':
+      pageName = 'architecture';
       pageData = data.filter(function (item) {
         return item.type[item.type.findIndex(function (typename) {
           return typename === '建築專區';
         })] === '建築專區';
       });
-      normalCardList();
       break;
 
     case 'infoMap':
+      pageName = 'infoMap';
       pageData = data.filter(function (item) {
         return item.type[item.type.findIndex(function (typename) {
           return typename === '資源整理';
         })] === '資源整理';
       });
-      normalCardList();
       break;
 
     case 'library':
+      pageName = 'library';
       pageData = data.filter(function (item) {
         return item.type[item.type.findIndex(function (typename) {
-          return typename === '好書專區';
-        })] === '好書專區';
+          return typename === '好書推薦';
+        })] === '好書推薦';
       });
-      libraryCardList();
       break;
   }
+} //renderCards
 
-  contentList.innerHTML = str; //依照時間排序預設 ＋ id
-  // if(sortType === 'timeSort'){
-  //     sortByTime(pageData , sortType);
-  // }else{
-  //     console.log( sortType,'hot');
-  // };
-} //渲染調整時間顯示方式
+
+function renderCardsList(pageData) {
+  var str = '';
+
+  if (pageName === 'library') {
+    str = libraryCardList(pageData);
+  } else if (pageName === 'newPosts') {
+    str = newPostCardList();
+  } else {
+    str = normalCardList(pageData);
+  }
+
+  ;
+  return str;
+} //normal content Card list
+
+
+function normalCardList(pageData) {
+  var str = '';
+  pageData.forEach(function (item) {
+    //要加上 item.time 排序時間
+    var content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), " data-tags-content=\"").concat(item.tagsByContent, ">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" class=\"d-block\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" alt=\"card img\" class=\"card-img-top content-card-img-top\">\n          </a>\n          <div class=\"py-5 px-6 h-100\">\n            <h3 class=\"hide-row-2 fs-7 text-primary fw-md mb-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n            <p class=\"text-secondary hide-row-2 fs-8\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
+    str += content;
+  });
+  return str;
+} //library content Card list
+
+
+function libraryCardList(pageData) {
+  var str = '';
+  pageData.forEach(function (item) {
+    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), " data-tags-content=\"").concat(item.tagsByContent, ">\n        <div class=\"card content-card h-100\">\n          <!-- \u7528\u4F86\u958B\u555Fmodal \u5167\u7684carousel -->\n          <!--  alt=\"First slide\" data-bs-target=\"#carouselExample\" data-bs-slide-to=\"0\" -->\n          <a\n            href=\"").concat(item.linkUrl, "\"\n            class=\"d-block\"\n            data-bs-toggle=\"modal\"\n            data-bs-target=\"#libraryContentModal\"\n          >\n            <img\n              src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n              alt=\"card img\"\n              class=\"card-img-top content-card-img-top card-inside-img\"\n            />\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n            ").concat(item.title, "\n            </h3>\n            <p class=\"text-secondary hide-row-2\">\n            ").concat(item.description, "\n            </p>\n          </div>\n        </div>\n      </li>");
+    str += content;
+  });
+  return str;
+} //newPost content Card list
+
+
+function newPostCardList() {} //渲染調整時間顯示方式
 //顯示上架距離現今的時間
 
 
@@ -382,5 +584,95 @@ function regTime(time) {
   }
 
   ;
+} //依照上架順序排序
+// 依照上架日期排序
+
+
+function sortByTime(inputData, sortType) {
+  inputData.forEach(function (item) {
+    var nowTime = new Date().getTime();
+    item[sortType] = nowTime - item.id;
+  });
+  inputData.sort(function (a, b) {
+    return a[sortType] - b[sortType];
+  });
+} //tags 篩選資料
+
+
+function checkboxSelected(e) {
+  if (this.dataset.tagsType === 'theme') {
+    if (e.target.closest('input').checked === true) {
+      pageData.forEach(function (item) {
+        item.tagsByTheme.forEach(function (tagsName) {
+          if (tagsName === e.target.name) {
+            themeData.unshift(item);
+          }
+
+          ;
+        });
+      }); //刪除重複的項目
+
+      var newThemeData = new Set(themeData);
+      themeData = _toConsumableArray(newThemeData);
+    } else if (e.target.closest('input').checked === false) {
+      //刪除點擊取消的tags  
+      themeData.forEach(function (updateType) {
+        updateType.tagsByTheme.forEach(function (updateTagsName) {
+          if (e.target.name === updateTagsName) {
+            themeData.splice(themeData.indexOf(updateType), e.target.dataset.num);
+          }
+        });
+      });
+    }
+
+    updateContentList(themeData);
+    updateContentTagsList(themeData);
+    addClickCheckboxStyle(this);
+  } else if (this.dataset.tagsType === 'content') {
+    if (e.target.closest('input').checked === true) {
+      themeData.forEach(function (item) {
+        if (item.tagsByContent === e.target.name) {
+          contentData.unshift(item);
+        }
+
+        ;
+      });
+    } else if (e.target.closest('input').checked === false) {
+      contentData.forEach(function (updateType) {
+        if (e.target.name === updateType.tagsByContent) {
+          contentData.splice(contentData.indexOf(updateType), e.target.dataset.num);
+        }
+      });
+    }
+
+    updateContentList(contentData);
+    addClickCheckboxStyle(this);
+  }
+}
+
+function addClickCheckboxStyle(vm) {
+  var themeTitle = document.querySelector('[data-title="theme"]');
+  var contentTitle = document.querySelector('[data-title= "content"]');
+  vm.querySelectorAll('li input').forEach(function (inputItem) {
+    if (inputItem.checked === true) {
+      num++;
+    }
+
+    ;
+  });
+
+  if (num1 > 0) {
+    themeTitle.classList.remove('link-secondary');
+  } else {
+    themeTitle.classList.add('link-secondary');
+  }
+
+  ;
+
+  if (num2 > 0) {
+    contentTitle.classList.remove('link-secondary');
+  } else {
+    contentTitle.classList.add('link-secondary');
+  }
 }
 //# sourceMappingURL=all.js.map
