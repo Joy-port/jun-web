@@ -6,7 +6,7 @@ let data =[
         time: '2020-04-01',
         imgUrl:"https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         tagsByTheme:["設計"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -16,7 +16,7 @@ let data =[
         time: '2020-04-17',
         imgUrl:"https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["設計"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -26,7 +26,7 @@ let data =[
         time: '2020-04-18',
         imgUrl:"https://images.unsplash.com/45/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80",
         tagsByTheme:["設計"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -36,7 +36,7 @@ let data =[
         time: '2021-10-12',
         imgUrl:"https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["設計"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -46,7 +46,7 @@ let data =[
         time: '2020-04-01',
         imgUrl:"https://images.unsplash.com/photo-1461773518188-b3e86f98242f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80",
         tagsByTheme:["設計"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -56,7 +56,7 @@ let data =[
         time: '2020-03-27',
         imgUrl:"https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:[],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -66,7 +66,7 @@ let data =[
         time: '2021-01-29',
         imgUrl:"https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80",
         tagsByTheme:["Notion"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     
@@ -77,7 +77,7 @@ let data =[
         time: '2021-05-12',
         imgUrl:"https://images.unsplash.com/photo-1555707813-dc14c22ae471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
         tagsByTheme:["Notion"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     
@@ -88,7 +88,7 @@ let data =[
         time: '2020-04-23',
         imgUrl:"https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["英文學習"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     
@@ -99,7 +99,7 @@ let data =[
         time: '2020-04-27',
         imgUrl:"https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80",
         tagsByTheme:["英文學習"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     
@@ -110,7 +110,7 @@ let data =[
         time: '2020-03-24',
         imgUrl:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8aGNmcTBVMHAzNWd8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
         tagsByTheme:["建築資源","建築師考試"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     
@@ -121,7 +121,7 @@ let data =[
         time: '2020-04-24',
         imgUrl:"https://images.unsplash.com/photo-1589085947445-a491beee038d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["建築資源"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     
@@ -132,7 +132,7 @@ let data =[
         time: '2020-05-05',
         imgUrl:"https://images.unsplash.com/photo-1572053675669-036f6b9232fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         tagsByTheme:["建築資源"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -142,7 +142,7 @@ let data =[
         time: '2020-05-20',
         imgUrl:"https://images.unsplash.com/photo-1520330979108-7d66e04b35e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
         tagsByTheme:["建築資源"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -152,7 +152,7 @@ let data =[
         time: '2020-06-05',
         imgUrl:"https://images.unsplash.com/photo-1605028241606-ca01277aa15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
         tagsByTheme:["建築資源"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -162,7 +162,7 @@ let data =[
         time: '2020-06-10',
         imgUrl:"https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
         tagsByTheme:["建築資源"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -172,7 +172,7 @@ let data =[
         time: '2020-05-14',
         imgUrl:"https://images.unsplash.com/photo-1467226632440-65f0b4957563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80",
         tagsByTheme:["建築資源"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
         
     },
@@ -183,7 +183,7 @@ let data =[
         time: '2020-05-14',
         imgUrl:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["建築資源","建築師考試"],
-        tagsByContent:["心智圖"],
+        tagsByContent:"心智圖",
         linkUrl:"https://junlearning.ck.page/lawnotes"
     },
     {
@@ -193,7 +193,7 @@ let data =[
         time: '2020-06-26',
         imgUrl:"https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80",
         tagsByTheme:["職涯思考"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -203,7 +203,7 @@ let data =[
         time: '2020-06-26',
         imgUrl:"https://images.unsplash.com/photo-1592819695396-064b9572a660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["職涯思考"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -213,7 +213,7 @@ let data =[
         time: '2020-11-10',
         imgUrl:"https://images.unsplash.com/photo-1531346878377-a5be20888e57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         tagsByTheme:["日常反思"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -223,7 +223,7 @@ let data =[
         time: '2021-06-04',
         imgUrl:"https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:[],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -233,7 +233,7 @@ let data =[
         time: '2021-06-06',
         imgUrl:"https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1749&q=80",
         tagsByTheme:["寫作"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -243,7 +243,7 @@ let data =[
         time: '2021-06-15',
         imgUrl:"https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
         tagsByTheme:["學習方法"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -253,7 +253,7 @@ let data =[
         time: '2021-07-31',
         imgUrl:"https://images.unsplash.com/photo-1574421233009-a6d13da3b5a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80",
         tagsByTheme:["學習方法"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -263,7 +263,7 @@ let data =[
         time: '2021-08-11',
         imgUrl:"https://i2.wp.com/junlearning.com/wp-content/uploads/2021/08/97421060_2621642168124981_7721735136688996352_n.jpg?resize=690%2C550&ssl=1",
         tagsByTheme:["日常反思"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     },
     {
@@ -273,187 +273,141 @@ let data =[
         time: '2021-09-23',
         imgUrl:"https://images.unsplash.com/photo-1531347118459-c3ea7a5ac61e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
         tagsByTheme:["職涯思考"],
-        tagsByContent:["文章"],
+        tagsByContent:"文章",
         linkUrl:""
     }
 ];
-let filterData = [];
+let pageData = [];
 let tagsData = [];
+let contentData = [];
 let sortType = 'timeSort';
 
-//contentList
-function renderContentList(){
-    const contentList = document.querySelector('.js-content-list');
-    let str = '';
-
-    if(!contentList.dataset.listType) return ;
-    switch(contentList.dataset.listType){
-        case 'all':
-        filterData = data;
-        break;  
-        case 'learning':
-        filterData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '學習思考'))] === '學習思考');
-        break;
-        case 'architecture':
-        filterData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '建築專區'))] === '建築專區');
-        break;
-        case 'infoMap':
-        filterData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '資源整理'))] === '資源整理');
-        break;
-     }
-    
-    //依照時間排序預設 ＋ id
-    if(sortType === 'timeSort'){
-        sortByTime(filterData , sortType);
-    }else{
-        console.log( sortType,'hot');
-    };
-    
-    filterData.forEach(item =>{
-        //要加上 item.time 排序時間
-        let content=`<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent.join('_')}>
-        <div class="card content-card h-100">
-          <a href="${item.linkUrl}" class="d-block">
-            <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" alt="card img" class="card-img-top content-card-img-top">
-          </a>
-          <div class="py-5 px-6 h-100">
-            <h3 class="fs-7 text-primary fw-md mb-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
-            <p class="text-secondary hide-row-2 fs-8">${item.description}</p>
-          </div>
-        </div>
-      </li>`;
-      str+= content;
-    });
-    contentList.innerHTML = str;
+//預設渲染畫面
+function init(){
+    setDataId(); //將資料綁定id 根據時間
+    autoRenderByPage();
 }
-function updateContentList(inputData){
-    const contentList = document.querySelector('.js-content-list');
-    let str = '';
-    inputData.forEach(item =>{
-        //要加上 item.time 排序時間
-        let content=`<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent.join('_')}>
-        <div class="card content-card h-100">
-          <a href="${item.linkUrl}" class="d-block">
-            <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" alt="card img" class="card-img-top content-card-img-top">
-          </a>
-          <div class="py-5 px-6 h-100">
-            <h3 class="fs-7 text-primary fw-md mb-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
-            <p class="text-secondary hide-row-2 fs-8">${item.description}</p>
-          </div>
-        </div>
-      </li>`;
-      str+= content;
+
+init();
+
+//綁定id
+function setDataId(){
+let num = 0;
+    data.forEach(function(item){
+        let year = Number(item.time.split('-')[0]);
+        let month = Number(item.time.split('-')[1]) - 1;
+        let day = Number(item.time.split('-')[2]);
+
+        let time = new Date(year, month ,day).getTime();
+        num += .2; //避免重複
+        time += num;
+        item.id = time ;
     });
-    contentList.innerHTML = str;
-}
-//tags
-function renderTagsList(theme, content ,data){
-
-    theme.querySelectorAll('li input').forEach(inputItem =>{
-        inputItem.setAttribute('disabled', '');
-        
-        data.forEach(item =>{
-            item.tagsByTheme.forEach(themeName =>{
-                if(themeName === inputItem.name){
-                    inputItem.removeAttribute('disabled', '');
-                    inputItem.dataset.num ++ ;
-                };
-            });
-        });
-        
-    });
-
-    theme.querySelectorAll('li input').forEach(inputItem=>{
-        theme.querySelectorAll('li label').forEach(labelItem =>{
-            if(labelItem.getAttribute('for') === inputItem.getAttribute('id')){
-                labelItem.querySelector('span').textContent = inputItem.dataset.num;
-            };
-        });
-    })
-
-    content.querySelectorAll('li input').forEach(inputItem =>{
-        inputItem.setAttribute('disabled', '');
-        data.forEach(item =>{
-            item.tagsByContent.forEach(themeName =>{
-                if(themeName === inputItem.name){
-                    inputItem.removeAttribute('disabled', '');
-                    inputItem.dataset.num ++ ;
-                }
-            })
-        })
-    });
-
-    content.querySelectorAll('li input').forEach(inputItem=>{
-        content.querySelectorAll('li label').forEach(labelItem =>{
-            if(labelItem.getAttribute('for') === inputItem.getAttribute('id')){
-                labelItem.querySelector('span').textContent = inputItem.dataset.num;
-            };
-        });
-    })
-
 
 }
 
-function checkboxSelected(e){
-    // console.log(e.target.name,e.target.closest('input').checked);
-    //新增點擊過的tags
-    data.forEach((item) => {
-        item.tagsByTheme.forEach(tagsName =>{
-            // console.log(e.target.name === tagsName, e.target.closest('input').checked===true);
-            if(e.target.name === tagsName && e.target.closest('input').checked===true){
-                tagsData.unshift(item);
-            };
-        });
-        item.tagsByContent.forEach(tagsName =>{
-            // console.log(e.target.name === tagsName, e.target.closest('input').checked===true);
-            if(e.target.name === tagsName && e.target.closest('input').checked===true){
-                tagsData.unshift(item);
-            };
-        })
-    });
-    //刪除點擊取消的tags
-    if(e.target.closest('input').checked === false){
-     tagsData.forEach(function(updateType){
-            updateType.tagsByTheme.forEach(updateTagsName =>{
-               if(e.target.name === updateTagsName){
-                //console.log(tagsData.indexOf(updateType), e.target.dataset.num);
-                tagsData.splice(tagsData.indexOf(updateType),e.target.dataset.num);
-               }
-            })
-        })
-        tagsData.forEach(function(updateType){
-            updateType.tagsByContent.forEach(updateTagsName =>{
-               if(e.target.name === updateTagsName){
-                //console.log(tagsData.indexOf(updateType), e.target.dataset.num);
-                tagsData.splice(tagsData.indexOf(updateType),e.target.dataset.num);
-               }
-            })
-        })
-    }
-
-    updateContentList(tagsData);
-
-}
-
-//渲染到有監聽的頁面上
+//根據頁面顯示資料
 function autoRenderByPage(){
     if (document.querySelector('.js-content-list')){
-        
         renderContentList();
-        
-        if(document.querySelectorAll('.js-tags-list')){
-        const tagsListTheme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
-        const tagsListContent = document.querySelector('.js-tags-list[data-tags-type="content"]');
-        renderTagsList(tagsListTheme,tagsListContent , filterData);
+        // if(document.querySelectorAll('.js-tags-list')){
+        // renderTagsList(filterData);
+        // };
+    }
+}
 
-        tagsListTheme.addEventListener('change', checkboxSelected);
-        tagsListContent.addEventListener('change', checkboxSelected);
-        };
-    };
+//渲染卡片
+function renderContentList(){
+    const contentList = document.querySelector('.js-content-list');
+
+    if(!contentList.dataset.listType) return ;
+    let str = '';    
+   
+    let normalCardList = function (){
+        pageData.forEach(item =>{
+            //要加上 item.time 排序時間
+            let content=`<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+            <div class="card content-card h-100">
+              <a href="${item.linkUrl}" class="d-block">
+                <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" alt="card img" class="card-img-top content-card-img-top">
+              </a>
+              <div class="py-5 px-6 h-100">
+                <h3 class="fs-7 text-primary fw-md mb-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
+                <p class="text-secondary hide-row-2 fs-8">${item.description}</p>
+              </div>
+            </div>
+          </li>`;
+          str+= content;
+        });
+    }
+    let libraryCardList = function (){
+        pageData.forEach(item =>{
+            //要加上 item.time 排序時間
+            let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+            <div class="card content-card">
+              <!-- 用來開啟modal 內的carousel -->
+              <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
+              <a
+                href="${item.linkUrl}"
+                class="d-block"
+                data-bs-toggle="modal"
+                data-bs-target="#libraryContentModal"
+              >
+                <img
+                  src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
+                  alt="card img"
+                  class="card-img-top content-card-img-top card-inside-img"
+                />
+              </a>
+              <div class="py-3 px-5">
+                <h3 class="fs-6 text-primary fw-bold mb-2">
+                ${item.title}
+                </h3>
+                <p class="text-secondary hide-row-2">
+                ${item.description}
+                </p>
+              </div>
+            </div>
+          </li>`;
+          str+= content;
+        });
+    }
+
+    switch(contentList.dataset.listType){
+        case 'all':
+        pageData = data;
+        normalCardList();
+        break;  
+        case 'learning':
+        pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '學習思考'))] === '學習思考');
+        normalCardList();
+        break;
+        case 'architecture':
+        pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '建築專區'))] === '建築專區');
+        normalCardList();
+        break;
+        case 'infoMap':
+        pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '資源整理'))] === '資源整理');
+        normalCardList();
+        break;
+        case 'library':
+        pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '好書專區'))] === '好書專區');
+        libraryCardList();
+        break;
+     }
+
+    contentList.innerHTML = str;
+
+            //依照時間排序預設 ＋ id
+    // if(sortType === 'timeSort'){
+    //     sortByTime(pageData , sortType);
+    // }else{
+    //     console.log( sortType,'hot');
+    // };
 }
 
 
-//content
+//渲染調整時間顯示方式
 //顯示上架距離現今的時間
 function regTime(time){
     let year = time.split('-')[0];
@@ -479,35 +433,3 @@ function regTime(time){
     };
 
 }
-// 依照上架日期排序
-function sortByTime(inputData, sortType){
-    inputData.forEach(function(item){
-        let nowTime = new Date().getTime();
-        item[sortType] = nowTime - item.id;
-    });
-
-    data.sort((a,b)=> a[sortType] - b[sortType]);
-}
-
-//data 綁id
-function setDataId(){
-    data.forEach(function(item){
-        let year = Number(item.time.split('-')[0]);
-        let month = Number(item.time.split('-')[1]) - 1;
-        let day = Number(item.time.split('-')[2]);
-
-        let time = new Date(year, month ,day).getTime();
-        item.id = time ;
-    });
-}
-
-
-
-
-function init(){
-    setDataId();
-    autoRenderByPage();
-
-}
-
-init();
