@@ -12112,6 +12112,22 @@ fieldset:disabled .btn {
   .d-sm-none {
     display: none !important;
   }
+  .shadow-sm {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .shadow-sm-sm {
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  .shadow-sm-lg {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  .shadow-sm-none {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
   .border-sm {
     border: 1px solid #dee2e6 !important;
   }
@@ -14351,6 +14367,22 @@ fieldset:disabled .btn {
   }
   .d-md-none {
     display: none !important;
+  }
+  .shadow-md {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .shadow-md-sm {
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  .shadow-md-lg {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  .shadow-md-none {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
   .border-md {
     border: 1px solid #dee2e6 !important;
@@ -16592,6 +16624,22 @@ fieldset:disabled .btn {
   .d-lg-none {
     display: none !important;
   }
+  .shadow-lg {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .shadow-lg-sm {
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  .shadow-lg-lg {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  .shadow-lg-none {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
   .border-lg {
     border: 1px solid #dee2e6 !important;
   }
@@ -18832,6 +18880,22 @@ fieldset:disabled .btn {
   .d-xl-none {
     display: none !important;
   }
+  .shadow-xl {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .shadow-xl-sm {
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  .shadow-xl-lg {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  .shadow-xl-none {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
   .border-xl {
     border: 1px solid #dee2e6 !important;
   }
@@ -21071,6 +21135,22 @@ fieldset:disabled .btn {
   }
   .d-xxl-none {
     display: none !important;
+  }
+  .shadow-xxl {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .shadow-xxl-sm {
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  .shadow-xxl-lg {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  .shadow-xxl-none {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
   .border-xxl {
     border: 1px solid #dee2e6 !important;
@@ -23512,11 +23592,6 @@ input:focus, input:active {
   font-size: 0.875rem;
 }
 
-.shadow {
-  -webkit-box-shadow: 2px 0 8px 0 rgba(251, 251, 251, 0.4);
-          box-shadow: 2px 0 8px 0 rgba(251, 251, 251, 0.4);
-}
-
 .rotate-180 {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -23851,11 +23926,20 @@ input:focus, input:active {
   -webkit-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .checkbox-outline-primary:hover {
   background-color: #DF8A39;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .checkbox-outline-primary {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .checkbox-link-secondary {
