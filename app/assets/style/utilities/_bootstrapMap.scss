@@ -230,5 +230,12 @@ $utilities: map-merge(
     responsive: true,
     values: $aspect-ratios,
     ),
+    "shadow":
+    map-merge(
+      map-get($utilities, "shadow"),
+      (
+        responsive: true,
+      )
+    ),
   )
 );

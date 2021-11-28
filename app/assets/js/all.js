@@ -609,7 +609,7 @@ function normalCardList(pageData){
 function libraryCardList(pageData) {
     let str = '';
     pageData.forEach(item =>{
-        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+        let content=` <li class="col-8 mx-auto col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
         <div class="card content-card h-100">
           <!-- 用來開啟modal 內的carousel -->
           <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
