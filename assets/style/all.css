@@ -23448,6 +23448,12 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  -webkit-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 ul, ol {
   padding: 0;
   margin: 0;
@@ -23510,7 +23516,7 @@ input:focus, input:active {
 
 .catagory-header-title {
   font-family: "TaipeiSansTCBeta", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   color: #000;
   font-size: 1.56rem;
 }
