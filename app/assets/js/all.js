@@ -42,12 +42,12 @@ let data =[
             <h1 class="text-content-h1" data-title="h1" id="「UI/UX 設計」是什麼？">「UI/UX 設計」是什麼？</h1>
             <h2 class="text-content-h2" data-title="h2" id="UI：UserInterface">UI：User Interface</h2>
             <p>
-              >> <a href="https://zh.wikipedia.org/zh-tw/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2">使用者介面</a><br>
+              >> <a href="https://zh.wikipedia.org/zh-tw/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2" class="text-content-link">使用者介面</a><br>
               設計專注在「產品怎麼呈現」，設計每一個網頁或畫面。
             </p>
             <h2 class="text-content-h2" data-title="h2" id="UX：User Experience">UX：User Experience</h2>
             <p>
-              >> <a href="https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%B6%93%E9%A9%97">用戶體驗</a><br>
+              >> <a href="https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%B6%93%E9%A9%97" class="text-content-link">用戶體驗</a><br>
               設計專注在「產品用起來的感覺」，提供使用者入門的流程和最舒適的使用經驗。
             </p>
             
@@ -75,8 +75,8 @@ let data =[
             <p><a href="https://pttrns.com/" class="text-content-link-btn">pttrns（ iPhone, iPad, Apple Watch, Android ）</a></p>
             
             <h1 class="text-content-h1" data-title="h1" id="找素材">找素材</h1>
-            <p><a href="https://junlearning.com/icon-website/">Icons</a></p>
-            <p><a href="https://junlearning.com/color-website/">Colors</a></p>
+            <p><a href="https://junlearning.com/icon-website/" class="text-content-link">Icons</a></p>
+            <p><a href="https://junlearning.com/color-website/" class="text-content-link">Colors</a></p>
 
             <h3 class="text-content-h3">Neede Design Resources</h3>
             <p> <a href="https://neede.co/#/UI-Design" class="text-content-link-btn">UI Design</a></p>
@@ -1411,7 +1411,7 @@ function renderModalImg(inputData){
   let num = 0;
 //   let total = inputData.length;
   
-  inputData.forEach((item,index) =>{
+  inputData.forEach(item =>{
     num++;
     let content = `<div class="carousel-item ratio ratio-1x1 ${num === 1 ? 'active': ''}" >
     <img src="${item}" alt="post img"
