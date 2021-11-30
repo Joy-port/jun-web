@@ -23696,7 +23696,7 @@ input:focus, input:active {
   letter-spacing: 1.5px;
   color: #373737;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .text-content > p {
@@ -23739,7 +23739,7 @@ input:focus, input:active {
 }
 
 .text-content-h2 {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.25rem;
   color: #5D7E93;
 }
