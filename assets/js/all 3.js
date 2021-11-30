@@ -21,7 +21,12 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "色票、配色網站",
   description: "配色網站這麼多，怎麼選？選能夠幫上你的那一個！讓不懂配色理論的你也能選對顏色！如果你只需要兩個顏色搭配，就不要找提供五個顏色的色票網站，那會讓你更難做出選擇～以下幫你整理了多色色票、漸層色、以及可以依照色彩理論自訂顏色的網站，來看看哪個用起來比較順手吧！",
@@ -31,7 +36,12 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "UI/UX 設計參考網站",
   description: "針對 UI/UX 設計，這些網站有很豐富的設計作品，能培養你的美感，也能幫助你在沒有想法的時候帶給你一些靈感。對於想自學的人，多看好作品也能讓你有更高的設計敏感度。沒事就來逛逛資料庫、尋找好設計吧！",
@@ -43,7 +53,7 @@ var data = [{
   linkUrl: "blogContent.html",
   blogContent: {
     subtitle: '沒靈感？做不出好設計？',
-    content: "\n            <p>\u91DD\u5C0D UI/UX \u8A2D\u8A08\uFF0C\u9019\u4E9B\u7DB2\u7AD9\u6709\u5F88\u8C50\u5BCC\u7684\u8A2D\u8A08\u4F5C\u54C1\uFF0C\u80FD\u57F9\u990A\u4F60\u7684\u7F8E\u611F\uFF0C\u4E5F\u80FD\u5E6B\u52A9\u4F60\u5728\u6C92\u6709\u60F3\u6CD5\u7684\u6642\u5019\u5E36\u7D66\u4F60\u4E00\u4E9B\u9748\u611F\u3002</p>\n            <p>\u5C0D\u65BC\u60F3\u81EA\u5B78\u7684\u4EBA\uFF0C\u591A\u770B\u597D\u4F5C\u54C1\u4E5F\u80FD\u8B93\u4F60\u6709\u66F4\u9AD8\u7684\u8A2D\u8A08\u654F\u611F\u5EA6\u3002\u6C92\u4E8B\u5C31\u4F86\u901B\u901B\u8CC7\u6599\u5EAB\u3001\u5C0B\u627E\u597D\u8A2D\u8A08\u5427\uFF01</p>\n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u300CUI/UX \u8A2D\u8A08\u300D\u662F\u4EC0\u9EBC\uFF1F\">\u300CUI/UX \u8A2D\u8A08\u300D\u662F\u4EC0\u9EBC\uFF1F</h1>\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"UI\uFF1AUserInterface\">UI\uFF1AUser Interface</h2>\n            <p>\n              >> <a href=\"https://zh.wikipedia.org/zh-tw/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2\" class=\"text-content-link\">\u4F7F\u7528\u8005\u4ECB\u9762</a><br>\n              \u8A2D\u8A08\u5C08\u6CE8\u5728\u300C\u7522\u54C1\u600E\u9EBC\u5448\u73FE\u300D\uFF0C\u8A2D\u8A08\u6BCF\u4E00\u500B\u7DB2\u9801\u6216\u756B\u9762\u3002\n            </p>\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"UX\uFF1AUser Experience\">UX\uFF1AUser Experience</h2>\n            <p>\n              >> <a href=\"https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%B6%93%E9%A9%97\" class=\"text-content-link\">\u7528\u6236\u9AD4\u9A57</a><br>\n              \u8A2D\u8A08\u5C08\u6CE8\u5728\u300C\u7522\u54C1\u7528\u8D77\u4F86\u7684\u611F\u89BA\u300D\uFF0C\u63D0\u4F9B\u4F7F\u7528\u8005\u5165\u9580\u7684\u6D41\u7A0B\u548C\u6700\u8212\u9069\u7684\u4F7F\u7528\u7D93\u9A57\u3002\n            </p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u9748\u611F\">\u627E\u9748\u611F</h1>\n            \n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u624B\u6A5F\">\u624B\u6A5F</h2>\n            <p><a href=\"https://www.uplabs.com/\" class=\"text-content-link-btn\">up labs</a></p>\n            <p><a href=\"https://mobbin.design/\" class=\"text-content-link-btn\">Mobbin</a></p>\n            <p><a href=\"https://www.mobile-patterns.com/\" class=\"text-content-link-btn\">Mobile Patterns</a></p>\n\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u7DB2\u9801\">\u7DB2\u9801</h2>\n            <p><a href=\"https://ecomm.design/\" class=\"text-content-link-btn\">ecomm.design</a></p>\n            <p><a href=\"https://homejaws.com/?fbclid=IwAR2w01iQg3Jpst1RQhBvr2Qarx0ipRSMWgMbTwiTLwL_QK33aDlW-4gngt0\" class=\"text-content-link-btn\">Awesome Design Website Gallery</a></p>\n            <p><a href=\"https://land-book.com/\" class=\"text-content-link-btn\">Land-book</a></p>\n            <p><a href=\"https://www.siteinspire.com/\" class=\"text-content-link-btn\">site inspire</a></p>\n            <p><a href=\"http://patterntap.com/patterntap\" class=\"text-content-link-btn\">PatternTap</a></p>\n            <p><a href=\"https://niice.co/showcase\" class=\"text-content-link-btn\">Nlice</a></p>\n\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u7D9C\u5408\">\u7D9C\u5408</h2>\n           <p> <a href=\"https://www.awwwards.com/\" class=\"text-content-link-btn\">awwwards</a></p>\n            <p><a href=\"https://uimovement.com/tag/article/\" class=\"text-content-link-btn\">UI movement</a></p>\n            <p><a href=\"https://collectui.com/\" class=\"text-content-link-btn\">Collect UI</a></p>\n            <p><a href=\"https://www.lapa.ninja/\" class=\"text-content-link-btn\">lapa</a></p>\n            <p><a href=\"https://uigarage.net/\" class=\"text-content-link-btn\">UI Garage</a></p>\n            <p><a href=\"https://pttrns.com/\" class=\"text-content-link-btn\">pttrns\uFF08 iPhone, iPad, Apple Watch, Android \uFF09</a></p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u7D20\u6750\">\u627E\u7D20\u6750</h1>\n            <p><a href=\"https://junlearning.com/icon-website/\" class=\"text-content-link\">Icons</a></p>\n            <p><a href=\"https://junlearning.com/color-website/\" class=\"text-content-link\">Colors</a></p>\n\n            <h3 class=\"text-content-h3\">Neede Design Resources</h3>\n            <p> <a href=\"https://neede.co/#/UI-Design\" class=\"text-content-link-btn\">UI Design</a></p>\n            <p>Design templates, sketch resources and component libraries.</p>\n            \n            <p><a href=\"\" class=\"text-content-link-btn\">UX Design</a></p>\n            <p>Articles on UX best practices and tools for user testing.</p>\n\n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u6559\u5B78\">\u627E\u6559\u5B78</h1>\n            <img src=\"https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/as-a-product-designer.jpg?resize=1536%2C726&ssl=1\" alt=\"img\" class=\"img-fluid\">\n            <p>\u9664\u4E86\u8981\u591A\u770B\u597D\u4F5C\u54C1\uFF0C\u6709\u7CFB\u7D71\u7684 UI/UX \u5B78\u7FD2\u4E5F\u662F\u5F88\u91CD\u8981\u7684\uFF5E</p>\n            <p><a href=\"https://www.uilearn.com/\" class=\"text-content-link-btn\">UI LEARN</a></p>\n            <p><a href=\"https://productdesign.tips/\" class=\"text-content-link-btn\">Product.design.tips</a></p>\n            <p><a href=\"https://designshack.net/\" class=\"text-content-link-btn\">Design Shack</a></p>\n            <p><a href=\"https://beautifulpixels.com/\" class=\"text-content-link-btn\">Beautiful Pixels</a></p>\n            <p><a href=\"https://ui-patterns.com/\" class=\"text-content-link-btn\">UI-Patterns</a></p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u6587\u7AE0\">\u627E\u6587\u7AE0</h1>\n                <p> <a href=\"https://medium.com/as-a-product-designer\" class=\"text-content-link-btn\" >\n                AAPD\u2014As A Product Designer <br>\n                UI/UX\u8A2D\u8A08\u3001\u8A2D\u8A08\u8CC7\u6E90\u3001\u5B78\u7FD2\u6210\u9577\n                </a></p>\n                <p> <a href=\"https://medium.com/@wayne.chengweilin\" class=\"text-content-link-btn\">Medium\uFF5CWayne\u4E92\u806F\u7DB2\u91CE\u883B\u6210\u9577UX\u8A2D\u8A08\u5E2B</a></p>\n            ",
+    content: "\n            <p>\u91DD\u5C0D UI/UX \u8A2D\u8A08\uFF0C\u9019\u4E9B\u7DB2\u7AD9\u6709\u5F88\u8C50\u5BCC\u7684\u8A2D\u8A08\u4F5C\u54C1\uFF0C\u80FD\u57F9\u990A\u4F60\u7684\u7F8E\u611F\uFF0C\u4E5F\u80FD\u5E6B\u52A9\u4F60\u5728\u6C92\u6709\u60F3\u6CD5\u7684\u6642\u5019\u5E36\u7D66\u4F60\u4E00\u4E9B\u9748\u611F\u3002</p>\n            <p>\u5C0D\u65BC\u60F3\u81EA\u5B78\u7684\u4EBA\uFF0C\u591A\u770B\u597D\u4F5C\u54C1\u4E5F\u80FD\u8B93\u4F60\u6709\u66F4\u9AD8\u7684\u8A2D\u8A08\u654F\u611F\u5EA6\u3002\u6C92\u4E8B\u5C31\u4F86\u901B\u901B\u8CC7\u6599\u5EAB\u3001\u5C0B\u627E\u597D\u8A2D\u8A08\u5427\uFF01</p>\n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u300CUI/UX \u8A2D\u8A08\u300D\u662F\u4EC0\u9EBC\uFF1F\">\u300CUI/UX \u8A2D\u8A08\u300D\u662F\u4EC0\u9EBC\uFF1F</h1>\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"UI\uFF1AUserInterface\">UI\uFF1AUser Interface</h2>\n            <p>\n              >> <a href=\"https://zh.wikipedia.org/zh-tw/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2\">\u4F7F\u7528\u8005\u4ECB\u9762</a><br>\n              \u8A2D\u8A08\u5C08\u6CE8\u5728\u300C\u7522\u54C1\u600E\u9EBC\u5448\u73FE\u300D\uFF0C\u8A2D\u8A08\u6BCF\u4E00\u500B\u7DB2\u9801\u6216\u756B\u9762\u3002\n            </p>\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"UX\uFF1AUser Experience\">UX\uFF1AUser Experience</h2>\n            <p>\n              >> <a href=\"https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%B6%93%E9%A9%97\">\u7528\u6236\u9AD4\u9A57</a><br>\n              \u8A2D\u8A08\u5C08\u6CE8\u5728\u300C\u7522\u54C1\u7528\u8D77\u4F86\u7684\u611F\u89BA\u300D\uFF0C\u63D0\u4F9B\u4F7F\u7528\u8005\u5165\u9580\u7684\u6D41\u7A0B\u548C\u6700\u8212\u9069\u7684\u4F7F\u7528\u7D93\u9A57\u3002\n            </p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u9748\u611F\">\u627E\u9748\u611F</h1>\n            \n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u624B\u6A5F\">\u624B\u6A5F</h2>\n            <p><a href=\"https://www.uplabs.com/\" class=\"text-content-link-btn\">up labs</a></p>\n            <p><a href=\"https://mobbin.design/\" class=\"text-content-link-btn\">Mobbin</a></p>\n            <p><a href=\"https://www.mobile-patterns.com/\" class=\"text-content-link-btn\">Mobile Patterns</a></p>\n\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u7DB2\u9801\">\u7DB2\u9801</h2>\n            <p><a href=\"https://ecomm.design/\" class=\"text-content-link-btn\">ecomm.design</a></p>\n            <p><a href=\"https://homejaws.com/?fbclid=IwAR2w01iQg3Jpst1RQhBvr2Qarx0ipRSMWgMbTwiTLwL_QK33aDlW-4gngt0\" class=\"text-content-link-btn\">Awesome Design Website Gallery</a></p>\n            <p><a href=\"https://land-book.com/\" class=\"text-content-link-btn\">Land-book</a></p>\n            <p><a href=\"https://www.siteinspire.com/\" class=\"text-content-link-btn\">site inspire</a></p>\n            <p><a href=\"http://patterntap.com/patterntap\" class=\"text-content-link-btn\">PatternTap</a></p>\n            <p><a href=\"https://niice.co/showcase\" class=\"text-content-link-btn\">Nlice</a></p>\n\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u7D9C\u5408\">\u7D9C\u5408</h2>\n           <p> <a href=\"https://www.awwwards.com/\" class=\"text-content-link-btn\">awwwards</a></p>\n            <p><a href=\"https://uimovement.com/tag/article/\" class=\"text-content-link-btn\">UI movement</a></p>\n            <p><a href=\"https://collectui.com/\" class=\"text-content-link-btn\">Collect UI</a></p>\n            <p><a href=\"https://www.lapa.ninja/\" class=\"text-content-link-btn\">lapa</a></p>\n            <p><a href=\"https://uigarage.net/\" class=\"text-content-link-btn\">UI Garage</a></p>\n            <p><a href=\"https://pttrns.com/\" class=\"text-content-link-btn\">pttrns\uFF08 iPhone, iPad, Apple Watch, Android \uFF09</a></p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u7D20\u6750\">\u627E\u7D20\u6750</h1>\n            <p><a href=\"https://junlearning.com/icon-website/\">Icons</a></p>\n            <p><a href=\"https://junlearning.com/color-website/\">Colors</a></p>\n\n            <h3 class=\"text-content-h3\">Neede Design Resources</h3>\n            <p> <a href=\"https://neede.co/#/UI-Design\" class=\"text-content-link-btn\">UI Design</a></p>\n            <p>Design templates, sketch resources and component libraries.</p>\n            \n            <p><a href=\"\" class=\"text-content-link-btn\">UX Design</a></p>\n            <p>Articles on UX best practices and tools for user testing.</p>\n\n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u6559\u5B78\">\u627E\u6559\u5B78</h1>\n            <img src=\"https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/as-a-product-designer.jpg?resize=1536%2C726&ssl=1\" alt=\"img\" class=\"img-fluid\">\n            <p>\u9664\u4E86\u8981\u591A\u770B\u597D\u4F5C\u54C1\uFF0C\u6709\u7CFB\u7D71\u7684 UI/UX \u5B78\u7FD2\u4E5F\u662F\u5F88\u91CD\u8981\u7684\uFF5E</p>\n            <p><a href=\"https://www.uilearn.com/\" class=\"text-content-link-btn\">UI LEARN</a></p>\n            <p><a href=\"https://productdesign.tips/\" class=\"text-content-link-btn\">Product.design.tips</a></p>\n            <p><a href=\"https://designshack.net/\" class=\"text-content-link-btn\">Design Shack</a></p>\n            <p><a href=\"https://beautifulpixels.com/\" class=\"text-content-link-btn\">Beautiful Pixels</a></p>\n            <p><a href=\"https://ui-patterns.com/\" class=\"text-content-link-btn\">UI-Patterns</a></p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u6587\u7AE0\">\u627E\u6587\u7AE0</h1>\n                <p> <a href=\"https://medium.com/as-a-product-designer\" class=\"text-content-link-btn\" >\n                AAPD\u2014As A Product Designer <br>\n                UI/UX\u8A2D\u8A08\u3001\u8A2D\u8A08\u8CC7\u6E90\u3001\u5B78\u7FD2\u6210\u9577\n                </a></p>\n                <p> <a href=\"https://medium.com/@wayne.chengweilin\" class=\"text-content-link-btn\">Medium\uFF5CWayne\u4E92\u806F\u7DB2\u91CE\u883B\u6210\u9577UX\u8A2D\u8A08\u5E2B</a></p>\n            ",
     tags: [{
       name: '資源整理',
       url: 'infoMap.html'
@@ -51,6 +61,11 @@ var data = [{
       name: '設計',
       url: 'searchLink.html'
     }]
+  },
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
   }
 }, {
   title: "簡報設計學習資源",
@@ -71,6 +86,11 @@ var data = [{
       name: '設計',
       url: 'searchLink.html'
     }]
+  },
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
   }
 }, {
   title: "資料視覺化／資訊圖表參考與製作網站",
@@ -81,7 +101,12 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "線上課程、免費資源整理",
   description: "疫情影響，一瞬間，線上學習成為很重要的自學管道。除了知識的學習，還有很多人文體驗都被搬到了線上，博物館、音樂劇…通通有，一起來看看吧！",
@@ -91,7 +116,12 @@ var data = [{
   tagsByTheme: [],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "Notion 筆記軟體教學資源",
   description: "大家都說好用的 Notion 到底怎麼用？看完一堆教學文章，還是有點不知道怎麼將功能發揮到極致？看看這些大神怎麼透過 Notion，建立屬於自己的工作系統，再去截取適合自己的部分，才能真的把 Notion 學到精通！有了這些實例，再去詳細探究功能，學習的速度也會更快！",
@@ -101,7 +131,12 @@ var data = [{
   tagsByTheme: ["Notion"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "Notion+ 標記管理器，快速匯出筆記重點",
   description: "在找跟 Notion 相關的 chrome 擴充功能時，意外發現這款很特別的標記工具，可以截取你用顏色畫重點的文字和區塊，書籍重點摘要、課程重點回顧、文章重點整理通通可以快速匯出！以下是功能的簡單介紹和運用情境舉例，分享給大家～",
@@ -111,7 +146,12 @@ var data = [{
   tagsByTheme: ["Notion"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "看影片要怎麼學英文？",
   description: "你也覺得學英文很無聊，很沒有動力嗎？來看看我是怎麼透過影片學英文吧！",
@@ -121,7 +161,12 @@ var data = [{
   tagsByTheme: ["英文學習"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "｜雅思讀書計畫｜書籍推薦｜",
   description: "準備雅思，我第一個想到的事情是買參考書，但我發現這只是一個「做好準備的假象」，買了書但沒有讀書計畫也沒辦法開始準備。要考雅思必須一步一步，從訂定適合自己的讀書計畫開始。想自學考雅思，跟著這 7 個步驟來準備吧～",
@@ -131,7 +176,12 @@ var data = [{
   tagsByTheme: ["英文學習"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "｜實用網站｜推薦書單｜考試報名資訊｜放榜資訊｜",
   description: "準備建築師考試，大部分的人會直接選擇報名補習班（如實力、九華……），省下整理考試內容的時間，但費用也不便宜。文章整理了實用的網站和推薦書籍，讓你不靠補習班也能省下時間省下錢。",
@@ -141,7 +191,12 @@ var data = [{
   tagsByTheme: ["建築資源", "建築師考試"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "台灣建築書店有哪些",
   description: "博客來的「藝術設計類」>>「建築」怎麼那麼少書？每次去書店尋找「建築」類都找不到你要的書？那是因為你找錯地方了！要找建築的書就要去「建築書店」！來看看以下這幾間書店吧！",
@@ -151,7 +206,12 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "2020 建築畢業設計展，全台各校展期彙整",
   description: "又到了建築系畢業展覽的季節，以下整理各校建築系的總評、展覽日期及地點。實踐、中原、文化、高大、大葉、朝陽、中華、銘傳、中國科大、成大、台科、逢甲、北科、金大、聯合、淡江、東海",
@@ -161,7 +221,12 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "30 個優質建築新聞網站",
   description: "你腦中浮現的第一個一定是 archdaily 吧！但第二個呢？第三個呢？archdaily 雖然資料庫很大，但有些建築類別或地區的案例很少。這些網站有豐富的案例",
@@ -171,7 +236,12 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "6 個聊建築、聊設計的 Podcast",
   description: "離島人 Humans Offshore、建人五四三、Z剖面 建築談、字型腦補 A Knob of Font、嚼嚼設計 Design chew chew、WOW!建築Amazing architecture",
@@ -181,7 +251,12 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "建築相關活動的 11 個資訊來源",
   description: "欣講堂、忠泰集團、築生文化協會、空總臺灣當代文化實驗場 C-LAB、交大建築所、成大建築演講股、實構築、臺北市立美術館",
@@ -191,7 +266,12 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "2021 建築畢業設計展，全台各校展期彙整",
   description: "又到了建築系畢業展覽的季節，以下整理各校建築系的總評、展覽日期及地點。中原建築、中華建築、北科建築、大葉大學空間設計系、實踐建築、成大建築、文化建築、朝陽科大建築系建築組、東海建築、 淡江建築、聯合建築 臺科建築、逢甲建築、金門大學建築系、銘傳建築、高大建築……（疫情將影響展覽的舉行，持續更新）",
@@ -201,7 +281,12 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "建築師考試法規心智圖整理",
   description: "不用再啃厚厚的講義、輕易找到題目出處與解答、標示常考的法律條文",
@@ -210,7 +295,12 @@ var data = [{
   imgUrl: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
   tagsByTheme: ["建築資源", "建築師考試"],
   tagsByContent: "心智圖",
-  linkUrl: "https://junlearning.ck.page/lawnotes"
+  linkUrl: "https://junlearning.ck.page/lawnotes",
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "轉捩點不是單一個重要的事件，而是一段時間的轉變",
   description: "是什麼造就了今天的你？有什麼重大的選擇讓你的生活產生巨大改變？回想過去的日子，我好像沒辦法明確指出，是什麼單一事件讓我成為現在的樣子，但我可以說",
@@ -220,7 +310,12 @@ var data = [{
   tagsByTheme: ["職涯思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "心智圖也能拿來探索職涯",
   description: "很少主動去認識別人，但這次認識荃鈺之後，我深刻體會到如果願意跟不同的人交流，會有很不一樣的收穫。",
@@ -230,7 +325,12 @@ var data = [{
   tagsByTheme: ["職涯思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "錢要花在刀口上，那買什麼才算是高效益的？",
   description: "今天聽到一集 podcast，大人的 small talk EP99，標題是「媽媽都說錢要花在「刀口上」，那「刀口」到底在哪裡呢？」，雖然這是很主觀的價值觀選擇，但也給了我很多啟發，在這裡記錄一些想法分享給大家。",
@@ -240,7 +340,12 @@ var data = [{
   tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "關於口語表達，有些答案不必向外求",
   description: "向外搜尋解答可以解決一半的問題​，還有另一半是無法透過外求解決的問題",
@@ -250,7 +355,12 @@ var data = [{
   tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "關於寫作，應該要先學還是先寫？",
   description: "如果你也想開始學習寫作，我認為最好的方式是",
@@ -260,7 +370,12 @@ var data = [{
   tagsByTheme: ["寫作"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "忘形流，是架構重要還是心法重要？",
   description: "真如期待，再加上一點意料之外​，在邊玩邊學的過程又得到新啟發​​！上完課後，整理出三個對製作簡報的反思，也分享給大家～",
@@ -270,7 +385,12 @@ var data = [{
   tagsByTheme: ["學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "思維框架怎麼學？",
   description: "《超速思維》讀書會心得分享主辦單位：CMX 給社群經理的社群 想學思維框架，先想想哲學三問 有這麼多",
@@ -280,7 +400,12 @@ var data = [{
   tagsByTheme: ["學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "從《機智醫生生活》看想成為的大人",
   description: "最近深刻體會到，看韓劇絕對不是浪費時間的一件事！ 看韓劇有趣的地方跟看書一樣，都是透過別人的眼睛去理解不同的生活，而影片的呈現，更能讓人將自己投射其中。",
@@ -290,7 +415,12 @@ var data = [{
   tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《B型選擇》你永遠都有選擇",
   description: "很多時候，我們都會認為自己只有一種選擇，比如說畢業後只能趕快找工作，找到工作之後只能趕快想辦法拚升遷、拚加薪，但除了這些選擇以外，其實還有各種不同的可能。",
@@ -300,7 +430,12 @@ var data = [{
   tagsByTheme: ["職涯思考", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《設計生意經》會做設計，還不足以讓你養活自己！",
   description: "懂得經營和了解設計同等重要。設計美麗的東西是一種藝術，但能從中找到獲利的空間，則是一種技能。了解營運一家公司的各種面向，才能讓你更自由的去做設計。",
@@ -310,7 +445,12 @@ var data = [{
   tagsByTheme: ["設計", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《精準成長》",
   description: "反思才會成長！如果沒有經過反思，所有的努力不一定能成為你學習的養分，花下的時間也不一定能讓你發揮最大的潛力。想要成長，你必須學會有意地暫停，理解經驗帶給你的啟發，才能從人生體驗當中學到東西。",
@@ -320,7 +460,12 @@ var data = [{
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《清單革命》",
   description: "不犯錯的秘密武器！清單不能教會我們專業知識，但清單能幫助我們免於犯錯。就像一個機器需要零件，但如果沒有好的系統，也無法讓零件發揮效用，我們光擁有知識還不夠，清單就是能幫助我們有效運用知識的系統。",
@@ -330,7 +475,12 @@ var data = [{
   tagsByTheme: ["學習方法", "工作術"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《最高學習法》",
   description: "想學會「教」，就要先知道怎麼「學」。透過了解大腦的運作，學著如何順著天性，更有效率地學習，也學著如何克服本能，選擇更有成效的方式教學。",
@@ -340,7 +490,12 @@ var data = [{
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
   description: "作者把如何成功的重點放在「看待事情的角度」之上，是一本心態和方法並重的書，不只用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」。書中不斷提及的「心智」，指的就是面對事情心態",
@@ -350,7 +505,12 @@ var data = [{
   tagsByTheme: ["職涯思考", "學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "怎麼達到工作與生活的平衡？",
   description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
@@ -360,7 +520,12 @@ var data = [{
   tagsByTheme: ["職涯思考", "自我成長", "人生思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
   description: "遠距在家忙到生活失衡？《搞定》教你管理自己的行動，就會自然而然地做好時間管理了！",
@@ -370,7 +535,12 @@ var data = [{
   tagsByTheme: ["職涯思考", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
   title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
   description: "第一次接觸統計思維，是在 2020 年商業思維學院裡劉奕酉老師的一堂課，那是我第一次用「思維」的角度理解一個學門，也讓我開始想更深入了解統計學。這堂課不只是教統計概念，也帶給我很多想法上的轉變",
@@ -380,21 +550,26 @@ var data = [{
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: [{}],
+  igContent: {
+    imgUrl: [],
+    textContent: [],
+    tagsName: []
+  }
 }, {
-  title: "-書籍- 商業模式是什麽 《商業模式全史一創世紀篇》",
-  description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢",
+  title: "-書籍- 商業模式 是什麽 《商業模式全史一創世紀篇》",
+  description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？﻿",
   type: ["好書推薦"],
   time: '2020-05-05',
   imgUrl: "",
-  tagsByTheme: ["投資理財", "提問", "商業筆記"],
-  tagsByContent: "IG 貼文",
+  tagsByTheme: ["投資理財", "提問"],
+  tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [],
+  blogContent: [{}],
   igContent: {
-    imgUrl: ['https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60', 'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80', 'https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80', 'https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'],
-    textContent: "<span>\u5546\u696D\u6A21\u5F0F\u662F\u4EC0\u9EBC\uFF1F</span>\n            <p>\u300C\u5546\u696D\u6A21\u5F0F\u300D\u8B1B\u8D77\u4F86\u597D\u50CF\u5F88\u6E05\u695A\uFF0C\u807D\u7684\u4EBA\u537B\u807D\u5F97\u5F88\u6A21\u7CCA\u3002\u5230\u5E95\u8981\u600E\u9EBC\u53BB\u4E86\u89E3\u9019\u56DB\u500B\u5B57\u5462\uFF1F</p>\n            <p>\u5546\u696D\u6A21\u5F0F\u662F\u4E00\u500B\u4F01\u696D\u7D93\u71DF\u7B56\u7565\u7684\u67B6\u69CB\uFF0C\u5176\u4E2D\u5FC5\u9808\u5305\u542B\u56DB\u500B\u8981\u4EF6\uFF1A\u76EE\u6A19\u3001\u50F9\u503C\u3001\u80FD\u529B\u3001\u7372\u5229\u6A21\u5F0F\u3002</p>\n            <p>\u4EE5\u5F8C\u807D\u5230\u300C\u5546\u696D\u6A21\u5F0F\u300D\uFF0C\u4E0D\u59A8\u505C\u4E0B\u4F86\u60F3\u4E00\u60F3\u6709\u6C92\u6709\u5305\u542B\u9019\u56DB\u500B\u8981\u4EF6\u5427\uFF01</p>\n            <p class=\"ig-content-tag\"><a href=\"#\">J\u672C\u597D\u66F8\u770B\u8D77\u4F86</a></p>",
-    tagsName: ['商業', '商業模式', '企業經營', '策略', '架構', '目標', '價值', '創造', '能力', '資源', '網路', '獲利', '獲利模式', '閱讀筆記']
+    imgUrl: ['https://instagram.ftpe7-4.fna.fbcdn.net/v/t51.2885-15/e35/95482051_486411535442623_4567707100492500243_n.jpg?_nc_ht=instagram.ftpe7-4.fna.fbcdn.net&_nc_cat=107&_nc_ohc=V7WIPH8ubycAX_CTGFu&edm=AABBvjUBAAAA&ccb=7-4&oh=1bac472fc5f0b4ce98e3b3ffc3496c0f&oe=61AB861D&_nc_sid=83d603', 'https://instagram.ftpe7-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/95525966_873205223196998_1813022107166397510_n.jpg?_nc_ht=instagram.ftpe7-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=kHRVKD_IhhIAX_k3vsA&tn=9K9NUlmWM7HI7bgK&edm=AABBvjUBAAAA&ccb=7-4&oh=0d1cfc47dd1eacadd7535bc7f5342248&oe=61AB38BB&_nc_sid=83d603', 'https://instagram.ftpe7-2.fna.fbcdn.net/v/t51.2885-15/e35/95550000_267794181292449_3793291122758222696_n.jpg?_nc_ht=instagram.ftpe7-2.fna.fbcdn.net&_nc_cat=109&_nc_ohc=GgnG6ZUeGzwAX_kQVZM&edm=AABBvjUBAAAA&ccb=7-4&oh=b00a3d6f1191dddadd5426ea297023d2&oe=61AB272F&_nc_sid=83d603', 'https://instagram.ftpe7-4.fna.fbcdn.net/v/t51.2885-15/e35/95361732_800846267108307_7726218822320259619_n.jpg?_nc_ht=instagram.ftpe7-4.fna.fbcdn.net&_nc_cat=103&_nc_ohc=phxstaJxRwIAX8ZYFpQ&edm=AABBvjUBAAAA&ccb=7-4&oh=a3417cc690de6c4061b9698db21749fb&oe=61AAD764&_nc_sid=83d603'],
+    textContent: [],
+    tagsName: []
   }
 }];
 var pageData = [];
@@ -406,8 +581,7 @@ var pageName = '';
 var sortType = 'timeSort';
 var blogItem = [];
 var pageItem = [];
-var blogId = '';
-var IgItem = {}; //預設渲染畫面
+var blogId = ''; //預設渲染畫面
 
 function init() {
   setDataId(); //將資料綁定id 根據時間
@@ -415,7 +589,6 @@ function init() {
   localStorage.setItem('allData', JSON.stringify(data));
   autoRenderByPage();
   renderBlogContent();
-  renderLibraryModal();
 }
 
 init(); //綁定id
@@ -511,7 +684,9 @@ function updateContentList(inputData) {
 
 function renderTagsList() {
   var theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
-  theme.addEventListener('change', checkboxSelected); //更新theme 標籤 disabled 樣式
+  var content = document.querySelector('.js-tags-list[data-tags-type="content"]');
+  theme.addEventListener('change', checkboxSelected);
+  content.addEventListener('change', checkboxSelected); //更新theme 標籤 disabled 樣式
 
   theme.querySelectorAll('li input').forEach(function (inputItem) {
     inputItem.setAttribute('disabled', '');
@@ -534,35 +709,28 @@ function renderTagsList() {
 
       ;
     });
-  });
+  }); //更新content 標籤 disabled 樣式
 
-  if (document.querySelector('.js-tags-list[data-tags-type="content"]')) {
-    var content = document.querySelector('.js-tags-list[data-tags-type="content"]');
-    content.addEventListener('change', checkboxSelected); //更新content 標籤 disabled 樣式
-
-    content.querySelectorAll('li input').forEach(function (inputItem) {
-      inputItem.setAttribute('disabled', '');
-      inputItem.dataset.num = 0;
-      pageData.forEach(function (item) {
-        if (item.tagsByContent === inputItem.name) {
-          inputItem.removeAttribute('disabled', '');
-          inputItem.dataset.num++;
-        }
-      });
-    }); //更新content 標籤 數量
-
-    content.querySelectorAll('li input').forEach(function (inputItem) {
-      content.querySelectorAll('li label').forEach(function (labelItem) {
-        if (labelItem.getAttribute('for') === inputItem.getAttribute('id')) {
-          labelItem.querySelector('span').textContent = inputItem.dataset.num;
-        }
-
-        ;
-      });
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    inputItem.setAttribute('disabled', '');
+    inputItem.dataset.num = 0;
+    pageData.forEach(function (item) {
+      if (item.tagsByContent === inputItem.name) {
+        inputItem.removeAttribute('disabled', '');
+        inputItem.dataset.num++;
+      }
     });
-  }
+  }); //更新content 標籤 數量
 
-  ;
+  content.querySelectorAll('li input').forEach(function (inputItem) {
+    content.querySelectorAll('li label').forEach(function (labelItem) {
+      if (labelItem.getAttribute('for') === inputItem.getAttribute('id')) {
+        labelItem.querySelector('span').textContent = inputItem.dataset.num;
+      }
+
+      ;
+    });
+  });
 }
 
 function refreshThemeTagsList() {
@@ -677,8 +845,7 @@ function renderCardsList(pageData) {
 
   ;
   return str;
-} //normal content Card list 
-//要加上ig 效果
+} //normal content Card list
 
 
 function normalCardList(pageData) {
@@ -695,15 +862,7 @@ function normalCardList(pageData) {
 function libraryCardList(pageData) {
   var str = '';
   pageData.forEach(function (item) {
-    var content = '';
-
-    if (item.tagsByContent === '文章') {
-      content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block js-blog-link\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>\n            ");
-    } else {
-      //開啟 modal 的ig 文章
-      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#libraryContentModal\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#libraryContentModal\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
-    }
-
+    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n        <div class=\"card content-card h-100\">\n          <!-- \u7528\u4F86\u958B\u555Fmodal \u5167\u7684carousel -->\n          <!--  alt=\"First slide\" data-bs-target=\"#carouselExample\" data-bs-slide-to=\"0\" -->\n          <a\n            href=\"").concat(item.linkUrl, " ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\"\n            data-id=\"").concat(item.id, "\"\n            class=\"d-block\"\n            data-bs-toggle=\"modal\"\n            data-bs-target=\"#libraryContentModal\"\n          >\n            <img\n              src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n              alt=\"card img\"\n              class=\"card-img-top content-card-img-top card-inside-img\"\n            />\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n            ").concat(item.title, "\n            </h3>\n            <p class=\"text-secondary hide-row-2\">\n            ").concat(item.description, "\n            </p>\n          </div>\n        </div>\n      </li>");
     str += content;
   });
   return str;
@@ -850,12 +1009,6 @@ function refreshContent(e) {
 function getBlogContentId(e) {
   e.preventDefault();
 
-  if (pageData.length === 0) {
-    pageData = data;
-  }
-
-  ;
-
   if (blogItem.length !== 0) {
     blogItem.splice(0, 1);
     localStorage.removeItem(blogContent);
@@ -991,61 +1144,61 @@ function renderInnerContent() {
     var h3Num = 0;
     var h4Num = 0;
     var h5Num = 0;
-    tableTitles.forEach(function (item) {
+    var h1End = null;
+    var h2End = null;
+    var h3End = null;
+    var h4End = null;
+    var h5End = null;
+    tableTitles.forEach(function (item, index) {
       switch (item.dataset.title) {
         case 'h1':
           h1Num++;
-          h2Num = sortNumberList(h2Num);
-          h3Num = sortNumberList(h3Num);
-          h4Num = sortNumberList(h4Num);
-          h5Num = sortNumberList(h5Num);
+          h1End = h1Num;
           break;
 
         case 'h2':
           h2Num++;
-          h3Num = sortNumberList(h3Num);
-          h4Num = sortNumberList(h4Num);
-          h5Num = sortNumberList(h5Num);
+          h2End = h2Num;
+          cutOver(h2Num, h2End);
           break;
 
         case 'h3':
           h3Num++;
-          h4Num = sortNumberList(h4Num);
-          h5Num = sortNumberList(h5Num);
+          h3End = h3Num;
           break;
 
         case 'h4':
           h4Num++;
-          h5Num = sortNumberList(h5Num);
+          h4End = h4Num;
           break;
 
         case 'h5':
           h5Num++;
+          h5End = h5Num;
           break;
       }
 
-      var titles = "\n            <li class=\"table-content table-content-".concat(item.nodeName.toLocaleLowerCase(), "\">\n                <a href=\"#").concat(item.id, "\"\n                >").concat(h1Num ? h1Num : '').concat(h1Num ? '.' : '').concat(h2Num ? h2Num : '').concat(h2Num ? '.' : '').concat(h3Num ? '.' : '').concat(h3Num ? h3Num : '').concat(h3Num ? '.' : '').concat(h4Num ? h4Num : '', " ").concat(item.textContent, "\n                </a>\n            </li>\n            ");
+      function cutOver(a, b) {
+        if (a === b) {
+          a -= b;
+        }
+
+        ;
+      }
+
+      console.log(h1End, h2End, h3End, h4End, h5End);
+      var titles = "\n                <li class=\"table-content table-content-".concat(item.nodeName.toLocaleLowerCase(), "\">\n                    <a href=\"#").concat(item.id, "\"\n                    >").concat(h1Num ? h1Num : '').concat(h1Num ? '.' : '').concat(h2Num ? h2Num : '').concat(h3Num ? '.' : '').concat(h3Num ? h3Num : '').concat(h3Num ? '.' : '').concat(h4Num ? h4Num : '', " ").concat(item.textContent, "\n                    </a>\n                </li>\n                ");
       _str3 += titles;
     });
+    console.log(h1Num, h2Num, h3Num, h4Num, h5Num);
     blogTableContent.innerHTML = _str3;
   }
-
-  ;
-  addBlogLink();
-}
-
-function sortNumberList(a) {
-  if (a !== 0) {
-    a -= a;
-  }
-
-  return a;
 }
 
 function renderRecommend(input) {
   var str = '';
   input.forEach(function (item) {
-    var content = "\n        <li class=\"col-md-4 mb-5 mb-md-0\">\n            <div class=\"card content-card h-100\">\n            <a href=\"blogContent.html\" class=\"d-block js-blog-link\" data-id=\"".concat(item.id, "\">\n                <img\n                src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                alt=\"card img\"\n                class=\"card-img-top content-card-img-top  content-card-img-top-sm\"\n                />\n            </a>\n            <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"fs-8 text-primary fw-bold hide-row-2 mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n            </div>\n            </div>\n        </li>\n        ");
+    var content = "\n        <li class=\"col-md-4 mb-5 mb-md-0\">\n            <div class=\"card content-card h-100\">\n            <a href=\"blogContent.html\" class=\"d-block\">\n                <img\n                src=\"".concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                alt=\"card img\"\n                class=\"card-img-top content-card-img-top  content-card-img-top-sm\"\n                />\n            </a>\n            <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"fs-8 text-primary fw-bold hide-row-2 mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n            </div>\n            </div>\n        </li>\n        ");
     str += content;
   });
   return str;
@@ -1082,75 +1235,4 @@ function getPageName(pageName) {
       break;
   }
 }
-
-function addBlogLink() {
-  //監聽按鈕用來開啟頁面內容
-  if (document.querySelector('.js-blog-link')) {
-    var blogLinks = document.querySelectorAll('.js-blog-link');
-    blogLinks.forEach(function (item) {
-      return item.addEventListener('click', getBlogContentId);
-    });
-  }
-} //ig 模式
-
-
-function renderLibraryModal() {
-  if (document.querySelector('[data-bs-target]')) {
-    document.querySelectorAll('[data-bs-target="#libraryContentModal"]').forEach(function (item) {
-      item.addEventListener('mouseover', renderModalContent);
-    });
-  }
-}
-
-function renderModalContent(e) {
-  var clickId = e.target.closest('a').dataset.id;
-  pageData.forEach(function (item) {
-    if (parseInt(item.id) === parseInt(clickId)) {
-      IgItem = item;
-    }
-
-    ;
-  });
-  var imgButton = document.querySelector('.js-carousel-button');
-  var imgContent = document.querySelector('.js-carousel-itemList');
-  var textContent = document.querySelector('.ig-text-content');
-  var tagsContent = document.querySelector('.ig-content-tag');
-  var createdTime = document.querySelector('.js-ig-time');
-  imgButton.innerHTML = renderModalButton(IgItem.igContent.imgUrl);
-  imgContent.innerHTML = renderModalImg(IgItem.igContent.imgUrl);
-  textContent.innerHTML = IgItem.igContent.textContent;
-  tagsContent.innerHTML = renderTags(IgItem.igContent.tagsName);
-  createdTime.textContent = regTime(IgItem.time);
-}
-
-function renderModalButton(inputData) {
-  var str = "<button\n    type=\"button\"\n    data-bs-target=\"#carouselExampleDark\"\n    data-bs-slide-to=\"0\"\n    class=\"active\"\n    aria-current=\"true\"\n    aria-label=\"Slide 1\"\n  ></button>";
-  inputData.shift();
-  inputData.forEach(function (item, index) {
-    var content = "  <button\n        type=\"button\"\n        imgUrl =\"".concat(item, "\"\n        data-bs-target=\"#carouselExampleDark\"\n        data-bs-slide-to=\"").concat(index + 1, "\"\n        aria-label=\"Slide ").concat(index + 2, "\"\n        ></button>");
-    str += content;
-  });
-  return str;
-}
-
-function renderModalImg(inputData) {
-  var str = "<div\n    class=\"\n      d-block d-md-none\n      text-end\n      mt-5\n      pe-5\n      position-fixed\n      top-0\n      end-0\n    \"\n    style=\"z-index: 2001\"\n  >\n    <button\n      type=\"button\"\n      class=\"btn-close\"\n      data-bs-dismiss=\"modal\"\n      aria-label=\"Close\"\n    ></button>\n  </div>";
-  var num = 0; //   let total = inputData.length;
-
-  inputData.forEach(function (item) {
-    num++;
-    var content = "<div class=\"carousel-item ratio ratio-1x1 ".concat(num === 1 ? 'active' : '', "\" >\n    <img src=\"").concat(item, "\" alt=\"post img\"\n      class=\"card-inside-img\"/></div>");
-    str += content;
-  });
-  return str;
-}
-
-function renderTags(inputData) {
-  var str = '';
-  inputData.forEach(function (item) {
-    var content = "<a href=\"#\" data-tag-type=\"ig\" data-tag-name=\"".concat(item, "\"\n        >").concat(item, "</a>");
-    str += content;
-  });
-  return str;
-} //搜尋頁面功能
 //# sourceMappingURL=all.js.map
