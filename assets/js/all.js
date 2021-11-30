@@ -51,7 +51,17 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}],
+  blogContent: {
+    subtitle: '沒靈感？做不出好設計？',
+    content: "\n            <p>\u91DD\u5C0D UI/UX \u8A2D\u8A08\uFF0C\u9019\u4E9B\u7DB2\u7AD9\u6709\u5F88\u8C50\u5BCC\u7684\u8A2D\u8A08\u4F5C\u54C1\uFF0C\u80FD\u57F9\u990A\u4F60\u7684\u7F8E\u611F\uFF0C\u4E5F\u80FD\u5E6B\u52A9\u4F60\u5728\u6C92\u6709\u60F3\u6CD5\u7684\u6642\u5019\u5E36\u7D66\u4F60\u4E00\u4E9B\u9748\u611F\u3002</p>\n            <p>\u5C0D\u65BC\u60F3\u81EA\u5B78\u7684\u4EBA\uFF0C\u591A\u770B\u597D\u4F5C\u54C1\u4E5F\u80FD\u8B93\u4F60\u6709\u66F4\u9AD8\u7684\u8A2D\u8A08\u654F\u611F\u5EA6\u3002\u6C92\u4E8B\u5C31\u4F86\u901B\u901B\u8CC7\u6599\u5EAB\u3001\u5C0B\u627E\u597D\u8A2D\u8A08\u5427\uFF01</p>\n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u300CUI/UX \u8A2D\u8A08\u300D\u662F\u4EC0\u9EBC\uFF1F\">\u300CUI/UX \u8A2D\u8A08\u300D\u662F\u4EC0\u9EBC\uFF1F</h1>\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"UI\uFF1AUserInterface\">UI\uFF1AUser Interface</h2>\n            <p>\n              >> <a href=\"https://zh.wikipedia.org/zh-tw/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2\">\u4F7F\u7528\u8005\u4ECB\u9762</a><br>\n              \u8A2D\u8A08\u5C08\u6CE8\u5728\u300C\u7522\u54C1\u600E\u9EBC\u5448\u73FE\u300D\uFF0C\u8A2D\u8A08\u6BCF\u4E00\u500B\u7DB2\u9801\u6216\u756B\u9762\u3002\n            </p>\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"UX\uFF1AUser Experience\">UX\uFF1AUser Experience</h2>\n            <p>\n              >> <a href=\"https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%B6%93%E9%A9%97\">\u7528\u6236\u9AD4\u9A57</a><br>\n              \u8A2D\u8A08\u5C08\u6CE8\u5728\u300C\u7522\u54C1\u7528\u8D77\u4F86\u7684\u611F\u89BA\u300D\uFF0C\u63D0\u4F9B\u4F7F\u7528\u8005\u5165\u9580\u7684\u6D41\u7A0B\u548C\u6700\u8212\u9069\u7684\u4F7F\u7528\u7D93\u9A57\u3002\n            </p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u9748\u611F\">\u627E\u9748\u611F</h1>\n            \n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u624B\u6A5F\">\u624B\u6A5F</h2>\n            <p><a href=\"https://www.uplabs.com/\" class=\"text-content-link-btn\">up labs</a></p>\n            <p><a href=\"https://mobbin.design/\" class=\"text-content-link-btn\">Mobbin</a></p>\n            <p><a href=\"https://www.mobile-patterns.com/\" class=\"text-content-link-btn\">Mobile Patterns</a></p>\n\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u7DB2\u9801\">\u7DB2\u9801</h2>\n            <p><a href=\"https://ecomm.design/\" class=\"text-content-link-btn\">ecomm.design</a></p>\n            <p><a href=\"https://homejaws.com/?fbclid=IwAR2w01iQg3Jpst1RQhBvr2Qarx0ipRSMWgMbTwiTLwL_QK33aDlW-4gngt0\" class=\"text-content-link-btn\">Awesome Design Website Gallery</a></p>\n            <p><a href=\"https://land-book.com/\" class=\"text-content-link-btn\">Land-book</a></p>\n            <p><a href=\"https://www.siteinspire.com/\" class=\"text-content-link-btn\">site inspire</a></p>\n            <p><a href=\"http://patterntap.com/patterntap\" class=\"text-content-link-btn\">PatternTap</a></p>\n            <p><a href=\"https://niice.co/showcase\" class=\"text-content-link-btn\">Nlice</a></p>\n\n            <h2 class=\"text-content-h2\" data-title=\"h2\" id=\"\u7D9C\u5408\">\u7D9C\u5408</h2>\n           <p> <a href=\"https://www.awwwards.com/\" class=\"text-content-link-btn\">awwwards</a></p>\n            <p><a href=\"https://uimovement.com/tag/article/\" class=\"text-content-link-btn\">UI movement</a></p>\n            <p><a href=\"https://collectui.com/\" class=\"text-content-link-btn\">Collect UI</a></p>\n            <p><a href=\"https://www.lapa.ninja/\" class=\"text-content-link-btn\">lapa</a></p>\n            <p><a href=\"https://uigarage.net/\" class=\"text-content-link-btn\">UI Garage</a></p>\n            <p><a href=\"https://pttrns.com/\" class=\"text-content-link-btn\">pttrns\uFF08 iPhone, iPad, Apple Watch, Android \uFF09</a></p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u7D20\u6750\">\u627E\u7D20\u6750</h1>\n            <p><a href=\"https://junlearning.com/icon-website/\">Icons</a></p>\n            <p><a href=\"https://junlearning.com/color-website/\">Colors</a></p>\n\n            <h3 class=\"text-content-h3\">Neede Design Resources</h3>\n            <p> <a href=\"https://neede.co/#/UI-Design\" class=\"text-content-link-btn\">UI Design</a></p>\n            <p>Design templates, sketch resources and component libraries.</p>\n            \n            <p><a href=\"\" class=\"text-content-link-btn\">UX Design</a></p>\n            <p>Articles on UX best practices and tools for user testing.</p>\n\n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u6559\u5B78\">\u627E\u6559\u5B78</h1>\n            <img src=\"https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/as-a-product-designer.jpg?resize=1536%2C726&ssl=1\" alt=\"img\" class=\"img-fluid\">\n            <p>\u9664\u4E86\u8981\u591A\u770B\u597D\u4F5C\u54C1\uFF0C\u6709\u7CFB\u7D71\u7684 UI/UX \u5B78\u7FD2\u4E5F\u662F\u5F88\u91CD\u8981\u7684\uFF5E</p>\n            <p><a href=\"https://www.uilearn.com/\" class=\"text-content-link-btn\">UI LEARN</a></p>\n            <p><a href=\"https://productdesign.tips/\" class=\"text-content-link-btn\">Product.design.tips</a></p>\n            <p><a href=\"https://designshack.net/\" class=\"text-content-link-btn\">Design Shack</a></p>\n            <p><a href=\"https://beautifulpixels.com/\" class=\"text-content-link-btn\">Beautiful Pixels</a></p>\n            <p><a href=\"https://ui-patterns.com/\" class=\"text-content-link-btn\">UI-Patterns</a></p>\n            \n            <h1 class=\"text-content-h1\" data-title=\"h1\" id=\"\u627E\u6587\u7AE0\">\u627E\u6587\u7AE0</h1>\n                <p> <a href=\"https://medium.com/as-a-product-designer\" class=\"text-content-link-btn\" >\n                AAPD\u2014As A Product Designer <br>\n                UI/UX\u8A2D\u8A08\u3001\u8A2D\u8A08\u8CC7\u6E90\u3001\u5B78\u7FD2\u6210\u9577\n                </a></p>\n                <p> <a href=\"https://medium.com/@wayne.chengweilin\" class=\"text-content-link-btn\">Medium\uFF5CWayne\u4E92\u806F\u7DB2\u91CE\u883B\u6210\u9577UX\u8A2D\u8A08\u5E2B</a></p>\n            ",
+    tags: [{
+      name: '資源整理',
+      url: 'infoMap.html'
+    }, {
+      name: '設計',
+      url: 'searchLink.html'
+    }]
+  },
   igContent: {
     imgUrl: [],
     textContent: [],
@@ -67,12 +77,8 @@ var data = [{
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
   blogContent: {
-    title: '簡報設計學習資源',
     subtitle: '',
-    tableOfContent: {
-      'ps-0': ['簡報設計素材', '專欄文章', 'Facebook 粉絲專頁', 'Facebook 社團', 'Instagram 帳號', '線上課程']
-    },
-    content: "<p class=\"text-content-h2\">\u7C21\u5831\u8A2D\u8A08\u7D20\u6750</p>\n            <p><a href=\"#\" class=\"\">BFA \u7C21\u5831\u5B78\u9662</a></p>\n            <p class=\"text-content-h2\">\u5C08\u6B04\u6587\u7AE0</p>\n            <p><a href=\"#\" class=\"\">BFA \u7C21\u5831</a></p>\n            <p><a href=\"#\" class=\"\">\u7C21\u5831\u7DF4\u529F\u5718</a></p>\n            <p><a href=\"#\" class=\"\">\u7C21\u5831\u85DD\u8853\u70D8\u7119\u574A</a></p>\n            <p class=\"text-content-h2\">Facebook \u7C89\u7D72\u5C08\u9801</p>\n            <p><a href=\"#\" class=\"\">\u7C21\u5831\u30FB\u521D\u5B78\u8005</a></p>\n            <p><a href=\"#\" class=\"\">\u7C21\u5831\u30FB\u7C21\u55AE\u5831</a></p>\n            <p><a href=\"#\" class=\"\">\u6B6A\u6A13\u85E5\u5E2B \u7FC1\u7D39\u6069</a></p>\n            <p><a href=\"#\" class=\"\">Keynote\u4E0D\u6C42\u4EBA</a></p>\n            <p><a href=\"#\" class=\"\">Keynote \u7C21\u5831\u661F\u7403</a></p>\n            <p><a href=\"#\" class=\"\">\u6709Power\u4E5F\u6709Point\u7684\u7C21\u5831\u8A2D\u8A08</a></p>\n            <p class=\"text-content-h2\">Facebook \u793E\u5718</p>\n            <p><a href=\"#\" class=\"\">\u7C21\u5831\u8A2D\u8A08\u65B0\u624B\u6751</a></p>\n            <p><a href=\"#\" class=\"\">10\u5206\u9418\u7C21\u5831\u4EA4\u6D41\u793E\u5718</a></p>\n            <p class=\"text-content-h2\">Instagram \u5E33\u865F</p>\n            <p><a href=\"#\" class=\"\">ppt.note</a></p>\n            <p class=\"text-content-h2\">\u7DDA\u4E0A\u8AB2\u7A0B</p>\n            <p><a href=\"#\" class=\"\">\u5546\u696D\u7C21\u5831\u8A2D\u8A08\u8207\u61C9\u7528\u8AB2\uFF5C\u6649\u5347\u4E3B\u7BA1\u5FC5\u5099\u768428\u7A2E\u8077\u5834\u7C21\u5831\u8853</a></p>\n            <p><a href=\"#\" class=\"\">PPT \u52D5\u756B\u8AB2\uFF5C\u52D5\u614B\u7C21\u5831\u8F15\u9B06\u4E0A\u624B</a></p>\n            <p><a href=\"#\" class=\"\">Keynote \u5168\u653B\u7565\uFF1A\u96F6\u57FA\u790E\u505A\u51FA\u8D85\u5438\u775B\u7C21\u5831\uFF01</a></p>\n            <p>\u6709\u4E9B\u6587\u7AE0\u548C\u6280\u5DE7\uFF0C\u90FD\u795E\u5947\u5230\u751A\u81F3\u89BA\u5F97\u5927\u795E\u7528\u7684 PPT \u8DDF\u6211\u7528\u7684\u597D\u50CF\u4E0D\u4E00\u6A23XD</p>\n            <p>\u5E0C\u671B\u9019\u6A23\u7684\u6574\u7406\uFF0C\u80FD\u5E6B\u4F60\u7BC0\u7701\u4E00\u4E9B\u88FD\u4F5C\u7C21\u5831\u7684\u6642\u9593\uFF5E</p>\n            <p>\u4E00\u8D77\u5411\u53B2\u5BB3\u7684\u4EBA\u5B78\u7FD2\uFF01</p>",
+    content: "\n            <p>\u5728\u88FD\u4F5C\u7C21\u5831\u6642\uFF0C\u7D20\u6750\u7DB2\u7AD9\u53EF\u4EE5\u7BC0\u7701\u5F88\u591A\u6642\u9593\uFF0C\u6551\u6025\u7684\u6642\u5019\u80FD\u5E6B\u4E0A\u4E00\u4E9B\u5FD9\u3002</p>\n            <p>\u4F46\u82E5\u771F\u7684\u60F3\u7CBE\u9032\u7C21\u5831\u8A2D\u8A08\uFF0C\u5247\u9700\u8981\u5E73\u5E38\u7D2F\u7A4D\u5C0D\u8A2D\u8A08\u7684\u654F\u611F\u5EA6\uFF0C\u4E5F\u9700\u8981\u5C0D\u88FD\u4F5C\u5DE5\u5177\u6709\u4E00\u5B9A\u7684\u719F\u7DF4\u7A0B\u5EA6\u3002</p>\n            <p>\u4EE5\u4E0B\u6574\u7406\u4E86 12 \u500B\u5206\u4EAB\u7C21\u5831\u8A2D\u8A08\u77E5\u8B58\u53CA\u6280\u5DE7\u7684\u90E8\u843D\u683C\u548C FB \u7C89\u5C08\u3002</p>\n            <h2 class=\"text-content-h2\" id=\"\u7C21\u5831\u8A2D\u8A08\u7D20\u6750\" data-title=\"h2\">\u7C21\u5831\u8A2D\u8A08\u7D20\u6750</h2>\n            <p><a href=\"https://www.bfa.com.tw/tools\" class=\"text-content-link-btn\">BFA \u7C21\u5831\u5B78\u9662</a></p>\n\n            <h2 class=\"text-content-h2\" id=\"\u5C08\u6B04\u6587\u7AE0\" data-title=\"h2\">\u5C08\u6B04\u6587\u7AE0</h2>\n            <p><a href=\"https://www.bfa.com.tw/blog\" class=\"text-content-link-btn\">BFA \u7C21\u5831</a></p>\n            <p><a href=\"https://chuckchiangppt.blogspot.com/\" class=\"text-content-link-btn\">\u7C21\u5831\u7DF4\u529F\u5718</a></p>\n            <p><a href=\"https://artofslide.blogspot.com/\" class=\"text-content-link-btn\">\u7C21\u5831\u85DD\u8853\u70D8\u7119\u574A</a></p>\n            \n            <h2 class=\"text-content-h2\" id=\"Facebook\u7C89\u7D72\u5C08\u9801\" data-title=\"h2\">Facebook \u7C89\u7D72\u5C08\u9801</h2>\n            <p><a href=\"https://www.facebook.com/slideologylearner/\" class=\"text-content-link-btn\">\u7C21\u5831\u30FB\u521D\u5B78\u8005</a></p>\n            <p><a href=\"https://www.facebook.com/easypresentation/\" class=\"text-content-link-btn\">\u7C21\u5831\u30FB\u7C21\u55AE\u5831</a></p>\n            <p><a href=\"https://www.facebook.com/Medicalslideology\" class=\"text-content-link-btn\">\u6B6A\u6A13\u85E5\u5E2B \u7FC1\u7D39\u6069</a></p>\n            <p><a href=\"https://www.facebook.com/WowKeynote/\" class=\"text-content-link-btn\">Keynote\u4E0D\u6C42\u4EBA</a></p>\n            <p><a href=\"https://www.facebook.com/thekeynotestar/\" class=\"text-content-link-btn\">Keynote \u7C21\u5831\u661F\u7403</a></p>\n            <p><a href=\"https://www.facebook.com/pptskill\" class=\"text-content-link-btn\">\u6709Power\u4E5F\u6709Point\u7684\u7C21\u5831\u8A2D\u8A08</a></p>\n            \n            <h2 class=\"text-content-h2\" id=\"Facebook\u793E\u5718\" data-title=\"h2\">Facebook \u793E\u5718</h2>\n            <p><a href=\"https://www.facebook.com/groups/870602986442387/\" class=\"text-content-link-btn\">\u7C21\u5831\u8A2D\u8A08\u65B0\u624B\u6751</a></p>\n            <p><a href=\"https://www.facebook.com/groups/1080149785351887/\" class=\"text-content-link-btn\">10\u5206\u9418\u7C21\u5831\u4EA4\u6D41\u793E\u5718</a></p>\n\n            <h2 class=\"text-content-h2\" id=\"Instagram\u5E33\u865F\" data-title=\"h2\">Instagram \u5E33\u865F</h2>\n            <p><a href=\"https://www.instagram.com/ppt.note/\" class=\"text-content-link-btn\">ppt.note</a></p>\n\n            <h2 class=\"text-content-h2\" id=\"\u7DDA\u4E0A\u8AB2\u7A0B\" data-title=\"h2\">\u7DDA\u4E0A\u8AB2\u7A0B</h2>\n            <p><a href=\"https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about\" class=\"text-content-link-btn\">\u5546\u696D\u7C21\u5831\u8A2D\u8A08\u8207\u61C9\u7528\u8AB2\uFF5C\u6649\u5347\u4E3B\u7BA1\u5FC5\u5099\u768428\u7A2E\u8077\u5834\u7C21\u5831\u8853</a></p>\n            <p><a href=\"https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about\" class=\"text-content-link-btn\">PPT \u52D5\u756B\u8AB2\uFF5C\u52D5\u614B\u7C21\u5831\u8F15\u9B06\u4E0A\u624B</a></p>\n            <p><a href=\"https://www.yottau.com.tw/course/intro/1152#intro\" class=\"text-content-link-btn\">Keynote \u5168\u653B\u7565\uFF1A\u96F6\u57FA\u790E\u505A\u51FA\u8D85\u5438\u775B\u7C21\u5831\uFF01</a></p>\n            <p>\u6709\u4E9B\u6587\u7AE0\u548C\u6280\u5DE7\uFF0C\u90FD\u795E\u5947\u5230\u751A\u81F3\u89BA\u5F97\u5927\u795E\u7528\u7684 PPT \u8DDF\u6211\u7528\u7684\u597D\u50CF\u4E0D\u4E00\u6A23XD</p>\n            <p>\u5E0C\u671B\u9019\u6A23\u7684\u6574\u7406\uFF0C\u80FD\u5E6B\u4F60\u7BC0\u7701\u4E00\u4E9B\u88FD\u4F5C\u7C21\u5831\u7684\u6642\u9593\uFF5E</p>\n            <p>\u4E00\u8D77\u5411\u53B2\u5BB3\u7684\u4EBA\u5B78\u7FD2\uFF01</p>",
     tags: [{
       name: '資源整理',
       url: 'infoMap.html'
@@ -574,11 +580,13 @@ var newestData2 = [];
 var pageName = '';
 var sortType = 'timeSort';
 var blogItem = [];
+var pageItem = [];
 var blogId = ''; //預設渲染畫面
 
 function init() {
   setDataId(); //將資料綁定id 根據時間
 
+  localStorage.setItem('allData', JSON.stringify(data));
   autoRenderByPage();
   renderBlogContent();
 }
@@ -633,6 +641,7 @@ function renderContentList() {
   }
 
   ;
+  updatePageDataLocalStorage();
 
   if (contentList.dataset.listType === 'newestData') {
     console.log(pageData);
@@ -820,6 +829,8 @@ function getPageData(contentList) {
       });
       break;
   }
+
+  updatePageDataLocalStorage();
 } //renderCards
 
 
@@ -990,6 +1001,7 @@ function refreshContent(e) {
   autoRenderByPage();
   refreshThemeTagsList();
 } //render modal body content for every page//暫時無法實現需要一個個加入
+//無法更新ＱＱ
 //文章也是
 //得到點擊文章的id
 
@@ -999,19 +1011,29 @@ function getBlogContentId(e) {
 
   if (blogItem.length !== 0) {
     blogItem.splice(0, 1);
+    localStorage.removeItem(blogContent);
   }
 
+  ;
   pageData.forEach(function (item) {
     if (parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)) {
       blogItem.push(item);
+      console.log(item);
     }
 
     ;
   });
+  updateBlogLocalStorage();
+  loadToPage();
+}
+
+function updateBlogLocalStorage() {
   localStorage.setItem('blogContent', JSON.stringify(blogItem));
   localStorage.setItem('pageName', JSON.stringify(pageName));
+}
+
+function updatePageDataLocalStorage() {
   localStorage.setItem('pageData', JSON.stringify(pageData));
-  loadToPage();
 }
 
 function loadToPage() {
@@ -1023,55 +1045,163 @@ function loadToPage() {
 
 function renderBlogContent() {
   if (document.querySelector('.js-blog-content')) {
-    blogItem = JSON.parse(localStorage.getItem('blogContent'));
-    pageName = JSON.parse(localStorage.getItem('pageName'));
-    pageItem = JSON.parse(localStorage.getItem('pageItem'));
-    console.log(blogItem, pageName, pageItem);
-    var title = blogItem[0].title;
-    var subtitle = blogItem[0].blogContent.subtitle;
-    var date = blogItem[0].time.split('-').join('/');
-    var content = blogItem[0].blogContent.content;
-    var tags = blogItem[0].blogContent.tags;
-    var blogTitleBox = document.querySelector('[data-type="title"]');
-    var blogTitle = document.querySelector('[data-blog="title"]');
-    var blogSubtitle = document.querySelector('[data-blog="subtitle"]');
-    var blogDate = document.querySelectorAll('[data-blog="date"]');
-    var blogContent = document.querySelector('[data-blog="content"]');
-    var blogFooter = document.querySelector('[data-blog="footer"]');
-    var blogFooterTags = document.querySelector('[data-blog="tags"]');
-    var recommendTitle = document.querySelector('[data-blog="recommendTitle"]');
-    blogTitle.textContent = title;
-
-    if (subtitle.length !== 0) {
-      blogSubtitle.textContent = subtitle;
-    }
-
-    {
-      blogTitleBox.removeChild(blogSubtitle);
-      blogTitle.classList.add('mb-0');
-    }
-    ;
-    blogDate.forEach(function (item) {
-      item.textContent = date;
-    });
-    blogContent.innerHTML = content;
-
-    if (tags.length !== 0) {
-      var str = '';
-      tags.forEach(function (item) {
-        var content = "\n            <li><a href=\"".concat(item.url, "\">").concat(item.name, "</a></li>\n            ");
-        str += content;
-      });
-      blogFooterTags.innerHTML = str;
-    } else {
-      blogFooter.removeChild(blogFooterTags);
-    }
-
-    ;
-    recommendTitle.textContent = "\u300C".concat(getPageName(pageName) || blogItem[0].type, "\u300D");
+    renderInnerContent();
   }
 
   ;
+}
+
+function renderInnerContent() {
+  blogItem = JSON.parse(localStorage.getItem('blogContent'));
+  pageName = JSON.parse(localStorage.getItem('pageName'));
+  pageItem = JSON.parse(localStorage.getItem('pageData'));
+  var allData = JSON.parse(localStorage.getItem('allData'));
+  console.log(blogItem, pageName);
+  var title = blogItem[0].title;
+  var subtitle = blogItem[0].blogContent.subtitle;
+  var date = blogItem[0].time.split('-').join('/');
+  var content = blogItem[0].blogContent.content;
+  var tags = blogItem[0].blogContent.tags;
+  var recommendAry1 = [];
+  var recommendAry2 = [];
+  recommendAry1.push(pageItem[0], pageItem[1], pageItem[2]);
+  recommendAry2.push(pageItem[3], pageItem[4], pageItem[5]);
+  var hotPosts = [];
+  var newPosts = [];
+  hotPosts.push(allData[0], allData[1], allData[2], allData[3], allData[4]);
+  newPosts.push(pageItem[0], pageItem[1], pageItem[2], pageItem[3], pageItem[4]);
+  var blogTitleBox = document.querySelector('[data-type="title"]');
+  var blogTitle = document.querySelector('[data-blog="title"]');
+  var blogSubtitle = document.querySelector('[data-blog="subtitle"]');
+  var blogDate = document.querySelectorAll('[data-blog="date"]');
+  var blogContent = document.querySelector('[data-blog="content"]');
+  var blogFooter = document.querySelector('[data-blog="footer"]');
+  var blogFooterTags = document.querySelector('[data-blog="tags"]');
+  var recommendTitle = document.querySelector('[data-blog="recommendTitle"]');
+  var recommendContentLists = document.querySelectorAll('#carouselRecommendedArea [data-blog]');
+  var blogHotPosts = document.querySelector('[data-blog="hotPosts"]');
+  var blogNewPosts = document.querySelector('[data-blog="newPosts"]');
+  var blogTableContent = document.querySelector('[data-blog="tableContent"]');
+  blogTitle.textContent = title;
+
+  if (subtitle.length !== 0) {
+    blogSubtitle.textContent = subtitle;
+  }
+
+  {
+    blogTitleBox.removeChild(blogSubtitle);
+    blogTitle.classList.add('mb-0');
+  }
+  ;
+  blogDate.forEach(function (item) {
+    item.textContent = date;
+  });
+  blogContent.innerHTML = content;
+
+  if (tags.length !== 0) {
+    var str = '';
+    tags.forEach(function (item) {
+      var content = "\n            <li><a href=\"".concat(item.url, "\">").concat(item.name, "</a></li>\n            ");
+      str += content;
+    });
+    blogFooterTags.innerHTML = str;
+  } else {
+    blogFooter.removeChild(blogFooterTags);
+  }
+
+  ;
+  recommendTitle.textContent = "\u300C".concat(getPageName(pageName) || blogItem[0].type, "\u300D");
+  recommendContentLists[0].innerHTML = renderRecommend(recommendAry1);
+  recommendContentLists[1].innerHTML = renderRecommend(recommendAry2);
+
+  if (hotPosts.length !== 0) {
+    var _str = '';
+    hotPosts.forEach(function (item) {
+      var content = "\n            <li class=\"mb-2\">\n            <a href=\"".concat(item.url, "\" class=\"link-secondary\"\n              >").concat(item.title, "\n            </a>\n          </li>\n            ");
+      _str += content;
+    });
+    blogHotPosts.innerHTML = _str;
+  }
+
+  ;
+
+  if (newPosts.length !== 0) {
+    var _str2 = '';
+    newPosts.forEach(function (item) {
+      var content = "\n            <li class=\"mb-2\">\n            <a href=\"".concat(item.url, "\" class=\"link-secondary\"\n              >").concat(item.title, "\n            </a>\n          </li>\n            ");
+      _str2 += content;
+    });
+    blogNewPosts.innerHTML = _str2;
+  }
+
+  ;
+
+  if (blogContent.querySelectorAll('[data-title]')) {
+    var tableTitles = blogContent.querySelectorAll('[data-title]');
+    var _str3 = '';
+    var h1Num = 0;
+    var h2Num = 0;
+    var h3Num = 0;
+    var h4Num = 0;
+    var h5Num = 0;
+    var h1End = null;
+    var h2End = null;
+    var h3End = null;
+    var h4End = null;
+    var h5End = null;
+    tableTitles.forEach(function (item, index) {
+      switch (item.dataset.title) {
+        case 'h1':
+          h1Num++;
+          h1End = h1Num;
+          break;
+
+        case 'h2':
+          h2Num++;
+          h2End = h2Num;
+          cutOver(h2Num, h2End);
+          break;
+
+        case 'h3':
+          h3Num++;
+          h3End = h3Num;
+          break;
+
+        case 'h4':
+          h4Num++;
+          h4End = h4Num;
+          break;
+
+        case 'h5':
+          h5Num++;
+          h5End = h5Num;
+          break;
+      }
+
+      function cutOver(a, b) {
+        if (a === b) {
+          a -= b;
+        }
+
+        ;
+      }
+
+      console.log(h1End, h2End, h3End, h4End, h5End);
+      var titles = "\n                <li class=\"table-content table-content-".concat(item.nodeName.toLocaleLowerCase(), "\">\n                    <a href=\"#").concat(item.id, "\"\n                    >").concat(h1Num ? h1Num : '').concat(h1Num ? '.' : '').concat(h2Num ? h2Num : '').concat(h3Num ? '.' : '').concat(h3Num ? h3Num : '').concat(h3Num ? '.' : '').concat(h4Num ? h4Num : '', " ").concat(item.textContent, "\n                    </a>\n                </li>\n                ");
+      _str3 += titles;
+    });
+    console.log(h1Num, h2Num, h3Num, h4Num, h5Num);
+    blogTableContent.innerHTML = _str3;
+  }
+}
+
+function renderRecommend(input) {
+  var str = '';
+  input.forEach(function (item) {
+    var content = "\n        <li class=\"col-md-4 mb-5 mb-md-0\">\n            <div class=\"card content-card h-100\">\n            <a href=\"blogContent.html\" class=\"d-block\">\n                <img\n                src=\"".concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                alt=\"card img\"\n                class=\"card-img-top content-card-img-top  content-card-img-top-sm\"\n                />\n            </a>\n            <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"fs-8 text-primary fw-bold hide-row-2 mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n            </div>\n            </div>\n        </li>\n        ");
+    str += content;
+  });
+  return str;
 }
 
 function getPageName(pageName) {
