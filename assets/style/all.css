@@ -23880,6 +23880,7 @@ input:focus, input:active {
 
 .ig-content-tag > a {
   color: #5D7E93;
+  margin-right: 0.25rem;
 }
 
 .ig-content-tag > a:hover {
@@ -23888,7 +23889,19 @@ input:focus, input:active {
 
 .ig-content-tag > a::before {
   content: '#';
-  margin-right: 2px;
+  margin-right: 1.5px;
+}
+
+.ig-text-content:first-child::before {
+  content: 'junlearning';
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 12px;
+  margin-bottom: 1rem;
+}
+
+.ig-text-content > p {
+  margin-bottom: 1rem;
 }
 
 .btn-icon {
