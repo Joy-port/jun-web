@@ -41,6 +41,20 @@
         color: $info;
     }
 
+    &-link-btn{
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        border-radius: 20px;
+        border: 1px solid $black;
+        color: $black;
+
+        &:hover{
+            color: $info;
+            border: 1px solid $info;
+        }
+    }
+
     &-highlight{
         background-color: $warning
     }
@@ -55,11 +69,18 @@
         padding: 4px;
         font-size: 2.25rem;
         font-weight: 700;
+        margin-bottom: 1.5rem;
     }
     &-h2{
         font-weight:500;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         color:$info;
+        margin-bottom: 1rem;
+    }
+    &-h3{
+        font-size: 1.25rem;
+        color: $info;
+        margin-bottom: 1rem;
     }
     &-callout{
         padding: 0.875rem;
@@ -87,17 +108,43 @@
 }
 
 .table-content{
-    color: $info;
-    font-weight: 300;
+    margin-bottom: 0.5rem;
 
+    &>a{
+        color: $secondary;
+        font-weight: 400;
+        display: block;
+    }
     &:hover{
-        color: $black;
+        &>a{
+            color: $black;
+            font-weight: 400;
+        }
+       
     }
 
     &.active{
-        color: $primary;
-        font-weight: 400;
+        a{
+            color: $info;
+            font-weight: 400;
+        }
+        
     }
+    
+    &-h2{
+        padding-left: 0;
+    }
+    &-h3{
+        padding-left: 1rem;
+    }
+    &-h4{
+        padding-left: 2rem;
+    }
+    &-h5{
+        padding-left: 3.5rem;
+    }
+
+
 }
 
 .text-footer{

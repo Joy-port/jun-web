@@ -65,31 +65,37 @@ let data =[
         blogContent:{
             title:'簡報設計學習資源',
             subtitle:'',
-            tableOfContent:{
-                'ps-0':['簡報設計素材','專欄文章','Facebook 粉絲專頁','Facebook 社團','Instagram 帳號','線上課程']
-            },
-            content:`<p class="text-content-h2">簡報設計素材</p>
-            <p><a href="#" class="">BFA 簡報學院</a></p>
-            <p class="text-content-h2">專欄文章</p>
-            <p><a href="#" class="">BFA 簡報</a></p>
-            <p><a href="#" class="">簡報練功團</a></p>
-            <p><a href="#" class="">簡報藝術烘焙坊</a></p>
-            <p class="text-content-h2">Facebook 粉絲專頁</p>
-            <p><a href="#" class="">簡報・初學者</a></p>
-            <p><a href="#" class="">簡報・簡單報</a></p>
-            <p><a href="#" class="">歪樓藥師 翁紹恩</a></p>
-            <p><a href="#" class="">Keynote不求人</a></p>
-            <p><a href="#" class="">Keynote 簡報星球</a></p>
-            <p><a href="#" class="">有Power也有Point的簡報設計</a></p>
-            <p class="text-content-h2">Facebook 社團</p>
-            <p><a href="#" class="">簡報設計新手村</a></p>
-            <p><a href="#" class="">10分鐘簡報交流社團</a></p>
-            <p class="text-content-h2">Instagram 帳號</p>
-            <p><a href="#" class="">ppt.note</a></p>
-            <p class="text-content-h2">線上課程</p>
-            <p><a href="#" class="">商業簡報設計與應用課｜晉升主管必備的28種職場簡報術</a></p>
-            <p><a href="#" class="">PPT 動畫課｜動態簡報輕鬆上手</a></p>
-            <p><a href="#" class="">Keynote 全攻略：零基礎做出超吸睛簡報！</a></p>
+            content:`
+            <p>在製作簡報時，素材網站可以節省很多時間，救急的時候能幫上一些忙。</p>
+            <p>但若真的想精進簡報設計，則需要平常累積對設計的敏感度，也需要對製作工具有一定的熟練程度。</p>
+            <p>以下整理了 12 個分享簡報設計知識及技巧的部落格和 FB 粉專。</p>
+            <h2 class="text-content-h2" id="簡報設計素材" data-title="h2">簡報設計素材</h2>
+            <p><a href="https://www.bfa.com.tw/tools" class="text-content-link-btn">BFA 簡報學院</a></p>
+
+            <h2 class="text-content-h2" id="專欄文章" data-title="h2">專欄文章</h2>
+            <p><a href="https://www.bfa.com.tw/blog" class="text-content-link-btn">BFA 簡報</a></p>
+            <p><a href="https://chuckchiangppt.blogspot.com/" class="text-content-link-btn">簡報練功團</a></p>
+            <p><a href="https://artofslide.blogspot.com/" class="text-content-link-btn">簡報藝術烘焙坊</a></p>
+            
+            <h2 class="text-content-h2" id="Facebook粉絲專頁" data-title="h2">Facebook 粉絲專頁</h2>
+            <p><a href="https://www.facebook.com/slideologylearner/" class="text-content-link-btn">簡報・初學者</a></p>
+            <p><a href="https://www.facebook.com/easypresentation/" class="text-content-link-btn">簡報・簡單報</a></p>
+            <p><a href="https://www.facebook.com/Medicalslideology" class="text-content-link-btn">歪樓藥師 翁紹恩</a></p>
+            <p><a href="https://www.facebook.com/WowKeynote/" class="text-content-link-btn">Keynote不求人</a></p>
+            <p><a href="https://www.facebook.com/thekeynotestar/" class="text-content-link-btn">Keynote 簡報星球</a></p>
+            <p><a href="https://www.facebook.com/pptskill" class="text-content-link-btn">有Power也有Point的簡報設計</a></p>
+            
+            <h2 class="text-content-h2" id="Facebook社團" data-title="h2">Facebook 社團</h2>
+            <p><a href="https://www.facebook.com/groups/870602986442387/" class="text-content-link-btn">簡報設計新手村</a></p>
+            <p><a href="https://www.facebook.com/groups/1080149785351887/" class="text-content-link-btn">10分鐘簡報交流社團</a></p>
+
+            <h2 class="text-content-h2" id="Instagram帳號" data-title="h2">Instagram 帳號</h2>
+            <p><a href="https://www.instagram.com/ppt.note/" class="text-content-link-btn">ppt.note</a></p>
+
+            <h2 class="text-content-h2" id="線上課程" data-title="h2">線上課程</h2>
+            <p><a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">商業簡報設計與應用課｜晉升主管必備的28種職場簡報術</a></p>
+            <p><a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">PPT 動畫課｜動態簡報輕鬆上手</a></p>
+            <p><a href="https://www.yottau.com.tw/course/intro/1152#intro" class="text-content-link-btn">Keynote 全攻略：零基礎做出超吸睛簡報！</a></p>
             <p>有些文章和技巧，都神奇到甚至覺得大神用的 PPT 跟我用的好像不一樣XD</p>
             <p>希望這樣的整理，能幫你節省一些製作簡報的時間～</p>
             <p>一起向厲害的人學習！</p>`,
@@ -697,11 +703,13 @@ let newestData2 = [];
 let pageName = '';
 let sortType = 'timeSort';
 let blogItem = [];
+let pageItem = [];
 let blogId='';
 
 //預設渲染畫面
 function init(){
     setDataId(); //將資料綁定id 根據時間
+    localStorage.setItem('allData',JSON.stringify(data));
     autoRenderByPage();
     renderBlogContent();
 }
@@ -753,6 +761,7 @@ function renderContentList(){
     }else{
         console.log( sortType,'hot');
     };
+    updatePageDataLocalStorage();
     if(contentList.dataset.listType==='newestData'){
         console.log(pageData);
         const thoughtsList = document.querySelector('.js-data-list');
@@ -910,6 +919,7 @@ function getPageData(contentList){
         pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '學習思考'))] === '學習思考');
         break;
      }
+     updatePageDataLocalStorage();
 
 }
 //renderCards
@@ -1133,12 +1143,19 @@ function getBlogContentId(e){
            blogItem.push(item);
        };   
    });
-   localStorage.setItem('blogContent',JSON.stringify(blogItem));
-   localStorage.setItem('pageName',JSON.stringify(pageName));
-   localStorage.setItem('pageData',JSON.stringify(pageData));
+   updateBlogLocalStorage();
 
     loadToPage();
 
+}
+
+function updateBlogLocalStorage(){
+    localStorage.setItem('blogContent',JSON.stringify(blogItem));
+    localStorage.setItem('pageName',JSON.stringify(pageName));
+}
+
+function updatePageDataLocalStorage(){
+    localStorage.setItem('pageData',JSON.stringify(pageData));
 }
 
 function loadToPage(){
@@ -1154,11 +1171,15 @@ function loadToPage(){
 function renderBlogContent (){
 
     if(document.querySelector('.js-blog-content')){
-        blogItem = JSON.parse(localStorage.getItem('blogContent'));
-        pageName = JSON.parse(localStorage.getItem('pageName'));
-        pageItem = JSON.parse(localStorage.getItem('pageItem'));
+        renderInnerContent();
+};
+}
 
-    console.log(blogItem,pageName,pageItem);
+function renderInnerContent(){
+    blogItem = JSON.parse(localStorage.getItem('blogContent'));
+    pageName = JSON.parse(localStorage.getItem('pageName'));
+    pageItem = JSON.parse(localStorage.getItem('pageData'));
+    let allData = JSON.parse(localStorage.getItem('allData'));
 
     let title = blogItem[0].title;
     let subtitle = blogItem[0].blogContent.subtitle;
@@ -1166,6 +1187,16 @@ function renderBlogContent (){
     let content = blogItem[0].blogContent.content;
     let tags = blogItem[0].blogContent.tags;
 
+    let recommendAry1=[];
+    let recommendAry2=[];
+    recommendAry1.push(pageItem[0],pageItem[1],pageItem[2]);
+    recommendAry2.push(pageItem[3],pageItem[4],pageItem[5]);
+
+    let hotPosts = [];
+    let newPosts = [];
+    hotPosts.push(allData[0],allData[1],allData[2],allData[3],allData[4]);
+
+    newPosts.push(pageItem[0],pageItem[1],pageItem[2],pageItem[3],pageItem[4]);
 
     const blogTitleBox = document.querySelector('[data-type="title"]');
     const blogTitle = document.querySelector('[data-blog="title"]');
@@ -1175,7 +1206,10 @@ function renderBlogContent (){
     const blogFooter = document.querySelector('[data-blog="footer"]');
     const blogFooterTags = document.querySelector('[data-blog="tags"]');
     const recommendTitle = document.querySelector('[data-blog="recommendTitle"]');
-
+    const recommendContentLists = document.querySelectorAll('#carouselRecommendedArea [data-blog]');
+    const blogHotPosts = document.querySelector('[data-blog="hotPosts"]');
+    const blogNewPosts = document.querySelector('[data-blog="newPosts"]');
+    const blogTableContent = document.querySelector('[data-blog="tableContent"]');
     blogTitle.textContent=title;
 
     if(subtitle.length !==0){
@@ -1201,11 +1235,106 @@ function renderBlogContent (){
     };
 
     recommendTitle.textContent = `「${getPageName(pageName) || blogItem[0].type}」`;
-    };
+   
+    recommendContentLists[0].innerHTML = renderRecommend(recommendAry1);
+    recommendContentLists[1].innerHTML = renderRecommend(recommendAry2);
 
+    if(hotPosts.length !== 0){
+        let str = ''
+        hotPosts.forEach(item=>{
+            let content = `
+            <li class="mb-2">
+            <a href="${item.url}" class="link-secondary"
+              >${item.title}
+            </a>
+          </li>
+            `;
+            str += content;
+        })
+        blogHotPosts.innerHTML = str;
+    };
+    if(newPosts.length !== 0){
+        let str = ''
+        newPosts.forEach(item=>{
+            let content = `
+            <li class="mb-2">
+            <a href="${item.url}" class="link-secondary"
+              >${item.title}
+            </a>
+          </li>
+            `;
+            str += content;
+        })
+        blogNewPosts.innerHTML = str;
+    };
+        if(blogContent.querySelectorAll('[data-title]')){
+
+            let tableTitles = blogContent.querySelectorAll('[data-title]');
+            let str ='';
+            let h2Num = 0;
+            let h3Num = 0;
+            let h4Num = 0;
+            let h5Num = 0;
+
+ 
+            tableTitles.forEach(item => {
+                switch(item.dataset.title){
+                    case'h2':
+                    h2Num++
+                    break;
+                    case'h3':
+                    h3Num++
+                    break;
+                    case'h4':
+                    h4Num++
+                    break;
+                    case'h5':
+                    h5Num++
+                    break;
+                }
+                let titles = `
+                <li class="table-content table-content-${item.nodeName.toLocaleLowerCase()}">
+                    <a href="#${item.id}"
+                    >${h2Num}${h3Num ? '.' : ''}${h3Num ? h3Num : ''}${h3Num? '.' : ''}${h4Num ? h4Num : ''} ${item.textContent}
+                    </a>
+                </li>
+                `;
+                str += titles;
+            })
+            blogTableContent.innerHTML = str;
+        }
 
 }
 
+function renderRecommend(input){
+    let str = '';
+    input.forEach(item => {
+        let content = `
+        <li class="col-md-4 mb-5 mb-md-0">
+            <div class="card content-card h-100">
+            <a href="blogContent.html" class="d-block">
+                <img
+                src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
+                alt="card img"
+                class="card-img-top content-card-img-top  content-card-img-top-sm"
+                />
+            </a>
+            <div class="py-3 px-5 h-100">
+                <h3 class="fs-8 text-primary fw-bold hide-row-2 mb-2">
+                ${item.title}
+                </h3>
+                <p class="text-secondary hide-row-2">
+                ${item.description}
+                </p>
+            </div>
+            </div>
+        </li>
+        `;
+
+        str += content;
+    })
+    return str;
+}
 
 function getPageName(pageName){
     switch(pageName){
