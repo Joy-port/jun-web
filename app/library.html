@@ -588,7 +588,7 @@ type: catagoryList
           class="carousel slide w-100 w-md-80 h-100 my-auto"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
+          <div class="carousel-indicators js-carousel-button">
             <button
               type="button"
               data-bs-target="#carouselExampleDark"
@@ -610,7 +610,7 @@ type: catagoryList
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner w-100 h-100 position-relative">
+          <div class="carousel-inner w-100 h-100 position-relative js-carousel-itemList">
             <!-- close btn mobile -->
             <div
               class="
@@ -631,7 +631,8 @@ type: catagoryList
                 aria-label="Close"
               ></button>
             </div>
-            <div class="carousel-item ratio ratio-1x1 active" data-bs-interval="1000">
+            <!-- data-bs-interval="1000" 用來計算auto slide duration -->
+            <div class="carousel-item ratio ratio-1x1 active js-carousel-img-1" data-bs-interval="1000">
               <img
                 src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
                 alt="post img"
@@ -709,28 +710,16 @@ type: catagoryList
             <!-- 內文區 -->
             <div class="">
               <!-- 主要文字內容 -->
-              <p class="text-black mb-5">
+              <div class="text-black mb-5 ig-text-content">
                 <!-- 這邊不要改 -->
-                <span class="fw-md me-3">junlearning</span>
                 <!-- 從此處輸入內文 用 <br> (br + tab) 換行-->
-                Lorem ipsum dolor sit amet consectetur adipisic<br />ing elit.
-                Libero, debitis. Amet <br />consequ<br />atur <br />soluta dicta
-                voluptatum <br />
-                eum quos minus odit voluptate molestiae voluptates alias fu<br />ga,
-                consectetur laboriosam dolores corrup<br />ti exercitatione<br />m
-                error ipsa beatae. Te<br />mporibus voluptatibus porro delect<br />us
-                mollitia tempora illum<br />
-                ex illo dolores reprehenderit facilis<br />
-                iusto accusa<br />mus consectetur nihil aliquam sap<br />iente,
-                ullam re<br />m fugit exercitation<br />m cupiditate. Placeat
-                o<br />fficiis itaque <br />mollitia. Voluptatem facilis
-                maiore<br />s dolorum dolor molestiae <br />iusto inventore ex,
-                amet impedit voluptate sa<br />epe quo tenetur<br />
-                iste laborum vel <br />error? Autem ipsum fugiat neque nesciunt
-                reprehenderit quod esse. Nam b<br />eatae perferendis unde,
-                dicta minus<br />
-                earum eos, alias quos laborum, <br />eaque autem.
-              </p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, suscipit?</span>
+                <p>Obcaecati eum totam ea facilis ad minus id dolorem natus!</p>
+                <p>Aut, suscipit dicta? Accusantium cum accusamus illo, expedita animi distinctio!</p>
+                <p>Vitae in quia vel quasi asperiores facere sequi omnis cum.</p>
+                <p>Hic doloremque possimus non expedita eaque labore nulla quisquam sit.</p>
+                <p>Nihil earum consequatur dicta voluptates commodi dignissimos soluta veritatis suscipit!</p>
+              </div>
               <!-- 這邊放上相關分類標籤 -->
               <div class="ig-content-tag">
                 <a href="#" data-tag-type="ig" data-tag-name="職涯思考"
@@ -743,10 +732,10 @@ type: catagoryList
                   >習慣養成</a
                 >
               </div>
-              <p class="fs-9 text-gray-500 fw-md mb-3">9 天前</p>
+              <p class="fs-9 text-gray-500 fw-md mb-3 js-ig-time">9 天前</p>
             </div>
           </div>
-          <div class="d-none p-5 d-flex justify-content-between">
+          <!-- <div class="d-none p-5 d-flex justify-content-between">
             <ul class="d-flex align-items-center gap-3">
               <li>
                 <a href="#" class="material-icons-outlined fs-4 pb-1">
@@ -765,7 +754,7 @@ type: catagoryList
             <a href="#" class="material-icons-outlined fs-4">
               bookmark_border
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -11,11 +11,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "色票、配色網站",
@@ -29,11 +24,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "UI/UX 設計參考網站",
@@ -119,11 +109,6 @@ let data =[
                 url: 'searchLink.html'
             }]
         },
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "簡報設計學習資源",
@@ -179,11 +164,6 @@ let data =[
             }]
 
         },
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "資料視覺化／資訊圖表參考與製作網站",
@@ -197,11 +177,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "線上課程、免費資源整理",
@@ -215,11 +190,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "Notion 筆記軟體教學資源",
@@ -233,13 +203,7 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
-    
     {
         title: "Notion+ 標記管理器，快速匯出筆記重點",
         description: "在找跟 Notion 相關的 chrome 擴充功能時，意外發現這款很特別的標記工具，可以截取你用顏色畫重點的文字和區塊，書籍重點摘要、課程重點回顧、文章重點整理通通可以快速匯出！以下是功能的簡單介紹和運用情境舉例，分享給大家～",
@@ -252,13 +216,7 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
-    
     {
         title: "看影片要怎麼學英文？",
         description: "你也覺得學英文很無聊，很沒有動力嗎？來看看我是怎麼透過影片學英文吧！",
@@ -271,13 +229,7 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
-    
     {
         title: "｜雅思讀書計畫｜書籍推薦｜",
         description: "準備雅思，我第一個想到的事情是買參考書，但我發現這只是一個「做好準備的假象」，買了書但沒有讀書計畫也沒辦法開始準備。要考雅思必須一步一步，從訂定適合自己的讀書計畫開始。想自學考雅思，跟著這 7 個步驟來準備吧～",
@@ -290,13 +242,7 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
-    
     {
         title: "｜實用網站｜推薦書單｜考試報名資訊｜放榜資訊｜",
         description: "準備建築師考試，大部分的人會直接選擇報名補習班（如實力、九華……），省下整理考試內容的時間，但費用也不便宜。文章整理了實用的網站和推薦書籍，讓你不靠補習班也能省下時間省下錢。",
@@ -309,13 +255,7 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
-    
     {
         title: "台灣建築書店有哪些",
         description: "博客來的「藝術設計類」>>「建築」怎麼那麼少書？每次去書店尋找「建築」類都找不到你要的書？那是因為你找錯地方了！要找建築的書就要去「建築書店」！來看看以下這幾間書店吧！",
@@ -328,13 +268,7 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
-    
     {
         title: "2020 建築畢業設計展，全台各校展期彙整",
         description: "又到了建築系畢業展覽的季節，以下整理各校建築系的總評、展覽日期及地點。實踐、中原、文化、高大、大葉、朝陽、中華、銘傳、中國科大、成大、台科、逢甲、北科、金大、聯合、淡江、東海",
@@ -347,11 +281,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "30 個優質建築新聞網站",
@@ -365,11 +294,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "6 個聊建築、聊設計的 Podcast",
@@ -383,11 +307,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "建築相關活動的 11 個資訊來源",
@@ -401,11 +320,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "2021 建築畢業設計展，全台各校展期彙整",
@@ -419,11 +333,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
         
     },
     {
@@ -435,11 +344,6 @@ let data =[
         tagsByTheme:["建築資源","建築師考試"],
         tagsByContent:"心智圖",
         linkUrl:"https://junlearning.ck.page/lawnotes",
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "轉捩點不是單一個重要的事件，而是一段時間的轉變",
@@ -453,11 +357,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "心智圖也能拿來探索職涯",
@@ -471,11 +370,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "錢要花在刀口上，那買什麼才算是高效益的？",
@@ -489,11 +383,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "關於口語表達，有些答案不必向外求",
@@ -507,11 +396,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "關於寫作，應該要先學還是先寫？",
@@ -525,11 +409,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "忘形流，是架構重要還是心法重要？",
@@ -543,11 +422,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "思維框架怎麼學？",
@@ -561,11 +435,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "從《機智醫生生活》看想成為的大人",
@@ -579,11 +448,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《B型選擇》你永遠都有選擇",
@@ -597,11 +461,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《設計生意經》會做設計，還不足以讓你養活自己！",
@@ -615,11 +474,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《精準成長》",
@@ -633,11 +487,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《清單革命》",
@@ -651,11 +500,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《最高學習法》",
@@ -669,11 +513,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
@@ -687,11 +526,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "怎麼達到工作與生活的平衡？",
@@ -705,11 +539,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
@@ -723,11 +552,6 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
         title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
@@ -741,28 +565,25 @@ let data =[
         blogContent:[{
 
         }],
-        igContent:{
-            imgUrl:[],
-            textContent:[],
-            tagsName:[]
-        }
     },
     {
-        title: "-書籍- 商業模式 是什麽 《商業模式全史一創世紀篇》",
-        description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？﻿",
+        title: "-書籍- 商業模式是什麽 《商業模式全史一創世紀篇》",
+        description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢",
         type:["好書推薦"],
         time: '2020-05-05',
         imgUrl:"",
-        tagsByTheme:["投資理財","提問"],
-        tagsByContent:"文章",
+        tagsByTheme:["投資理財","提問","商業筆記"],
+        tagsByContent:"IG 貼文",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
         igContent:{
-            imgUrl:['https://instagram.ftpe7-4.fna.fbcdn.net/v/t51.2885-15/e35/95482051_486411535442623_4567707100492500243_n.jpg?_nc_ht=instagram.ftpe7-4.fna.fbcdn.net&_nc_cat=107&_nc_ohc=V7WIPH8ubycAX_CTGFu&edm=AABBvjUBAAAA&ccb=7-4&oh=1bac472fc5f0b4ce98e3b3ffc3496c0f&oe=61AB861D&_nc_sid=83d603','https://instagram.ftpe7-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/95525966_873205223196998_1813022107166397510_n.jpg?_nc_ht=instagram.ftpe7-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=kHRVKD_IhhIAX_k3vsA&tn=9K9NUlmWM7HI7bgK&edm=AABBvjUBAAAA&ccb=7-4&oh=0d1cfc47dd1eacadd7535bc7f5342248&oe=61AB38BB&_nc_sid=83d603','https://instagram.ftpe7-2.fna.fbcdn.net/v/t51.2885-15/e35/95550000_267794181292449_3793291122758222696_n.jpg?_nc_ht=instagram.ftpe7-2.fna.fbcdn.net&_nc_cat=109&_nc_ohc=GgnG6ZUeGzwAX_kQVZM&edm=AABBvjUBAAAA&ccb=7-4&oh=b00a3d6f1191dddadd5426ea297023d2&oe=61AB272F&_nc_sid=83d603','https://instagram.ftpe7-4.fna.fbcdn.net/v/t51.2885-15/e35/95361732_800846267108307_7726218822320259619_n.jpg?_nc_ht=instagram.ftpe7-4.fna.fbcdn.net&_nc_cat=103&_nc_ohc=phxstaJxRwIAX8ZYFpQ&edm=AABBvjUBAAAA&ccb=7-4&oh=a3417cc690de6c4061b9698db21749fb&oe=61AAD764&_nc_sid=83d603',],
-            textContent:[],
-            tagsName:[]
+            imgUrl:['https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60','https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80','https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80','https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',],
+            textContent:`<span>商業模式是什麼？</span>
+            <p>「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？</p>
+            <p>商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式。</p>
+            <p>以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！</p>
+            <p class="ig-content-tag"><a href="#">J本好書看起來</a></p>`,
+            tagsName:['商業','商業模式','企業經營','策略', '架構', '目標', '價值', '創造', '能力','資源','網路','獲利','獲利模式','閱讀筆記']
         }
     }
 ];
@@ -776,6 +597,7 @@ let sortType = 'timeSort';
 let blogItem = [];
 let pageItem = [];
 let blogId='';
+let IgItem ={};
 
 //預設渲染畫面
 function init(){
@@ -783,6 +605,7 @@ function init(){
     localStorage.setItem('allData',JSON.stringify(data));
     autoRenderByPage();
     renderBlogContent();
+    renderLibraryModal();
 }
 
 init();
@@ -872,9 +695,8 @@ function updateContentList(inputData){
 //渲染tags 標籤＋disable 效果 + 綁監聽
 function renderTagsList(){
     const theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
-    const content = document.querySelector('.js-tags-list[data-tags-type="content"]');
     theme.addEventListener('change', checkboxSelected);
-    content.addEventListener('change', checkboxSelected);
+
 
     //更新theme 標籤 disabled 樣式
     theme.querySelectorAll('li input').forEach(inputItem =>{
@@ -900,6 +722,11 @@ function renderTagsList(){
         });
     })
 
+    if(document.querySelector('.js-tags-list[data-tags-type="content"]')){
+        const content = document.querySelector('.js-tags-list[data-tags-type="content"]');
+        content.addEventListener('change', checkboxSelected);
+    
+
     //更新content 標籤 disabled 樣式
     content.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.setAttribute('disabled', '')
@@ -920,6 +747,7 @@ function renderTagsList(){
             };
         });
     })
+    };
 }
 function refreshThemeTagsList(){
     const theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
@@ -1006,7 +834,8 @@ function renderCardsList(pageData){
     return str ;
 }
 
-//normal content Card list
+//normal content Card list 
+//要加上ig 效果
 function normalCardList(pageData){
     let str ='';
     pageData.forEach(item =>{
@@ -1031,34 +860,63 @@ function normalCardList(pageData){
 function libraryCardList(pageData) {
     let str = '';
     pageData.forEach(item =>{
-        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
-        <div class="card content-card h-100">
-          <!-- 用來開啟modal 內的carousel -->
-          <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
-          <a
-            href="${item.linkUrl} ${item.tagsByContent === '文章'? 'js-blog-link':''}"
-            data-id="${item.id}"
-            class="d-block"
-            data-bs-toggle="modal"
-            data-bs-target="#libraryContentModal"
-          >
-            <img
-              src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
-              alt="card img"
-              class="card-img-top content-card-img-top card-inside-img"
-            />
-          </a>
-          <div class="py-3 px-5 h-100">
-            <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
-            ${item.title}
-            </h3>
-            <p class="text-secondary hide-row-2">
-            ${item.description}
-            </p>
-          </div>
-        </div>
-      </li>`;
-      str += content;
+        let content='';
+        if(item.tagsByContent==='文章'){
+             content = `<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
+            <div class="card content-card h-100">
+              <a
+                href="${item.linkUrl}"
+                data-id="${item.id}"
+                class="d-block js-blog-link"
+              >
+                <img
+                  src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
+                  alt="card img"
+                  class="card-img-top content-card-img-top card-inside-img"
+                />
+              </a>
+              <div class="py-3 px-5 h-100">
+                <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
+                ${item.title}
+                </h3>
+                <p class="text-secondary hide-row-2">
+                ${item.description}
+                </p>
+              </div>
+            </div>
+          </li>
+            `;
+        }else{
+            //開啟 modal 的ig 文章
+            content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
+            <div class="card content-card h-100">
+              <a
+                href="#libraryContentModal"
+                data-id="${item.id}"
+                class="d-block"
+                data-bs-toggle="modal"
+                data-bs-target="#libraryContentModal"
+              >
+                <img
+                  src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
+                  alt="card img"
+                  class="card-img-top content-card-img-top card-inside-img"
+                />
+              </a>
+              <div class="py-3 px-5 h-100">
+                <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
+                ${item.title}
+                </h3>
+                <p class="text-secondary hide-row-2">
+                ${item.description}
+                </p>
+              </div>
+            </div>
+          </li>`;
+          
+        }
+        str += content;
+
     });
 
     return str ;
@@ -1207,10 +1065,14 @@ function refreshContent(e){
 //得到點擊文章的id
 function getBlogContentId(e){
     e.preventDefault();
+    if(pageData.length === 0){
+        pageData = data;
+    };
     if(blogItem.length !== 0){
         blogItem.splice(0,1);
         localStorage.removeItem(blogContent);
     };
+    
     pageData.forEach(item =>{
         if(parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)){
             blogItem.push(item);
@@ -1218,7 +1080,7 @@ function getBlogContentId(e){
         };
     });
 
-   updateBlogLocalStorage();
+    updateBlogLocalStorage();
 
     loadToPage();
 }
@@ -1243,7 +1105,6 @@ function loadToPage(){
 
 
 function renderBlogContent (){
-
     if(document.querySelector('.js-blog-content')){
         renderInnerContent();
 };
@@ -1314,6 +1175,7 @@ function renderInnerContent(){
    
     recommendContentLists[0].innerHTML = renderRecommend(recommendAry1);
     recommendContentLists[1].innerHTML = renderRecommend(recommendAry2);
+    
 
     if(hotPosts.length !== 0){
         let str = ''
@@ -1343,62 +1205,66 @@ function renderInnerContent(){
         })
         blogNewPosts.innerHTML = str;
     };
-        if(blogContent.querySelectorAll('[data-title]')){
+    if(blogContent.querySelectorAll('[data-title]')){
 
-            let tableTitles = blogContent.querySelectorAll('[data-title]');
-            let str ='';
-            let h1Num = 0;
-            let h2Num = 0;
-            let h3Num = 0;
-            let h4Num = 0;
-            let h5Num = 0;
-            let h1End = null;
-            let h2End = null;
-            let h3End = null;
-            let h4End = null;
-            let h5End = null;
+        let tableTitles = blogContent.querySelectorAll('[data-title]');
+        let str ='';
+        let h1Num = 0;
+        let h2Num = 0;
+        let h3Num = 0;
+        let h4Num = 0;
+        let h5Num = 0;
 
- 
-            tableTitles.forEach((item,index) => {
-                switch(item.dataset.title){
-                    case'h1':
-                    h1Num++
-                    h1End = h1Num;
-                    break;
-                    case'h2':
-                    h2Num++
-                    h2End = h2Num;
-                    break;
-                    case'h3':
-                    h3Num++
-                    h3End = h3Num;
-                    break;
-                    case'h4':
-                    h4Num++
-                    h4End = h4Num;
-                    break;
-                    case'h5':
-                    h5Num++
-                    h5End = h5Num;
-                    break;
-                }
+        tableTitles.forEach(item => {
+            switch(item.dataset.title){
+                case'h1':
+                h1Num++
+                h2Num=sortNumberList(h2Num)
+                h3Num=sortNumberList(h3Num)
+                h4Num=sortNumberList(h4Num)
+                h5Num=sortNumberList(h5Num)
+                break;
+                case'h2':
+                h2Num++
+                h3Num=sortNumberList(h3Num)
+                h4Num=sortNumberList(h4Num)
+                h5Num=sortNumberList(h5Num)
+                break;
+                case'h3':
+                h3Num++
+                h4Num=sortNumberList(h4Num)
+                h5Num=sortNumberList(h5Num)
+                break;
+                case'h4':
+                h4Num++
+                h5Num=sortNumberList(h5Num)
+                break;
+                case'h5':
+                h5Num++
+                break;
+            }
 
-                
-                console.log(h1End,h2End,h3End,h4End,h5End);
+            let titles = `
+            <li class="table-content table-content-${item.nodeName.toLocaleLowerCase()}">
+                <a href="#${item.id}"
+                >${h1Num? h1Num : ''}${h1Num? '.' : ''}${h2Num? h2Num : ''}${h2Num? '.' : ''}${h3Num ? '.' : ''}${h3Num ? h3Num : ''}${h3Num? '.' : ''}${h4Num ? h4Num : ''} ${item.textContent}
+                </a>
+            </li>
+            `;
+            str += titles;
+        });
+        blogTableContent.innerHTML = str;
+    };
+    
+    addBlogLink();
 
-                let titles = `
-                <li class="table-content table-content-${item.nodeName.toLocaleLowerCase()}">
-                    <a href="#${item.id}"
-                    >${h1Num? h1Num : ''}${h1Num? '.' : ''}${h2Num? h2Num : ''}${h3Num ? '.' : ''}${h3Num ? h3Num : ''}${h3Num? '.' : ''}${h4Num ? h4Num : ''} ${item.textContent}
-                    </a>
-                </li>
-                `;
-                str += titles;
-            })
-            console.log(h1Num,h2Num,h3Num,h4Num,h5Num);
-            blogTableContent.innerHTML = str;
-        }
+}
 
+function sortNumberList(a){
+    if(a!==0){
+        a-=a;
+    }
+    return a
 }
 
 function renderRecommend(input){
@@ -1407,7 +1273,7 @@ function renderRecommend(input){
         let content = `
         <li class="col-md-4 mb-5 mb-md-0">
             <div class="card content-card h-100">
-            <a href="blogContent.html" class="d-block">
+            <a href="blogContent.html" class="d-block js-blog-link" data-id="${item.id}">
                 <img
                 src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
                 alt="card img"
@@ -1456,3 +1322,113 @@ function getPageName(pageName){
         break;
     }
 }
+
+function addBlogLink(){
+    //監聽按鈕用來開啟頁面內容
+    if(document.querySelector('.js-blog-link')){
+        const blogLinks = document.querySelectorAll('.js-blog-link');
+        blogLinks.forEach(item => item.addEventListener('click',getBlogContentId));
+     }
+}
+
+//ig 模式
+function renderLibraryModal(){
+    if(document.querySelector('[data-bs-target]')){
+       document.querySelectorAll('[data-bs-target="#libraryContentModal"]').forEach(item=>{
+           item.addEventListener('mouseover', renderModalContent);
+       })
+    }
+}
+
+function renderModalContent(e){
+    let clickId = e.target.closest('a').dataset.id;
+
+    pageData.forEach(item =>{
+        if(parseInt(item.id) === parseInt(clickId)){
+            IgItem = item;
+        };
+    });
+
+    const imgButton = document.querySelector('.js-carousel-button');
+    const imgContent = document.querySelector('.js-carousel-itemList');
+    const textContent = document.querySelector('.ig-text-content');
+    const tagsContent = document.querySelector('.ig-content-tag');
+    const createdTime = document.querySelector('.js-ig-time');
+    
+   
+    imgButton.innerHTML = renderModalButton(IgItem.igContent.imgUrl);
+    imgContent.innerHTML = renderModalImg(IgItem.igContent.imgUrl);
+    textContent.innerHTML = IgItem.igContent.textContent;
+    tagsContent.innerHTML = renderTags(IgItem.igContent.tagsName);
+    createdTime.textContent = regTime(IgItem.time);
+}
+
+function renderModalButton(inputData){
+    let str = `<button
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide-to="0"
+    class="active"
+    aria-current="true"
+    aria-label="Slide 1"
+  ></button>`;
+
+  inputData.shift();
+  inputData.forEach((item,index) =>{
+        let content = `  <button
+        type="button"
+        imgUrl ="${item}"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="${index+1}"
+        aria-label="Slide ${index+2}"
+        ></button>`;
+
+       str+=content;
+    })
+    return str ;
+}
+function renderModalImg(inputData){
+    let str = `<div
+    class="
+      d-block d-md-none
+      text-end
+      mt-5
+      pe-5
+      position-fixed
+      top-0
+      end-0
+    "
+    style="z-index: 2001"
+  >
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+  </div>`;
+
+  let num = 0;
+//   let total = inputData.length;
+  
+  inputData.forEach((item,index) =>{
+    num++;
+    let content = `<div class="carousel-item ratio ratio-1x1 ${num === 1 ? 'active': ''}" >
+    <img src="${item}" alt="post img"
+      class="card-inside-img"/></div>`;
+    str+= content;
+  })
+  return str;
+}
+function renderTags(inputData){
+    let str = '';
+    inputData.forEach(item =>{
+        let content = `<a href="#" data-tag-type="ig" data-tag-name="${item}"
+        >${item}</a>`;
+        str += content ;
+    });
+
+    return str ;
+}
+
+//搜尋頁面功能

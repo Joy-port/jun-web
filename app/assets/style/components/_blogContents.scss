@@ -186,13 +186,28 @@
         margin-bottom: 1rem;
         &>a{
             color: $info;
+            margin-right: 0.25rem;
             &:hover{
                 color: $black;
             }
             &::before{
                 content:'#';
-                margin-right: 2px;
+                margin-right: 1.5px;
             }
         }
+    }
+}
+
+.ig-text-content{
+    &:first-child::before{
+        content:'junlearning';
+        display: inline-block;
+        font-weight: 500;
+        margin-right: 12px;
+        margin-bottom: 1rem;
+    }
+
+    &>p{
+        margin-bottom: 1rem;
     }
 }
