@@ -44,9 +44,81 @@ let data =[
         tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
+        blogContent:{
+            subtitle:'沒靈感？做不出好設計？',
+            content:`
+            <p>針對 UI/UX 設計，這些網站有很豐富的設計作品，能培養你的美感，也能幫助你在沒有想法的時候帶給你一些靈感。</p>
+            <p>對於想自學的人，多看好作品也能讓你有更高的設計敏感度。沒事就來逛逛資料庫、尋找好設計吧！</p>
+            <h1 class="text-content-h1" data-title="h1" id="「UI/UX 設計」是什麼？">「UI/UX 設計」是什麼？</h1>
+            <h2 class="text-content-h2" data-title="h2" id="UI：UserInterface">UI：User Interface</h2>
+            <p>
+              >> <a href="https://zh.wikipedia.org/zh-tw/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2">使用者介面</a><br>
+              設計專注在「產品怎麼呈現」，設計每一個網頁或畫面。
+            </p>
+            <h2 class="text-content-h2" data-title="h2" id="UX：User Experience">UX：User Experience</h2>
+            <p>
+              >> <a href="https://zh.wikipedia.org/wiki/%E4%BD%BF%E7%94%A8%E8%80%85%E7%B6%93%E9%A9%97">用戶體驗</a><br>
+              設計專注在「產品用起來的感覺」，提供使用者入門的流程和最舒適的使用經驗。
+            </p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="找靈感">找靈感</h1>
+            
+            <h2 class="text-content-h2" data-title="h2" id="手機">手機</h2>
+            <p><a href="https://www.uplabs.com/" class="text-content-link-btn">up labs</a></p>
+            <p><a href="https://mobbin.design/" class="text-content-link-btn">Mobbin</a></p>
+            <p><a href="https://www.mobile-patterns.com/" class="text-content-link-btn">Mobile Patterns</a></p>
 
-        }],
+            <h2 class="text-content-h2" data-title="h2" id="網頁">網頁</h2>
+            <p><a href="https://ecomm.design/" class="text-content-link-btn">ecomm.design</a></p>
+            <p><a href="https://homejaws.com/?fbclid=IwAR2w01iQg3Jpst1RQhBvr2Qarx0ipRSMWgMbTwiTLwL_QK33aDlW-4gngt0" class="text-content-link-btn">Awesome Design Website Gallery</a></p>
+            <p><a href="https://land-book.com/" class="text-content-link-btn">Land-book</a></p>
+            <p><a href="https://www.siteinspire.com/" class="text-content-link-btn">site inspire</a></p>
+            <p><a href="http://patterntap.com/patterntap" class="text-content-link-btn">PatternTap</a></p>
+            <p><a href="https://niice.co/showcase" class="text-content-link-btn">Nlice</a></p>
+
+            <h2 class="text-content-h2" data-title="h2" id="綜合">綜合</h2>
+           <p> <a href="https://www.awwwards.com/" class="text-content-link-btn">awwwards</a></p>
+            <p><a href="https://uimovement.com/tag/article/" class="text-content-link-btn">UI movement</a></p>
+            <p><a href="https://collectui.com/" class="text-content-link-btn">Collect UI</a></p>
+            <p><a href="https://www.lapa.ninja/" class="text-content-link-btn">lapa</a></p>
+            <p><a href="https://uigarage.net/" class="text-content-link-btn">UI Garage</a></p>
+            <p><a href="https://pttrns.com/" class="text-content-link-btn">pttrns（ iPhone, iPad, Apple Watch, Android ）</a></p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="找素材">找素材</h1>
+            <p><a href="https://junlearning.com/icon-website/">Icons</a></p>
+            <p><a href="https://junlearning.com/color-website/">Colors</a></p>
+
+            <h3 class="text-content-h3">Neede Design Resources</h3>
+            <p> <a href="https://neede.co/#/UI-Design" class="text-content-link-btn">UI Design</a></p>
+            <p>Design templates, sketch resources and component libraries.</p>
+            
+            <p><a href="" class="text-content-link-btn">UX Design</a></p>
+            <p>Articles on UX best practices and tools for user testing.</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="找教學">找教學</h1>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/as-a-product-designer.jpg?resize=1536%2C726&ssl=1" alt="img" class="img-fluid">
+            <p>除了要多看好作品，有系統的 UI/UX 學習也是很重要的～</p>
+            <p><a href="https://www.uilearn.com/" class="text-content-link-btn">UI LEARN</a></p>
+            <p><a href="https://productdesign.tips/" class="text-content-link-btn">Product.design.tips</a></p>
+            <p><a href="https://designshack.net/" class="text-content-link-btn">Design Shack</a></p>
+            <p><a href="https://beautifulpixels.com/" class="text-content-link-btn">Beautiful Pixels</a></p>
+            <p><a href="https://ui-patterns.com/" class="text-content-link-btn">UI-Patterns</a></p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="找文章">找文章</h1>
+                <p> <a href="https://medium.com/as-a-product-designer" class="text-content-link-btn" >
+                AAPD—As A Product Designer <br>
+                UI/UX設計、設計資源、學習成長
+                </a></p>
+                <p> <a href="https://medium.com/@wayne.chengweilin" class="text-content-link-btn">Medium｜Wayne互聯網野蠻成長UX設計師</a></p>
+            `,
+            tags:[{
+                name:'資源整理',
+                url: 'infoMap.html'
+            },{
+                name:'設計',
+                url: 'searchLink.html'
+            }]
+        },
         igContent:{
             imgUrl:[],
             textContent:[],
@@ -63,7 +135,6 @@ let data =[
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
         blogContent:{
-            title:'簡報設計學習資源',
             subtitle:'',
             content:`
             <p>在製作簡報時，素材網站可以節省很多時間，救急的時候能幫上一些忙。</p>
@@ -1131,22 +1202,25 @@ function refreshContent(e){
 
 //render modal body content for every page//暫時無法實現需要一個個加入
 
+//無法更新ＱＱ
 //文章也是
 //得到點擊文章的id
 function getBlogContentId(e){
     e.preventDefault();
     if(blogItem.length !== 0){
         blogItem.splice(0,1);
-    }
+        localStorage.removeItem(blogContent);
+    };
     pageData.forEach(item =>{
-       if(parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)){
-           blogItem.push(item);
-       };   
-   });
+        if(parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)){
+            blogItem.push(item);
+            console.log(item);
+        };
+    });
+
    updateBlogLocalStorage();
 
     loadToPage();
-
 }
 
 function updateBlogLocalStorage(){
@@ -1180,6 +1254,8 @@ function renderInnerContent(){
     pageName = JSON.parse(localStorage.getItem('pageName'));
     pageItem = JSON.parse(localStorage.getItem('pageData'));
     let allData = JSON.parse(localStorage.getItem('allData'));
+
+    console.log(blogItem,pageName);
 
     let title = blogItem[0].title;
     let subtitle = blogItem[0].blogContent.subtitle;
@@ -1271,36 +1347,55 @@ function renderInnerContent(){
 
             let tableTitles = blogContent.querySelectorAll('[data-title]');
             let str ='';
+            let h1Num = 0;
             let h2Num = 0;
             let h3Num = 0;
             let h4Num = 0;
             let h5Num = 0;
+            let h1End = null;
+            let h2End = null;
+            let h3End = null;
+            let h4End = null;
+            let h5End = null;
 
  
-            tableTitles.forEach(item => {
+            tableTitles.forEach((item,index) => {
                 switch(item.dataset.title){
+                    case'h1':
+                    h1Num++
+                    h1End = h1Num;
+                    break;
                     case'h2':
                     h2Num++
+                    h2End = h2Num;
                     break;
                     case'h3':
                     h3Num++
+                    h3End = h3Num;
                     break;
                     case'h4':
                     h4Num++
+                    h4End = h4Num;
                     break;
                     case'h5':
                     h5Num++
+                    h5End = h5Num;
                     break;
                 }
+
+                
+                console.log(h1End,h2End,h3End,h4End,h5End);
+
                 let titles = `
                 <li class="table-content table-content-${item.nodeName.toLocaleLowerCase()}">
                     <a href="#${item.id}"
-                    >${h2Num}${h3Num ? '.' : ''}${h3Num ? h3Num : ''}${h3Num? '.' : ''}${h4Num ? h4Num : ''} ${item.textContent}
+                    >${h1Num? h1Num : ''}${h1Num? '.' : ''}${h2Num? h2Num : ''}${h3Num ? '.' : ''}${h3Num ? h3Num : ''}${h3Num? '.' : ''}${h4Num ? h4Num : ''} ${item.textContent}
                     </a>
                 </li>
                 `;
                 str += titles;
             })
+            console.log(h1Num,h2Num,h3Num,h4Num,h5Num);
             blogTableContent.innerHTML = str;
         }
 
