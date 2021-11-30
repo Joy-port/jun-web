@@ -7,7 +7,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         tagsByTheme:["設計"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "色票、配色網站",
@@ -17,7 +25,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["設計"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "UI/UX 設計參考網站",
@@ -27,7 +43,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/45/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80",
         tagsByTheme:["設計"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "簡報設計學習資源",
@@ -37,7 +61,52 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["設計"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:{
+            title:'簡報設計學習資源',
+            subtitle:'',
+            tableOfContent:{
+                'ps-0':['簡報設計素材','專欄文章','Facebook 粉絲專頁','Facebook 社團','Instagram 帳號','線上課程']
+            },
+            content:`<p class="text-content-h2">簡報設計素材</p>
+            <p><a href="#" class="">BFA 簡報學院</a></p>
+            <p class="text-content-h2">專欄文章</p>
+            <p><a href="#" class="">BFA 簡報</a></p>
+            <p><a href="#" class="">簡報練功團</a></p>
+            <p><a href="#" class="">簡報藝術烘焙坊</a></p>
+            <p class="text-content-h2">Facebook 粉絲專頁</p>
+            <p><a href="#" class="">簡報・初學者</a></p>
+            <p><a href="#" class="">簡報・簡單報</a></p>
+            <p><a href="#" class="">歪樓藥師 翁紹恩</a></p>
+            <p><a href="#" class="">Keynote不求人</a></p>
+            <p><a href="#" class="">Keynote 簡報星球</a></p>
+            <p><a href="#" class="">有Power也有Point的簡報設計</a></p>
+            <p class="text-content-h2">Facebook 社團</p>
+            <p><a href="#" class="">簡報設計新手村</a></p>
+            <p><a href="#" class="">10分鐘簡報交流社團</a></p>
+            <p class="text-content-h2">Instagram 帳號</p>
+            <p><a href="#" class="">ppt.note</a></p>
+            <p class="text-content-h2">線上課程</p>
+            <p><a href="#" class="">商業簡報設計與應用課｜晉升主管必備的28種職場簡報術</a></p>
+            <p><a href="#" class="">PPT 動畫課｜動態簡報輕鬆上手</a></p>
+            <p><a href="#" class="">Keynote 全攻略：零基礎做出超吸睛簡報！</a></p>
+            <p>有些文章和技巧，都神奇到甚至覺得大神用的 PPT 跟我用的好像不一樣XD</p>
+            <p>希望這樣的整理，能幫你節省一些製作簡報的時間～</p>
+            <p>一起向厲害的人學習！</p>`,
+            tags:[{
+                name:'資源整理',
+                url: 'infoMap.html'
+            },{
+                name:'設計',
+                url: 'searchLink.html'
+            }]
+
+        },
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "資料視覺化／資訊圖表參考與製作網站",
@@ -47,7 +116,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1461773518188-b3e86f98242f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80",
         tagsByTheme:["設計"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "線上課程、免費資源整理",
@@ -57,7 +134,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:[],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "Notion 筆記軟體教學資源",
@@ -67,7 +152,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80",
         tagsByTheme:["Notion"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     
     {
@@ -78,7 +171,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1555707813-dc14c22ae471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
         tagsByTheme:["Notion"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     
     {
@@ -89,7 +190,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["英文學習"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     
     {
@@ -100,7 +209,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80",
         tagsByTheme:["英文學習"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     
     {
@@ -111,7 +228,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8aGNmcTBVMHAzNWd8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
         tagsByTheme:["建築資源","建築師考試"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     
     {
@@ -122,7 +247,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1589085947445-a491beee038d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     
     {
@@ -133,7 +266,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1572053675669-036f6b9232fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "30 個優質建築新聞網站",
@@ -143,7 +284,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1520330979108-7d66e04b35e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "6 個聊建築、聊設計的 Podcast",
@@ -153,7 +302,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1605028241606-ca01277aa15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "建築相關活動的 11 個資訊來源",
@@ -163,7 +320,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "2021 建築畢業設計展，全台各校展期彙整",
@@ -173,7 +338,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1467226632440-65f0b4957563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80",
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
         
     },
     {
@@ -184,7 +357,12 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["建築資源","建築師考試"],
         tagsByContent:"心智圖",
-        linkUrl:"https://junlearning.ck.page/lawnotes"
+        linkUrl:"https://junlearning.ck.page/lawnotes",
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "轉捩點不是單一個重要的事件，而是一段時間的轉變",
@@ -194,7 +372,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80",
         tagsByTheme:["職涯思考"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "心智圖也能拿來探索職涯",
@@ -204,7 +390,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1592819695396-064b9572a660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["職涯思考"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "錢要花在刀口上，那買什麼才算是高效益的？",
@@ -214,7 +408,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1531346878377-a5be20888e57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "關於口語表達，有些答案不必向外求",
@@ -224,7 +426,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "關於寫作，應該要先學還是先寫？",
@@ -234,7 +444,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1749&q=80",
         tagsByTheme:["寫作"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "忘形流，是架構重要還是心法重要？",
@@ -244,7 +462,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
         tagsByTheme:["學習方法"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "思維框架怎麼學？",
@@ -254,7 +480,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1574421233009-a6d13da3b5a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80",
         tagsByTheme:["學習方法"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "從《機智醫生生活》看想成為的大人",
@@ -264,7 +498,15 @@ let data =[
         imgUrl:"https://i2.wp.com/junlearning.com/wp-content/uploads/2021/08/97421060_2621642168124981_7721735136688996352_n.jpg?resize=690%2C550&ssl=1",
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《B型選擇》你永遠都有選擇",
@@ -274,7 +516,15 @@ let data =[
         imgUrl:"https://images.unsplash.com/photo-1531347118459-c3ea7a5ac61e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
         tagsByTheme:["職涯思考","學習方法"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《設計生意經》會做設計，還不足以讓你養活自己！",
@@ -284,7 +534,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["設計","學習方法"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《精準成長》",
@@ -294,7 +552,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《清單革命》",
@@ -304,7 +570,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["學習方法","工作術"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《最高學習法》",
@@ -314,7 +588,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
@@ -324,7 +606,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["職涯思考","學習方法","自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "怎麼達到工作與生活的平衡？",
@@ -334,7 +624,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["職涯思考","自我成長","人生思考"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
@@ -344,7 +642,15 @@ let data =[
         imgUrl:"",
         tagsByTheme:["職涯思考","學習方法"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
     },
     {
         title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
@@ -354,7 +660,33 @@ let data =[
         imgUrl:"",
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
-        linkUrl:""
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:[],
+            textContent:[],
+            tagsName:[]
+        }
+    },
+    {
+        title: "-書籍- 商業模式 是什麽 《商業模式全史一創世紀篇》",
+        description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？﻿",
+        type:["好書推薦"],
+        time: '2020-05-05',
+        imgUrl:"",
+        tagsByTheme:["投資理財","提問"],
+        tagsByContent:"文章",
+        linkUrl:"blogContent.html",
+        blogContent:[{
+
+        }],
+        igContent:{
+            imgUrl:['https://instagram.ftpe7-4.fna.fbcdn.net/v/t51.2885-15/e35/95482051_486411535442623_4567707100492500243_n.jpg?_nc_ht=instagram.ftpe7-4.fna.fbcdn.net&_nc_cat=107&_nc_ohc=V7WIPH8ubycAX_CTGFu&edm=AABBvjUBAAAA&ccb=7-4&oh=1bac472fc5f0b4ce98e3b3ffc3496c0f&oe=61AB861D&_nc_sid=83d603','https://instagram.ftpe7-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/95525966_873205223196998_1813022107166397510_n.jpg?_nc_ht=instagram.ftpe7-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=kHRVKD_IhhIAX_k3vsA&tn=9K9NUlmWM7HI7bgK&edm=AABBvjUBAAAA&ccb=7-4&oh=0d1cfc47dd1eacadd7535bc7f5342248&oe=61AB38BB&_nc_sid=83d603','https://instagram.ftpe7-2.fna.fbcdn.net/v/t51.2885-15/e35/95550000_267794181292449_3793291122758222696_n.jpg?_nc_ht=instagram.ftpe7-2.fna.fbcdn.net&_nc_cat=109&_nc_ohc=GgnG6ZUeGzwAX_kQVZM&edm=AABBvjUBAAAA&ccb=7-4&oh=b00a3d6f1191dddadd5426ea297023d2&oe=61AB272F&_nc_sid=83d603','https://instagram.ftpe7-4.fna.fbcdn.net/v/t51.2885-15/e35/95361732_800846267108307_7726218822320259619_n.jpg?_nc_ht=instagram.ftpe7-4.fna.fbcdn.net&_nc_cat=103&_nc_ohc=phxstaJxRwIAX8ZYFpQ&edm=AABBvjUBAAAA&ccb=7-4&oh=a3417cc690de6c4061b9698db21749fb&oe=61AAD764&_nc_sid=83d603',],
+            textContent:[],
+            tagsName:[]
+        }
     }
 ];
 let pageData = [];
@@ -364,11 +696,14 @@ let newestData1 = [];
 let newestData2 = [];
 let pageName = '';
 let sortType = 'timeSort';
+let blogItem = [];
+let blogId='';
 
 //預設渲染畫面
 function init(){
     setDataId(); //將資料綁定id 根據時間
     autoRenderByPage();
+    renderBlogContent();
 }
 
 init();
@@ -437,6 +772,12 @@ function renderContentList(){
     }else{
         str = renderCardsList(pageData);
         contentList.innerHTML = str;
+    }
+    
+    //監聽按鈕用來開啟頁面內容
+    if(document.querySelector('.js-blog-link')){
+       const blogLinks = document.querySelectorAll('.js-blog-link');
+       blogLinks.forEach(item => item.addEventListener('click',getBlogContentId));
     }
 }
 
@@ -589,9 +930,9 @@ function normalCardList(pageData){
     let str ='';
     pageData.forEach(item =>{
         //要加上 item.time 排序時間
-        let content=`<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+        let content=`<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}">
         <div class="card content-card h-100">
-          <a href="${item.linkUrl}" class="d-block">
+          <a href="${item.linkUrl}" data-id="${item.id}" class="d-block ${item.tagsByContent === '文章'? 'js-blog-link':''}">
             <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" alt="card img" class="card-img-top content-card-img-top">
           </a>
           <div class="py-5 px-6 h-100">
@@ -609,12 +950,13 @@ function normalCardList(pageData){
 function libraryCardList(pageData) {
     let str = '';
     pageData.forEach(item =>{
-        let content=` <li class="col-8 mx-auto col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
         <div class="card content-card h-100">
           <!-- 用來開啟modal 內的carousel -->
           <!--  alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0" -->
           <a
-            href="${item.linkUrl}"
+            href="${item.linkUrl} ${item.tagsByContent === '文章'? 'js-blog-link':''}"
+            data-id="${item.id}"
             class="d-block"
             data-bs-toggle="modal"
             data-bs-target="#libraryContentModal"
@@ -645,9 +987,9 @@ function libraryCardList(pageData) {
 function newPostCardList(pageData){
     let str = '';
     pageData.forEach(item =>{
-        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-0" data-tags-theme="${item.tagsByTheme.join('_')} data-tags-content="${item.tagsByContent}>
+        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-0" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
         <div class="card content-card h-100">
-          <a href="${item.linkUrl}" class="d-block">
+          <a href="${item.linkUrl}" data-id="${item.id}" class="d-block ${item.tagsByContent === '文章'? 'js-blog-link':''}">
             <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" class="card-img-top content-card-img-top card-inside-img">
           </a>
           <div class="py-3 px-5 h-100">
@@ -774,4 +1116,119 @@ function refreshContent(e){
     autoRenderByPage();
     refreshThemeTagsList();
 
+}
+
+
+//render modal body content for every page//暫時無法實現需要一個個加入
+
+//文章也是
+//得到點擊文章的id
+function getBlogContentId(e){
+    e.preventDefault();
+    if(blogItem.length !== 0){
+        blogItem.splice(0,1);
+    }
+    pageData.forEach(item =>{
+       if(parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)){
+           blogItem.push(item);
+       };   
+   });
+   localStorage.setItem('blogContent',JSON.stringify(blogItem));
+   localStorage.setItem('pageName',JSON.stringify(pageName));
+   localStorage.setItem('pageData',JSON.stringify(pageData));
+
+    loadToPage();
+
+}
+
+function loadToPage(){
+
+    window.setTimeout(
+        function (){
+            window.location.assign("blogContent.html");
+            renderBlogContent ();
+        },1000); 
+}
+
+
+function renderBlogContent (){
+
+    if(document.querySelector('.js-blog-content')){
+        blogItem = JSON.parse(localStorage.getItem('blogContent'));
+        pageName = JSON.parse(localStorage.getItem('pageName'));
+        pageItem = JSON.parse(localStorage.getItem('pageItem'));
+
+    console.log(blogItem,pageName,pageItem);
+
+    let title = blogItem[0].title;
+    let subtitle = blogItem[0].blogContent.subtitle;
+    let date = (blogItem[0].time).split('-').join('/');
+    let content = blogItem[0].blogContent.content;
+    let tags = blogItem[0].blogContent.tags;
+
+
+    const blogTitleBox = document.querySelector('[data-type="title"]');
+    const blogTitle = document.querySelector('[data-blog="title"]');
+    const blogSubtitle = document.querySelector('[data-blog="subtitle"]');
+    const blogDate = document.querySelectorAll('[data-blog="date"]');
+    const blogContent = document.querySelector('[data-blog="content"]');
+    const blogFooter = document.querySelector('[data-blog="footer"]');
+    const blogFooterTags = document.querySelector('[data-blog="tags"]');
+    const recommendTitle = document.querySelector('[data-blog="recommendTitle"]');
+
+    blogTitle.textContent=title;
+
+    if(subtitle.length !==0){
+        blogSubtitle.textContent = subtitle;
+    }{
+        blogTitleBox.removeChild(blogSubtitle);
+        blogTitle.classList.add('mb-0');
+    };
+    blogDate.forEach(item =>{item.textContent = date;});
+    blogContent.innerHTML = content;
+
+    if(tags.length !== 0){
+        let str = ''
+        tags.forEach(item=>{
+            let content = `
+            <li><a href="${item.url}">${item.name}</a></li>
+            `;
+            str += content;
+        })
+        blogFooterTags.innerHTML = str;
+    }else{
+        blogFooter.removeChild(blogFooterTags);
+    };
+
+    recommendTitle.textContent = `「${getPageName(pageName) || blogItem[0].type}」`;
+    };
+
+
+}
+
+
+function getPageName(pageName){
+    switch(pageName){
+        case'all':
+        return '';
+        break;
+        case'newPosts':
+        return '最新文章';
+        break;
+        case'learning':
+        return '學習思考';
+        break;
+        case'architecture':
+        return '建築專區';
+        break;
+        case'infoMap':
+        return '資源整理';
+        break;
+        case'quote':
+        return '精選金句';
+        break;
+        case'library':
+        return '好書推薦';
+        break;
+    }
 }

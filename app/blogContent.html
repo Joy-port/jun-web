@@ -7,7 +7,7 @@ type: blogContent
 ---
 
 <div class="container py-15">
-  <div class="row">
+  <div class="row js-blog-content">
     <div
       class="
         col-md-9
@@ -16,18 +16,18 @@ type: blogContent
       "
     >
       <!-- 文章標題處 -->
-      <div class="bg-light text-center p-3 mb-3">
+      <div class="bg-light text-center p-3 mb-3" data-type="title">
         <!-- 輸入文章標題名稱 -->
-        <h2 class="title">《造局者》讀後心得</h2>
+        <h2 class="title" data-blog="title">《造局者》讀後心得</h2>
         <!-- 輸入文章副標題標題名稱 -->
-        <p class="subtitle">運用思考框架，對應最棘手的商業困境</p>
+        <p class="subtitle" data-blog="subtitle">運用思考框架，對應最棘手的商業困境</p>
       </div>
       <!-- 輸入文章日期 -->
       <div class="text-end mb-5">
-        <small class="date"> 2021/07/08 </small>
+        <small class="date" data-blog="date"> 2021/07/08 </small>
       </div>
       <!-- 正文內容 -->
-      <div class="text-content">
+      <div class="text-content"  data-blog="content">
         <p>
           從去年開始寫作​，一直到最近才有一種感覺是​，好像才剛開始打字​，一回過神就發現文章快打完了​！
         </p>
@@ -76,9 +76,9 @@ type: blogContent
         <p>知識內容寫作課｜鄭國威</p>
       </div>
       <!-- 正文最底下結尾 -->
-      <div class="text-footer">
-        發佈於 2021/07/08
-        <ul class="text-footer-tags">
+      <div class="text-footer" data-blog="footer">
+        發佈於 <span class="ms-2" data-blog="date">2021/07/08</span>
+        <ul class="text-footer-tags"  data-blog="tags">
           <li><a href="#">職涯思考</a></li>
           <li><a href="#">建築師考試</a></li>
           <li><a href="#">建築</a></li>
@@ -88,7 +88,7 @@ type: blogContent
       <!-- 推薦區域 -->
       <div class="mb-10">
         <h4 class="fs-6 fw-bold text-black mb-5">
-          其他<a href="index.html" class="link-black">「 建築專區 」</a>的文章
+          其他<a href="index.html" class="link-black"  data-blog="recommendTitle">「 建築專區 」</a>的文章
         </h4>
         <div
           id="carouselRecommendedArea"
@@ -113,7 +113,7 @@ type: blogContent
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <ul class="row mx-12 py-5">
+              <ul class="row mx-12 py-5" data-blog="recommendContent1">
                 <li
                   class="col-md-4 mb-5 mb-md-0"
                 >
@@ -192,7 +192,7 @@ type: blogContent
               </ul>
             </div>
             <div class="carousel-item">
-                <ul class="row mx-12 py-5">
+                <ul class="row mx-12 py-5" data-blog="recommendContent1">
                     <li
                       class="col-md-4 mb-5 mb-md-0"
                     >
@@ -295,7 +295,7 @@ type: blogContent
     <!-- 側邊欄位 -->
     <div class="col-md-3 ps-md-10">
       <div class="pt-15 pt-md-20 mb-18">
-        <h4 class="fs-6 text-info fw-bold mb-5">熱門文章</h4>
+        <h4 class="fs-6 text-info fw-bold mb-5" data-blog="hotPosts">熱門文章</h4>
         <ul class="">
           <li class="mb-2">
             <a href="#" class="link-secondary"
@@ -331,7 +331,7 @@ type: blogContent
       </div>
       <div class="mb-18">
         <h4 class="fs-6 text-info fw-bold mb-5">最新文章</h4>
-        <ul class="">
+        <ul class="" data-blog="newPosts">
           <li class="mb-2">
             <a href="#" class="link-secondary"
               >2021已經過半，下半年值得一讀的六本書
