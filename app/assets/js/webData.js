@@ -1,0 +1,11 @@
+let pageData = [];
+let themeData = [];
+let contentData = [];
+let newestData1 = [];
+let newestData2 = [];
+let pageName = '';
+let sortType = 'timeSort';
+let blogItem = [];
+let pageItem = [];
+let blogId='';
+let IgItem ={};
