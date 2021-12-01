@@ -39,14 +39,20 @@ let num = 0;
 //根據頁面顯示資料
 function autoRenderByPage(){
     if (document.querySelector('.js-content-list')){
-            renderContentList(); //渲染卡片資料
+        renderContentList(); //渲染卡片資料
         if(document.querySelectorAll('.js-tags-list')){
             renderTagsList(); //渲染標籤數量＋disabled
         };
+        //tags 加上清除重新搜尋效果
         if(document.querySelector('.js-refresh-btn')){
             const refreshBtn = document.querySelector('.js-refresh-btn');
             refreshBtn.addEventListener('click', refreshContent);
-        }
+        };
+        //標籤tags 加上旋轉icon效果
+        if(document.querySelector('[data-bs-toggle="collapse"]')){
+            document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(item => item.addEventListener('click',changeIconRotateStyle));
+        };
+        
     };
 
 }
@@ -231,6 +237,10 @@ function getPageData(contentList){
         case 'newestData':
         pageName = 'newPosts';
         pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '學習思考'))] === '學習思考');
+        break;
+        case 'search':
+        pageName = 'search';
+        pageData = searchAllResults();
         break;
      }
      updatePageDataLocalStorage();
@@ -488,6 +498,16 @@ function addClickCheckboxStyle(vm){
         titleSelected.classList.add('link-secondary');
     };
 
+}
+
+//tags icon 加上旋轉效果 //hover的話可用css 達到相同效果
+
+function changeIconRotateStyle(e){
+    //預設狀態不同而有差異
+    if(e.target.closest('a').getAttribute('aria-expanded')){
+        e.target.closest('a').lastElementChild.classList.toggle('rotate-180');
+        e.target.closest('a').lastElementChild.classList.toggle('rotate-0');
+    };
 }
 
 //重新篩選按鈕
@@ -921,3 +941,7 @@ function getPageDataLocalStorage(){
 }
 
 //搜尋頁面功能
+
+function searchAllResults(){
+
+}
