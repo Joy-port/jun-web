@@ -465,12 +465,22 @@ function autoRenderByPage() {
       renderTagsList(); //渲染標籤數量＋disabled
     }
 
-    ;
+    ; //tags 加上清除重新搜尋效果
 
     if (document.querySelector('.js-refresh-btn')) {
       var refreshBtn = document.querySelector('.js-refresh-btn');
       refreshBtn.addEventListener('click', refreshContent);
     }
+
+    ; //標籤tags 加上旋轉icon效果
+
+    if (document.querySelector('[data-bs-toggle="collapse"]')) {
+      document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function (item) {
+        return item.addEventListener('click', changeIconRotateStyle);
+      });
+    }
+
+    ;
   }
 
   ;
@@ -688,6 +698,11 @@ function getPageData(contentList) {
         })] === '學習思考';
       });
       break;
+
+    case 'search':
+      pageName = 'search';
+      pageData = searchAllResults();
+      break;
   }
 
   updatePageDataLocalStorage();
@@ -864,6 +879,17 @@ function addClickCheckboxStyle(vm) {
     titleSelected.classList.remove('link-secondary');
   } else {
     titleSelected.classList.add('link-secondary');
+  }
+
+  ;
+} //tags icon 加上旋轉效果 //hover的話可用css 達到相同效果
+
+
+function changeIconRotateStyle(e) {
+  //預設狀態不同而有差異
+  if (e.target.closest('a').getAttribute('aria-expanded')) {
+    e.target.closest('a').lastElementChild.classList.toggle('rotate-180');
+    e.target.closest('a').lastElementChild.classList.toggle('rotate-0');
   }
 
   ;
@@ -1224,5 +1250,8 @@ function updatePageDataLocalStorage() {
 function getPageDataLocalStorage() {
   return JSON.parse(localStorage.getItem('pageData'));
 } //搜尋頁面功能
+
+
+function searchAllResults() {}
 "use strict";
 //# sourceMappingURL=all.js.map

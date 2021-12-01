@@ -17,8 +17,8 @@
   </head>
 
   <body>
-      <header>
-        <div class="bg-light py-5 py-md-2">
+      <header class="position-relative mb-15">
+        <div class="bg-light py-5 py-md-2 position-fixed top-0 w-100" style="z-index: 1200;">
     <div class="container">
     <div class="d-flex justify-content-center justify-content-md-between align-items-center gap-3">
         <h1 class="">
@@ -103,19 +103,19 @@ mb-4">
 <!-- 目錄類別標籤 -->
 <div class="catagory-body show" id="categoryBox" aria-labelledby="categoryBox">
   <div class="container">
-    <div class="d-flex justify-content-between flex-column flex-md-row mb-3">
+    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-3">
       <a href="#categoryTheme" class="d-flex link-secondary order-last order-md-first" data-title="theme" data-bs-parent="#categoryBox" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="categoryTheme">
-        主題
-        <span class="material-icons-outlined"> arrow_drop_down </span>
+        <p>主題</p>
+        <span class="material-icons-outlined rotate-180">arrow_drop_down </span>
       </a>
-      <div class="text-secondary d-flex justify-content-center mb-5">
+      <div class="text-secondary d-flex justify-content-center align-items-center mb-5">
         <div class="d-flex me-5">
           <a href="#" class="d-block link-secondary fs-9">按時間排序</a>
           <span class="fs-9">/</span>
           <a href="#" class="d-block link-secondary fs-9">按熱門排序</a>
         </div>
         <a href="#" class="d-flex link-secondary fs-9 js-refresh-btn">
-          <span class="material-icons-outlined me-1 fs-6"> refresh </span>
+          <span class="material-icons-outlined me-1 fs-6 icon-rotate-hover"> refresh </span>
           重新搜尋
         </a>
       </div>
@@ -178,7 +178,7 @@ mb-4">
     <div class="d-flex justify-content-between mb-3">
       <a href="#categoryContent" class="d-flex link-secondary"  data-title="content" data-bs-parent="#categoryBox" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="categoryContent">
         <p>內容形式</p>
-        <span class="material-icons-outlined"> arrow_drop_down </span>
+        <span class="material-icons-outlined rotate-0"> arrow_drop_down </span>
       </a>
     </div>
     <ul class="catagory-body-content mb-8 js-tags-list collapse" id="categoryContent" data-tags-type="content">
