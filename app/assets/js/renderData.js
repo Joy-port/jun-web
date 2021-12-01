@@ -1,3 +1,12 @@
+let pageData = [];
+let themeData = [];
+let contentData = [];
+let pageName = '';
+let blogItem = [];
+let pageItem = [];
+let blogId='';
+let IgItem =[];
+let pptItem = [];
 let sortType = 'timeSort';
 
 //預設渲染畫面
@@ -60,6 +69,9 @@ function renderContentList(){
     updatePageDataLocalStorage();
     if(contentList.dataset.listType==='newestData'){
         const thoughtsList = document.querySelector('.js-data-list');
+        pageData = getPageDataLocalStorage();
+        let newestData1 = [];
+        let newestData2 = [];
         pageData.forEach((item,index) =>{
                 if(index >= 0 && index < 3){
                     newestData1.push(item);
@@ -67,6 +79,7 @@ function renderContentList(){
                     newestData2.push(item);
                 };
         });
+        console.log(newestData1);
 
         str = newPostCardList(newestData1);
         contentList.innerHTML = str;
@@ -352,7 +365,7 @@ function libraryCardList(pageData) {
 function newPostCardList(pageData){
     let str = '';
     pageData.forEach(item =>{
-        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-0" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
+        let content=` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-3" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
         <div class="card content-card h-100">
           <a href="${item.linkUrl}" data-id="${item.id}" class="d-block ${item.tagsByContent === '文章'? 'js-blog-link':''}">
             <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" class="card-img-top content-card-img-top card-inside-img">
