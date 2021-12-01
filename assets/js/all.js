@@ -9,7 +9,7 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "色票、配色網站",
   description: "配色網站這麼多，怎麼選？選能夠幫上你的那一個！讓不懂配色理論的你也能選對顏色！如果你只需要兩個顏色搭配，就不要找提供五個顏色的色票網站，那會讓你更難做出選擇～以下幫你整理了多色色票、漸層色、以及可以依照色彩理論自訂顏色的網站，來看看哪個用起來比較順手吧！",
@@ -19,7 +19,7 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "UI/UX 設計參考網站",
   description: "針對 UI/UX 設計，這些網站有很豐富的設計作品，能培養你的美感，也能幫助你在沒有想法的時候帶給你一些靈感。對於想自學的人，多看好作品也能讓你有更高的設計敏感度。沒事就來逛逛資料庫、尋找好設計吧！",
@@ -69,17 +69,17 @@ var data = [{
   tagsByTheme: ["設計"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "線上課程、免費資源整理",
   description: "疫情影響，一瞬間，線上學習成為很重要的自學管道。除了知識的學習，還有很多人文體驗都被搬到了線上，博物館、音樂劇…通通有，一起來看看吧！",
   type: ["資源整理"],
   time: '2020-03-27',
   imgUrl: "https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-  tagsByTheme: [],
+  tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "Notion 筆記軟體教學資源",
   description: "大家都說好用的 Notion 到底怎麼用？看完一堆教學文章，還是有點不知道怎麼將功能發揮到極致？看看這些大神怎麼透過 Notion，建立屬於自己的工作系統，再去截取適合自己的部分，才能真的把 Notion 學到精通！有了這些實例，再去詳細探究功能，學習的速度也會更快！",
@@ -89,7 +89,7 @@ var data = [{
   tagsByTheme: ["Notion"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "Notion+ 標記管理器，快速匯出筆記重點",
   description: "在找跟 Notion 相關的 chrome 擴充功能時，意外發現這款很特別的標記工具，可以截取你用顏色畫重點的文字和區塊，書籍重點摘要、課程重點回顧、文章重點整理通通可以快速匯出！以下是功能的簡單介紹和運用情境舉例，分享給大家～",
@@ -99,17 +99,17 @@ var data = [{
   tagsByTheme: ["Notion"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "看影片要怎麼學英文？",
   description: "你也覺得學英文很無聊，很沒有動力嗎？來看看我是怎麼透過影片學英文吧！",
   type: ["資源整理"],
   time: '2020-04-23',
   imgUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-  tagsByTheme: ["英文學習"],
+  tagsByTheme: ["英文學習", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "｜雅思讀書計畫｜書籍推薦｜",
   description: "準備雅思，我第一個想到的事情是買參考書，但我發現這只是一個「做好準備的假象」，買了書但沒有讀書計畫也沒辦法開始準備。要考雅思必須一步一步，從訂定適合自己的讀書計畫開始。想自學考雅思，跟著這 7 個步驟來準備吧～",
@@ -119,7 +119,7 @@ var data = [{
   tagsByTheme: ["英文學習"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "｜實用網站｜推薦書單｜考試報名資訊｜放榜資訊｜",
   description: "準備建築師考試，大部分的人會直接選擇報名補習班（如實力、九華……），省下整理考試內容的時間，但費用也不便宜。文章整理了實用的網站和推薦書籍，讓你不靠補習班也能省下時間省下錢。",
@@ -129,7 +129,7 @@ var data = [{
   tagsByTheme: ["建築資源", "建築師考試"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "台灣建築書店有哪些",
   description: "博客來的「藝術設計類」>>「建築」怎麼那麼少書？每次去書店尋找「建築」類都找不到你要的書？那是因為你找錯地方了！要找建築的書就要去「建築書店」！來看看以下這幾間書店吧！",
@@ -139,7 +139,7 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "2020 建築畢業設計展，全台各校展期彙整",
   description: "又到了建築系畢業展覽的季節，以下整理各校建築系的總評、展覽日期及地點。實踐、中原、文化、高大、大葉、朝陽、中華、銘傳、中國科大、成大、台科、逢甲、北科、金大、聯合、淡江、東海",
@@ -149,7 +149,7 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "30 個優質建築新聞網站",
   description: "你腦中浮現的第一個一定是 archdaily 吧！但第二個呢？第三個呢？archdaily 雖然資料庫很大，但有些建築類別或地區的案例很少。這些網站有豐富的案例",
@@ -159,7 +159,7 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "6 個聊建築、聊設計的 Podcast",
   description: "離島人 Humans Offshore、建人五四三、Z剖面 建築談、字型腦補 A Knob of Font、嚼嚼設計 Design chew chew、WOW!建築Amazing architecture",
@@ -169,7 +169,7 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "建築相關活動的 11 個資訊來源",
   description: "欣講堂、忠泰集團、築生文化協會、空總臺灣當代文化實驗場 C-LAB、交大建築所、成大建築演講股、實構築、臺北市立美術館",
@@ -179,7 +179,7 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "2021 建築畢業設計展，全台各校展期彙整",
   description: "又到了建築系畢業展覽的季節，以下整理各校建築系的總評、展覽日期及地點。中原建築、中華建築、北科建築、大葉大學空間設計系、實踐建築、成大建築、文化建築、朝陽科大建築系建築組、東海建築、 淡江建築、聯合建築 臺科建築、逢甲建築、金門大學建築系、銘傳建築、高大建築……（疫情將影響展覽的舉行，持續更新）",
@@ -189,7 +189,7 @@ var data = [{
   tagsByTheme: ["建築資源"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "建築師考試法規心智圖整理",
   description: "不用再啃厚厚的講義、輕易找到題目出處與解答、標示常考的法律條文",
@@ -208,7 +208,7 @@ var data = [{
   tagsByTheme: ["職涯思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "心智圖也能拿來探索職涯",
   description: "很少主動去認識別人，但這次認識荃鈺之後，我深刻體會到如果願意跟不同的人交流，會有很不一樣的收穫。",
@@ -218,7 +218,7 @@ var data = [{
   tagsByTheme: ["職涯思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "錢要花在刀口上，那買什麼才算是高效益的？",
   description: "今天聽到一集 podcast，大人的 small talk EP99，標題是「媽媽都說錢要花在「刀口上」，那「刀口」到底在哪裡呢？」，雖然這是很主觀的價值觀選擇，但也給了我很多啟發，在這裡記錄一些想法分享給大家。",
@@ -228,7 +228,7 @@ var data = [{
   tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "關於口語表達，有些答案不必向外求",
   description: "向外搜尋解答可以解決一半的問題​，還有另一半是無法透過外求解決的問題",
@@ -238,7 +238,7 @@ var data = [{
   tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "關於寫作，應該要先學還是先寫？",
   description: "如果你也想開始學習寫作，我認為最好的方式是",
@@ -248,7 +248,7 @@ var data = [{
   tagsByTheme: ["寫作"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "忘形流，是架構重要還是心法重要？",
   description: "真如期待，再加上一點意料之外​，在邊玩邊學的過程又得到新啟發​​！上完課後，整理出三個對製作簡報的反思，也分享給大家～",
@@ -258,7 +258,7 @@ var data = [{
   tagsByTheme: ["學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "思維框架怎麼學？",
   description: "《超速思維》讀書會心得分享主辦單位：CMX 給社群經理的社群 想學思維框架，先想想哲學三問 有這麼多",
@@ -268,7 +268,7 @@ var data = [{
   tagsByTheme: ["學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "從《機智醫生生活》看想成為的大人",
   description: "最近深刻體會到，看韓劇絕對不是浪費時間的一件事！ 看韓劇有趣的地方跟看書一樣，都是透過別人的眼睛去理解不同的生活，而影片的呈現，更能讓人將自己投射其中。",
@@ -278,7 +278,7 @@ var data = [{
   tagsByTheme: ["自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《B型選擇》你永遠都有選擇",
   description: "很多時候，我們都會認為自己只有一種選擇，比如說畢業後只能趕快找工作，找到工作之後只能趕快想辦法拚升遷、拚加薪，但除了這些選擇以外，其實還有各種不同的可能。",
@@ -288,7 +288,7 @@ var data = [{
   tagsByTheme: ["職涯思考", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《設計生意經》會做設計，還不足以讓你養活自己！",
   description: "懂得經營和了解設計同等重要。設計美麗的東西是一種藝術，但能從中找到獲利的空間，則是一種技能。了解營運一家公司的各種面向，才能讓你更自由的去做設計。",
@@ -298,7 +298,7 @@ var data = [{
   tagsByTheme: ["設計", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《精準成長》",
   description: "反思才會成長！如果沒有經過反思，所有的努力不一定能成為你學習的養分，花下的時間也不一定能讓你發揮最大的潛力。想要成長，你必須學會有意地暫停，理解經驗帶給你的啟發，才能從人生體驗當中學到東西。",
@@ -308,7 +308,7 @@ var data = [{
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《清單革命》",
   description: "不犯錯的秘密武器！清單不能教會我們專業知識，但清單能幫助我們免於犯錯。就像一個機器需要零件，但如果沒有好的系統，也無法讓零件發揮效用，我們光擁有知識還不夠，清單就是能幫助我們有效運用知識的系統。",
@@ -318,7 +318,7 @@ var data = [{
   tagsByTheme: ["學習方法", "工作術"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《最高學習法》",
   description: "想學會「教」，就要先知道怎麼「學」。透過了解大腦的運作，學著如何順著天性，更有效率地學習，也學著如何克服本能，選擇更有成效的方式教學。",
@@ -328,7 +328,7 @@ var data = [{
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
   description: "作者把如何成功的重點放在「看待事情的角度」之上，是一本心態和方法並重的書，不只用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」。書中不斷提及的「心智」，指的就是面對事情心態",
@@ -338,7 +338,7 @@ var data = [{
   tagsByTheme: ["職涯思考", "學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "怎麼達到工作與生活的平衡？",
   description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
@@ -348,7 +348,7 @@ var data = [{
   tagsByTheme: ["職涯思考", "自我成長", "人生思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
   description: "遠距在家忙到生活失衡？《搞定》教你管理自己的行動，就會自然而然地做好時間管理了！",
@@ -358,7 +358,7 @@ var data = [{
   tagsByTheme: ["職涯思考", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
   description: "第一次接觸統計思維，是在 2020 年商業思維學院裡劉奕酉老師的一堂課，那是我第一次用「思維」的角度理解一個學門，也讓我開始想更深入了解統計學。這堂課不只是教統計概念，也帶給我很多想法上的轉變",
@@ -368,7 +368,7 @@ var data = [{
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "",
-  blogContent: [{}]
+  blogContent: []
 }, {
   title: "《商業模式全史一創世紀篇》",
   description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢",
@@ -378,7 +378,6 @@ var data = [{
   tagsByTheme: ["投資理財", "提問", "商業筆記"],
   tagsByContent: "IG 貼文",
   linkUrl: "blogContent.html",
-  blogContent: [],
   igContent: {
     imgUrl: ['https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60', 'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80', 'https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80', 'https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'],
     textContent: "<span>\u5546\u696D\u6A21\u5F0F\u662F\u4EC0\u9EBC\uFF1F</span>\n            <p>\u300C\u5546\u696D\u6A21\u5F0F\u300D\u8B1B\u8D77\u4F86\u597D\u50CF\u5F88\u6E05\u695A\uFF0C\u807D\u7684\u4EBA\u537B\u807D\u5F97\u5F88\u6A21\u7CCA\u3002\u5230\u5E95\u8981\u600E\u9EBC\u53BB\u4E86\u89E3\u9019\u56DB\u500B\u5B57\u5462\uFF1F</p>\n            <p>\u5546\u696D\u6A21\u5F0F\u662F\u4E00\u500B\u4F01\u696D\u7D93\u71DF\u7B56\u7565\u7684\u67B6\u69CB\uFF0C\u5176\u4E2D\u5FC5\u9808\u5305\u542B\u56DB\u500B\u8981\u4EF6\uFF1A\u76EE\u6A19\u3001\u50F9\u503C\u3001\u80FD\u529B\u3001\u7372\u5229\u6A21\u5F0F\u3002</p>\n            <p>\u4EE5\u5F8C\u807D\u5230\u300C\u5546\u696D\u6A21\u5F0F\u300D\uFF0C\u4E0D\u59A8\u505C\u4E0B\u4F86\u60F3\u4E00\u60F3\u6709\u6C92\u6709\u5305\u542B\u9019\u56DB\u500B\u8981\u4EF6\u5427\uFF01</p>\n            <p class=\"ig-content-tag\"><a href=\"#\">J\u672C\u597D\u66F8\u770B\u8D77\u4F86</a></p>",
@@ -393,8 +392,6 @@ var data = [{
   tagsByTheme: ["投資理財", "提問", "商業筆記"],
   tagsByContent: "簡報",
   linkUrl: "",
-  blogContent: [],
-  igContent: [],
   pptContent: [{
     imgUrl: 'https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60',
     textContent: '商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？'
@@ -410,6 +407,7 @@ var data = [{
   }]
 }];
 "use strict";
+"use strict";
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
@@ -423,7 +421,8 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-//預設渲染畫面
+var sortType = 'timeSort'; //預設渲染畫面
+
 function init() {
   setDataId(); //將資料綁定id 根據時間
 
@@ -479,14 +478,14 @@ function renderContentList() {
   if (sortType === 'timeSort') {
     sortByTime(pageData, sortType);
   } else {
-    console.log(sortType, 'hot');
+    console.log(sortType, 'hot'); //還沒新增
   }
 
-  ;
+  ; //將pageData 存入localStorage
+
   updatePageDataLocalStorage();
 
   if (contentList.dataset.listType === 'newestData') {
-    console.log(pageData);
     var thoughtsList = document.querySelector('.js-data-list');
     pageData.forEach(function (item, index) {
       if (index >= 0 && index < 3) {
@@ -513,7 +512,7 @@ function renderContentList() {
       return item.addEventListener('click', getBlogContentId);
     });
   }
-} //篩選後重新渲染card
+} //點擊tags 篩選後重新渲染card
 
 
 function updateContentList(inputData) {
@@ -525,8 +524,10 @@ function updateContentList(inputData) {
 
 
 function renderTagsList() {
-  var theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
-  theme.addEventListener('change', checkboxSelected); //更新theme 標籤 disabled 樣式
+  var theme = document.querySelector('.js-tags-list[data-tags-type="theme"]'); //tags 監聽用change 事件不是click
+
+  theme.addEventListener('change', checkboxSelected);
+  pageData = getPageDataLocalStorage(); //更新theme 標籤 disabled 樣式
 
   theme.querySelectorAll('li input').forEach(function (inputItem) {
     inputItem.setAttribute('disabled', '');
@@ -782,6 +783,8 @@ function sortByTime(inputData, sortType) {
 
 
 function checkboxSelected(e) {
+  pageData = getPageDataLocalStorage();
+
   if (this.dataset.tagsType === 'theme') {
     if (e.target.closest('input').checked === true) {
       pageData.forEach(function (item) {
@@ -859,10 +862,7 @@ function refreshContent(e) {
   e.preventDefault();
   autoRenderByPage();
   refreshThemeTagsList();
-} //render modal body content for every page//暫時無法實現需要一個個加入
-//無法更新ＱＱ
-//文章也是
-//得到點擊文章的id
+} //點擊之前得到blog 內容
 
 
 function getBlogContentId(e) {
@@ -883,27 +883,14 @@ function getBlogContentId(e) {
   pageData.forEach(function (item) {
     if (parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)) {
       blogItem.push(item);
-      console.log(item);
     }
 
     ;
   });
   updateBlogLocalStorage();
   loadToPage();
-}
+} //點擊card 後的效果
 
-function updateBlogLocalStorage() {
-  localStorage.setItem('blogContent', JSON.stringify(blogItem));
-  localStorage.setItem('pageName', JSON.stringify(pageName));
-}
-
-function updatePageDataLocalStorage() {
-  localStorage.setItem('pageData', JSON.stringify(pageData));
-}
-
-function getPageDataLocalStorage() {
-  return JSON.parse(localStorage.getItem('pageData'));
-}
 
 function loadToPage() {
   window.setTimeout(function () {
@@ -925,7 +912,6 @@ function renderInnerContent() {
   pageName = JSON.parse(localStorage.getItem('pageName'));
   pageItem = JSON.parse(localStorage.getItem('pageData'));
   var allData = JSON.parse(localStorage.getItem('allData'));
-  console.log(blogItem, pageName);
   var title = blogItem[0].title;
   var subtitle = blogItem[0].blogContent.subtitle;
   var date = blogItem[0].time.split('-').join('/');
@@ -1124,7 +1110,6 @@ function renderLibraryModal() {
     document.querySelectorAll('[data-bs-target="#libraryPPTModal"]').forEach(function (item) {
       item.addEventListener('mouseover', renderPPTContentModal);
     });
-    updatePageDataLocalStorage();
   }
 } //渲染ig 內容
 
@@ -1211,9 +1196,23 @@ function renderPPTContentModal(e) {
     var content = "\n        <div class=\"carousel-item ".concat(index === 0 ? 'active' : '', "\">\n            <div class=\"ratio ratio-16x9\">\n            <img src=\"").concat(item.imgUrl, "\"\n                alt=\"ppt img\"\n                class=\"card-inside-img\"/>\n            </div>\n            <div class=\"px-8 py-5 border-top border-gray-500\">\n                <div class=\"overflow-auto\"  style=\"height: 50px;\">\n                <p class=\"text-black\">").concat(item.textContent, "</p>\n                </div>\n            </div>\n        </div>\n        ");
     str += content;
   });
-  console.log(str);
   pptContentList.innerHTML = str;
+} //localStorage
+
+
+function updateBlogLocalStorage() {
+  localStorage.setItem('blogContent', JSON.stringify(blogItem));
+  localStorage.setItem('pageName', JSON.stringify(pageName));
+}
+
+function updatePageDataLocalStorage() {
+  localStorage.setItem('pageData', JSON.stringify(pageData));
+}
+
+function getPageDataLocalStorage() {
+  return JSON.parse(localStorage.getItem('pageData'));
 } //搜尋頁面功能
+"use strict";
 "use strict";
 
 var pageData = [];
@@ -1222,7 +1221,6 @@ var contentData = [];
 var newestData1 = [];
 var newestData2 = [];
 var pageName = '';
-var sortType = 'timeSort';
 var blogItem = [];
 var pageItem = [];
 var blogId = '';
