@@ -1,3 +1,5 @@
+let sortType = 'timeSort';
+
 //預設渲染畫面
 function init(){
     setDataId(); //將資料綁定id 根據時間
@@ -52,11 +54,11 @@ function renderContentList(){
     if(sortType === 'timeSort'){
         sortByTime(pageData,sortType);
     }else{
-        console.log( sortType,'hot');
+        console.log( sortType,'hot'); //還沒新增
     };
+    //將pageData 存入localStorage
     updatePageDataLocalStorage();
     if(contentList.dataset.listType==='newestData'){
-        console.log(pageData);
         const thoughtsList = document.querySelector('.js-data-list');
         pageData.forEach((item,index) =>{
                 if(index >= 0 && index < 3){
@@ -83,7 +85,7 @@ function renderContentList(){
     }
 }
 
-//篩選後重新渲染card
+//點擊tags 篩選後重新渲染card
 function updateContentList(inputData){
     const contentList = document.querySelector('.js-content-list');
     let str ='';
@@ -94,8 +96,9 @@ function updateContentList(inputData){
 //渲染tags 標籤＋disable 效果 + 綁監聽
 function renderTagsList(){
     const theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
+    //tags 監聽用change 事件不是click
     theme.addEventListener('change', checkboxSelected);
-
+    pageData = getPageDataLocalStorage();
 
     //更新theme 標籤 disabled 樣式
     theme.querySelectorAll('li input').forEach(inputItem =>{
@@ -406,6 +409,8 @@ function sortByTime(inputData,sortType){
 
 //tags 篩選資料
 function checkboxSelected(e){
+    pageData = getPageDataLocalStorage();
+
    if(this.dataset.tagsType === 'theme'){
     if(e.target.closest('input').checked===true){
         pageData.forEach((item) => {
@@ -481,11 +486,7 @@ function refreshContent(e){
 }
 
 
-//render modal body content for every page//暫時無法實現需要一個個加入
-
-//無法更新ＱＱ
-//文章也是
-//得到點擊文章的id
+//點擊之前得到blog 內容
 function getBlogContentId(e){
     e.preventDefault();
     if(pageData.length === 0){
@@ -499,7 +500,6 @@ function getBlogContentId(e){
     pageData.forEach(item =>{
         if(parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)){
             blogItem.push(item);
-            console.log(item);
         };
     });
 
@@ -508,19 +508,7 @@ function getBlogContentId(e){
     loadToPage();
 }
 
-function updateBlogLocalStorage(){
-    localStorage.setItem('blogContent',JSON.stringify(blogItem));
-    localStorage.setItem('pageName',JSON.stringify(pageName));
-}
-
-function updatePageDataLocalStorage(){
-    localStorage.setItem('pageData',JSON.stringify(pageData));
-}
-
-function getPageDataLocalStorage(){
-    return JSON.parse(localStorage.getItem('pageData'));
-}
-
+//點擊card 後的效果
 function loadToPage(){
 
     window.setTimeout(
@@ -542,8 +530,6 @@ function renderInnerContent(){
     pageName = JSON.parse(localStorage.getItem('pageName'));
     pageItem = JSON.parse(localStorage.getItem('pageData'));
     let allData = JSON.parse(localStorage.getItem('allData'));
-
-    console.log(blogItem,pageName);
 
     let title = blogItem[0].title;
     let subtitle = blogItem[0].blogContent.subtitle;
@@ -768,7 +754,6 @@ function renderLibraryModal(){
         document.querySelectorAll('[data-bs-target="#libraryPPTModal"]').forEach(item=>{
             item.addEventListener('mouseover', renderPPTContentModal);
         });
-        updatePageDataLocalStorage();
     }
 }
 
@@ -901,7 +886,6 @@ function renderPPTContentModal(e){
         `
         str += content;
     })
-    console.log(str);
 
     pptContentList.innerHTML = str ;
 
@@ -909,6 +893,18 @@ function renderPPTContentModal(e){
 
 
 
+//localStorage
+function updateBlogLocalStorage(){
+    localStorage.setItem('blogContent',JSON.stringify(blogItem));
+    localStorage.setItem('pageName',JSON.stringify(pageName));
+}
 
+function updatePageDataLocalStorage(){
+    localStorage.setItem('pageData',JSON.stringify(pageData));
+}
+
+function getPageDataLocalStorage(){
+    return JSON.parse(localStorage.getItem('pageData'));
+}
 
 //搜尋頁面功能

@@ -8,9 +8,7 @@ const data =[
         tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "色票、配色網站",
@@ -21,9 +19,7 @@ const data =[
         tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "UI/UX 設計參考網站",
@@ -174,9 +170,7 @@ const data =[
         tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "線上課程、免費資源整理",
@@ -184,12 +178,10 @@ const data =[
         type: ["資源整理"],
         time: '2020-03-27',
         imgUrl:"https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        tagsByTheme:[],
+        tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "Notion 筆記軟體教學資源",
@@ -200,9 +192,7 @@ const data =[
         tagsByTheme:["Notion"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "Notion+ 標記管理器，快速匯出筆記重點",
@@ -213,9 +203,7 @@ const data =[
         tagsByTheme:["Notion"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "看影片要怎麼學英文？",
@@ -223,12 +211,10 @@ const data =[
         type: ["資源整理"],
         time: '2020-04-23',
         imgUrl:"https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        tagsByTheme:["英文學習"],
+        tagsByTheme:["英文學習","學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "｜雅思讀書計畫｜書籍推薦｜",
@@ -239,9 +225,7 @@ const data =[
         tagsByTheme:["英文學習"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "｜實用網站｜推薦書單｜考試報名資訊｜放榜資訊｜",
@@ -252,9 +236,7 @@ const data =[
         tagsByTheme:["建築資源","建築師考試"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "台灣建築書店有哪些",
@@ -265,9 +247,7 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "2020 建築畢業設計展，全台各校展期彙整",
@@ -278,9 +258,7 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "30 個優質建築新聞網站",
@@ -291,9 +269,7 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "6 個聊建築、聊設計的 Podcast",
@@ -304,9 +280,7 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "建築相關活動的 11 個資訊來源",
@@ -317,9 +291,7 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "2021 建築畢業設計展，全台各校展期彙整",
@@ -330,9 +302,7 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
         
     },
     {
@@ -354,9 +324,7 @@ const data =[
         tagsByTheme:["職涯思考"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "心智圖也能拿來探索職涯",
@@ -367,9 +335,7 @@ const data =[
         tagsByTheme:["職涯思考"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "錢要花在刀口上，那買什麼才算是高效益的？",
@@ -380,9 +346,7 @@ const data =[
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "關於口語表達，有些答案不必向外求",
@@ -393,9 +357,7 @@ const data =[
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "關於寫作，應該要先學還是先寫？",
@@ -406,9 +368,7 @@ const data =[
         tagsByTheme:["寫作"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "忘形流，是架構重要還是心法重要？",
@@ -419,9 +379,7 @@ const data =[
         tagsByTheme:["學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "思維框架怎麼學？",
@@ -432,9 +390,7 @@ const data =[
         tagsByTheme:["學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "從《機智醫生生活》看想成為的大人",
@@ -445,9 +401,7 @@ const data =[
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《B型選擇》你永遠都有選擇",
@@ -458,9 +412,7 @@ const data =[
         tagsByTheme:["職涯思考","學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《設計生意經》會做設計，還不足以讓你養活自己！",
@@ -471,9 +423,7 @@ const data =[
         tagsByTheme:["設計","學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《精準成長》",
@@ -484,9 +434,7 @@ const data =[
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《清單革命》",
@@ -497,9 +445,7 @@ const data =[
         tagsByTheme:["學習方法","工作術"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《最高學習法》",
@@ -510,9 +456,7 @@ const data =[
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
@@ -523,9 +467,7 @@ const data =[
         tagsByTheme:["職涯思考","學習方法","自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "怎麼達到工作與生活的平衡？",
@@ -536,9 +478,7 @@ const data =[
         tagsByTheme:["職涯思考","自我成長","人生思考"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
@@ -549,9 +489,7 @@ const data =[
         tagsByTheme:["職涯思考","學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
@@ -562,9 +500,7 @@ const data =[
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
         linkUrl:"",
-        blogContent:[{
-
-        }],
+        blogContent:[],
     },
     {
         title: "《商業模式全史一創世紀篇》",
@@ -575,7 +511,6 @@ const data =[
         tagsByTheme:["投資理財","提問","商業筆記"],
         tagsByContent:"IG 貼文",
         linkUrl:"blogContent.html",
-        blogContent:[],
         igContent:{
             imgUrl:['https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60','https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80','https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80','https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',],
             textContent:`<span>商業模式是什麼？</span>
@@ -595,8 +530,6 @@ const data =[
         tagsByTheme:["投資理財","提問","商業筆記"],
         tagsByContent:"簡報",
         linkUrl:"",
-        blogContent:[],
-        igContent:[],
         pptContent:[
             {
                 imgUrl:'https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60',
