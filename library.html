@@ -552,7 +552,7 @@
     <div class="col-md-10 me-0 me-md-auto h-100">
       <!--  <div class="overflow-y-auto overflow-x-hidden"> -->
       <!-- data-target 用來開啟modal id="gallery" data-bs-toggle="modal" data-bs-target="#exampleModalwithCarousel" -->
-      <!--  data-bs-toggle="modal" data-bs-target="#libraryContentModal" -->
+      <!--  data-bs-toggle="modal" data-bs-target="#libraryIGPostModal" -->
       <ul
         class="
           row
@@ -573,7 +573,7 @@
               href="#"
               class="d-block"
               data-bs-toggle="modal"
-              data-bs-target="#libraryContentModal"
+              data-bs-target="#libraryIGPostModal"
             >
               <img
                 src="https://images.unsplash.com/photo-1637683558217-bf59e163750e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
@@ -599,12 +599,12 @@
   </div>
 </section>
 
-<!-- modal 版型 顯示 -->
+<!-- modal IG版型 顯示 -->
 <div
   class="modal fade"
-  id="libraryContentModal"
+  id="libraryIGPostModal"
   tabindex="-1"
-  aria-labelledby="libraryContentModalLabel"
+  aria-labelledby="libraryIGPostModalLabel"
   aria-hidden="true"
   data-bs-backdrop="static"
   data-bs-keyboard="true"
@@ -622,14 +622,14 @@
       <div class="modal-body p-0 d-flex flex-column flex-md-row w-100 h-100">
         <!-- pic -->
         <div
-          id="carouselExampleDark"
+          id="carouselInIGModal"
           class="carousel slide w-100 w-md-80 h-100 my-auto"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators js-carousel-button">
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselInIGModal"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -637,13 +637,13 @@
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselInIGModal"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselInIGModal"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
@@ -695,7 +695,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselInIGModal"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -704,7 +704,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselInIGModal"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -798,6 +798,129 @@
     </div>
   </div>
 </div>
+
+
+<!-- modal IG版型 顯示 -->
+<div
+  class="modal fade"
+  id="libraryPPTModal"
+  tabindex="-1"
+  aria-labelledby="libraryPPTModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+  data-bs-keyboard="true"
+>
+  <div
+    class="
+      modal-dialog
+      modal-xl
+      modal-fullscreen-md-down
+      modal-dialog-centered
+    "
+  >
+    <div class="modal-content w-100">
+        <!-- each page ppt -->
+        <div
+          id="carouselInPPTModal"
+          class="carousel slide w-100 h-100 my-auto"
+          data-bs-ride="carousel"
+        >
+          <!-- close btn mobile -->
+          <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+         <!--  <div class="carousel-indicators js-carousel-button">
+            <button
+              type="button"
+              data-bs-target="#carouselInPPTModal"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselInPPTModal"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselInPPTModal"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div> -->
+          <div class="carousel-inner w-100 h-100 js-carousel-itemList">
+            <!-- data-bs-interval="1000" 用來計算auto slide duration -->
+            <div class="carousel-item active h-100">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                    alt="post img"
+                    class="card-inside-img"
+                  />
+                </div>
+                
+              <div class="px-8 py-5 border-top border-gray-500">
+                <div class="overflow-auto"  style="height: 50px;">
+                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dicta expedita maxime, eos labore numquam autem dolores corrupti praesentium. Corporis numquam harum quis repudiandae laborum, vel, ab dolore deserunt at, veniam cumque beatae libero. Quod delectus animi modi laboriosam reprehenderit suscipit mollitia quo voluptatem? Nihil accusamus commodi cumque doloribus modi esse. Nobis quisquam esse laborum soluta praesentium aliquid quidem alias ut beatae! Quaerat, assumenda optio! Officiis tempore architecto quis ducimus, dolores amet tenetur, debitis voluptatibus ad quaerat earum dolore suscipit, libero nihil corporis eum! Et quis officia, consectetur pariatur quas non veniam molestiae. Rem, nesciunt consequuntur temporibus repellat eos inventore?</p>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                  alt="post img"
+                  class="card-inside-img"
+                />
+              </div>
+            <div class="px-8 py-5 overflow-y-auto border-top border-gray-500">
+              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                  alt="post img"
+                  class="card-inside-img"
+                />
+              </div>
+            <div class="px-8 py-5 overflow-y-auto border-top border-gray-500">
+              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem.</p>
+            </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselInPPTModal"
+            data-bs-slide="prev"
+            style="z-index: 3000;"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselInPPTModal"
+            data-bs-slide="next"
+            style="z-index: 3000;"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       
       <footer>
         <div class="bg-black py-10">
@@ -832,10 +955,8 @@
    <!-- <script>
     AOS.init();
   </script> -->
-  <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
-  <script async src="//www.instagram.com/embed.js"></script>
     <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+    <script  src="./assets/js/all.js"></script>
   </body>
 
 </html>

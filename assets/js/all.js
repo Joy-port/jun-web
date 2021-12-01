@@ -1,17 +1,5 @@
 "use strict";
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 var data = [{
   title: "icon 網站大集合",
   description: "你知道 icon 有分很多類型嗎？外框線、色塊、混合、等等，但要怎麼依照自己的需求尋找 icon？文章整理不同網站的特色，分成單色、彩色、可不可以編輯，及不同主題的 icon，趕快來找找看有沒有你想要的icon！",
@@ -397,18 +385,21 @@ var data = [{
     tagsName: ['商業', '商業模式', '企業經營', '策略', '架構', '目標', '價值', '創造', '能力', '資源', '網路', '獲利', '獲利模式', '閱讀筆記']
   }
 }];
-var pageData = [];
-var themeData = [];
-var contentData = [];
-var newestData1 = [];
-var newestData2 = [];
-var pageName = '';
-var sortType = 'timeSort';
-var blogItem = [];
-var pageItem = [];
-var blogId = '';
-var IgItem = {}; //預設渲染畫面
+"use strict";
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+//預設渲染畫面
 function init() {
   setDataId(); //將資料綁定id 根據時間
 
@@ -701,7 +692,7 @@ function libraryCardList(pageData) {
       content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block js-blog-link\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>\n            ");
     } else {
       //開啟 modal 的ig 文章
-      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#libraryContentModal\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#libraryContentModal\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
+      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#libraryIGPostModal\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#libraryPPTModal\"\n                // data-bs-target=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
     }
 
     str += content;
@@ -1153,4 +1144,17 @@ function renderTags(inputData) {
   });
   return str;
 } //搜尋頁面功能
+"use strict";
+
+var pageData = [];
+var themeData = [];
+var contentData = [];
+var newestData1 = [];
+var newestData2 = [];
+var pageName = '';
+var sortType = 'timeSort';
+var blogItem = [];
+var pageItem = [];
+var blogId = '';
+var IgItem = {};
 //# sourceMappingURL=all.js.map
