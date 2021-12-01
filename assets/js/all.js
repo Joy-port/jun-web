@@ -195,7 +195,7 @@ var data = [{
   description: "不用再啃厚厚的講義、輕易找到題目出處與解答、標示常考的法律條文",
   type: ["資源整理", "建築專區"],
   time: '2020-05-14',
-  imgUrl: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+  imgUrl: "https://images.unsplash.com/photo-1512850183-6d7990f42385?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
   tagsByTheme: ["建築資源", "建築師考試"],
   tagsByContent: "心智圖",
   linkUrl: "https://junlearning.ck.page/lawnotes"
@@ -294,7 +294,7 @@ var data = [{
   description: "懂得經營和了解設計同等重要。設計美麗的東西是一種藝術，但能從中找到獲利的空間，則是一種技能。了解營運一家公司的各種面向，才能讓你更自由的去做設計。",
   type: ["好書推薦"],
   time: '2020-04-15',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1486092476945-7f284646c58a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   tagsByTheme: ["設計", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -304,7 +304,7 @@ var data = [{
   description: "反思才會成長！如果沒有經過反思，所有的努力不一定能成為你學習的養分，花下的時間也不一定能讓你發揮最大的潛力。想要成長，你必須學會有意地暫停，理解經驗帶給你的啟發，才能從人生體驗當中學到東西。",
   type: ["學習思考", "好書推薦"],
   time: '2020-08-09',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1537059935635-db65478670d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80",
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -314,7 +314,7 @@ var data = [{
   description: "不犯錯的秘密武器！清單不能教會我們專業知識，但清單能幫助我們免於犯錯。就像一個機器需要零件，但如果沒有好的系統，也無法讓零件發揮效用，我們光擁有知識還不夠，清單就是能幫助我們有效運用知識的系統。",
   type: ["學習思考", "好書推薦"],
   time: '2020-09-27',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80",
   tagsByTheme: ["學習方法", "工作術"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -324,7 +324,7 @@ var data = [{
   description: "想學會「教」，就要先知道怎麼「學」。透過了解大腦的運作，學著如何順著天性，更有效率地學習，也學著如何克服本能，選擇更有成效的方式教學。",
   type: ["學習思考", "好書推薦"],
   time: '2021-10-01',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -334,7 +334,7 @@ var data = [{
   description: "作者把如何成功的重點放在「看待事情的角度」之上，是一本心態和方法並重的書，不只用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」。書中不斷提及的「心智」，指的就是面對事情心態",
   type: ["學習思考", "好書推薦"],
   time: '2021-05-28',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1529158062015-cad636e205a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80",
   tagsByTheme: ["職涯思考", "學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -344,7 +344,7 @@ var data = [{
   description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
   type: ["學習思考", "好書推薦"],
   time: '2021-06-24',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1456244698455-10edd25dacde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
   tagsByTheme: ["職涯思考", "自我成長", "人生思考"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -354,7 +354,7 @@ var data = [{
   description: "遠距在家忙到生活失衡？《搞定》教你管理自己的行動，就會自然而然地做好時間管理了！",
   type: ["學習思考", "好書推薦"],
   time: '2021-07-03',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1597167100957-1dfa110c1c14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2032&q=80",
   tagsByTheme: ["職涯思考", "學習方法"],
   tagsByContent: "文章",
   linkUrl: "blogContent.html",
@@ -364,13 +364,13 @@ var data = [{
   description: "第一次接觸統計思維，是在 2020 年商業思維學院裡劉奕酉老師的一堂課，那是我第一次用「思維」的角度理解一個學門，也讓我開始想更深入了解統計學。這堂課不只是教統計概念，也帶給我很多想法上的轉變",
   type: ["學習思考", "好書推薦"],
   time: '2021-07-31',
-  imgUrl: "",
+  imgUrl: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80",
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
   linkUrl: "",
   blogContent: []
 }, {
-  title: "《商業模式全史一創世紀篇》",
+  title: "IG貼文模板 -《商業模式全史一創世紀篇》",
   description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢",
   type: ["好書推薦"],
   time: '2020-10-21',
@@ -384,7 +384,7 @@ var data = [{
     tagsName: ['商業', '商業模式', '企業經營', '策略', '架構', '目標', '價值', '創造', '能力', '資源', '網路', '獲利', '獲利模式', '閱讀筆記']
   }
 }, {
-  title: "商業模式是什麽 《商業模式全史一創世紀篇》",
+  title: "簡報模版 - 商業模式是什麽 《商業模式全史一創世紀篇》",
   description: "商業模式是",
   type: ["好書推薦"],
   time: '2020-05-05',
@@ -420,6 +420,15 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+var pageData = [];
+var themeData = [];
+var contentData = [];
+var pageName = '';
+var blogItem = [];
+var pageItem = [];
+var blogId = '';
+var IgItem = [];
+var pptItem = [];
 var sortType = 'timeSort'; //預設渲染畫面
 
 function init() {
@@ -486,6 +495,9 @@ function renderContentList() {
 
   if (contentList.dataset.listType === 'newestData') {
     var thoughtsList = document.querySelector('.js-data-list');
+    pageData = getPageDataLocalStorage();
+    var newestData1 = [];
+    var newestData2 = [];
     pageData.forEach(function (item, index) {
       if (index >= 0 && index < 3) {
         newestData1.push(item);
@@ -495,6 +507,7 @@ function renderContentList() {
 
       ;
     });
+    console.log(newestData1);
     str = newPostCardList(newestData1);
     contentList.innerHTML = str;
     str = newPostCardList(newestData2);
@@ -731,7 +744,7 @@ function libraryCardList(pageData) {
 function newPostCardList(pageData) {
   var str = '';
   pageData.forEach(function (item) {
-    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-0\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"d-block ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" class=\"card-img-top content-card-img-top card-inside-img\">\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"fs-6 text-primary fw-bold mb-2 hide-row-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n            <p class=\"text-secondary hide-row-2\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
+    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-3\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"d-block ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" class=\"card-img-top content-card-img-top card-inside-img\">\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"fs-6 text-primary fw-bold mb-2 hide-row-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n            <p class=\"text-secondary hide-row-2\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
     str += content;
   });
   return str;
@@ -1212,17 +1225,4 @@ function getPageDataLocalStorage() {
   return JSON.parse(localStorage.getItem('pageData'));
 } //搜尋頁面功能
 "use strict";
-"use strict";
-
-var pageData = [];
-var themeData = [];
-var contentData = [];
-var newestData1 = [];
-var newestData2 = [];
-var pageName = '';
-var blogItem = [];
-var pageItem = [];
-var blogId = '';
-var IgItem = [];
-var pptItem = [];
 //# sourceMappingURL=all.js.map
