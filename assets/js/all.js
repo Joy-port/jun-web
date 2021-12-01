@@ -367,13 +367,13 @@ var data = [{
   imgUrl: "",
   tagsByTheme: ["學習方法", "自我成長"],
   tagsByContent: "文章",
-  linkUrl: "blogContent.html",
+  linkUrl: "",
   blogContent: [{}]
 }, {
-  title: "-書籍- 商業模式是什麽 《商業模式全史一創世紀篇》",
+  title: "《商業模式全史一創世紀篇》",
   description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢",
   type: ["好書推薦"],
-  time: '2020-05-05',
+  time: '2020-10-21',
   imgUrl: "",
   tagsByTheme: ["投資理財", "提問", "商業筆記"],
   tagsByContent: "IG 貼文",
@@ -384,6 +384,30 @@ var data = [{
     textContent: "<span>\u5546\u696D\u6A21\u5F0F\u662F\u4EC0\u9EBC\uFF1F</span>\n            <p>\u300C\u5546\u696D\u6A21\u5F0F\u300D\u8B1B\u8D77\u4F86\u597D\u50CF\u5F88\u6E05\u695A\uFF0C\u807D\u7684\u4EBA\u537B\u807D\u5F97\u5F88\u6A21\u7CCA\u3002\u5230\u5E95\u8981\u600E\u9EBC\u53BB\u4E86\u89E3\u9019\u56DB\u500B\u5B57\u5462\uFF1F</p>\n            <p>\u5546\u696D\u6A21\u5F0F\u662F\u4E00\u500B\u4F01\u696D\u7D93\u71DF\u7B56\u7565\u7684\u67B6\u69CB\uFF0C\u5176\u4E2D\u5FC5\u9808\u5305\u542B\u56DB\u500B\u8981\u4EF6\uFF1A\u76EE\u6A19\u3001\u50F9\u503C\u3001\u80FD\u529B\u3001\u7372\u5229\u6A21\u5F0F\u3002</p>\n            <p>\u4EE5\u5F8C\u807D\u5230\u300C\u5546\u696D\u6A21\u5F0F\u300D\uFF0C\u4E0D\u59A8\u505C\u4E0B\u4F86\u60F3\u4E00\u60F3\u6709\u6C92\u6709\u5305\u542B\u9019\u56DB\u500B\u8981\u4EF6\u5427\uFF01</p>\n            <p class=\"ig-content-tag\"><a href=\"#\">J\u672C\u597D\u66F8\u770B\u8D77\u4F86</a></p>",
     tagsName: ['商業', '商業模式', '企業經營', '策略', '架構', '目標', '價值', '創造', '能力', '資源', '網路', '獲利', '獲利模式', '閱讀筆記']
   }
+}, {
+  title: "商業模式是什麽 《商業模式全史一創世紀篇》",
+  description: "商業模式是",
+  type: ["好書推薦"],
+  time: '2020-05-05',
+  imgUrl: "",
+  tagsByTheme: ["投資理財", "提問", "商業筆記"],
+  tagsByContent: "簡報",
+  linkUrl: "",
+  blogContent: [],
+  igContent: [],
+  pptContent: [{
+    imgUrl: 'https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60',
+    textContent: '商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？'
+  }, {
+    imgUrl: 'https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+    textContent: '商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式，商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式'
+  }, {
+    imgUrl: 'https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+    textContent: '商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+  }, {
+    imgUrl: 'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
+    textContent: '以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來，以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+  }]
 }];
 "use strict";
 
@@ -688,11 +712,14 @@ function libraryCardList(pageData) {
   pageData.forEach(function (item) {
     var content = '';
 
-    if (item.tagsByContent === '文章') {
+    if (item.tagsByContent == '文章') {
       content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block js-blog-link\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>\n            ");
-    } else {
+    } else if (item.tagsByContent == 'IG 貼文' || item.tagsByContent == '簡報') {
       //開啟 modal 的ig 文章
-      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#libraryIGPostModal\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#libraryPPTModal\"\n                // data-bs-target=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
+      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
+    } else {
+      //其他如心智圖網頁連結
+      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
     }
 
     str += content;
@@ -872,6 +899,10 @@ function updateBlogLocalStorage() {
 
 function updatePageDataLocalStorage() {
   localStorage.setItem('pageData', JSON.stringify(pageData));
+}
+
+function getPageDataLocalStorage() {
+  return JSON.parse(localStorage.getItem('pageData'));
 }
 
 function loadToPage() {
@@ -1082,22 +1113,34 @@ function addBlogLink() {
       return item.addEventListener('click', getBlogContentId);
     });
   }
-} //ig 模式
+} //ig or 簡報 模式
 
 
 function renderLibraryModal() {
   if (document.querySelector('[data-bs-target]')) {
-    document.querySelectorAll('[data-bs-target="#libraryContentModal"]').forEach(function (item) {
-      item.addEventListener('mouseover', renderModalContent);
+    document.querySelectorAll('[data-bs-target="#libraryIGPostModal"]').forEach(function (item) {
+      item.addEventListener('mouseover', renderIGContentModal);
     });
+    document.querySelectorAll('[data-bs-target="#libraryPPTModal"]').forEach(function (item) {
+      item.addEventListener('mouseover', renderPPTContentModal);
+    });
+    updatePageDataLocalStorage();
   }
-}
+} //渲染ig 內容
 
-function renderModalContent(e) {
+
+function renderIGContentModal(e) {
   var clickId = e.target.closest('a').dataset.id;
+  pageData = getPageDataLocalStorage();
+
+  if (IgItem.length !== 0) {
+    IgItem.splice(0, 1);
+  }
+
+  ;
   pageData.forEach(function (item) {
     if (parseInt(item.id) === parseInt(clickId)) {
-      IgItem = item;
+      IgItem.push(item);
     }
 
     ;
@@ -1107,11 +1150,11 @@ function renderModalContent(e) {
   var textContent = document.querySelector('.ig-text-content');
   var tagsContent = document.querySelector('.ig-content-tag');
   var createdTime = document.querySelector('.js-ig-time');
-  imgButton.innerHTML = renderModalButton(IgItem.igContent.imgUrl);
-  imgContent.innerHTML = renderModalImg(IgItem.igContent.imgUrl);
-  textContent.innerHTML = IgItem.igContent.textContent;
-  tagsContent.innerHTML = renderTags(IgItem.igContent.tagsName);
-  createdTime.textContent = regTime(IgItem.time);
+  imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl);
+  imgContent.innerHTML = renderModalImg(IgItem[0].igContent.imgUrl);
+  textContent.innerHTML = IgItem[0].igContent.textContent;
+  tagsContent.innerHTML = renderTags(IgItem[0].igContent.tagsName);
+  createdTime.textContent = regTime(IgItem[0].time);
 }
 
 function renderModalButton(inputData) {
@@ -1143,6 +1186,33 @@ function renderTags(inputData) {
     str += content;
   });
   return str;
+} //渲染簡報內容
+
+
+function renderPPTContentModal(e) {
+  var clickId = e.target.closest('a').dataset.id;
+  pageData = getPageDataLocalStorage();
+
+  if (pptItem.length !== 0) {
+    pptItem.splice(0, 1);
+  }
+
+  ;
+  pageData.forEach(function (item) {
+    if (parseInt(item.id) === parseInt(clickId)) {
+      pptItem.push(item);
+    }
+
+    ;
+  });
+  var pptContentList = document.querySelector('.js-ppt-itemList');
+  var str = '';
+  pptItem[0].pptContent.forEach(function (item, index) {
+    var content = "\n        <div class=\"carousel-item ".concat(index === 0 ? 'active' : '', "\">\n            <div class=\"ratio ratio-16x9\">\n            <img src=\"").concat(item.imgUrl, "\"\n                alt=\"ppt img\"\n                class=\"card-inside-img\"/>\n            </div>\n            <div class=\"px-8 py-5 border-top border-gray-500\">\n                <div class=\"overflow-auto\"  style=\"height: 50px;\">\n                <p class=\"text-black\">").concat(item.textContent, "</p>\n                </div>\n            </div>\n        </div>\n        ");
+    str += content;
+  });
+  console.log(str);
+  pptContentList.innerHTML = str;
 } //搜尋頁面功能
 "use strict";
 
@@ -1156,5 +1226,6 @@ var sortType = 'timeSort';
 var blogItem = [];
 var pageItem = [];
 var blogId = '';
-var IgItem = {};
+var IgItem = [];
+var pptItem = [];
 //# sourceMappingURL=all.js.map

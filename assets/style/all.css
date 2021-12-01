@@ -12128,6 +12128,42 @@ fieldset:disabled .btn {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
+  .top-sm-0 {
+    top: 0 !important;
+  }
+  .top-sm-50 {
+    top: 50% !important;
+  }
+  .top-sm-100 {
+    top: 100% !important;
+  }
+  .bottom-sm-0 {
+    bottom: 0 !important;
+  }
+  .bottom-sm-50 {
+    bottom: 50% !important;
+  }
+  .bottom-sm-100 {
+    bottom: 100% !important;
+  }
+  .start-sm-0 {
+    left: 0 !important;
+  }
+  .start-sm-50 {
+    left: 50% !important;
+  }
+  .start-sm-100 {
+    left: 100% !important;
+  }
+  .end-sm-0 {
+    right: 0 !important;
+  }
+  .end-sm-50 {
+    right: 50% !important;
+  }
+  .end-sm-100 {
+    right: 100% !important;
+  }
   .border-sm {
     border: 1px solid #dee2e6 !important;
   }
@@ -14383,6 +14419,42 @@ fieldset:disabled .btn {
   .shadow-md-none {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
+  }
+  .top-md-0 {
+    top: 0 !important;
+  }
+  .top-md-50 {
+    top: 50% !important;
+  }
+  .top-md-100 {
+    top: 100% !important;
+  }
+  .bottom-md-0 {
+    bottom: 0 !important;
+  }
+  .bottom-md-50 {
+    bottom: 50% !important;
+  }
+  .bottom-md-100 {
+    bottom: 100% !important;
+  }
+  .start-md-0 {
+    left: 0 !important;
+  }
+  .start-md-50 {
+    left: 50% !important;
+  }
+  .start-md-100 {
+    left: 100% !important;
+  }
+  .end-md-0 {
+    right: 0 !important;
+  }
+  .end-md-50 {
+    right: 50% !important;
+  }
+  .end-md-100 {
+    right: 100% !important;
   }
   .border-md {
     border: 1px solid #dee2e6 !important;
@@ -16640,6 +16712,42 @@ fieldset:disabled .btn {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
+  .top-lg-0 {
+    top: 0 !important;
+  }
+  .top-lg-50 {
+    top: 50% !important;
+  }
+  .top-lg-100 {
+    top: 100% !important;
+  }
+  .bottom-lg-0 {
+    bottom: 0 !important;
+  }
+  .bottom-lg-50 {
+    bottom: 50% !important;
+  }
+  .bottom-lg-100 {
+    bottom: 100% !important;
+  }
+  .start-lg-0 {
+    left: 0 !important;
+  }
+  .start-lg-50 {
+    left: 50% !important;
+  }
+  .start-lg-100 {
+    left: 100% !important;
+  }
+  .end-lg-0 {
+    right: 0 !important;
+  }
+  .end-lg-50 {
+    right: 50% !important;
+  }
+  .end-lg-100 {
+    right: 100% !important;
+  }
   .border-lg {
     border: 1px solid #dee2e6 !important;
   }
@@ -18896,6 +19004,42 @@ fieldset:disabled .btn {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
+  .top-xl-0 {
+    top: 0 !important;
+  }
+  .top-xl-50 {
+    top: 50% !important;
+  }
+  .top-xl-100 {
+    top: 100% !important;
+  }
+  .bottom-xl-0 {
+    bottom: 0 !important;
+  }
+  .bottom-xl-50 {
+    bottom: 50% !important;
+  }
+  .bottom-xl-100 {
+    bottom: 100% !important;
+  }
+  .start-xl-0 {
+    left: 0 !important;
+  }
+  .start-xl-50 {
+    left: 50% !important;
+  }
+  .start-xl-100 {
+    left: 100% !important;
+  }
+  .end-xl-0 {
+    right: 0 !important;
+  }
+  .end-xl-50 {
+    right: 50% !important;
+  }
+  .end-xl-100 {
+    right: 100% !important;
+  }
   .border-xl {
     border: 1px solid #dee2e6 !important;
   }
@@ -21151,6 +21295,42 @@ fieldset:disabled .btn {
   .shadow-xxl-none {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
+  }
+  .top-xxl-0 {
+    top: 0 !important;
+  }
+  .top-xxl-50 {
+    top: 50% !important;
+  }
+  .top-xxl-100 {
+    top: 100% !important;
+  }
+  .bottom-xxl-0 {
+    bottom: 0 !important;
+  }
+  .bottom-xxl-50 {
+    bottom: 50% !important;
+  }
+  .bottom-xxl-100 {
+    bottom: 100% !important;
+  }
+  .start-xxl-0 {
+    left: 0 !important;
+  }
+  .start-xxl-50 {
+    left: 50% !important;
+  }
+  .start-xxl-100 {
+    left: 100% !important;
+  }
+  .end-xxl-0 {
+    right: 0 !important;
+  }
+  .end-xxl-50 {
+    right: 50% !important;
+  }
+  .end-xxl-100 {
+    right: 100% !important;
   }
   .border-xxl {
     border: 1px solid #dee2e6 !important;
@@ -23637,8 +23817,8 @@ input:focus, input:active {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .font-Abel {
