@@ -8,6 +8,7 @@ let blogId='';
 let IgItem =[];
 let pptItem = [];
 let sortType = 'timeSort';
+let searchName = '';
 
 //預設渲染畫面
 function init(){
@@ -16,6 +17,8 @@ function init(){
     autoRenderByPage();
     renderBlogContent();
     renderLibraryModal();
+    getSearchData();
+    renderSearchInput();
 }
 
 init();
@@ -33,6 +36,7 @@ let num = 0;
         time += num;
         item.id = time ;
     });
+    updateDataLocalStorage();
 
 }
 
@@ -52,7 +56,6 @@ function autoRenderByPage(){
         if(document.querySelector('[data-bs-toggle="collapse"]')){
             document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(item => item.addEventListener('click',changeIconRotateStyle));
         };
-        
     };
 
 }
@@ -238,9 +241,9 @@ function getPageData(contentList){
         pageName = 'newPosts';
         pageData = data.filter(item => item.type[(item.type.findIndex(typename=> typename === '學習思考'))] === '學習思考');
         break;
-        case 'search':
+        case 'search': //到search 頁面後 重新用value 取資料
         pageName = 'search';
-        pageData = searchAllResults();
+        pageData = getPageDataLocalStorage();
         break;
      }
      updatePageDataLocalStorage();
@@ -253,6 +256,16 @@ function renderCardsList(pageData){
         str = libraryCardList(pageData);
     }else if(pageName === 'newPosts'){
         
+    }else if(pageName === 'search'){
+       if(pageData.length === 0){
+           str = `
+           <li class="col-12 text-center h-100 my-auto">
+            <p class="fs-6 fw-md text-black mb-10">登愣，找不到相關結果... 請重新搜尋，或回到<a href="index.html" class="align-baseline">首頁</a></p>
+            <img class="btn-icon-gray-600" src="./assets/images/搜尋_無相關搜尋結果.svg" alt="no result">
+            </li> `
+       }else{
+           str = normalCardList(pageData);
+       }
     }else{
         str = normalCardList(pageData);
     };
@@ -538,15 +551,15 @@ function getBlogContentId(e){
 
     updateBlogLocalStorage();
 
-    loadToPage();
+    loadToPage('blogContent.html');
 }
 
-//點擊card 後的效果
-function loadToPage(){
+//換頁的效果
+function loadToPage(htmlPage){
 
     window.setTimeout(
         function (){
-            window.location.assign("blogContent.html");
+            window.location.assign(htmlPage);
             renderBlogContent ();
         },1000); 
 }
@@ -927,6 +940,10 @@ function renderPPTContentModal(e){
 
 
 //localStorage
+function updateDataLocalStorage(){
+    localStorage.setItem('data',JSON.stringify(data));
+}
+
 function updateBlogLocalStorage(){
     localStorage.setItem('blogContent',JSON.stringify(blogItem));
     localStorage.setItem('pageName',JSON.stringify(pageName));
@@ -935,13 +952,104 @@ function updateBlogLocalStorage(){
 function updatePageDataLocalStorage(){
     localStorage.setItem('pageData',JSON.stringify(pageData));
 }
+function updateSearchNameLocalStorage(){
+    localStorage.setItem('searchName',JSON.stringify(searchName));
+}
+
+function getDataLocalStorage(){
+    return JSON.parse(localStorage.getItem('data'));
+}
 
 function getPageDataLocalStorage(){
     return JSON.parse(localStorage.getItem('pageData'));
 }
 
+function getSearchNameLocalStorage(){
+    return JSON.parse(localStorage.getItem('searchName'));
+}
+
 //搜尋頁面功能
 
-function searchAllResults(){
+//搜尋input 綁監聽
+function getSearchData(){
+    if(document.querySelector('[data-search="input"]')){
 
+        if(pageName!=='search'){
+            const searchInput = document.querySelector('[data-search="input"]');
+            const searchBtn = document.querySelector('[data-search="btn"]');
+    
+            searchInput.addEventListener('keyup',showSimilarList);
+            searchBtn.addEventListener('click',searchAllResults);
+            searchInput.addEventListener('keypress',searchResultsWithKey);
+        }else{
+            
+        }
+
+    }
+}
+
+function searchAllResults(e){
+    e.preventDefault();
+    const searchInput = document.querySelector('[data-search="input"]');
+    let filterData =[];
+    let data = getDataLocalStorage();
+
+    if(e.target.closest('a').dataset.search === 'btn'){
+        searchName = searchInput.value.trim();
+        filterData = data.filter(item =>{
+           return item.title.match(searchName);
+        });
+
+       pageData = filterData;
+
+       updateSearchNameLocalStorage();
+       updatePageDataLocalStorage();
+
+       loadToPage('search.html');
+    };
+
+
+}
+
+function searchResultsWithKey(e){
+    const searchInput = document.querySelector('[data-search="input"]');
+    let filterData =[];
+    let data = getDataLocalStorage();
+
+   if( e.key === 'Enter'){
+    searchName = searchInput.value.trim();
+    filterData = data.filter(item =>{
+        return item.title.match(searchName);
+    });
+    pageData = filterData;
+
+    updateSearchNameLocalStorage();
+    updatePageDataLocalStorage();
+
+    loadToPage('search.html');
+   }
+}
+
+//條列顯示已有符合項目
+
+function showSimilarList(e){
+    // console.log(e.target.value);
+
+}
+
+//render 已搜尋出來的項目
+function renderSearchInput(){
+    if(pageName === 'search'){
+        const searchInput = document.querySelectorAll('[data-search="input"]');
+
+        searchName = getSearchNameLocalStorage();
+
+        searchInput.forEach((item,index) =>{
+            if(index === 1){
+                item.value = searchName;
+
+            }
+        })
+    }
+  
 }
