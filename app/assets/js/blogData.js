@@ -561,16 +561,16 @@ const data =[
         imgUrl:"",
         tagsByTheme:["學習方法","自我成長"],
         tagsByContent:"文章",
-        linkUrl:"blogContent.html",
+        linkUrl:"",
         blogContent:[{
 
         }],
     },
     {
-        title: "-書籍- 商業模式是什麽 《商業模式全史一創世紀篇》",
+        title: "《商業模式全史一創世紀篇》",
         description: "商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢",
         type:["好書推薦"],
-        time: '2020-05-05',
+        time: '2020-10-21',
         imgUrl:"",
         tagsByTheme:["投資理財","提問","商業筆記"],
         tagsByContent:"IG 貼文",
@@ -585,5 +585,35 @@ const data =[
             <p class="ig-content-tag"><a href="#">J本好書看起來</a></p>`,
             tagsName:['商業','商業模式','企業經營','策略', '架構', '目標', '價值', '創造', '能力','資源','網路','獲利','獲利模式','閱讀筆記']
         }
+    },
+    {
+        title: "商業模式是什麽 《商業模式全史一創世紀篇》",
+        description: "商業模式是",
+        type:["好書推薦"],
+        time: '2020-05-05',
+        imgUrl:"",
+        tagsByTheme:["投資理財","提問","商業筆記"],
+        tagsByContent:"簡報",
+        linkUrl:"",
+        blogContent:[],
+        igContent:[],
+        pptContent:[
+            {
+                imgUrl:'https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60',
+                textContent:'商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？'
+            },
+            {
+                imgUrl:'https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+                textContent:'商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式，商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式'
+            },
+            {
+                imgUrl:'https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                textContent:'商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+            },
+            {
+                imgUrl:'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
+                textContent:'以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來，以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+            }
+        ]
     }
 ];

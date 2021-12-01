@@ -260,7 +260,7 @@ function libraryCardList(pageData) {
     let str = '';
     pageData.forEach(item =>{
         let content='';
-        if(item.tagsByContent==='文章'){
+        if(item.tagsByContent=='文章'){
              content = `<li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
             <div class="card content-card h-100">
               <a
@@ -285,16 +285,16 @@ function libraryCardList(pageData) {
             </div>
           </li>
             `;
-        }else{
+        }else if(item.tagsByContent=='IG 貼文' || item.tagsByContent=='簡報' ){
             //開啟 modal 的ig 文章
             content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
             <div class="card content-card h-100">
               <a
-                href="#libraryContentModal"
+                href="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal':'libraryPPTModal')}"
                 data-id="${item.id}"
                 class="d-block"
                 data-bs-toggle="modal"
-                data-bs-target="#libraryContentModal"
+                data-bs-target="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal': 'libraryPPTModal')}"
               >
                 <img
                   src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
@@ -313,9 +313,33 @@ function libraryCardList(pageData) {
             </div>
           </li>`;
           
+        }else{
+            //其他如心智圖網頁連結
+            content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
+            <div class="card content-card h-100">
+              <a
+                href="${item.linkUrl}"
+                data-id="${item.id}"
+                class="d-block"
+              >
+                <img
+                  src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
+                  alt="card img"
+                  class="card-img-top content-card-img-top card-inside-img"
+                />
+              </a>
+              <div class="py-3 px-5 h-100">
+                <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
+                ${item.title}
+                </h3>
+                <p class="text-secondary hide-row-2">
+                ${item.description}
+                </p>
+              </div>
+            </div>
+          </li>`;
         }
         str += content;
-
     });
 
     return str ;
@@ -491,6 +515,10 @@ function updateBlogLocalStorage(){
 
 function updatePageDataLocalStorage(){
     localStorage.setItem('pageData',JSON.stringify(pageData));
+}
+
+function getPageDataLocalStorage(){
+    return JSON.parse(localStorage.getItem('pageData'));
 }
 
 function loadToPage(){
@@ -730,21 +758,31 @@ function addBlogLink(){
      }
 }
 
-//ig 模式
+//ig or 簡報 模式
 function renderLibraryModal(){
     if(document.querySelector('[data-bs-target]')){
-       document.querySelectorAll('[data-bs-target="#libraryContentModal"]').forEach(item=>{
-           item.addEventListener('mouseover', renderModalContent);
-       })
+        
+        document.querySelectorAll('[data-bs-target="#libraryIGPostModal"]').forEach(item=>{
+           item.addEventListener('mouseover', renderIGContentModal);
+            });
+        document.querySelectorAll('[data-bs-target="#libraryPPTModal"]').forEach(item=>{
+            item.addEventListener('mouseover', renderPPTContentModal);
+        });
+        updatePageDataLocalStorage();
     }
 }
 
-function renderModalContent(e){
+//渲染ig 內容
+function renderIGContentModal(e){
     let clickId = e.target.closest('a').dataset.id;
+    pageData = getPageDataLocalStorage();
 
+    if(IgItem.length !== 0){
+        IgItem.splice(0,1);
+    };
     pageData.forEach(item =>{
         if(parseInt(item.id) === parseInt(clickId)){
-            IgItem = item;
+            IgItem.push(item);
         };
     });
 
@@ -755,11 +793,11 @@ function renderModalContent(e){
     const createdTime = document.querySelector('.js-ig-time');
     
    
-    imgButton.innerHTML = renderModalButton(IgItem.igContent.imgUrl);
-    imgContent.innerHTML = renderModalImg(IgItem.igContent.imgUrl);
-    textContent.innerHTML = IgItem.igContent.textContent;
-    tagsContent.innerHTML = renderTags(IgItem.igContent.tagsName);
-    createdTime.textContent = regTime(IgItem.time);
+    imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl);
+    imgContent.innerHTML = renderModalImg(IgItem[0].igContent.imgUrl);
+    textContent.innerHTML = IgItem[0].igContent.textContent;
+    tagsContent.innerHTML = renderTags(IgItem[0].igContent.tagsName);
+    createdTime.textContent = regTime(IgItem[0].time);
 }
 
 function renderModalButton(inputData){
@@ -829,5 +867,48 @@ function renderTags(inputData){
 
     return str ;
 }
+
+//渲染簡報內容
+function renderPPTContentModal(e){
+    let clickId = e.target.closest('a').dataset.id;
+    pageData = getPageDataLocalStorage();
+
+    if(pptItem.length !== 0){
+        pptItem.splice(0,1);
+    };
+    pageData.forEach(item =>{
+        if(parseInt(item.id) === parseInt(clickId)){
+            pptItem.push(item);
+        };
+    });
+
+    const pptContentList = document.querySelector('.js-ppt-itemList');
+    let str ='';
+    pptItem[0].pptContent.forEach((item,index) =>{
+        let content = `
+        <div class="carousel-item ${index===0?'active':''}">
+            <div class="ratio ratio-16x9">
+            <img src="${item.imgUrl}"
+                alt="ppt img"
+                class="card-inside-img"/>
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+                <div class="overflow-auto"  style="height: 50px;">
+                <p class="text-black">${item.textContent}</p>
+                </div>
+            </div>
+        </div>
+        `
+        str += content;
+    })
+    console.log(str);
+
+    pptContentList.innerHTML = str ;
+
+}
+
+
+
+
 
 //搜尋頁面功能

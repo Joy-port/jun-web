@@ -68,6 +68,34 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+      "top":
+      map-merge(
+        map-get($utilities, "top"),
+        (
+          responsive: true,
+        )
+      ),
+    "bottom":
+      map-merge(
+        map-get($utilities, "bottom"),
+        (
+          responsive: true,
+        )
+      ),
+    "start":
+      map-merge(
+        map-get($utilities, "start"),
+        (
+          responsive: true,
+        )
+      ),
+    "end":
+      map-merge(
+        map-get($utilities, "end"),
+        (
+          responsive: true,
+        )
+      ),
     "width":
       map-merge(
         map-get($utilities, "width"),

@@ -8,4 +8,5 @@ let sortType = 'timeSort';
 let blogItem = [];
 let pageItem = [];
 let blogId='';
-let IgItem ={};
+let IgItem =[];
+let pptItem = [];
