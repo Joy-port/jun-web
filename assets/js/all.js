@@ -440,7 +440,6 @@ function init() {
   renderBlogContent();
   renderLibraryModal();
   getSearchData();
-  renderSearchInput();
 }
 
 init(); //綁定id
@@ -1288,28 +1287,54 @@ function getSearchData() {
       searchInput.addEventListener('keyup', showSimilarList);
       searchBtn.addEventListener('click', searchAllResults);
       searchInput.addEventListener('keypress', searchResultsWithKey);
-    } else {}
+    } else {
+      renderSearchPage();
+    }
   }
 }
 
 function searchAllResults(e) {
   e.preventDefault();
-  var searchInput = document.querySelector('[data-search="input"]');
-  var filterData = [];
-  var data = getDataLocalStorage();
 
-  if (e.target.closest('a').dataset.search === 'btn') {
-    searchName = searchInput.value.trim();
-    filterData = data.filter(function (item) {
-      return item.title.match(searchName);
+  if (pageName !== 'search') {
+    var searchInput = document.querySelector('[data-search="input"]');
+    var filterData = [];
+
+    var _data = getDataLocalStorage();
+
+    if (e.target.closest('a').dataset.search === 'btn') {
+      searchName = searchInput.value.trim();
+      filterData = _data.filter(function (item) {
+        return item.title.match(searchName);
+      });
+      pageData = filterData;
+      updateSearchNameLocalStorage();
+      updatePageDataLocalStorage();
+      loadToPage('search.html');
+    }
+
+    ;
+  } else {
+    var searchInputAll = document.querySelectorAll('[data-search="input"]');
+    var searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+    var _filterData = [];
+
+    var _data2 = getDataLocalStorage();
+
+    searchInputAll.forEach(function (inputItem) {
+      if (e.target.closest('a').dataset.search === 'btn') {
+        _filterData = _data2.filter(function (dataItem) {
+          return dataItem.title.match(inputItem.value.trim());
+        });
+      }
+
+      ;
     });
-    pageData = filterData;
+    pageData = _filterData;
     updateSearchNameLocalStorage();
     updatePageDataLocalStorage();
-    loadToPage('search.html');
+    renderContentList();
   }
-
-  ;
 }
 
 function searchResultsWithKey(e) {
@@ -1331,17 +1356,21 @@ function searchResultsWithKey(e) {
 
 
 function showSimilarList(e) {// console.log(e.target.value);
-} //render 已搜尋出來的項目
+}
 
-
-function renderSearchInput() {
+function renderSearchPage() {
   if (pageName === 'search') {
-    var searchInput = document.querySelectorAll('[data-search="input"]');
+    //render 已搜尋出來的內容
+    var searchInputAll = document.querySelectorAll('[data-search="input"]');
+    var searchBtnAll = document.querySelectorAll('[data-search="btn"]');
     searchName = getSearchNameLocalStorage();
-    searchInput.forEach(function (item, index) {
+    searchInputAll.forEach(function (item, index) {
       if (index === 1) {
         item.value = searchName;
       }
+    });
+    searchBtnAll.forEach(function (item) {
+      item.addEventListener('click', searchAllResults);
     });
   }
 }
