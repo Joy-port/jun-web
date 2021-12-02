@@ -258,10 +258,11 @@ function renderCardsList(pageData){
     }else if(pageName === 'newPosts'){
         
     }else if(pageName === 'search'){
+        let searchName = getSearchNameLocalStorage();
        if(pageData.length === 0){
            str = `
            <li class="col-12 text-center h-100 my-auto">
-            <p class="fs-6 fw-md text-black mb-10">登愣，找不到相關結果... 請重新搜尋，或回到<a href="index.html" class="align-baseline">首頁</a></p>
+            <p class="fs-6 fw-md text-black mb-10">登愣，找不到「${searchName}」相關結果... 請重新搜尋，或回到<a href="index.html" class="align-baseline">首頁</a></p>
             <img class="btn-icon-gray-600" src="./assets/images/搜尋_無相關搜尋結果.svg" alt="no result">
             </li> `
        }else{
