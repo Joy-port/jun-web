@@ -18,7 +18,8 @@ function init(){
     renderBlogContent();
     renderLibraryModal();
     getSearchData();
-    renderSearchInput();
+
+    
 }
 
 init();
@@ -973,16 +974,16 @@ function getSearchNameLocalStorage(){
 //搜尋input 綁監聽
 function getSearchData(){
     if(document.querySelector('[data-search="input"]')){
-
         if(pageName!=='search'){
             const searchInput = document.querySelector('[data-search="input"]');
             const searchBtn = document.querySelector('[data-search="btn"]');
     
             searchInput.addEventListener('keyup',showSimilarList);
             searchBtn.addEventListener('click',searchAllResults);
-            searchInput.addEventListener('keypress',searchResultsWithKey);
+            searchInput.addEventListener('keypress',searchResultsWithKey);  
         }else{
-            
+            renderSearchPage();
+
         }
 
     }
@@ -990,24 +991,43 @@ function getSearchData(){
 
 function searchAllResults(e){
     e.preventDefault();
-    const searchInput = document.querySelector('[data-search="input"]');
-    let filterData =[];
-    let data = getDataLocalStorage();
+    if(pageName!=='search'){
+        const searchInput = document.querySelector('[data-search="input"]');
+        let filterData =[];
+        let data = getDataLocalStorage();
+    
+        if(e.target.closest('a').dataset.search === 'btn'){
+            searchName = searchInput.value.trim();
+            filterData = data.filter(item =>{
+               return item.title.match(searchName);
+            });
+    
+           pageData = filterData;
+    
+           updateSearchNameLocalStorage();
+           updatePageDataLocalStorage();
+    
+           loadToPage('search.html');
+        };
+    }else{
+        const searchInputAll = document.querySelectorAll('[data-search="input"]');
+        const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+        
+        let filterData=[];
+        let data = getDataLocalStorage();
 
-    if(e.target.closest('a').dataset.search === 'btn'){
-        searchName = searchInput.value.trim();
-        filterData = data.filter(item =>{
-           return item.title.match(searchName);
-        });
+        searchInputAll.forEach(inputItem =>{
+            if(e.target.closest('a').dataset.search === 'btn'){
+                filterData = data.filter(dataItem => dataItem.title.match(inputItem.value.trim()));
+            };
+        })
 
-       pageData = filterData;
+        pageData = filterData;
+        updateSearchNameLocalStorage();
+        updatePageDataLocalStorage();
+        renderContentList();
 
-       updateSearchNameLocalStorage();
-       updatePageDataLocalStorage();
-
-       loadToPage('search.html');
-    };
-
+    }
 
 }
 
@@ -1037,19 +1057,21 @@ function showSimilarList(e){
 
 }
 
-//render 已搜尋出來的項目
-function renderSearchInput(){
+function renderSearchPage(){
     if(pageName === 'search'){
-        const searchInput = document.querySelectorAll('[data-search="input"]');
-
+        //render 已搜尋出來的內容
+        const searchInputAll = document.querySelectorAll('[data-search="input"]');
+        const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
         searchName = getSearchNameLocalStorage();
 
-        searchInput.forEach((item,index) =>{
-            if(index === 1){
+        searchInputAll.forEach((item,index)=>{
+            if(index===1){
                 item.value = searchName;
-
             }
         })
+        
+        searchBtnAll.forEach(item =>{
+            item.addEventListener('click',searchAllResults);
+        })
     }
-  
 }
