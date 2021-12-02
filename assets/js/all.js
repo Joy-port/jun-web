@@ -719,8 +719,10 @@ function renderCardsList(pageData) {
   if (pageName === 'library') {
     str = libraryCardList(pageData);
   } else if (pageName === 'newPosts') {} else if (pageName === 'search') {
+    var _searchName = getSearchNameLocalStorage();
+
     if (pageData.length === 0) {
-      str = "\n           <li class=\"col-12 text-center h-100 my-auto\">\n            <p class=\"fs-6 fw-md text-black mb-10\">\u767B\u6123\uFF0C\u627E\u4E0D\u5230\u76F8\u95DC\u7D50\u679C... \u8ACB\u91CD\u65B0\u641C\u5C0B\uFF0C\u6216\u56DE\u5230<a href=\"index.html\" class=\"align-baseline\">\u9996\u9801</a></p>\n            <img class=\"btn-icon-gray-600\" src=\"./assets/images/\u641C\u5C0B_\u7121\u76F8\u95DC\u641C\u5C0B\u7D50\u679C.svg\" alt=\"no result\">\n            </li> ";
+      str = "\n           <li class=\"col-12 text-center h-100 my-auto\">\n            <p class=\"fs-6 fw-md text-black mb-10\">\u767B\u6123\uFF0C\u627E\u4E0D\u5230\u300C".concat(_searchName, "\u300D\u76F8\u95DC\u7D50\u679C... \u8ACB\u91CD\u65B0\u641C\u5C0B\uFF0C\u6216\u56DE\u5230<a href=\"index.html\" class=\"align-baseline\">\u9996\u9801</a></p>\n            <img class=\"btn-icon-gray-600\" src=\"./assets/images/\u641C\u5C0B_\u7121\u76F8\u95DC\u641C\u5C0B\u7D50\u679C.svg\" alt=\"no result\">\n            </li> ");
     } else {
       str = normalCardList(pageData);
     }
