@@ -439,7 +439,9 @@ function init() {
   autoRenderByPage();
   renderBlogContent();
   renderLibraryModal();
-  getSearchData();
+  getSearchData(); //css
+
+  showBackTopBtn();
 }
 
 init(); //綁定id
@@ -1374,6 +1376,20 @@ function renderSearchPage() {
     searchBtnAll.forEach(function (item) {
       item.addEventListener('click', searchAllResults);
     });
+  }
+} //滑到底 css back-top btn 效果
+
+
+function showBackTopBtn() {
+  var el = document.body;
+  el.addEventListener('scroll', getHeight);
+}
+
+function getHeight(e) {
+  console.log(window.pageYOffset);
+
+  if (!e.window.pageYOffset) {
+    console.log(e.window.pageYOffset);
   }
 }
 "use strict";

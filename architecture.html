@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -42,9 +42,10 @@
 </div>
 </div>
       </header>
-  
+     
+      <main>
       
-<div class="catagory-header-container py-4">
+<section class="catagory-header-container py-4">
     <a href="#" class="d-block link-primary mb-4">
       <img
         src="./assets/images/Home_建築專區.svg"
@@ -56,10 +57,10 @@
     <p class="catagory-header-content">在讀建築系的時候，很多事情都自己埋頭摸索
     </br>後來才發現，其實可以不用這麼辛苦
     </p>
-  </div>
+</section>
   
 <!-- catagories -->
-<div class="container py-1
+<section class="container py-1
 mb-4">
   <div
     class="
@@ -92,16 +93,10 @@ mb-4">
       <img class="d-block me-1 py-1 btn-icon" src="./assets/images/Home_好書推薦.svg" alt="icon img" style="width:30px; height:30px;">
       好書推薦</a>
   </div>
-  <!-- 編輯toggle 功能區 -->
-  <!-- <a href="#" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#catagory" aria-expanded="false" aria-controls="catagory">所有文章</a
-        > -->
-</div>
+</section>
 
-
-  
-  <!-- <div id="catagory" class="accordion-collapse collapse show" aria-labelledby="catagory" data-bs-parent="#catagoryGroup"> -->
 <!-- 目錄類別標籤 -->
-<div class="catagory-body show" id="categoryBox" aria-labelledby="categoryBox">
+<section class="catagory-body show" id="categoryBox" aria-labelledby="categoryBox">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-3">
       <a href="#categoryTheme" class="d-flex link-secondary order-last order-md-first" data-title="theme" data-bs-parent="#categoryBox" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="categoryTheme">
@@ -200,10 +195,10 @@ mb-4">
       </li>
     </ul>
   </div>
-</div>
+</section>
 
  <!-- 建築相關 -->
- <div class="border-top border-2 border-gray-500 bg-light">
+ <section class="border-top border-2 border-gray-500 bg-light">
   <div class="container py-15">
         <ul class="row js-content-list" data-list-type="architecture">
           <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8">
@@ -224,11 +219,19 @@ mb-4">
           </li>
         </ul>
     </div>
-</div>
-      
+  </section>
+      </main>
       <footer>
-        <div class="bg-black py-10">
+        <footer class="bg-black py-10">
     <div class="container">
+        <a href="#" class="back-top position-fixed d-none" data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-anchor="#js-show-backTop-btn">
+            <span class="material-icons-outlined">
+                expand_less
+            </span>
+        </a>
         <h4 class="text-center text-md-start text-white fs-6 fw-md mb-10">JUN CHENG</h4>
         <div class="row justify-content-center justify-content-md-start text-center text-md-start">
             <ul class="col-md-3 offset-md-9 mb-10">
@@ -249,16 +252,16 @@ mb-4">
       
     </div>
 
-</div>
+</footer>
 
 
       </footer>
     
    <!--  <script src="https://unpkg.com/vue@next"></script> -->
-   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-   <!-- <script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
     AOS.init();
-  </script> -->
+  </script>
     <script src="./assets/js/vendors.js"></script>
     <script  src="./assets/js/all.js"></script>
   </body>
