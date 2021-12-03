@@ -34,3 +34,27 @@
 .h-1{
     height: 600px;
 }
+
+.back-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: rgba(15,15,15,.15);
+    font-size: 24px;
+
+    position: fixed;
+    bottom: 20px;//-50
+    right: 20px;
+    z-index: 10;
+    transition: bottom .4s cubic-bezier(.35,.49,.53,.88);
+
+    &:hover{
+        background: #fff;
+        color: $gray-500;
+        
+    }
+}

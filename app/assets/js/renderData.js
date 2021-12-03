@@ -19,7 +19,8 @@ function init(){
     renderLibraryModal();
     getSearchData();
 
-    
+    //css
+    showBackTopBtn();
 }
 
 init();
@@ -38,7 +39,6 @@ let num = 0;
         item.id = time ;
     });
     updateDataLocalStorage();
-
 }
 
 //根據頁面顯示資料
@@ -939,8 +939,6 @@ function renderPPTContentModal(e){
 
 }
 
-
-
 //localStorage
 function updateDataLocalStorage(){
     localStorage.setItem('data',JSON.stringify(data));
@@ -1052,7 +1050,6 @@ function searchResultsWithKey(e){
 }
 
 //條列顯示已有符合項目
-
 function showSimilarList(e){
     // console.log(e.target.value);
 
@@ -1074,5 +1071,20 @@ function renderSearchPage(){
         searchBtnAll.forEach(item =>{
             item.addEventListener('click',searchAllResults);
         })
+    }
+}
+
+
+//滑到底 css back-top btn 效果
+function showBackTopBtn(){
+    const el = document.body;
+    el.addEventListener('scroll',getHeight)
+    
+}
+
+function getHeight(e){
+    console.log(window.pageYOffset);
+    if(!e.window.pageYOffset){
+        console.log(e.window.pageYOffset);
     }
 }
