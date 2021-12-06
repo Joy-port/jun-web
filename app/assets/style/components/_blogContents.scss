@@ -1,5 +1,5 @@
 .title{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: .5rem;
     color: $black;
@@ -27,14 +27,23 @@
     &>p{
         margin-bottom: 2rem;
         line-height:1.5;
-
         &::selection{
             background-color: $warning;
+        }
+        &.text-paragraph{
+            margin-bottom: 0;
+        }
+        &.text-btn-group{
+            &>a+a{
+                margin-top: 0.5rem;
+                display: table;
+            }
         }
     }
     &>img{
         display:block;
     }
+
 
     &-link{
         line-height: 1.5;
@@ -45,11 +54,10 @@
     &-link-btn{
         text-decoration: none;
         padding: 0.5rem 1rem;
-        display: inline-block;
         border-radius: 20px;
         border: 1px solid $black;
         color: $black;
-
+        display: inline-flex;
         &:hover{
             color: $info;
             border: 1px solid $info;
@@ -61,7 +69,8 @@
     }
 
     &-highlight{
-        background-color: $warning
+        background-color: $warning;
+        border-bottom: 2px solid #f8cd5f;
     }
     &-hover-highlight{
         &:hover{

@@ -125,31 +125,34 @@ const data =[
             <p><a href="https://www.bfa.com.tw/tools" class="text-content-link-btn">BFA 簡報學院</a></p>
 
             <h2 class="text-content-h2" id="專欄文章" data-title="h2">專欄文章</h2>
-            <p><a href="https://www.bfa.com.tw/blog" class="text-content-link-btn">BFA 簡報</a></p>
-            <p><a href="https://chuckchiangppt.blogspot.com/" class="text-content-link-btn">簡報練功團</a></p>
-            <p><a href="https://artofslide.blogspot.com/" class="text-content-link-btn">簡報藝術烘焙坊</a></p>
+            <p class="text-btn-group">
+            <a href="https://www.bfa.com.tw/blog" class="text-content-link-btn">BFA 簡報</a>
+            <a href="https://chuckchiangppt.blogspot.com/" class="text-content-link-btn">簡報練功團</a>
+            <a href="https://artofslide.blogspot.com/" class="text-content-link-btn">簡報藝術烘焙坊</a></p>
             
             <h2 class="text-content-h2" id="Facebook粉絲專頁" data-title="h2">Facebook 粉絲專頁</h2>
-            <p><a href="https://www.facebook.com/slideologylearner/" class="text-content-link-btn">簡報・初學者</a></p>
-            <p><a href="https://www.facebook.com/easypresentation/" class="text-content-link-btn">簡報・簡單報</a></p>
-            <p><a href="https://www.facebook.com/Medicalslideology" class="text-content-link-btn">歪樓藥師 翁紹恩</a></p>
-            <p><a href="https://www.facebook.com/WowKeynote/" class="text-content-link-btn">Keynote不求人</a></p>
-            <p><a href="https://www.facebook.com/thekeynotestar/" class="text-content-link-btn">Keynote 簡報星球</a></p>
-            <p><a href="https://www.facebook.com/pptskill" class="text-content-link-btn">有Power也有Point的簡報設計</a></p>
+            <p class="text-btn-group"><a href="https://www.facebook.com/slideologylearner/" class="text-content-link-btn">簡報・初學者</a>
+            <a href="https://www.facebook.com/easypresentation/" class="text-content-link-btn">簡報・簡單報</a>
+            <a href="https://www.facebook.com/Medicalslideology" class="text-content-link-btn">歪樓藥師 翁紹恩</a>
+            <a href="https://www.facebook.com/WowKeynote/" class="text-content-link-btn">Keynote不求人</a>
+            <a href="https://www.facebook.com/thekeynotestar/" class="text-content-link-btn">Keynote 簡報星球</a>
+            <a href="https://www.facebook.com/pptskill" class="text-content-link-btn">有Power也有Point的簡報設計</a></p>
             
             <h2 class="text-content-h2" id="Facebook社團" data-title="h2">Facebook 社團</h2>
-            <p><a href="https://www.facebook.com/groups/870602986442387/" class="text-content-link-btn">簡報設計新手村</a></p>
-            <p><a href="https://www.facebook.com/groups/1080149785351887/" class="text-content-link-btn">10分鐘簡報交流社團</a></p>
+            <p class="text-btn-group">
+            <a href="https://www.facebook.com/groups/870602986442387/" class="text-content-link-btn">簡報設計新手村</a>
+            <a href="https://www.facebook.com/groups/1080149785351887/" class="text-content-link-btn">10分鐘簡報交流社團</a></p>
 
             <h2 class="text-content-h2" id="Instagram帳號" data-title="h2">Instagram 帳號</h2>
-            <p><a href="https://www.instagram.com/ppt.note/" class="text-content-link-btn">ppt.note</a></p>
+            <p class="text-btn-group"><a href="https://www.instagram.com/ppt.note/" class="text-content-link-btn">ppt.note</a></p>
 
             <h2 class="text-content-h2" id="線上課程" data-title="h2">線上課程</h2>
-            <p><a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">商業簡報設計與應用課｜晉升主管必備的28種職場簡報術</a></p>
-            <p><a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">PPT 動畫課｜動態簡報輕鬆上手</a></p>
-            <p><a href="https://www.yottau.com.tw/course/intro/1152#intro" class="text-content-link-btn">Keynote 全攻略：零基礎做出超吸睛簡報！</a></p>
-            <p>有些文章和技巧，都神奇到甚至覺得大神用的 PPT 跟我用的好像不一樣XD</p>
-            <p>希望這樣的整理，能幫你節省一些製作簡報的時間～</p>
+            <p class="text-btn-group">
+            <a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">商業簡報設計與應用課｜晉升主管必備的28種職場簡報術</a>
+            <a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">PPT 動畫課｜動態簡報輕鬆上手</a>
+            <a href="https://www.yottau.com.tw/course/intro/1152#intro" class="text-content-link-btn">Keynote 全攻略：零基礎做出超吸睛簡報！</a></p>
+            <p class="text-paragraph">有些文章和技巧，都神奇到甚至覺得大神用的 PPT 跟我用的好像不一樣XD </p>
+            <p class="text-paragraph">希望這樣的整理，能幫你節省一些製作簡報的時間～ </p>
             <p>一起向厲害的人學習！</p>`,
             tags:[{
                 name:'資源整理',
@@ -483,13 +486,46 @@ const data =[
     {
         title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
         description: "遠距在家忙到生活失衡？《搞定》教你管理自己的行動，就會自然而然地做好時間管理了！",
-        type:["學習思考","好書推薦"],
+        type:["好書推薦"],
         time: '2021-07-03',
         imgUrl:"https://images.unsplash.com/photo-1597167100957-1dfa110c1c14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2032&q=80",
-        tagsByTheme:["職涯思考","學習方法"],
+        tagsByTheme:["職涯思考","工作術"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:[],
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>遠距在家忙到生活失衡？</p>
+            <p>讀完《搞定》才了解，如果學會管理自己的行動，就能做好時間管理！</p>
+            <p>不知道你有沒有過這樣的經歷：</p>
+            <p>生活被瑣事填滿，實在抽不出時間做真正重要的事，覺得自己應該去上時間管理的課，所以騰出一段時間上課，但上完之後，馬上又被更多還沒完成的瑣事擊垮，根本就沒有餘力去應用上課學到的東西，就算我知道那些技巧很棒，就是沒時間學、沒時間用啊，根本養不程一個好的時間管理技巧或習慣…</p>
+            <p>我用過很多時間管理、提升工作效率的方法，可是很多方法都只是製造出更多的麻煩，例如記錄時間，每次要做事之前叫要打開app，結果花更多時間在看手機，也可能要額外花時間去學習方法，額外花心力去建立習慣，但卻沒有實際解決本來的問題，還是一樣每天熬夜，事情都做不完，想做的事也一直都沒有時間完成，甚至讓自己無法好好休息。</p>
+            <p>如果你也正在被瑣事追著跑的生活裡掙扎，再沒時間都要看一下《搞定》這本書！</p>
+            <p>作者大衛艾倫是全美前五大高階經理人教練，在書的第一章，就提出一個很重要的盲點：<span class="text-content-highlight callout bg-warning">「當我們在學時間管理技巧時，很多時候都著重在學習我們本來不知道的東西，但這等於是要我們在本來就很有限的時間內，用加入更多事情的方法，讓自己擁有更多時間，結果就是緣木求魚！」</span></p>
+            <p>每個方法都有它可以解決的問題，但如果沒有了解更上一層的思維，就不知道怎麼根據自己的問題，找到相應的解法。</p>
+            <p class="text-content-callout bg-warning">先理解原則，才能找對方法。</p>
+            <div class="text-content-quote">
+                <p>說到方法往往有上百萬種，但原則卻時常寥寥無幾。掌握原則的人可以成功選擇自己的方法，而嘗試各種方法卻忽略原則的人，必將面臨困難。
+                </p>
+                <p><span>&mdash; 《搞定》</span></p>
+            </div>
+            <p>大多人真正的問題不在方法，因為知道再多的方法，如果不能讓本來的事情變少，就沒辦法讓你生出更多時間。我們需要的是「一個讓事情變少的原則」，用這個原則建立起來的系統，就會是一個能讓事情被完成的正向循環：事情一一被完成、擁有更多時間去做想要的事情、然後繼續完成那些事情，最終可以幫助你過你想要的生活。</p>
+            <p>書中提到的三個原則是</p>
+            <ol>
+                <li>清空腦袋，別再用大腦記著所有大大小小的待辦事項</li>
+                <li>讓待辦事項變成行動清單，從抽象轉化為具體的行動</li>
+                <li>管理行動</li>
+            </ol>
+            `,
+            tags:[{
+                name:'資源整理',
+                url: 'infoMap.html'
+            },{
+                name:'設計',
+                url: 'searchLink.html'
+            }]
+
+        },
     },
     {
         title: "《統計學，最強的商業武器》統計學與統計思維 #還是初學者",
