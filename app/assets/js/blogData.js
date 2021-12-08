@@ -246,21 +246,21 @@ const data =[
             <p className="text-paragraph">
             教基礎操作，也教進階應用，讓你學會把功能靈活運用。</p>
             <p>課後社團還能跟大神一起交流 Notion 模板，絕對能讓你學會活用 Notion！</p>
-            <p><a href="https://hahow.in/courses/6059aee039f2512548c187c6/main?mts_s=ap&mts_m=ha&oasId=5e608b2d1c966500238f3b2c" class="text-content-link-btn">中文｜Notion 實戰課程：打造專屬數位工作術</a></p>
+            <p><a href="https://hahow.in/courses/6059aee039f2512548c187c6/main?mts_s=ap&mts_m=ha&oasId=5e608b2d1c966500238f3b2c" class="text-content-link-btn-dark">中文｜Notion 實戰課程：打造專屬數位工作術</a></p>
 
             <h2 class="text-content-h2" data-title="h2" id="電腦玩物Esor">電腦玩物｜Esor</h2>
             <p>最多人使用 Notion，應該就是拿來做筆記！懶得看文章，就來看這部影片吧！</p>
-            <p><a href="https://www.youtube.com/watch?v=wbaIOtKPyJ4&feature=emb_title" class="text-content-link-btn">中文｜Notion 進階活用教學：學生如何整理上課筆記、規劃課表、學習研究、準備考試，範本下載！</a></p>
+            <p><a href="https://www.youtube.com/watch?v=wbaIOtKPyJ4&feature=emb_title" class="text-content-link-btn-dark">中文｜Notion 進階活用教學：學生如何整理上課筆記、規劃課表、學習研究、準備考試，範本下載！</a></p>
 
             <h2 class="text-content-h2" data-title="h2" id="5amCEOCassie">5amCEO｜Cassie</h2>
             <p>Cassie 的版面整合性很強，幾乎可以將人生大小事都放進 Notion 整理，如果不想只是用 Notion 來做筆記，可以參考<a href="https://www.youtube.com/c/Cassiex5amCEO" class="text-content-link"> Cassie </a>的系列教學影片。</p>
-            <p><a href="https://junlearning.com/how-to-use-notion/" class="text-content-link-btn">中文｜Notion超強數位筆記術，高效數位人生導航 by 5amCEO</a></p>
+            <p><a href="https://junlearning.com/how-to-use-notion/" class="text-content-link-btn-dark">中文｜Notion超強數位筆記術，高效數位人生導航 by 5amCEO</a></p>
 
             <h2 class="text-content-h2" data-title="h2" id="AliAbdaal>Ali Abdaal</h2>
             <p>很喜歡 Ali Abdaal！他的教學影片都是用實際使用方式去解釋版面設計，雖然最後的呈現不一定適用每個人，可是可以從他的思考邏輯去設計自己的版面。
             </p>
             <p>追求效率、生產力的朋友，千萬不要錯過他的<a href="https://www.youtube.com/results?search_query=ali+abdaal+notion" class="text-content-link">影片</a>！</p>
-            <p><a href="https://www.youtube.com/playlist?list=PL7BImOT2srcEfz4QRfSKnKJLM_nTCMV7k" class="text-content-link-btn">英文｜How I Use Notion by Ali Abdaal</a></p>
+            <p><a href="https://www.youtube.com/playlist?list=PL7BImOT2srcEfz4QRfSKnKJLM_nTCMV7k" class="text-content-link-btn-dark">英文｜How I Use Notion by Ali Abdaal</a></p>
 
             <h1 class="text-content-h1" data-title="h1" id="交流社團">交流社團</h1>
             <p>在不同社團裡，除了可以發問、解決使用上的疑難雜症，也能看見大家分享自己的模板、外掛工具的使用。
@@ -268,9 +268,9 @@ const data =[
             <p>
             透過看見不同的使用方式，挑選適合你的，就能慢慢建立起屬於自己的版面！
             </p>
-            <p><a href="https://zh-tw.facebook.com/groups/notion.so.taiwan/" class="text-content-link-btn">Notion.Taiwan 台灣官方社群- 數位全能大腦，筆記、文件、知識庫、專案管理</a></p>
-            <p><a href="https://zh-tw.facebook.com/groups/notiontc/" class="text-content-link-btn">Notion 繁體中文社群｜筆記 x 資料庫 x 生產力工具</a></p>
-            <p><a href="https://zh-tw.facebook.com/groups/notionnotetw/" class="text-content-link-btn">Notion Note 中文筆記交流分享社群</a></p>
+            <p><a href="https://zh-tw.facebook.com/groups/notion.so.taiwan/" class="text-content-link-btn-dark">Notion.Taiwan 台灣官方社群- 數位全能大腦，筆記、文件、知識庫、專案管理</a></p>
+            <p><a href="https://zh-tw.facebook.com/groups/notiontc/" class="text-content-link-btn-dark">Notion 繁體中文社群｜筆記 x 資料庫 x 生產力工具</a></p>
+            <p><a href="https://zh-tw.facebook.com/groups/notionnotetw/" class="text-content-link-btn-dark">Notion Note 中文筆記交流分享社群</a></p>
             <p>最後最後，如果有其他實用學習資源，也歡迎在下面留言～也許你能幫到其他有需要的人！</p>
             `,
             tags:[{
