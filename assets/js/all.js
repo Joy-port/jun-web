@@ -563,18 +563,17 @@ function renderContentList() {
     contentList.innerHTML = str;
     str = newPostCardList(newestData2);
     thoughtsList.innerHTML = str;
+    addBlogLink();
   } else {
     str = renderCardsList(pageData);
     contentList.innerHTML = str;
+    addBlogLink();
   } //監聽按鈕用來開啟頁面內容
+  // if(document.querySelector('.js-blog-link')){
+  //    const blogLinks = document.querySelectorAll('.js-blog-link');
+  //    blogLinks.forEach(item => item.addEventListener('click',getBlogContentId));
+  // }
 
-
-  if (document.querySelector('.js-blog-link')) {
-    var blogLinks = document.querySelectorAll('.js-blog-link');
-    blogLinks.forEach(function (item) {
-      return item.addEventListener('click', getBlogContentId);
-    });
-  }
 } //點擊tags 篩選後重新渲染card
 
 
@@ -654,7 +653,8 @@ function refreshThemeTagsList() {
   content.querySelectorAll('li input').forEach(function (inputItem) {
     inputItem.checked = false;
   });
-}
+} //根據頁面更新tags 的數字跟樣式
+
 
 function updateContentTagsList(inputData) {
   var content = document.querySelector('.js-tags-list[data-tags-type="content"]'); //更新content 標籤 數量dataset
@@ -748,7 +748,7 @@ function getPageData(contentList) {
   }
 
   updatePageDataLocalStorage();
-} //renderCards
+} //get cards str content from pageData
 
 
 function renderCardsList(pageData) {
@@ -887,9 +887,11 @@ function checkboxSelected(e) {
       });
     }
 
-    updateContentList(themeData);
-    updateContentTagsList(themeData);
+    pageData = themeData;
+    updateContentList(pageData);
+    updateContentTagsList(pageData);
     addClickCheckboxStyle(this);
+    addBlogLink();
   } else if (this.dataset.tagsType === 'content') {
     if (e.target.closest('input').checked === true) {
       themeData.forEach(function (item) {
@@ -907,10 +909,12 @@ function checkboxSelected(e) {
       });
     }
 
-    updateContentList(contentData);
+    pageData = contentData;
+    updateContentList(pageData);
     addClickCheckboxStyle(this);
+    addBlogLink();
   }
-} //tags title 加上效果
+} //tags title 加上樣式效果
 
 
 function addClickCheckboxStyle(vm) {
@@ -964,7 +968,7 @@ function getBlogContentId(e) {
 
   if (blogItem.length !== 0) {
     blogItem.splice(0, 1);
-    localStorage.removeItem(blogContent);
+    localStorage.removeItem('blogContent');
   }
 
   ;
@@ -981,10 +985,9 @@ function getBlogContentId(e) {
 
 
 function loadToPage(htmlPage) {
-  window.setTimeout(function () {
-    window.location.assign(htmlPage);
-    renderBlogContent();
-  }, 1000);
+  window.open(htmlPage); //由local.assign 改為開啟新分頁
+
+  renderBlogContent();
 }
 
 function renderBlogContent() {
@@ -1231,7 +1234,7 @@ function renderIGContentModal(e) {
 }
 
 function renderModalButton(inputData) {
-  var str = "<button\n    type=\"button\"\n    data-bs-target=\"#carouselExampleDark\"\n    data-bs-slide-to=\"0\"\n    class=\"active\"\n    aria-current=\"true\"\n    aria-label=\"Slide 1\"\n  ></button>";
+  var str = "<button\n    type=\"button\"\n    data-bs-target=\"#carouselExampleDark\"\n    data-bs-slide-to=\"0\"\n    class=\"active\"\n    aria-current=\"true\"\n    aria-label=\"Slide 1\">\n    </button>";
   inputData.shift();
   inputData.forEach(function (item, index) {
     var content = "  <button\n        type=\"button\"\n        imgUrl =\"".concat(item, "\"\n        data-bs-target=\"#carouselExampleDark\"\n        data-bs-slide-to=\"").concat(index + 1, "\"\n        aria-label=\"Slide ").concat(index + 2, "\"\n        ></button>");
@@ -1355,8 +1358,8 @@ function searchAllResults(e) {
 
     ;
   } else {
-    var searchInputAll = document.querySelectorAll('[data-search="input"]');
-    var searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+    var searchInputAll = document.querySelectorAll('[data-search="input"]'); // const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+
     var _filterData = [];
 
     var _data2 = getDataLocalStorage();
@@ -1392,10 +1395,6 @@ function searchResultsWithKey(e) {
     updatePageDataLocalStorage();
     loadToPage('search.html');
   }
-} //條列顯示已有符合項目
-
-
-function showSimilarList(e) {// console.log(e.target.value);
 }
 
 function renderSearchPage() {
