@@ -310,7 +310,227 @@ const data =[
         tagsByTheme:["英文學習"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>準備雅思，我第一個想到的事情是買參考書，但我發現這只是一個「做好準備的假象」，買了書但沒有讀書計畫也沒辦法開始準備。</p>
+            <p>要考雅思必須一步一步，從訂定適合自己的讀書計畫開始。</p>
+            <p>想自學考雅思，跟著這 7 個步驟來準備吧～</p>
+            <ol class="number-list text-content-callout bg-light">
+                <li>了解考試制度</li>
+                <li>了解自己的程度</li>
+                <li>釐清自己的目標</li>
+                <li>購買參考書籍</li>
+                <li>訂定讀書計畫</li>
+                <li>定期回顧、檢討</li>
+                <li>讀書心態調整</li>
+            </ol>
+            <h1 class="text-content-h1" data-title="h1" id="了解雅思">1. 了解雅思</h1>
+            <p class="text-btn-group">
+            <a href="https://www.britishcouncil.org.tw/exam/ielts/study-work-live-abroad" target="_blank" class="text-content-link-btn">雅思的考試組別</a>
+            <a href="https://www.britishcouncil.org.tw/exam/ielts/which-test" target="_blank" class="text-content-link-btn">我要報考哪一種雅思</a></p>
+            <h2 class="text-content-h2" data-title="h2" id="學術組：">學術組：</h2>
+            <ul class="bulleted-list">
+                <li>聽力 Listening</li>
+                <li>閱讀 Reading</li>
+                <li>口說 Speaking</li>
+                <li>寫作 Writing</li>
+                <ul>
+                    <li>第一部分是看一個圖表來作分析</li>
+                    <li>第二部分是長篇英文作文</li>
+                </ul>
+            </ul>
+            <h2 class="text-content-h2" data-title="h2" id="評分標準">評分標準</h2>
+
+            <p class="text-btn-group">
+            <a href="https://takeielts.britishcouncil.org/teach-ielts/test-information/scores-explained" class="text-content-link-btn" target="_blank">雅思整體分數代表什麼英文程度？</a>
+            <a href="https://www.britishcouncil.org.tw/exam/ielts/courses-resources/videos" class="text-content-link-btn" target="_blank">雅思學習影片</a>
+            <a href="https://takeielts.britishcouncil.org/teach-ielts/test-information/assessment" class="text-content-link-btn" target="_blank">官方評分標準</a>
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="了解自己的程度">2. 了解自己的程度</h1>
+            <p>如果不太清楚自己的程度，可以先做一回模擬試題。</p>
+            
+            <h2 class="text-content-h2" data-title="h2" id="做對的題目不到一半">做對的題目不到一半</h2>
+            <p>做完模擬試題如果做對的題目不到一半，可以先加強基本功：文法、單字量（7000~9000） ，之後再來用做題目的方式準備雅思。</p>
+            <p>想知道自己單字量多少，可以到 這個網站 測測看。</p>
+            
+            <h2 class="text-content-h2" data-title="h2" id="做對的題目超過一半">做對的題目超過一半</h2>
+            <p>可以根據自己的弱點科目去訂讀書計畫。</p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="釐清自己的目標">3. 釐清自己的目標</h1>
+            <p>如果目標不明確，動力也會少一半，對於各科應該要有一個明確的目標。
+            </p>
+            <p>比如說：</p>
+            <ul class="bulleted-list">
+                <li>聽力 Listening：7.5</li>
+                <li>閱讀 Reading：7.5</li>
+                <li>口說 Speaking：7.0</li>
+                <li>寫作 Writing：7.0</li>
+            </ul>
+            <p><a href="http://www.roadtoielts.com/"   target="_blank" class="text-content-link">Road to IELTS</a> 註冊之後，點進「Resource Bank」可以計算出最後的成績。</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/ielts.jpg?w=1902&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="短期">短期</h2>
+            <p>考雅思通常是為了出國留學，算是短期目標，需要一個好的分數讓你達到入學門檻。</p>
+            <h2 class="text-content-h2" data-title="h2" id="長期">長期</h2>
+            <p>學英文長期來說，是學會運用這個語言，有更多的機會去了解不同的國家、不同的文化。</p>
+            <p>雖然短期目標是暫時的，但是學習語言沒辦法一蹴可幾，想要真的把英文學起來，可以跟母語人士正常溝通，需要長時間的累積和練習，除了準備考試的期間讓自己沈浸在英文環境中，也可以養成每天聽英文、說英文的習慣，就算考完雅思也能慢慢提升自己的英文能力。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="購買參考書籍">4. 購買參考書籍</h1>
+            <p><a href="https://shopee.tw/search?keyword=%E9%9B%85%E6%80%9D%E5%AE%98%E6%96%B9%E5%85%A8%E7%9C%9F%E9%A1%8C%E6%9C%AC" class="text-content-link-lg" target="_blank">👉🏻雅思官方全真題本</a></p>
+            <p><a href="https://junlearning.com/ielts-speaking-2" class="text-content-link-lg" target="_blank">👉🏻連面試官都讚嘆的英語口試應考大全</a></p>
+
+            <h2 class="text-content-h2 text-gray-600" data-title="h2" id="連雅思主考官都讚嘆的雅思解題祕笈系列">連雅思主考官都讚嘆的雅思解題祕笈系列</h2>
+            <p class="text-btn-group">
+            <a href="https://junlearning.com/ielts-reading"  target="_blank" class="text-content-link-btn">👉🏻閱讀高分祕笈</a>
+            <a href="https://junlearning.com/ielts-writing"  target="_blank" class="text-content-link-btn">👉🏻寫作解題祕笈</a>
+            <a href="https://junlearning.com/ielts-speaking"  target="_blank" class="text-content-link-btn">👉🏻口說高分祕笈</a></p>
+
+            <h1 class="text-content-h1" data-title="h1" id="訂定讀書計畫">5. 訂定讀書計畫</h1>
+            <p>可以依照參考書籍的篇數或章節去訂定讀書計畫，但計畫是可以調整的，如果一開始訂的計畫太輕鬆就能達成，或是已經花很多時間但辦不到，就可以考慮在這週結束時，訂定一個新的讀書計畫。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="各科讀書計畫">各科讀書計畫</h2>
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="Listening">Listening</h3>
+            <p class="text-btn-group">
+            <a href="https://www.ted.com/"  target="_blank" class="text-content-link-btn">TED</a>
+            <a href="https://youglish.com/"  target="_blank" class="text-content-link-btn">YouGlish</a></p>
+            <p>輸入單字／片語，去聽各種有出現這些單字／片語的影片，訓練聽力，也可以調整自己的發音。</p>
+            <p>想知道怎麼更有效率看影片學英文，可以看 <a href="https://junlearning.com/learn-english-through-videos/" target="_blank" class="text-content-link">這篇。</a></p>
+
+            <hr class="bg-gray-500" />
+
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="Speaking">Speaking</h3>
+            <p><a href="https://ieltsliz.com/ielts-speaking-topics-january-to-april-2020/?fbclid=IwAR1r6-k8GkLQcJt7SqGODnOjxOP5_Cu81H9DoR5szhOhW57qEfh-K78IS70"  target="_blank" class="text-content-link-btn">IELTS Speaking Topics January to April 2020</a></p>
+            
+            <h3 class="text-content-h2 text-gray-600" id="Youtube">Youtube</h3>
+            <p class="text-btn-group">
+            <a href="https://www.youtube.com/playlist?list=PLsuhejYkZ347SSZIRO-bh5t0aiDl5lNO5"  target="_blank" class="text-content-link-btn">IELTS Speaking Samples（官方）</a>
+            <a href="https://www.youtube.com/user/rachelsenglish"  target="_blank" class="text-content-link-btn">Rachel’s English</a></p>
+
+            <hr class="bg-gray-500" />
+
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="Reading">Reading</h3>
+            <p>每天聽 TED talks 或 Podcast，除了聽力、口說可以進步，也可以增加 閱讀的速度。</p>
+            <p>每天練習讀 7 篇閱讀測驗文章，試著每一段都用一句話 Summary。</p>
+            <p class="text-btn-group">
+            <a href="https://www.taiwannews.com.tw/en/index"  target="_blank" class="text-content-link-btn">台灣英文新聞</a>
+            <a href="https://elt.oup.com/searchresults?&searchtype=cat&fq=&q=Bookworms+6&cc=tw&selLanguage=zh"  target="_blank" class="text-content-link-btn">Oxford Bookworms Library</a></p>
+
+            <hr class="bg-gray-500" />
+
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="Writing">Writing</h3>
+            <p>一週挑三種類型的作文寫，嘗試寫出一個固定的段落架構。</p>
+            <p class="text-btn-group">
+            <a href="https://ielts-simon.com/ielts-help-and-english-pr/ielts-writing-task-1/"  target="_blank" class="text-content-link-btn">Simon｜IELTS Writing Task 1 Articles</a>
+            <a href="https://ielts-simon.com/ielts-help-and-english-pr/ielts-writing-task-2/"  target="_blank" class="text-content-link-btn">Simon｜IELTS Writing Task 2 Articles</a>
+            <a href="https://ielts-simon.com/ielts-help-and-english-pr/2011/05/ielts-writing-task-2-idea-explain-example.html"  target="_blank" class="text-content-link-btn">Simon｜IELTS Writing Task 2: idea, explain, example</a>
+            <p class="text-content-green">Start with an idea; Explain it in detail; Give an example.</p>
+            
+            <h3 class="text-content-h2 text-gray-600" id="易讀性測試工具">易讀性測試工具</h3>
+            <p class="text-btn-group">
+            <a href="https://www.webfx.com/tools/read-able/"  target="_blank" class="text-content-link-btn">READABILITY TEST TOOL</a>
+            <a href="https://www.online-utility.org/english/readability_test_and_improve.jsp"  target="_blank" class="text-content-link-btn">Tests Document Readability</a></p>
+
+            <hr class="bg-gray-500" />
+
+            <h2 class="text-content-h2" data-title="h2" id="準備方式">準備方式</h2>
+
+            <p>不要只是一味地做題目，一定要依據你的目標和自己的習慣去設定不同的準備方法。里茲螞蟻這篇文章中還有「<a href="https://drive.google.com/open?id=1IgVdI3uBTTo4dIs63PfOVRb20zxCdFSn" target="_blank" class="text-content-link">里茲螞蟻公開資料夾</a>」，裡面有讀書計畫表可以參考。</p>
+            <hr class="bg-gray-500" />
+
+            <h2 class="text-content-h2" data-title="h2" id="時間安排">時間安排</h2>
+            <p>從大尺度的時間，規劃到小尺度的時間，以一個大目標去詳細規劃。</p>
+            <p>為什麼要訂這麼細呢？</p>
+            <p>因為如果只是規劃每天的讀書時間，萬一有一天突然沒辦法達成今天的進度，就會拖著拖著，之後的進度也會一直延後。</p>
+            <p>但如果先把每個月的目標訂下來，再用四週的時間訂出小目標，最後訂出每日的目標，可以根據每週的目標去調整每日計畫，比較有彈性。比如說這週週末要出去玩，但這週的目標是寫三篇作文，那就可以一三五各寫一篇。</p>
+            <p>將大目標分解成小目標，也會讓你更容易執行計畫，透過達成小目標的成就感，讓你更有動力繼續照著讀書計畫走。</p>
+            <p>以下以我自己的讀書計畫為例：</p>
+
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="每月">每月</h3>
+            <ul class="bulleted-list">
+                <li>倒數三個月：習慣看英文，讓自己不要排斥讀書這件事</li>
+                <li>倒數兩個月：目標分數 7.0</li>
+                <li>倒數一個月：目標分數 7.5</li>
+            </ul>
+
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="每週（第一個月）">每週（第一個月）</h3>
+            <ul class="bulleted-list">
+                <li>把自己沉浸在英文的環境裡</li>
+                <li>每天聽＋看英文</li>
+                <li>每週說＋寫英文</li>
+            </ul>
+
+            <h3 class="text-content-h2 text-primary" data-title="h3" id="每日（第一週）">每日（第一週）</h3>
+            <p>每天一定要讀書六小時，如果有安排其他事情，至少也要讀書四小時。</p>
+            <p class="text-paragraph">一、二</p>
+            <p class="text-paragraph">聽一個 TED 演講＋做摘要＋摘要錄音</p>
+            <p class="text-paragraph">抄寫 IELTS Simon 網站上的寫作範例＋背單字＋背例句</p>
+            <p class="text-paragraph">讀一篇 BBC Words in the News＋背單字＋查字典例句</p>
+            <p class="text-paragraph">找 Youtuber 做跟讀練習（shadowing）</p>
+            <p>晚上看影集～</p>
+
+            <p>三：回顧、檢討、建立自己的資料庫、背單字</p>
+
+            <p class="text-paragraph">四、五</p>
+            <p class="text-paragraph">聽一個 TED 演講＋做摘要＋摘要錄音</p>
+            <p class="text-paragraph">抄寫 IELTS Simon 網站上的寫作範例＋背單字＋背例句</p>
+            <p class="text-paragraph">讀一篇 BBC Words in the News＋背單字＋查字典例句</p>
+            <p class="text-paragraph">找 Youtuber 做跟讀練習（shadowing）</p>
+            <p class="text-paragraph">晚上看影集～</p>
+
+            <p>六：回顧、檢討、建立自己的資料庫、背單字</p>
+            <p>日：調整讀書計畫、放假～～</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="定期回顧、檢討">6. 定期回顧、檢討</h1>
+            <p>如果只是一味的做題目，並沒辦法真的學到。一定要花時間好好檢討錯誤的題目，去思考是什麼樣的原因導致這樣的錯誤，這樣下次遇到相同的情境時，才能夠避免犯同樣的錯。</p>
+            <h2 class="text-content-h2" data-title="h2" id="做自己的資料庫">做自己的資料庫</h2>
+            <p>大家都會有比較不擅長的題型或科目，也可能會有思考盲點，如果可以整理出所有答錯的題目，也許能發現自己都錯什麼類型的題目，然後去針對性的加強。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="找到最適合自己的作答技巧">找到最適合自己的作答技巧</h2>
+            <p>每個人適合的方式不一樣，不要因為看到別人說什麼方法很好，就完全照做。在做了幾次練習之後，應該要慢慢調整成自己順手的方式，才能在考試緊張的時候，也不會亂了手腳。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="回顧做題目的成果">回顧做題目的成果</h2>
+            <p>可以每週進行回顧，順便調整讀書計畫。回顧可以讓你看到自己在進步，即使幅度是小的，也能因為感受到自己的成長，給自己更多動力堅持下去。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="讀書心態調整">7. 讀書心態調整</h1>
+            <p>好的生活作息和情緒管理，可以提升讀書效率，但這也是很容易被忽略的。</p>
+            <p>一定要規定自己一些不能破壞的規則，才能把生活調整成適合讀書考試的模式。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="作息：早睡早起">作息：早睡早起</h2>
+            <p>不要為了讀書熬夜、作息不正常，這些都會影響最後考試的表現。要讓自己一直保持在身心最佳狀態的作法就是固定作息。然後一定要好好睡覺。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="原則：把重要的事情優先完成">原則：把重要的事情優先完成</h2>
+            <p class="text-content-green">意志力是一種有限的資源，會隨著思考與決策而減少，尤其當你感到猶豫不決、被強迫做選擇、不得不做決定的時候，意志力更是會迅速大幅減少。</p>
+            <p>如果沒有好好分配意志力，例如早上先滑手機，把意志力消耗掉，就會讓自己更難放下手機去讀書。</p>
+            <p>但意志力像肌肉一樣，經常鍛煉就會變強。一旦養成了正確的習慣，找到了適合的方法，就能消耗更少的意志力去達成你想要的目標。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="心態：不要氣餒">心態：不要氣餒</h2>
+            <p class="text-content-green">Everything is information.</p>
+            <p>錯誤也是進步的來源。</p>
+            <p>告訴自己：「練習的時候先錯，考試就不會錯了。」</p>
+            <p>不要氣餒，也不要放棄，只有持續才能進步！加油～</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="雅思讀書計畫、策略分享">雅思讀書計畫、策略分享</h1>
+            <p class="text-btn-group">
+            <a href="https://ielts.com.tw/2019/07/06/%e6%83%b3%e6%8f%90%e5%8d%87%e8%ae%80%e5%af%ab%e8%83%bd%e5%8a%9b%e4%b8%8d%e8%83%bd%e4%b8%8d%e7%9c%8b%e7%9a%84%e9%9b%85%e6%80%9d%e6%8a%80%e5%b7%a7%ef%bc%81/?fbclid=IwAR3LSfnr76t2785ZByJ85oVZYN-kjP8BzKVZhpZX1nxk7geSmnzdJNpcmnc#%E9%9B%85%E6%80%9DIELTS%E5%AF%AB%E4%BD%9C"  target="_blank" class="text-content-link-btn">雅思「閱讀、寫作」作答技巧</a>
+            <a href="https://kirstycx.wordpress.com/2016/03/29/%E6%88%91%E7%9A%848%E5%88%86%E9%9B%85%E6%80%9D%E8%87%AA%E4%BF%AE%E8%AE%80%E6%9B%B8%E7%AD%96%E7%95%A5-my-study-strategies-for-ielts-band-8/"  target="_blank" class="text-content-link-btn">Piece by Piece｜我的 8 分雅思自修讀書策略</a>
+            <a href="https://www.facebook.com/AlexanderWangEnglish/videos/589365055264863/?v=589365055264863"  target="_blank" class="text-content-link-btn">Alexander Wang 王梓沅英文｜如何培養語感？</a></p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="Youtuber 推薦">Youtuber 推薦</h1>
+            <p class="text-btn-group">
+            <a href="https://ielts.com.tw/2019/07/06/%e6%83%b3%e6%8f%90%e5%8d%87%e8%ae%80%e5%af%ab%e8%83%bd%e5%8a%9b%e4%b8%8d%e8%83%bd%e4%b8%8d%e7%9c%8b%e7%9a%84%e9%9b%85%e6%80%9d%e6%8a%80%e5%b7%a7%ef%bc%81/?fbclid=IwAR3LSfnr76t2785ZByJ85oVZYN-kjP8BzKVZhpZX1nxk7geSmnzdJNpcmnc#%E9%9B%85%E6%80%9DIELTS%E5%AF%AB%E4%BD%9C"  target="_blank" class="text-content-link-btn">English Lessons with Adam – Learn English [engVid]</a>
+            <a href="https://www.youtube.com/channel/UCuIPd024-DOo9-LzNl_PiOQ"  target="_blank" class="text-content-link-btn">ieltssimon</a></p>
+            `,
+            tags:[{
+                name:'資源整理',
+                url:'index.html'
+            },
+            {
+                name:'英文學習',
+                url:'search.html'
+            }]
+        },
     },
     {
         title: "｜實用網站｜推薦書單｜考試報名資訊｜放榜資訊｜",
@@ -483,10 +703,94 @@ const data =[
         type:["學習思考"],
         time: '2021-08-11',
         imgUrl:"https://i2.wp.com/junlearning.com/wp-content/uploads/2021/08/97421060_2621642168124981_7721735136688996352_n.jpg?resize=690%2C550&ssl=1",
-        tagsByTheme:["自我成長"],
+        tagsByTheme:["自我成長","無處安放的想法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>最近深刻體會到，看韓劇絕對不是浪費時間的一件事！</p>
+            <p>看韓劇有趣的地方跟看書一樣，都是透過別人的眼睛去理解不同的生活，而影片的呈現，更能讓人將自己投射其中。雖然劇情與人物不一定是真實的故事，某部份卻也能反應真實的人性，這也是為什麼能夠引起共鳴、甚至讓人喜愛的原因吧！</p>
+            <p>最近在看的《機智醫生生活》，讓我看見很多自己嚮往的角色個性，比如蔡頌和的高情商、李翊晙的幽默風趣、和五個主角對專業的熱情。接著就讓我用這篇文章，來好好梳理自己的嚮往，也釐清我想成為什麼樣的大人究竟是什麼樣子。</p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="蔡頌和的高情商">蔡頌和的高情商</h1>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/08/217972287_2981150832174111_5418272165582608462_n.jpg?w=1080&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="與他人建立關係的重要性，勝過與他人爭論">與他人建立關係的重要性，勝過與他人爭論</h2>
+            <p>劇中有很多個旁觀者都比當事人蔡頌和還生氣的情況，但蔡頌和都能沉住氣、耐下性子，讓理智掌握情緒，以不起衝突的方式化解問題，在過程中不但沒有傷害任何人，甚至能讓人對他更加尊敬。</p>
+            <p>以蔡頌和的專業實力，絕對有能力去證明絕對的對錯，但蔡頌和選擇先照顧對方的情緒感受，再去尋找解決問題的方法，以圓融為目標，讓問題順勢被解決。</p>
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="有正確性，也要有適當的提出方式才有意義">有正確性，也要有適當的提出方式才有意義</h2>
+            <p>通常遇到問題的時候，我想的事情是「怎麼迅速解決」，但結果通常是，問題被解決了，人也被解決掉了。有能力解決問題，跟能不能與他人建立起好的關係，絕對不是同一件事。</p>
+            <p>從劇中的情境也可以看出，不在第一時間解決問題，其實並不會有什麼重大的影響，但在第一時間給出情緒反應，卻可能造成無法挽回的錯誤，甚至是人際關係中的裂痕。</p>
+            <p>從蔡頌和的個性和面對問題時的反應，我認為解決問題的思考，不能永遠將正確性擺在第一順位，而將人際關係擺在第二順位，反而要先思考怎麼促進彼此的關係，再從中探索不同的解決方案。雖然可能會少掉很多更快、更有效的方法，但剩下的那些，就都會是讓事情更圓融的方法。</p>
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="用「對話」跟「聆聽」去理解他人">用「對話」跟「聆聽」去理解他人</h2>
+            <p>在劇中常出現 A 說 B 很討人厭，然後四處抱怨、到處八卦的情景，但當這些話傳到蔡頌和耳裡時，她的第一個反應是讓抱怨的人停止抱怨，然後告訴他，當事人有他的困難，如果不能全然理解，就別輕易用自己所見來評斷一個人。</p>
+            <p>我很常犯的錯，就是用我看見的面向，去評斷一個人的好壞，但就連在劇中角色都有不只一種面向，現實生活中又何嘗不是如此？想理解，就別只是站遠遠的看，要真誠的與人互動，才能真正理解一個人。</p>
+            <p>同理心不只是要把自己放到他人的角度看待事情，更要在「無法理解」的時候，學會放下自己的判斷。</p>
+            <div class="text-content-quote">
+                <p>所有人都是在自己所見的世界做合理的選擇。</p>
+                <p><span>&mdash; 《就你最聰明！》</span></p>
+            </div>
+            <p>也許你認為的不理性，只是因為你沒看見他選擇背後的理性原因。</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/08/207018643_2969331473356047_4153497713691055152_n.jpg?w=1080&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="懂他，比總是給建議更能提供支持">懂他，比總是給建議更能提供支持</h2>
+            <p>蔡頌和雖然專業能力很強，但在她與同事間的相處中，卻很少看見「說教」、「建議」這類型的互動，更多的是對他人的「提問」給予「回應」。比起用主動的方式給予對方需要的東西，先理解對方再用適當的方式被動回應，才更能切中對方需求。</p>
+            <p>而面對有煩惱的人，他們需要的不一定是建議，有時候情緒上的支持，比實際的建議更能發揮安慰的效用。先照顧到情緒，才能開始好好思考怎麼做會更好，否則，只會讓人深陷負面情緒之中，反而更跳不開問題本身。</p>
+            <p>從蔡頌和與人的相處模式中，也可以發現她之所以能那麼受人尊敬，不單單只是因為能力優秀，更重要的是她從不把自己的能力，當作操縱別人的工具。因為這樣，她才獲得了更多的尊敬，而那樣的尊敬，是即便能力再好，也不一定能夠擁有的。</p>
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="看清規則，做一個理智的旁觀者">看清規則，做一個理智的旁觀者</h2>
+            <p>劇中有一幕是安政源和蔡頌和聊天，蔡頌和開始說起他對每個人的理解：「世界上似乎有三種人，有吃美食而感到最幸福的人，有獨自用餐時感到最美味的人，還有看著別人一臉幸福地享用食物而感到更幸福的人。」</p>
+            <p>每個人都有自己追求幸福的方式，而頌和也有讓自己幸福的方式。有時候看清規則，會讓人誤以為要照著那些規則走才行，但這段提醒了我，看清規則是一回事，要怎麼行動則是另一回事。讓自己好好過生活，才是唯一要遵循的規則。</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/08/231365700_2989274274695100_8393285368400741155_n.jpg?w=1080&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="成為一個能照顧好自己、好好享受生活的人">成為一個能照顧好自己、好好享受生活的人</h2>
+            <p>身為一接到電話，就要馬上衝回醫院照顧病患的醫生，蔡頌和沒有忘記要好好照顧自己、為自己而活。平日為自己的幸福而購買露營用品，假日為自己而搭帳篷，就算工作很忙碌，也會記得為自己做一點什麼。</p>
+            <p>「為自己」說起來很輕鬆，但做起來卻不簡單。要在別人需要你的地方付出，也要在自己需要的時候撐起自己，除了需要有意識地付出時間，也要清楚知道自己為誰而忙，避免「顧了工作卻失去自己」的情況發生。</p>
+            <p>在社會期待與自我價值之間取得平衡，並非一件容易的事，甚至可以說是一輩子的功課，但人生到最後，也只有你能為自己而活，所以更要學會好好照顧自己。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="金雋婠的專業與不張揚">金雋婠的專業與不張揚</h1>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/08/188476770_2936962159926312_8475301243229705220_n.jpg?w=1080&ssl=1" alt="img" class="img-fluid" />
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="堅持做正確的事，即使沒人知道做的人是你">堅持做正確的事，即使沒人知道做的人是你</h2>
+            <p>看似冷漠的金雋婠，卻常常在當事人不知道的情況下，用實際行動支持、提供協助。在金雋婠心中，只要認為是正確的事就會去做，不需要他人支持，也不在意他人會如何看待這件事看起來的樣子，唯一的一把尺就是他心中那把尺。
+            </p>
+            <p>
+            雖然在劇中，要做正確的事情好像很容易，但在現實社會裡，你心中的正確，卻可能是阻礙他人的行為，就算不是一種阻礙，能站出來發聲的也是少數人，甚至會有很多人阻止你去做正確的事，所以像金雋婠這樣毫無懸念為相信的事情做出行動，就更加令我嚮往。
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="李翊晙的幽默風趣">李翊晙的幽默風趣</h1>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/08/186518809_2931720577117137_8878309818535933627_n.jpg?w=1080&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="在日常中尋找快樂">在日常中尋找快樂</h2>
+            <p>劇中的惡作劇擔當就是李翊晙，雖然醫院生活一點也不輕鬆，但李翊晙總能在這樣的日常中找到有趣的小事，甚至把無聊的事情都變得有趣，為劇情增添了不少笑果。</p>
+            <p>你可以說是李翊晙的屁孩個性讓他成為醫院裡的開心果，但我認為「快樂」其實也是一種能力，當你不能改變環境，就只能改變你看待環境的方式，不用等環境變得符合期待，就能過一個快樂的生活。</p>
+
+            <h2 class="text-content-h2 border-start border-info border-5 ps-5" data-title="h2" id="扮演好每一個角色">扮演好每一個角色</h2>
+            <p>李翊晙幽默風趣的特質，也讓他跟誰都能好好相處，甚至成為了他跟上級、跟下屬相處的潤滑劑。身為一個醫生，他同時是個爸爸、是哥哥、是朋友、是同事，除了要面對病患、家屬、前輩、後輩，還要擔起各種角色該做的事，簡直就是超人！</p>
+            <p>雖然有這麼多角色，但李翊晙很清楚知道什麼時候該做什麼事情，即便少了許多與自己相處的時間，也是從各種角色中做出取捨之後的結果。在現實世界中，也許沒辦法面面俱到，時間有限、精力有限，沒辦法真的變成超人，但可以提醒自己，在該成為那個角色的時候，要好好扮演那個角色的位子，好好成為自己。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="我想成為什麼樣的人？">我想成為什麼樣的人？</h1>
+            <p>我們都在看別人的經歷，找自己的路，但不論劇情真實與否，終究是別人的人生，怎麼讓自己的生活變得更好，才是我們的功課。</p>
+            <p>劇中的每一個角色，好像都讓我看見自己的個性如果變得更好，可以是什麼樣子。一直都知道我想成為一個「有專業」的人，但看完《機智醫生生活》之後，我更想成為一個「令人尊敬」的人，雖說這並不是一個設定好目標就會達成的事，但對未來有更清晰的想像，讓我的步伐更堅定了！</p>
+            <p class="text-content-callout bg-warning">#專業 #溫暖 #享受生活 #做正確的事</p>
+            <p>希望在未來，當別人看見我的時候，腦海能夠浮現這些關鍵字！就算只是從劇中看見美好的樣子，我也想往那個方向前進。</p>
+            `,
+            tags:[{
+                name:'無處安放的想法',
+                url:'search.html'
+            },
+            {
+                name:'自我成長',
+                url:'search.html'
+            },
+            {
+                name:'日常啟發',
+                url:'search.html'
+            },
+            ]
+        },
     },
     {
         title: "《B型選擇》你永遠都有選擇",

@@ -74,8 +74,17 @@
                 background-color: $warning;
             }
         }
+        &>ul{
+            &>li{
+                list-style-type: circle;
+                margin-left: 4rem;
+                margin-bottom: 0.5rem;
+                &::selection{
+                    background-color: $warning;
+                }
+            }
+        }
     }
-
 
     &-link{
         line-height: 1.5;
@@ -109,6 +118,20 @@
             }
         }
     }
+    &-green{
+        color: #408080;
+        font-weight: 600;
+    }
+    &-link-lg{
+        display: block;
+        color: $info;
+        font-size: 1.75rem;
+        transition: all .25s;
+
+        &:hover{
+            color: $black;
+        }
+    }
     &-callout{
         padding: 0.875rem;
         line-height: 1.5;
@@ -135,12 +158,12 @@
         font-weight:500;
         font-size: 1.5rem;
         color:$info;
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
     }
     &-h3{
         font-size: 1.25rem;
         color: $info;
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
     }
 
     &-quote{

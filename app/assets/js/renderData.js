@@ -965,10 +965,10 @@ function getSearchData(){
         if(pageName!=='search'){
             const searchInput = document.querySelector('[data-search="input"]');
             const searchBtn = document.querySelector('[data-search="btn"]');
-    
-            searchInput.addEventListener('keyup',showSimilarList);
+            
             searchBtn.addEventListener('click',searchAllResults);
             searchInput.addEventListener('keypress',searchResultsWithKey);  
+            // searchInput.addEventListener('keyup',showSimilarList);//新增功能
         }else{
             renderSearchPage();
         }
