@@ -23986,6 +23986,20 @@ input:focus, input:active {
   background-color: #fff5d8;
 }
 
+.text-content > .bulleted-list > ul > li {
+  list-style-type: circle;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-content > .bulleted-list > ul > li::-moz-selection {
+  background-color: #fff5d8;
+}
+
+.text-content > .bulleted-list > ul > li::selection {
+  background-color: #fff5d8;
+}
+
 .text-content-link {
   line-height: 1.5;
   text-decoration: underline;
@@ -24026,6 +24040,24 @@ input:focus, input:active {
   background-color: #fff;
 }
 
+.text-content-green {
+  color: #408080;
+  font-weight: 600;
+}
+
+.text-content-link-lg {
+  display: block;
+  color: #5D7E93;
+  font-size: 1.75rem;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.text-content-link-lg:hover {
+  color: #000;
+}
+
 .text-content-callout {
   padding: 0.875rem;
   line-height: 1.5;
@@ -24053,13 +24085,13 @@ input:focus, input:active {
   font-weight: 500;
   font-size: 1.5rem;
   color: #5D7E93;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .text-content-h3 {
   font-size: 1.25rem;
   color: #5D7E93;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .text-content-quote {
