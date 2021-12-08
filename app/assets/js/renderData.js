@@ -178,13 +178,21 @@ function renderTagsList(){
 function refreshThemeTagsList(){
     const theme = document.querySelector('.js-tags-list[data-tags-type="theme"]');
     const content = document.querySelector('.js-tags-list[data-tags-type="content"]');
-   //移除 checkbox checked  狀態
+    const tagsTitle = document.querySelectorAll('[data-title]');
+
+   //移除 checkbox checked  狀態 
    theme.querySelectorAll('li input').forEach(inputItem =>{
        inputItem.checked = false;
    });
-   content.querySelectorAll('li input').forEach(inputItem =>{
-    inputItem.checked = false;
-});
+   content.querySelectorAll('li input').forEach(inputItem =>{ inputItem.checked = false; });
+
+   //移除 tags title 樣式顏色
+   tagsTitle.forEach(item =>{
+       if(!item.classList.contains('link-secondary')){
+           item.classList.add('link-secondary');
+       }
+   })
+
 }
 
 //根據頁面更新tags 的數字跟樣式
@@ -701,7 +709,7 @@ function renderInnerContent(){
             let titles = `
             <li class="table-content table-content-${item.nodeName.toLocaleLowerCase()}">
                 <a href="#${item.id}"
-                >${h1Num? h1Num : ''}${h1Num? '.' : ''}${h2Num? h2Num : ''}${h2Num? '.' : ''}${h3Num ? '.' : ''}${h3Num ? h3Num : ''}${h3Num? '.' : ''}${h4Num ? h4Num : ''} ${item.textContent}
+                >${h1Num? h1Num : ''}${h1Num? '.' : ''}${h2Num? h2Num : ''}${h2Num? '.' : ''}${h3Num ? h3Num : ''}${h3Num ? '.' : ''}${h4Num ? h4Num : ''}${h4Num? '.' : ''} ${numberFilterReg(item.textContent)}
                 </a>
             </li>
             `;
@@ -714,6 +722,19 @@ function renderInnerContent(){
 
 }
 
+//將文章中的數字過濾掉
+function numberFilterReg(item){
+    if(item.includes('.')){
+       return item.split('.')[1];
+    }else if(item.includes('、')){
+        return item.split('、')[1];
+    };
+    return item
+}
+    
+
+
+// 過濾已經重複的數字
 function sortNumberList(a){
     if(a!==0){
         a-=a;

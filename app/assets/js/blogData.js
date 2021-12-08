@@ -257,9 +257,12 @@ const data =[
             <p><a href="https://junlearning.com/how-to-use-notion/" class="text-content-link-btn-dark">中文｜Notion超強數位筆記術，高效數位人生導航 by 5amCEO</a></p>
 
             <h2 class="text-content-h2" data-title="h2" id="AliAbdaal>Ali Abdaal</h2>
-            <p>很喜歡 Ali Abdaal！他的教學影片都是用實際使用方式去解釋版面設計，雖然最後的呈現不一定適用每個人，可是可以從他的思考邏輯去設計自己的版面。
-            </p>
-            <p>追求效率、生產力的朋友，千萬不要錯過他的<a href="https://www.youtube.com/results?search_query=ali+abdaal+notion" class="text-content-link">影片</a>！</p>
+
+            <p>很喜歡 Ali Abdaal！他的教學影片都是用實際使用方式去解釋版面設計，雖然最後的呈現不一定適用每個人，可是可以從他的思考邏輯去設計自己的版面。</p>
+
+            <p>追求效率、生產力的朋友，千萬不要錯過他的
+            <a href="https://www.youtube.com/results?search_query=ali+abdaal+notion" target="_blank" class="text-content-link">影片!</a></p>
+
             <p><a href="https://www.youtube.com/playlist?list=PL7BImOT2srcEfz4QRfSKnKJLM_nTCMV7k" class="text-content-link-btn-dark">英文｜How I Use Notion by Ali Abdaal</a></p>
 
             <h1 class="text-content-h1" data-title="h1" id="交流社團">交流社團</h1>
@@ -268,9 +271,9 @@ const data =[
             <p>
             透過看見不同的使用方式，挑選適合你的，就能慢慢建立起屬於自己的版面！
             </p>
-            <p><a href="https://zh-tw.facebook.com/groups/notion.so.taiwan/" class="text-content-link-btn-dark">Notion.Taiwan 台灣官方社群- 數位全能大腦，筆記、文件、知識庫、專案管理</a></p>
-            <p><a href="https://zh-tw.facebook.com/groups/notiontc/" class="text-content-link-btn-dark">Notion 繁體中文社群｜筆記 x 資料庫 x 生產力工具</a></p>
-            <p><a href="https://zh-tw.facebook.com/groups/notionnotetw/" class="text-content-link-btn-dark">Notion Note 中文筆記交流分享社群</a></p>
+            <p class="text-btn-group"><a href="https://zh-tw.facebook.com/groups/notion.so.taiwan/" class="text-content-link-btn-dark">Notion.Taiwan 台灣官方社群- 數位全能大腦，筆記、文件、知識庫、專案管理</a>
+            <a href="https://zh-tw.facebook.com/groups/notiontc/" class="text-content-link-btn-dark">Notion 繁體中文社群｜筆記 x 資料庫 x 生產力工具</a>
+            <a href="https://zh-tw.facebook.com/groups/notionnotetw/" class="text-content-link-btn-dark">Notion Note 中文筆記交流分享社群</a></p>
             <p>最後最後，如果有其他實用學習資源，也歡迎在下面留言～也許你能幫到其他有需要的人！</p>
             `,
             tags:[{

@@ -100,13 +100,13 @@
         color: $black;
         display: inline-flex;
         transition: all .3s ease-in;
-        &:hover{
-            color: $info;
-            border: 1px solid $info;
-        }
 
         &-dark{
-            border: 0px solid $black;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid transparent;
             color: $white;
             background-color: #32373c;
             transition: all .3s ease-in;
@@ -117,6 +117,11 @@
                 background-color: #fff;
             }
         }
+        &:hover{
+            color: $info;
+            border: 1px solid $info;
+        }
+
     }
     &-green{
         color: #408080;
