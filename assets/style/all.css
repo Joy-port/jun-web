@@ -23893,7 +23893,7 @@ input:focus, input:active {
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: .5rem;
   color: #000;
@@ -23931,8 +23931,59 @@ input:focus, input:active {
   background-color: #fff5d8;
 }
 
+.text-content > p.text-paragraph {
+  margin-bottom: 0;
+}
+
+.text-content > p.text-btn-group > a + a {
+  margin-top: 0.5rem;
+  display: table;
+}
+
 .text-content > img {
   display: block;
+}
+
+.text-content > .number-list {
+  counter-reset: num;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.text-content > .number-list > li {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.text-content > .number-list > li::before {
+  counter-increment: num;
+  content: counter(num) ". ";
+}
+
+.text-content > .number-list > li::-moz-selection {
+  background-color: #fff5d8;
+}
+
+.text-content > .number-list > li::selection {
+  background-color: #fff5d8;
+}
+
+.text-content > .bulleted-list {
+  margin-bottom: 2rem;
+}
+
+.text-content > .bulleted-list > li {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-content > .bulleted-list > li::-moz-selection {
+  background-color: #fff5d8;
+}
+
+.text-content > .bulleted-list > li::selection {
+  background-color: #fff5d8;
 }
 
 .text-content-link {
@@ -23944,15 +23995,35 @@ input:focus, input:active {
 .text-content-link-btn {
   text-decoration: none;
   padding: 0.5rem 1rem;
-  display: inline-block;
   border-radius: 20px;
   border: 1px solid #000;
   color: #000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .text-content-link-btn:hover {
   color: #5D7E93;
   border: 1px solid #5D7E93;
+}
+
+.text-content-link-btn-dark {
+  border: 0px solid #000;
+  color: #fff;
+  background-color: #32373c;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.text-content-link-btn-dark:hover {
+  color: #32373c;
+  border: 1px solid #32373c;
+  background-color: #fff;
 }
 
 .text-content-callout {
@@ -23962,6 +24033,7 @@ input:focus, input:active {
 
 .text-content-highlight {
   background-color: #fff5d8;
+  border-bottom: 2px solid #f8cd5f;
 }
 
 .text-content-hover-highlight:hover {
@@ -23972,8 +24044,8 @@ input:focus, input:active {
   background: #f8f8f8;
   color: #000;
   padding: 4px;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -23998,7 +24070,7 @@ input:focus, input:active {
   margin-bottom: 3rem;
 }
 
-.text-content-quote > p:first-child {
+.text-content-quote > p {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.625rem;
@@ -24008,6 +24080,7 @@ input:focus, input:active {
   font-size: 1rem;
   font-weight: normal;
   text-align: right;
+  margin-bottom: 0;
 }
 
 .img-fluid {
