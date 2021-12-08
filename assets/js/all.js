@@ -464,6 +464,15 @@ var data = [{
     imgUrl: 'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
     textContent: '以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來，以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
   }]
+}, {
+  title: "職場即戰力",
+  description: "職場即戰力攻略-內容：15 本好書精華​＋閱讀筆記方法分享​，超過 5000 字的內容提供",
+  type: ["資源整理"],
+  time: '2021-09-01',
+  imgUrl: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
+  tagsByTheme: ["工作術"],
+  tagsByContent: "產品銷售",
+  linkUrl: "https://junlearning.ck.page/tips-to-work-better"
 }];
 "use strict";
 
@@ -784,7 +793,7 @@ function getPageData(contentList) {
 function renderCardsList(pageData) {
   var str = '';
 
-  if (pageName === 'library') {
+  if (pageName === 'library' || pageName === 'all') {
     str = libraryCardList(pageData);
   } else if (pageName === 'newPosts') {} else if (pageName === 'search') {
     var _searchName = getSearchNameLocalStorage();
@@ -920,8 +929,10 @@ function checkboxSelected(e) {
     pageData = themeData;
     updateContentList(pageData);
     updateContentTagsList(pageData);
-    addClickCheckboxStyle(this);
+    addClickCheckboxStyle(this); //重新綁監聽
+
     addBlogLink();
+    renderLibraryModal();
   } else if (this.dataset.tagsType === 'content') {
     if (e.target.closest('input').checked === true) {
       themeData.forEach(function (item) {
@@ -941,8 +952,10 @@ function checkboxSelected(e) {
 
     pageData = contentData;
     updateContentList(pageData);
-    addClickCheckboxStyle(this);
+    addClickCheckboxStyle(this); //重新綁監聽
+
     addBlogLink();
+    renderLibraryModal();
   }
 } //tags title 加上樣式效果
 
@@ -1250,6 +1263,7 @@ function renderLibraryModal() {
 
 function renderIGContentModal(e) {
   var clickId = e.target.closest('a').dataset.id;
+  console.log(clickId);
   pageData = getPageDataLocalStorage();
 
   if (IgItem.length !== 0) {
