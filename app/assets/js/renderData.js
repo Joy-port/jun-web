@@ -32,8 +32,8 @@ let num = 0;
         let year = Number(item.time.split('-')[0]);
         let month = Number(item.time.split('-')[1]) - 1;
         let day = Number(item.time.split('-')[2]);
-
         let time = new Date(year, month ,day).getTime();
+
         num += .2; //避免重複
         time += num;
         item.id = time ;
@@ -58,7 +58,6 @@ function autoRenderByPage(){
             document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(item => item.addEventListener('click',changeIconRotateStyle));
         };
     };
-
 }
 
 //渲染卡片
@@ -95,17 +94,19 @@ function renderContentList(){
         contentList.innerHTML = str;
         str = newPostCardList(newestData2);
         thoughtsList.innerHTML = str;
+        addBlogLink();
        
     }else{
         str = renderCardsList(pageData);
         contentList.innerHTML = str;
+        addBlogLink();
     }
     
     //監聽按鈕用來開啟頁面內容
-    if(document.querySelector('.js-blog-link')){
-       const blogLinks = document.querySelectorAll('.js-blog-link');
-       blogLinks.forEach(item => item.addEventListener('click',getBlogContentId));
-    }
+    // if(document.querySelector('.js-blog-link')){
+    //    const blogLinks = document.querySelectorAll('.js-blog-link');
+    //    blogLinks.forEach(item => item.addEventListener('click',getBlogContentId));
+    // }
 }
 
 //點擊tags 篩選後重新渲染card
@@ -186,6 +187,7 @@ function refreshThemeTagsList(){
 });
 }
 
+//根據頁面更新tags 的數字跟樣式
 function updateContentTagsList(inputData){
     const content = document.querySelector('.js-tags-list[data-tags-type="content"]');
      //更新content 標籤 數量dataset
@@ -205,7 +207,6 @@ function updateContentTagsList(inputData){
             };
         });
     });
-
     //如果content dataset num =0 -> disabled
     content.querySelectorAll('li input').forEach(inputItem =>{
         inputItem.setAttribute('disabled', '');
@@ -250,7 +251,7 @@ function getPageData(contentList){
      updatePageDataLocalStorage();
 
 }
-//renderCards
+//get cards str content from pageData
 function renderCardsList(pageData){
     let str ='';
     if(pageName === 'library'){
@@ -385,7 +386,6 @@ function libraryCardList(pageData) {
 
     return str ;
 }
-
 //newPost content Card list
 function newPostCardList(pageData){
     let str = '';
@@ -473,9 +473,11 @@ function checkboxSelected(e){
   });
   
 }
-    updateContentList(themeData);
-    updateContentTagsList(themeData);
+    pageData = themeData;
+    updateContentList(pageData);
+    updateContentTagsList(pageData);
     addClickCheckboxStyle(this);
+    addBlogLink();
 }else if(this.dataset.tagsType === 'content'){
     if(e.target.closest('input').checked===true){
         themeData.forEach((item) => {
@@ -490,12 +492,13 @@ function checkboxSelected(e){
             }
         });
     }
-    updateContentList(contentData);
+    pageData = contentData;
+    updateContentList(pageData);
     addClickCheckboxStyle(this);
+    addBlogLink();
 } 
-
 }
-//tags title 加上效果
+//tags title 加上樣式效果
 function addClickCheckboxStyle(vm){
     let num = 0;
     let type = vm.dataset.tagsType;
@@ -516,7 +519,6 @@ function addClickCheckboxStyle(vm){
 }
 
 //tags icon 加上旋轉效果 //hover的話可用css 達到相同效果
-
 function changeIconRotateStyle(e){
     //預設狀態不同而有差異
     if(e.target.closest('a').getAttribute('aria-expanded')){
@@ -533,7 +535,6 @@ function refreshContent(e){
 
 }
 
-
 //點擊之前得到blog 內容
 function getBlogContentId(e){
     e.preventDefault();
@@ -542,32 +543,24 @@ function getBlogContentId(e){
     };
     if(blogItem.length !== 0){
         blogItem.splice(0,1);
-        localStorage.removeItem(blogContent);
+        localStorage.removeItem('blogContent');
     };
-    
     pageData.forEach(item =>{
         if(parseInt(item.id) == parseInt(e.target.closest('a').dataset.id)){
             blogItem.push(item);
         };
     });
-
     updateBlogLocalStorage();
-
     loadToPage('blogContent.html');
 }
 
 //換頁的效果
 function loadToPage(htmlPage){
-
-    window.setTimeout(
-        function (){
-            window.location.assign(htmlPage);
-            renderBlogContent ();
-        },1000); 
+    window.open(htmlPage); //由local.assign 改為開啟新分頁
+    renderBlogContent();
 }
 
-
-function renderBlogContent (){
+function renderBlogContent() {
     if(document.querySelector('.js-blog-content')){
         renderInnerContent();
 };
@@ -752,7 +745,6 @@ function renderRecommend(input){
             </div>
         </li>
         `;
-
         str += content;
     })
     return str;
@@ -825,7 +817,6 @@ function renderIGContentModal(e){
     const tagsContent = document.querySelector('.ig-content-tag');
     const createdTime = document.querySelector('.js-ig-time');
     
-   
     imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl);
     imgContent.innerHTML = renderModalImg(IgItem[0].igContent.imgUrl);
     textContent.innerHTML = IgItem[0].igContent.textContent;
@@ -840,8 +831,8 @@ function renderModalButton(inputData){
     data-bs-slide-to="0"
     class="active"
     aria-current="true"
-    aria-label="Slide 1"
-  ></button>`;
+    aria-label="Slide 1">
+    </button>`;
 
   inputData.shift();
   inputData.forEach((item,index) =>{
@@ -897,7 +888,6 @@ function renderTags(inputData){
         >${item}</a>`;
         str += content ;
     });
-
     return str ;
 }
 
@@ -936,7 +926,6 @@ function renderPPTContentModal(e){
     })
 
     pptContentList.innerHTML = str ;
-
 }
 
 //localStorage
@@ -982,9 +971,7 @@ function getSearchData(){
             searchInput.addEventListener('keypress',searchResultsWithKey);  
         }else{
             renderSearchPage();
-
         }
-
     }
 }
 
@@ -1005,12 +992,11 @@ function searchAllResults(e){
     
            updateSearchNameLocalStorage();
            updatePageDataLocalStorage();
-    
            loadToPage('search.html');
         };
     }else{
         const searchInputAll = document.querySelectorAll('[data-search="input"]');
-        const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+        // const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
         
         let filterData=[];
         let data = getDataLocalStorage();
@@ -1020,14 +1006,11 @@ function searchAllResults(e){
                 filterData = data.filter(dataItem => dataItem.title.match(inputItem.value.trim()));
             };
         })
-
         pageData = filterData;
         updateSearchNameLocalStorage();
         updatePageDataLocalStorage();
         renderContentList();
-
     }
-
 }
 
 function searchResultsWithKey(e){
@@ -1049,12 +1032,6 @@ function searchResultsWithKey(e){
    }
 }
 
-//條列顯示已有符合項目
-function showSimilarList(e){
-    // console.log(e.target.value);
-
-}
-
 function renderSearchPage(){
     if(pageName === 'search'){
         //render 已搜尋出來的內容
@@ -1067,19 +1044,17 @@ function renderSearchPage(){
                 item.value = searchName;
             }
         })
-        
+
         searchBtnAll.forEach(item =>{
             item.addEventListener('click',searchAllResults);
         })
     }
 }
 
-
 //滑到底 css back-top btn 效果
 function showBackTopBtn(){
     const el = document.body;
-    el.addEventListener('scroll',getHeight)
-    
+    el.addEventListener('scroll',getHeight)    
 }
 
 function getHeight(e){
