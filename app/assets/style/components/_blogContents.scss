@@ -23,6 +23,7 @@
     color: $gray-800;
     font-weight:300;
     margin-bottom: 3rem;
+ 
 
     &>p{
         margin-bottom: 2rem;
@@ -44,6 +45,37 @@
         display:block;
     }
 
+    &>.number-list{
+        counter-reset:num;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+
+        &>li{
+            display: block;
+            margin-bottom: 0.5rem;
+            &::before{
+                counter-increment:num; 
+                content:counter(num) '. ';
+            }
+            &::selection{
+                background-color: $warning;
+            }
+        }
+    }
+
+    &>.bulleted-list{
+        margin-bottom: 2rem;
+
+        &>li{
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-bottom: 0.5rem;
+            &::selection{
+                background-color: $warning;
+            }
+        }
+    }
+
 
     &-link{
         line-height: 1.5;
@@ -58,9 +90,23 @@
         border: 1px solid $black;
         color: $black;
         display: inline-flex;
+        transition: all .3s ease-in;
         &:hover{
             color: $info;
             border: 1px solid $info;
+        }
+
+        &-dark{
+            border: 0px solid $black;
+            color: $white;
+            background-color: #32373c;
+            transition: all .3s ease-in;
+
+            &:hover{
+                color: #32373c;
+                border: 1px solid #32373c;
+                background-color: #fff;
+            }
         }
     }
     &-callout{
@@ -81,8 +127,8 @@
         background: $light;
         color: $black;
         padding: 4px;
-        font-size: 1.25rem;
-        font-weight: 600;
+        font-size: 1.75rem;
+        font-weight: 500;
         margin-bottom: 1.5rem;
     }
     &-h2{
@@ -103,7 +149,7 @@
         padding-left: 2rem;
         font-style: italic;
         margin-bottom: 3rem;
-        &>p:first-child{
+        &>p{
             font-size: 1.25rem;
             font-weight: 500;
             margin-bottom: 0.625rem;
@@ -113,6 +159,7 @@
             font-size: 1rem;
             font-weight: normal;
             text-align: right;
+            margin-bottom: 0;
         }
     }
 }
