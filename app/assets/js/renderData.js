@@ -262,7 +262,7 @@ function getPageData(contentList){
 //get cards str content from pageData
 function renderCardsList(pageData){
     let str ='';
-    if(pageName === 'library'){
+    if(pageName === 'library' || pageName === 'all'){
         str = libraryCardList(pageData);
     }else if(pageName === 'newPosts'){
         
@@ -485,7 +485,9 @@ function checkboxSelected(e){
     updateContentList(pageData);
     updateContentTagsList(pageData);
     addClickCheckboxStyle(this);
+    //重新綁監聽
     addBlogLink();
+    renderLibraryModal();
 }else if(this.dataset.tagsType === 'content'){
     if(e.target.closest('input').checked===true){
         themeData.forEach((item) => {
@@ -503,7 +505,10 @@ function checkboxSelected(e){
     pageData = contentData;
     updateContentList(pageData);
     addClickCheckboxStyle(this);
+
+    //重新綁監聽
     addBlogLink();
+    renderLibraryModal();
 } 
 }
 //tags title 加上樣式效果
@@ -808,10 +813,9 @@ function addBlogLink(){
 //ig or 簡報 模式
 function renderLibraryModal(){
     if(document.querySelector('[data-bs-target]')){
-        
         document.querySelectorAll('[data-bs-target="#libraryIGPostModal"]').forEach(item=>{
            item.addEventListener('mouseover', renderIGContentModal);
-            });
+        });
         document.querySelectorAll('[data-bs-target="#libraryPPTModal"]').forEach(item=>{
             item.addEventListener('mouseover', renderPPTContentModal);
         });
@@ -821,6 +825,7 @@ function renderLibraryModal(){
 //渲染ig 內容
 function renderIGContentModal(e){
     let clickId = e.target.closest('a').dataset.id;
+    console.log(clickId);
     pageData = getPageDataLocalStorage();
 
     if(IgItem.length !== 0){

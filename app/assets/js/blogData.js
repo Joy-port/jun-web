@@ -1084,5 +1084,15 @@ const data =[
                 textContent:'以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來，以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
             }
         ]
-    }
+    },
+    {
+        title: "職場即戰力",
+        description: "職場即戰力攻略-內容：15 本好書精華​＋閱讀筆記方法分享​，超過 5000 字的內容提供",
+        type: ["資源整理"],
+        time: '2021-09-01',
+        imgUrl:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
+        tagsByTheme:["工作術"],
+        tagsByContent:"產品銷售",
+        linkUrl:"https://junlearning.ck.page/tips-to-work-better",
+    },
 ];
