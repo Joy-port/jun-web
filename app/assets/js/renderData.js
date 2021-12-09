@@ -15,6 +15,7 @@ function init(){
     setDataId(); //將資料綁定id 根據時間
     localStorage.setItem('allData',JSON.stringify(data));
     autoRenderByPage();
+    addClickCategoryStyle(); //加上分頁樣式
     renderBlogContent();
     renderLibraryModal();
     getSearchData();
@@ -43,7 +44,7 @@ let num = 0;
 
 //根據頁面顯示資料
 function autoRenderByPage(){
-    if (document.querySelector('.js-content-list')){
+    if(document.querySelector('.js-content-list')){
         renderContentList(); //渲染卡片資料
         if(document.querySelectorAll('.js-tags-list')){
             renderTagsList(); //渲染標籤數量＋disabled
@@ -255,9 +256,27 @@ function getPageData(contentList){
         pageName = 'search';
         pageData = getPageDataLocalStorage();
         break;
+        case 'quotes':
+        pageName = 'quotes';
+        break;
      }
      updatePageDataLocalStorage();
 
+}
+
+//更新頁面標籤顏色 
+function addClickCategoryStyle(){
+    //分頁按鈕加上效果
+    if(document.querySelector('.js-category-btn')){
+        const categoryList = document.querySelectorAll('[data-category]');
+        const categoryBtn = document.querySelector(`[data-category="${pageName}"]`);
+
+        categoryList.forEach(item =>{
+            item.classList.remove('active');
+        });
+
+        categoryBtn.classList.add('active');
+    }
 }
 //get cards str content from pageData
 function renderCardsList(pageData){
@@ -511,6 +530,7 @@ function checkboxSelected(e){
     renderLibraryModal();
 } 
 }
+
 //tags title 加上樣式效果
 function addClickCheckboxStyle(vm){
     let num = 0;
@@ -714,7 +734,7 @@ function renderInnerContent(){
             let titles = `
             <li class="table-content table-content-${item.nodeName.toLocaleLowerCase()}">
                 <a href="#${item.id}"
-                >${h1Num? h1Num : ''}${h1Num? '.' : ''}${h2Num? h2Num : ''}${h2Num? '.' : ''}${h3Num ? h3Num : ''}${h3Num ? '.' : ''}${h4Num ? h4Num : ''}${h4Num? '.' : ''} ${numberFilterReg(item.textContent)}
+                >${h1Num? ' ' : ''}${h2Num? ' ' : ''}${h3Num ? ' ' : ''}${h4Num ? ' ' : ''} ${numberFilterReg(item.textContent)}
                 </a>
             </li>
             `;
@@ -843,17 +863,18 @@ function renderIGContentModal(e){
     const tagsContent = document.querySelector('.ig-content-tag');
     const createdTime = document.querySelector('.js-ig-time');
     
-    imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl);
+    imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl, 'carouselInIGModal');
     imgContent.innerHTML = renderModalImg(IgItem[0].igContent.imgUrl);
     textContent.innerHTML = IgItem[0].igContent.textContent;
     tagsContent.innerHTML = renderTags(IgItem[0].igContent.tagsName);
     createdTime.textContent = regTime(IgItem[0].time);
 }
 
-function renderModalButton(inputData){
+function renderModalButton(inputData, targetName){
+
     let str = `<button
     type="button"
-    data-bs-target="#carouselExampleDark"
+    data-bs-target="#${targetName}"
     data-bs-slide-to="0"
     class="active"
     aria-current="true"
@@ -862,10 +883,10 @@ function renderModalButton(inputData){
 
   inputData.shift();
   inputData.forEach((item,index) =>{
-        let content = `  <button
+        let content = `<button
         type="button"
         imgUrl ="${item}"
-        data-bs-target="#carouselExampleDark"
+        data-bs-target="#${targetName}"
         data-bs-slide-to="${index+1}"
         aria-label="Slide ${index+2}"
         ></button>`;
@@ -907,6 +928,7 @@ function renderModalImg(inputData){
   })
   return str;
 }
+
 function renderTags(inputData){
     let str = '';
     inputData.forEach(item =>{
@@ -932,6 +954,8 @@ function renderPPTContentModal(e){
     });
 
     const pptContentList = document.querySelector('.js-ppt-itemList');
+    const pptSlideButton = document.querySelector('.js-carousel-button-ppt');
+
     let str ='';
     pptItem[0].pptContent.forEach((item,index) =>{
         let content = `
@@ -950,9 +974,11 @@ function renderPPTContentModal(e){
         `
         str += content;
     })
-
+    console.log(pptItem[0].pptContent);
     pptContentList.innerHTML = str ;
+    pptSlideButton.innerHTML = renderModalButton(pptItem[0].pptContent,'carouselInPPTModal');
 }
+
 
 //localStorage
 function updateDataLocalStorage(){

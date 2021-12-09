@@ -809,13 +809,150 @@ const data =[
     {
         title: "《設計生意經》會做設計，還不足以讓你養活自己！",
         description: "懂得經營和了解設計同等重要。設計美麗的東西是一種藝術，但能從中找到獲利的空間，則是一種技能。了解營運一家公司的各種面向，才能讓你更自由的去做設計。",
-        type:["好書推薦"],
+        type:["建築專區","好書推薦"],
         time: '2020-04-15',
         imgUrl:"https://images.unsplash.com/photo-1486092476945-7f284646c58a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-        tagsByTheme:["設計","學習方法"],
+        tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>先問問你自己有沒有想過這三個問題：</p>
+            <p>1. 你也曾想過要創立自己的公司嗎？你也曾想過要怎麼把自己的設計「賣出去」嗎？</p>
+            <p class="text-content-green">➜ 可惜的是，學校教的只是設計的藝術，而不是經營的技巧。</p>
+
+            <p>2. 大家都說，「成為建築師／設計師需要滿滿的熱忱」，但僅憑對設計的熱情，真的能將作品轉化為盈利嗎？</p>
+            <p class="text-content-green">➜ 其實，建築專業是一門生意、是一項技術知識，也是一種管理技巧，而懂得經營和了解設計同等重要。</p>
+            <p>3. 出社會真的會需要對自己的設計方法作出妥協，來回應客戶提出的商業需求嗎？</p>
+            <p class="text-content-green">➜ 應該這樣說，了解商業面會讓你成為更好的設計師和更優秀的專業人士，不需要對自己的設計方法作出妥協，這會形成雙贏的局勢。</p>
+
+            <p>如果這三個問題都有點出你的疑惑，那就接著看看書中的內容吧！</p>
+
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010702509?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202004"  target="_blank" class="text-content-link-btn">點此購買《設計生意經》</a></p>
+
+            <h1 class="text-content-h1" data-title="h1" id="作者 Keith Grane">作者 Keith Grane</h1>
+            <p>作者 Keith Grane，大學讀建築時曾在 Gensler 實習一個學期。（<a href="https://www.gensler.com/"  target="_blank" class="text-content-link">Gensler</a> 連續好幾年都是 <strong>世界百大建築設計公司</strong> 中的第一名）實習之後，他發現  <strong>當建築師做設計</strong> 並不是他想做的事，所以在實習過後，回到學校修商學相關的課程，因而發現自己對商業的敏銳度。</p>
+            <p>之後便結合他對「設計」及「商業」兩者的熱愛，成立公司，提供策略、財務和執行管理等服務，協助設計師、事務所的經營。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="CH1 設計業的基礎">CH1 設計業的基礎：開一家設計公司之前的準備</h1>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/vision-of-the-studio-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
+            <p class="text-content-green">設計美麗的東西是一種藝術，但以成功而有意義的方式製成這些美麗的東西，還能從中找到獲利的空間，則是一種技能。</p>
+            <p>學校教育卻著重在「設計」，但實務上，設計的「營運面向」比「設計」佔更大的比重！</p>
+            <p>在這裡，創業的基礎指的並不是學校教的「設計」、「美感」，而是跟營運相關的準備。</p>
+            <p>1. 在創立公司之前，你需要先立下公司的</p>
+                <ul class="bulleted-list">
+                    <li><strong>願景</strong>：公司的最高宗旨</li>
+                    <ul class="circle-list">
+                        <li>「維護並改善人類生活」－默克化工製藥</li>
+                    </ul>
+                    <li><strong>使用說明</strong>：設定方向，以實現願景</li>
+                    <ul class="circle-list">
+                        <li>「ebay 的使命是提供一個全球性的貿易平台，實質地讓任何人都能實質地交易任何東西。」－ebay</li>
+                    </ul>
+                    <li><strong>核心價值</strong>：影響你做每個決定的中心思想</li>
+                    <ul class="circle-list">
+                        <li>「品質」、「樂趣」、「歷史脈絡」、「永續性」……</li>
+                    </ul>
+                </ul>
+            <p>2. 接著是創業的「前置工作」</p>
+            <ul class="bulleted-list">
+                <li><strong>營運計畫書</strong></li>
+                <li><strong>策略規劃</strong></li>
+                <li><strong>了解經營的要務</strong></li>
+            </ul>
+            <p>這些都是設計的基礎，要先準備好這些基礎，才去尋找客戶，不是 尋找客戶後，才在執行的過程中發現問題、回來修正。</p>
+            <p class="text-content-green">你必須體認到奠定基礎的重要性，才能真正專注於工作之上。</p>
+            <p>就像是跑車，要先經過精密的調整後，再上跑道，才不會上了跑道後，才發現問題其實出在車子本身。</p>
+
+
+            <h1 class="text-content-h1" data-title="h1" id="CH2 業務和財務管理">CH2 業務和財務管理</h1>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2020/04/finance-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
+            <p>「我是個設計師，我必須信任這些我顧來經營公司的員工，不然我就沒空做設計了。」</p>
+            <p>你是不是也這樣想？</p>
+            <p>但如果你看不懂財務數據、沒辦法監督公司的財務管控狀況、你能承受這些風險嗎？</p>
+            <p>如果這樣的風險是你承受不起的，為什麼不信任自己，去學習好的管理工具和知識？</p>
+            <p class="text-content-green">擁有好的工具和正確的財務知識，能讓你做好財務管控，你也才能獲得自由去設計更多作品！</p>
+            <p>還有很重要的一點是，你必須理解你所創造的「價值」，價值與報酬應該要是相稱的。</p>
+            <p>作者特別點出許多建築人／設計人的盲點：「我熱愛設計，所以不會以賺錢為第一優先。」</p>
+            <p>因為這個想法，「做建築／設計吃不飽，能營運就很好了」的狀況在業界是常態，但這樣的觀念是不合理的，商業思維的本質就是價值的交換，你願意用熬夜換取時間去做設計，為什麼不能要求客戶用相應的報酬來買你的設計呢？</p>
+            <p class="text-content-green">公司的財務是你的命脈。只要你得負責這家公司的生計，你就必須了解如何經營生意，也就是業務和財務管理。</p>
+            <p>不了解的話也沒關係，趕快從下手這本書，讓作者以最淺顯易懂的方式讓你明白，財務會怎麼影響你做設計！</p>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010702509?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202004"  target="_blank" class="text-content-link-btn">點此購買《設計生意經》</a></p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="CH3 行銷與公關">CH3 行銷與公關</h1>
+            <img src=https://i1.wp.com/junlearning.com/wp-content/uploads/2020/04/design-portfolio-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
+            <p>先區分一下行銷和公關</p>
+            <p>行銷：針對市場上的可得工作進行研究和爭取</p>
+            <p>公關：聚焦於創造公司的能見度，盡可能被最多的目標客戶看見</p>
+            <p>兩者相同的點是，要讓這兩項努力奏效，你都必須擬定策略。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="行銷">行銷</h2>
+            <p>除了一些行銷的 <strong>計畫事項</strong> ，作者還提出幾個很不直覺，但卻很重要的概念：</p>
+            <p class="text-content-green">1. 你應該在最忙的時候做行銷，把自己的名聲傳播出去。</p>
+            <p>行銷很重要的就是時效性，當你忙完，別人也沒空理你了。</p>
+            <p class="text-content-green">2. 你應該教導你的每個員工一起為公司做行銷。</p>
+            <p>如果人們深以自己工作的地方為榮，就會樂於談論它，而這些談話也許會在某個地方觸及到某個潛在客戶。</p>
+
+            <h3 class="text-content-h3 text-primary" data-title="h3" id="社群">社群</h3>
+            <p>經營得好的話，組織社群會是一個能達到許多綜合功效的作為。作者對於「組織社群」的看法我認為非常值得學習。</p>
+            <p>所謂的社群，包含一群有共同理念、會在這個環境中共同努力的人，是一個能夠與彼此分享更多資訊、互相學習、交流，並逐漸壯大彼此的地方。不論是合作或是競爭，社群都能透過 分享 的力量而壯大。</p>
+            <p>而社群最大的資產就是人際關係。經營的過程中，你必須為付出而付出，才會真正從中受益。</p>
+            <p>但社群裡該包含的哪些人？</p>
+            <p>社群真正的涵義是：</p>
+            <p class="text-content-green">將具備不同技能的人們聚集起來，讓他們理解各自的才能結合之後所發揮的集體力量。</p>
+            <p>以這點出發，就 <strong>不應該只限於設計／建築的業內人士</strong> ，也需要不同領域的人們來一起組成這個社群，這些人或許能在日後成為提供彼此資源、支援的角色也說不定。</p>
+
+            <h3 class="text-content-h3 text-primary" data-title="h3" id="獨門利基">獨門利基</h3>
+            <p>這在行銷上是很基本的一個概念，在設計／建築業也一樣能運用。</p>
+            <p>利基領域是指你在設計之中的專門技術，可以讓你在市場上的眾多人才中脫穎而出。以建築業為例，如果你經常設計工廠，擁有設計工廠所需要的專業知識和能力，那麼比起其他也設計過一兩個工廠的建築師，客戶更傾向找你為他們設計工廠。</p>
+            <p>一旦確定你的利基領域，潛在客戶就更容易因為你的專門技術而選擇你。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="公關">公關</h2>
+            除了競圖和出版作品集，書中提出了很多不同的方法，想知道更多就 <a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010702509?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202004" target="_blank" class="text-content-link">去買書來看看</a> 吧。
+
+            <h1 class="text-content-h1" data-title="h1" id="CH4 人力資源">CH4 人力資源</h1>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2020/04/human-resources-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
+            <p class="text-content-green">設計基本上是一種服務業。</p>
+            <ol class="number-list">
+                <li>員工是公司的最大資產</li>
+                <li>保護這份資產的關鍵因素是「如何對待人」</li>
+            </ol>
+            <p>但為什麼常常聽到的，卻是「做設計很累」、「認真做也沒錢賺啦」、「好想離開」……</p>
+            <p>設計／建築的案子大多是長期的，因此 短期的員工，對公司帶來的傷害不是短時間內可以復原的，員工的雇用、交接、溝通都會需要耗掉很多的時間和精力。但如果公司氛圍或制度，都沒辦法把員工留住，那豈不是造成惡性循環，一步一步在打擊公司嗎？</p>
+            <p>那為什麼不好好去了解，怎麼管理員工呢？</p>
+            <p>作者在這一章節，從四個部分去解析管理員工的作法：</p>
+            <ul class="bulleted-list">
+                <li>找到適合的員工</li>
+                <li>考核</li>
+                <li>指導你的員工</li>
+                <li>員工福利</li>
+            </ul>
+            <p>但沒有一個好的公司組織，即使有好的員工也無法好好發揮它的能力。</p>
+            <p>管理公司的部分，作者則談到公司組織架構、雇用實務、所有權移轉、永續經營等等細節。</p>
+            <p>有了好的「管理」，你才算是擁有機器人的電腦迴路，也才能放心地與員工們一起運作「公司」這個大機器人。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="CH5 專案管理">CH5 專案管理</h1>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2020/04/meeting-management-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
+            <p class="text-content-green">精通規則會創造出無拘無束的表現。了解遊戲規則將使你得以揮灑自如地運用他們，規畫出對你有利的工作流程。</p>
+            <p>從整個專案的開始、時程規劃、編列預算，到合約和技術管理，最重要的都是溝通，你必須思考要用什麼工具，才幫助你達到溝通的目的。</p>
+            <p class="text-content-callout bg-light">最後的 <strong>CH6 產品開發</strong>，就留給有興趣的人去閱讀啦！</p>
+            <p>這本書不只為我解答許多在學期間的疑問，也為我開啟另一個求知的大門！</p>
+            <p>對書籍的介紹如果有興趣的話，就趕快買一本來看看吧！</p>
+            <p class="text-content-green">節錄自：《設計生意經》</p>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010702509?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202004/"  target="_blank" class="text-content-link-btn">點此看更多</a></p>
+            `,
+            tags:[{
+                name:'好書推薦',
+                url: 'library.html'
+            },{
+                name:'建築專區',
+                url: 'architecture.html'
+            },{
+                name:'設計',
+                url: 'search.html'
+            }]
+        },
     },
     {
         title: "《精準成長》",
@@ -835,9 +972,98 @@ const data =[
         time: '2020-09-27',
         imgUrl:"https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80",
         tagsByTheme:["學習方法","工作術"],
-        tagsByContent:"文章",
+        tagsByContent:"簡報",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        pptContent:[
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/%E6%B8%85%E5%96%AE%E9%9D%A9%E5%91%BD.jpeg?zoom=2&resize=690%2C550&ssl=1',
+                textContent:'作者開始研究清單，是因為想解決醫生手術時常犯一些小錯誤而造成重大後果的問題。<br/>第一步要先搞懂常犯錯的原因，才有辦法知道犯錯導致的問題有哪些、怎麼解決。'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8702-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:'隨著科技進步，資訊日漸充足，取得也比以往更加便利，越來越少知識不足造成的錯誤，但我們還是不斷會犯錯，主要原因則是無法有效運用這些過量的知識，靠腦袋的記憶力，不足以記得所有事情，仍會因為漏掉細節、疏忽一個步驟，而犯下嚴重錯誤。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8703-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:'所以我們想知道的是，要怎麼讓知識為我們所用？<br />先來把問題分類吧！'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8704-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8705-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8706-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8707-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:'問題分好類別，就可以來看看清單需要什麼樣的品質，以及為什麼清單可以解決問題。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8708-2-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8709-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:'設計清單時，記住兩件事：<br/>1. 只靠清單你還是不會開飛機<br/>清單只是輔助，不是要把步驟一五一十地寫入，用清單的人還是必須具備專業知識，清單只是用來提醒關鍵事項和那些容易忽視的關鍵事項。<br/>2. 清單是為了讓我們腦袋更靈光<br/>怎麼讓我們腦袋更靈光？<br/>當事務性質的事項被寫入清單，代表腦袋能騰出力氣去思考、去創造，因此清單不是一種取代，也不是侷限，而是交棒腦袋的工作，讓我們能做更多發想與判斷。'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8710-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8711-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8712-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8713-2-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8714-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8715-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8716-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8717-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8718-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8719-scaled.jpg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8720-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8721-2-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8722-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+                textContent:''
+            }
+        ]
     },
     {
         title: "《最高學習法》",
@@ -856,10 +1082,46 @@ const data =[
         type:["學習思考","好書推薦"],
         time: '2021-05-28',
         imgUrl:"https://images.unsplash.com/photo-1529158062015-cad636e205a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80",
-        tagsByTheme:["職涯思考","學習方法","自我成長"],
-        tagsByContent:"文章",
+        tagsByTheme:["工作術"],
+        tagsByContent:"心智圖",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle: '',
+            content: `
+            <p>一開始並沒有想看這本書，看標題的感覺是：「大概又是一本成功學的書吧！只說如何成功，不說如何避免失敗…」，但翻開來，馬上就發現我錯了！</p>
+            <p>作者把如何成功的重點放在「看待事情的角度」之上，而這些想法則是建立在科學基礎之上，是一本心態和方法並重的書，不只是用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」！</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/05/image-18.png?w=1326&ssl=1" alt="img" class="img-fluid" />
+            <p>全書提出七大「心智」，而心智指的就是面對事情心態。</p>
+            <p>不同人會對一件事有不同看法，就是因為每個人的認知不同導致，而作者所說的「心智」，就是對事情的正向認知。有了正面認知，才能對遇到的問題提出正向的解法，進而提高工作績效與生活滿意度。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">第一部分：個人工作能力</h1>
+            <h2 class="text-content-h2" data-title="h2" id="保持雙重專注">保持雙重專注</h2>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/05/image-19.png?resize=2048%2C324&ssl=1" alt="img" class="img-fluid" />
+            <h2 class="text-content-h2" data-title="h2" id="重新設計工作">重新設計工作</h2>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-20.png?resize=2048%2C960&ssl=1" alt="img" class="img-fluid" />
+            <h2 class="text-content-h2" data-title="h2" id="啟動學習迴圈">啟動學習迴圈</h2>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-21.png?resize=2048%2C1418&ssl=1" alt="img" class="img-fluid" />
+            <h2 class="text-content-h2" data-title="h2" id="結合熱情與使命">結合熱情與使命</h2>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-22.png?resize=2048%2C1028&ssl=1" alt="img" class="img-fluid" />
+
+            <h1 class="text-content-h1" data-title="h1" id="與他人協作的能力">第二部分：與他人協作的能力</h1>
+            <h2 class="text-content-h2" data-title="h2" id="說服別人，以達成目標">說服別人，以達成目標</h2>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-23.png?resize=2048%2C1082&ssl=1" alt="img" class="img-fluid" />
+            <h2 class="text-content-h2" data-title="h2" id="團隊合作要領">團隊合作要領</h2>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-24.png?resize=2048%2C1365&ssl=1" alt="img" class="img-fluid" />
+            <h2 class="text-content-h2" data-title="h2" id="跨部門協作要領">跨部門協作要領</h2>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-25.png?resize=2048%2C1399&ssl=1" alt="img" class="img-fluid" />
+            
+            <h1 class="text-content-h1" data-title="h1" id="三大策略補足七大心智的不足">第三部分：三大策略補足七大心智的不足</h1>
+            <p>雖說七大心智是作者經過研究整理出來的好方法，能夠幫助我們在工作上提高績效，讓我們有更多餘裕去過想要的生活，但有些心智單獨使用時，就會出現負面效果，必須靠其他方法來防範。</p>
+            <p>例如，充滿熱情與使命感的人，一不小心就會變成工作狂，這樣的人在工作績效與表現都會很優秀，但卻無法在工作與生活之間取得平衡，因此作者建議，必須將工作與生活分開，不讓兩者彼此干擾，才能在保有工作績效的同時，過上想要的生活。</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-27.png?resize=2048%2C1007&ssl=1" alt="img" class="img-fluid" />
+            `,
+            tags:[{
+                name: '工作術',
+                url: 'search.html'
+            }]
+        },
     },
     {
         title: "怎麼達到工作與生活的平衡？",

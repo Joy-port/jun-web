@@ -21,8 +21,8 @@ type: catagoryList
 </div>
 
 <!-- catagories -->
-<div class="container py-1 mb-4">
-  <div class="d-flex justify-content-center flex-wrap px-5 gap-2">
+<section class="container py-1 mb-4">
+  <div class="d-flex justify-content-center flex-wrap px-5 gap-2 js-category-btn">
     <a
       href="index.html"
       class="
@@ -39,6 +39,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="all"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -63,6 +64,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="newPosts"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -87,6 +89,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="learning"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -111,6 +114,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="architecture"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -135,6 +139,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="infoMap"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -159,6 +164,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="quotes"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -183,6 +189,7 @@ type: catagoryList
         ms-md-2
         mb-md-0
       "
+      data-category="library"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -193,10 +200,7 @@ type: catagoryList
       好書推薦</a
     >
   </div>
-  <!-- 編輯toggle 功能區 -->
-  <!-- <a href="#" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#catagory" aria-expanded="false" aria-controls="catagory">所有文章</a
-        > -->
-</div>
+</section>
 
 <!-- 列表內容 -->
 <section class="border-top border-2 border-gray-500">
@@ -670,117 +674,135 @@ type: catagoryList
   data-bs-keyboard="true"
 >
   <div
-    class="
-      modal-dialog
-      modal-xl
-      modal-fullscreen-md-down
-      modal-dialog-centered
-    "
+    class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered"
   >
     <div class="modal-content w-100">
-        <!-- each page ppt -->
-        <div
-          id="carouselInPPTModal"
-          class="carousel slide w-100 h-100 my-auto position-relative"
-          data-bs-ride="carousel"
-        >
-          <!-- close btn mobile -->
-          <div class="position-absolute top-md-0 end-0 mt-3 me-3 me-md-n15 mt-md-n10" style="z-index: 2001;">
-          <button
+      <!-- each page ppt -->
+      <div
+        id="carouselInPPTModal"
+        class="carousel slide w-100 h-100 my-auto position-relative"
+        data-bs-ride="carousel"
+      >
+      <div class="carousel-indicators js-carousel-button-ppt mb-n10">
+        <button
           type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="modal"
-          aria-label="Close"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
         ></button>
-          </div>
-         <!--  <div class="carousel-indicators js-carousel-button">
-            <button
-              type="button"
-              data-bs-target="#carouselInPPTModal"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselInPPTModal"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselInPPTModal"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div> -->
-          <div class="carousel-inner w-100 h-100 js-ppt-itemList">
-            <!-- data-bs-interval="1000" 用來計算auto slide duration -->
-            <div class="carousel-item active">
-              <div class="ratio ratio-16x9">
-                <img
-                  src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-                  alt="post img"
-                  class="card-inside-img"
-                />
-              </div>
-              <div class="px-8 py-5 border-top border-gray-500">
-                <div class="overflow-auto"  style="height: 50px;">
-                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dicta expedita maxime, eos labore numquam autem dolores corrupti praesentium. Corporis numquam harum quis repudiandae laborum, vel, ab dolore deserunt at, veniam cumque beatae libero. Quod delectus animi modi laboriosam reprehenderit suscipit mollitia quo voluptatem? Nihil accusamus commodi cumque doloribus modi esse. Nobis quisquam esse laborum soluta praesentium aliquid quidem alias ut beatae! Quaerat, assumenda optio! Officiis tempore architecto quis ducimus, dolores amet tenetur, debitis voluptatibus ad quaerat earum dolore suscipit, libero nihil corporis eum! Et quis officia, consectetur pariatur quas non veniam molestiae. Rem, nesciunt consequuntur temporibus repellat eos inventore?</p>
-              </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="ratio ratio-16x9">
-                <img
-                  src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-                  alt="post img"
-                  class="card-inside-img"
-                />
-              </div>
-              <div class="px-8 py-5 border-top border-gray-500">
-                <div class="overflow-auto"  style="height: 50px;">
-                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dicta expedita maxime, eos labore numquam autem dolores corrupti praesentium. Corporis numquam harum quis repudiandae laborum, vel, ab dolore deserunt at, veniam cumque beatae libero. Quod delectus animi modi laboriosam reprehenderit suscipit mollitia quo voluptatem? Nihil accusamus</p>
-              </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="ratio ratio-16x9">
-                <img
-                  src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-                  alt="post img"
-                  class="card-inside-img"
-                />
-              </div>
-              <div class="px-8 py-5 border-top border-gray-500">
-                <div class="overflow-auto"  style="height: 50px;">
-                <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dicta expedita maxime, eos labore numquam autem dolores corrupti praesentium. Corporis numquam harum quis repudiandae laborum, vel, ab dolore deserunt at, veniam cumque oluptatibus ad quaerat earum dolore suscipit, libero nihil corporis eum! Et quis officia, consectetur pariatur quas non veniam molestiae. Rem, nesciunt consequuntur temporibus repellat eos inventore?</p>
-              </div>
-              </div>
-            </div>
-          </div>
+        <button
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+        <!-- close btn mobile -->
+        <div
+          class="position-absolute top-md-0 end-0 mt-3 me-3 me-md-n15 mt-md-n10"
+          style="z-index: 2001"
+        >
           <button
-            class="carousel-control-prev ms-md-n10"
             type="button"
-            data-bs-target="#carouselInPPTModal"
-            data-bs-slide="prev"
-            style="z-index: 2000;"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next me-md-n10"
-            type="button"
-            data-bs-target="#carouselInPPTModal"
-            data-bs-slide="next"
-            style="z-index: 2000;"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
+        <div class="carousel-inner w-100 h-100 js-ppt-itemList">
+          <div class="carousel-item active">
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+              <div class="overflow-auto" style="height: 50px">
+                <p class="text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Quae dicta expedita maxime,
+                  voluptatibus ad quaerat earum dolore suscipit, libero nihil
+                  corporis eum! Et quis officia, consectetur pariatur quas non
+                  veniam molestiae. Rem, nesciunt consequuntur temporibus
+                  repellat eos inventore?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+              <div class="overflow-auto" style="height: 50px">
+                <p class="text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur
+                  dolore deserunt at, veniam cumque beatae libero. Quod delectus
+                  animi modi laboriosam reprehenderit suscipit mollitia quo
+                  voluptatem? Nihil accusamus
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+              <div class="overflow-auto" style="height: 50px">
+                <p class="text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Quae dicta expedita maxime,
+                  eos labore numquam autem dolores corrupti praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev ms-md-n10"
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide="prev"
+          style="z-index: 2000"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next me-md-n10"
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide="next"
+          style="z-index: 2000"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

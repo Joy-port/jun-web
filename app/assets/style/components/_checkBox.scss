@@ -7,10 +7,16 @@
     transition: all .15s;
 
 
-    &:hover{
+    &:hover, :active{
         background-color: $primary;
         color: #fff;
     }
+    &.active{
+        background-color: $primary;
+        color: #fff;
+    }
+
+
 }
 
 .checkbox-outline-primary{

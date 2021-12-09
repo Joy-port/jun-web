@@ -44,6 +44,9 @@
     &>img{
         display:block;
     }
+    &.img-fluid{
+        border-radius: 12px;
+    }
 
     &>.number-list{
         counter-reset:num;
@@ -75,6 +78,7 @@
             }
         }
         &>ul{
+            margin-bottom: 2rem;
             &>li{
                 list-style-type: circle;
                 margin-left: 4rem;
@@ -85,7 +89,19 @@
             }
         }
     }
-
+    
+    &>.circle-list{
+        margin-bottom: 2rem;
+        list-style: circle;
+        &>li{
+            list-style-type: circle;
+            margin-left: 4rem;
+            margin-bottom: 0.5rem;
+            &::selection{
+                background-color: $warning;
+            }
+        }
+    }
     &-link{
         line-height: 1.5;
         text-decoration: underline;
@@ -125,7 +141,7 @@
     }
     &-green{
         color: #408080;
-        font-weight: 600;
+        font-weight: 500;
     }
     &-link-lg{
         display: block;
