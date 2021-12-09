@@ -23986,6 +23986,10 @@ input:focus, input:active {
   background-color: #fff5d8;
 }
 
+.text-content > .bulleted-list > ul {
+  margin-bottom: 2rem;
+}
+
 .text-content > .bulleted-list > ul > li {
   list-style-type: circle;
   margin-left: 4rem;
@@ -23997,6 +24001,25 @@ input:focus, input:active {
 }
 
 .text-content > .bulleted-list > ul > li::selection {
+  background-color: #fff5d8;
+}
+
+.text-content > .circle-list {
+  margin-bottom: 2rem;
+  list-style: circle;
+}
+
+.text-content > .circle-list > li {
+  list-style-type: circle;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-content > .circle-list > li::-moz-selection {
+  background-color: #fff5d8;
+}
+
+.text-content > .circle-list > li::selection {
   background-color: #fff5d8;
 }
 
