@@ -23944,6 +23944,10 @@ input:focus, input:active {
   display: block;
 }
 
+.text-content.img-fluid {
+  border-radius: 12px;
+}
+
 .text-content > .number-list {
   counter-reset: num;
   padding-left: 1rem;

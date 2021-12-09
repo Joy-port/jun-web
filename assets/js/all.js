@@ -359,9 +359,75 @@ var data = [{
   time: '2020-09-27',
   imgUrl: "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80",
   tagsByTheme: ["學習方法", "工作術"],
-  tagsByContent: "文章",
+  tagsByContent: "簡報",
   linkUrl: "blogContent.html",
-  blogContent: {}
+  pptContent: [{
+    imgUrl: 'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/%E6%B8%85%E5%96%AE%E9%9D%A9%E5%91%BD.jpeg?zoom=2&resize=690%2C550&ssl=1',
+    textContent: '作者開始研究清單，是因為想解決醫生手術時常犯一些小錯誤而造成重大後果的問題。<br/>第一步要先搞懂常犯錯的原因，才有辦法知道犯錯導致的問題有哪些、怎麼解決。'
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8702-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: '隨著科技進步，資訊日漸充足，取得也比以往更加便利，越來越少知識不足造成的錯誤，但我們還是不斷會犯錯，主要原因則是無法有效運用這些過量的知識，靠腦袋的記憶力，不足以記得所有事情，仍會因為漏掉細節、疏忽一個步驟，而犯下嚴重錯誤。'
+  }, {
+    imgUrl: 'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8703-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: '所以我們想知道的是，要怎麼讓知識為我們所用？<br />先來把問題分類吧！'
+  }, {
+    imgUrl: 'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8704-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8705-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8706-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8707-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: '問題分好類別，就可以來看看清單需要什麼樣的品質，以及為什麼清單可以解決問題。'
+  }, {
+    imgUrl: 'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8708-2-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8709-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: '設計清單時，記住兩件事：<br/>1. 只靠清單你還是不會開飛機<br/>清單只是輔助，不是要把步驟一五一十地寫入，用清單的人還是必須具備專業知識，清單只是用來提醒關鍵事項和那些容易忽視的關鍵事項。<br/>2. 清單是為了讓我們腦袋更靈光<br/>怎麼讓我們腦袋更靈光？<br/>當事務性質的事項被寫入清單，代表腦袋能騰出力氣去思考、去創造，因此清單不是一種取代，也不是侷限，而是交棒腦袋的工作，讓我們能做更多發想與判斷。'
+  }, {
+    imgUrl: 'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8710-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8711-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8712-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8713-2-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8714-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8715-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8716-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8717-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8718-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8719-scaled.jpg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8720-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8721-2-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }, {
+    imgUrl: 'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8722-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
+    textContent: ''
+  }]
 }, {
   title: "《最高學習法》",
   description: "想學會「教」，就要先知道怎麼「學」。透過了解大腦的運作，學著如何順著天性，更有效率地學習，也學著如何克服本能，選擇更有成效的方式教學。",
@@ -1303,18 +1369,18 @@ function renderIGContentModal(e) {
   var textContent = document.querySelector('.ig-text-content');
   var tagsContent = document.querySelector('.ig-content-tag');
   var createdTime = document.querySelector('.js-ig-time');
-  imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl);
+  imgButton.innerHTML = renderModalButton(IgItem[0].igContent.imgUrl, 'carouselInIGModal');
   imgContent.innerHTML = renderModalImg(IgItem[0].igContent.imgUrl);
   textContent.innerHTML = IgItem[0].igContent.textContent;
   tagsContent.innerHTML = renderTags(IgItem[0].igContent.tagsName);
   createdTime.textContent = regTime(IgItem[0].time);
 }
 
-function renderModalButton(inputData) {
-  var str = "<button\n    type=\"button\"\n    data-bs-target=\"#carouselExampleDark\"\n    data-bs-slide-to=\"0\"\n    class=\"active\"\n    aria-current=\"true\"\n    aria-label=\"Slide 1\">\n    </button>";
+function renderModalButton(inputData, targetName) {
+  var str = "<button\n    type=\"button\"\n    data-bs-target=\"#".concat(targetName, "\"\n    data-bs-slide-to=\"0\"\n    class=\"active\"\n    aria-current=\"true\"\n    aria-label=\"Slide 1\">\n    </button>");
   inputData.shift();
   inputData.forEach(function (item, index) {
-    var content = "  <button\n        type=\"button\"\n        imgUrl =\"".concat(item, "\"\n        data-bs-target=\"#carouselExampleDark\"\n        data-bs-slide-to=\"").concat(index + 1, "\"\n        aria-label=\"Slide ").concat(index + 2, "\"\n        ></button>");
+    var content = "<button\n        type=\"button\"\n        imgUrl =\"".concat(item, "\"\n        data-bs-target=\"#").concat(targetName, "\"\n        data-bs-slide-to=\"").concat(index + 1, "\"\n        aria-label=\"Slide ").concat(index + 2, "\"\n        ></button>");
     str += content;
   });
   return str;
@@ -1359,12 +1425,15 @@ function renderPPTContentModal(e) {
     ;
   });
   var pptContentList = document.querySelector('.js-ppt-itemList');
+  var pptSlideButton = document.querySelector('.js-carousel-button-ppt');
   var str = '';
   pptItem[0].pptContent.forEach(function (item, index) {
     var content = "\n        <div class=\"carousel-item ".concat(index === 0 ? 'active' : '', "\">\n            <div class=\"ratio ratio-16x9\">\n            <img src=\"").concat(item.imgUrl, "\"\n                alt=\"ppt img\"\n                class=\"card-inside-img\"/>\n            </div>\n            <div class=\"px-8 py-5 border-top border-gray-500\">\n                <div class=\"overflow-auto\"  style=\"height: 50px;\">\n                <p class=\"text-black\">").concat(item.textContent, "</p>\n                </div>\n            </div>\n        </div>\n        ");
     str += content;
   });
+  console.log(pptItem[0].pptContent);
   pptContentList.innerHTML = str;
+  pptSlideButton.innerHTML = renderModalButton(pptItem[0].pptContent, 'carouselInPPTModal');
 } //localStorage
 
 
