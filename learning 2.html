@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jun Cheng | 搜尋</title>
+    <title>Jun Cheng | 學習思考</title>
     <link rel="shortcut icon" href="./assets/images/logo-icon/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -46,39 +46,22 @@
       <main>
       
 <section class="catagory-header-container py-4">
-  <h2 class="catagory-header-title mb-4">搜尋文章</h2>
-  <div class="position-relative me-1 me-md-3 w-70 w-md-30">
-    <input
-      type="text"
-      class="
-        search-input
-        border-secondary border-1
-        bg-white
-        pd-none
-        py-1
-        px-5 px-md-5
-        w-100
-      "
-      name="searchAllContent"
-      id="searchTitle"
-      placeholder="請輸入關鍵字"
-      data-search="input"
+  <a href="#" class="d-block link-primary mb-4">
+    <img
+      src="./assets/images/Home_學習思考.svg"
+      class="catagory-header-icon"
+      alt="catagory img"
     />
-    <a
-      href="search.html"
-      class="d-block position-absolute top-50 end-0 translate-middle"
-      data-search="btn"
-    >
-      <span class="material-icons-outlined align-middle text-primary">
-        search
-      </span>
-    </a>
-  </div>
+  </a>
+  <h2 class="catagory-header-title mb-4">學習思考</h2>
+  <p class="catagory-header-content">
+    離開學校後，才是真正的學習<br />是學習者，也期許自己終能成為實踐者
+  </p>
 </section>
 
 <!-- catagories -->
 <section class="container py-1 mb-4">
-  <div class="d-flex justify-content-center flex-wrap px-5 gap-2 js-category-btn">
+  <div class="d-flex justify-content-center flex-wrap px-5 gap-2">
     <a
       href="index.html"
       class="
@@ -95,7 +78,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="all"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -120,7 +102,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="newPosts"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -145,7 +126,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="learning"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -170,7 +150,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="architecture"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -195,7 +174,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="infoMap"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -220,7 +198,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="quotes"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -245,7 +222,6 @@
         ms-md-2
         mb-md-0
       "
-      data-category="library"
     >
       <img
         class="d-block me-1 py-1 btn-icon"
@@ -544,36 +520,34 @@
   </div>
 </section>
 
-<!-- 搜尋結果 -->
-<section class="border-top border-2 border-gray-500">
+<!-- 學習專區 -->
+<section class="border-top border-2 border-gray-500 bg-light">
   <div class="container py-15">
-    <ul class="row js-content-list" data-list-type="search">
-      <li class="col-12 text-center h-100 my-auto">
-        <p class="fs-6 fw-md text-black mb-10">
-          登愣，找不到相關結果... 請重新搜尋，或回到<a
-            href="index.html"
-            class="align-baseline"
-            >首頁</a
-          >
-        </p>
-        <img
-          class="btn-icon-gray-600"
-          src="./assets/images/搜尋_無相關搜尋結果.svg"
-          alt="no result"
-        />
+    <ul class="row js-content-list" data-list-type="learning">
+      <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8">
+        <div class="card content-card">
+          <a href="blogContent.html" class="d-block">
+            <img
+              src="https://images.unsplash.com/photo-1637683558217-bf59e163750e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              alt="card img"
+              class="card-img-top content-card-img-top"
+            />
+          </a>
+          <div class="py-3 px-5">
+            <h3 class="fs-6 text-primary fw-bold mb-2">
+              文章標題<span class="text-gray-500 fw-normal fs-10 ms-3">
+                9 天前</span
+              >
+            </h3>
+            <p class="text-secondary hide-row-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              nihil a, perspiciatis molestiae ullam eveniet magni quo blanditiis
+              quibusdam incidunt ipsum repellendus eaque iure non odit? Impedit,
+              sunt. Asperiores, maiores!
+            </p>
+          </div>
+        </div>
       </li>
-      <!-- <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8">
-            <div class="card content-card h-100">
-              <a href="blogContent.html" class="d-block">
-
-                <img src="https://images.unsplash.com/photo-1637683558217-bf59e163750e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="card img" class="card-img-top content-card-img-top">
-              </a>
-              <div class="py-3 px-5">
-                <h3 class="fs-6 text-primary fw-bold mb-2">文章標題<span class="text-gray-500 fw-normal fs-10 ms-3"> 9 天前</span></h3> 
-                <p class="text-secondary hide-row-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil a, perspiciatis molestiae ullam eveniet magni quo blanditiis quibusdam incidunt ipsum repellendus eaque iure non odit? Impedit, sunt. Asperiores, maiores!</p>
-              </div>
-            </div>
-          </li> -->
     </ul>
   </div>
 </section>
