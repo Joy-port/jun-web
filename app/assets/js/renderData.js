@@ -89,7 +89,6 @@ function renderContentList(){
                     newestData2.push(item);
                 };
         });
-        console.log(newestData1);
 
         str = newPostCardList(newestData1);
         contentList.innerHTML = str;
@@ -183,7 +182,7 @@ function refreshThemeTagsList(){
 
    //移除 checkbox checked  狀態 
    theme.querySelectorAll('li input').forEach(inputItem =>{
-       inputItem.checked = false;
+    inputItem.checked = false;
    });
    content.querySelectorAll('li input').forEach(inputItem =>{ inputItem.checked = false; });
 
@@ -314,7 +313,11 @@ function normalCardList(pageData){
             <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" alt="card img" class="card-img-top content-card-img-top">
           </a>
           <div class="py-5 px-6 h-100">
-            <h3 class="hide-row-2 fs-7 text-primary fw-md mb-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
+            <h3 class="hide-row-2 fs-7 text-primary fw-md mb-2">
+                <a href="${item.linkUrl}" data-id="${item.id}" class="${item.tagsByContent === '文章'? 'js-blog-link':''}">
+                    ${item.title}</a>
+                <span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span>
+            </h3> 
             <p class="text-secondary hide-row-2 fs-8">${item.description}</p>
           </div>
         </div>
@@ -345,7 +348,13 @@ function libraryCardList(pageData) {
               </a>
               <div class="py-3 px-5 h-100">
                 <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
+                <a
+                href="${item.linkUrl}"
+                data-id="${item.id}"
+                class="js-blog-link"
+                >
                 ${item.title}
+                </a>
                 </h3>
                 <p class="text-secondary hide-row-2">
                 ${item.description}
@@ -373,7 +382,15 @@ function libraryCardList(pageData) {
               </a>
               <div class="py-3 px-5 h-100">
                 <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
-                ${item.title}
+                    <a
+                    href="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal':'libraryPPTModal')}"
+                    data-id="${item.id}"
+                    class="d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal': 'libraryPPTModal')}"
+                    >
+                    ${item.title}
+                    </a>
                 </h3>
                 <p class="text-secondary hide-row-2">
                 ${item.description}
@@ -399,7 +416,13 @@ function libraryCardList(pageData) {
               </a>
               <div class="py-3 px-5 h-100">
                 <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
+                <a
+                href="${item.linkUrl}"
+                data-id="${item.id}"
+                class="d-block"
+                > 
                 ${item.title}
+                </a>
                 </h3>
                 <p class="text-secondary hide-row-2">
                 ${item.description}
@@ -423,7 +446,12 @@ function newPostCardList(pageData){
             <img src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}" class="card-img-top content-card-img-top card-inside-img">
           </a>
           <div class="py-3 px-5 h-100">
-            <h3 class="fs-6 text-primary fw-bold mb-2 hide-row-2">${item.title}<span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span></h3> 
+            <h3 class="fs-6 text-primary fw-bold mb-2 hide-row-2">
+                <a href="${item.linkUrl}" data-id="${item.id}" class="${item.tagsByContent === '文章'? 'js-blog-link':''}">
+                    ${item.title}
+                </a>
+                <span class="text-gray-500 fw-normal fs-9 ms-3"> ${regTime(item.time)}</span>
+            </h3> 
             <p class="text-secondary hide-row-2">${item.description}</p>
           </div>
         </div>
@@ -584,19 +612,29 @@ function getBlogContentId(e){
         };
     });
     updateBlogLocalStorage();
-    loadToPage('blogContent.html');
+    openNewPage('blogContent.html');
+    renderBlogContent();
 }
 
 //換頁的效果
-function loadToPage(htmlPage){
+function openNewPage(htmlPage){
     window.open(htmlPage); //由local.assign 改為開啟新分頁
-    renderBlogContent();
+}
+function loadToPage(htmlPage){
+    window.location.assign(htmlPage); //由local.assign 改為開啟新分頁
+    
+    const contentList = document.querySelector('.js-content-list');
+    let str = '';
+    pageData = getPageDataLocalStorage();
+    str = renderCardsList(pageData);
+    contentList.innerHTML = str;
+    addBlogLink();
 }
 
 function renderBlogContent() {
     if(document.querySelector('.js-blog-content')){
         renderInnerContent();
-};
+    };
 }
 
 function renderInnerContent(){
@@ -638,7 +676,7 @@ function renderInnerContent(){
 
     if(subtitle.length !==0){
         blogSubtitle.textContent = subtitle;
-    }{
+    }else{
         blogTitleBox.removeChild(blogSubtitle);
         blogTitle.classList.add('mb-0');
     };
@@ -649,17 +687,20 @@ function renderInnerContent(){
         let str = ''
         tags.forEach(item=>{
             let content = `
-            <li><a href="${item.url}">${item.name}</a></li>
+            <li><a href="${item.url}" class="js-keywords-search" data-search="${item.url === 'search.html'? true : false }" data-keyWords="${item.name}">${item.name}</a></li>
             `;
             str += content;
         })
         blogFooterTags.innerHTML = str;
+
+        //監聽tags 的按鈕們
+        blogFooterTags.addEventListener('mouseover',getTagKeywordsToSearch);
     }else{
         blogFooter.removeChild(blogFooterTags);
     };
 
     recommendTitle.textContent = `「${getPageName(pageName) || blogItem[0].type}」`;
-   
+
     recommendContentLists[0].innerHTML = renderRecommend(recommendAry1);
     recommendContentLists[1].innerHTML = renderRecommend(recommendAry2);
     
@@ -669,10 +710,10 @@ function renderInnerContent(){
         hotPosts.forEach(item=>{
             let content = `
             <li class="mb-2">
-            <a href="${item.url}" class="link-secondary"
-              >${item.title}
-            </a>
-          </li>
+                <a href="${item.url}" class="link-secondary"
+                >${item.title}
+                </a>
+            </li>
             `;
             str += content;
         })
@@ -683,10 +724,8 @@ function renderInnerContent(){
         newPosts.forEach(item=>{
             let content = `
             <li class="mb-2">
-            <a href="${item.url}" class="link-secondary"
-              >${item.title}
-            </a>
-          </li>
+                <a href="${item.url}" class="link-secondary">${item.title}</a>
+            </li>
             `;
             str += content;
         })
@@ -756,8 +795,6 @@ function numberFilterReg(item){
     };
     return item
 }
-    
-
 
 // 過濾已經重複的數字
 function sortNumberList(a){
@@ -773,7 +810,7 @@ function renderRecommend(input){
         let content = `
         <li class="col-md-4 mb-5 mb-md-0">
             <div class="card content-card h-100">
-            <a href="blogContent.html" class="d-block js-blog-link" data-id="${item.id}">
+            <a href="blogContent.html" class="d-block js-blog-link" target="_blank" data-id="${item.id}">
                 <img
                 src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
                 alt="card img"
@@ -782,7 +819,9 @@ function renderRecommend(input){
             </a>
             <div class="py-3 px-5 h-100">
                 <h3 class="fs-8 text-primary fw-bold hide-row-2 mb-2">
+                <a href="blogContent.html" class="js-blog-link" target="_blank" data-id="${item.id}">
                 ${item.title}
+                </a>
                 </h3>
                 <p class="text-secondary hide-row-2">
                 ${item.description}
@@ -895,6 +934,7 @@ function renderModalButton(inputData, targetName){
     })
     return str ;
 }
+
 function renderModalImg(inputData){
     let str = `<div
     class="
@@ -979,7 +1019,6 @@ function renderPPTContentModal(e){
     pptSlideButton.innerHTML = renderModalButton(pptItem[0].pptContent,'carouselInPPTModal');
 }
 
-
 //localStorage
 function updateDataLocalStorage(){
     localStorage.setItem('data',JSON.stringify(data));
@@ -1022,7 +1061,10 @@ function getSearchData(){
             searchInput.addEventListener('keypress',searchResultsWithKey);  
             // searchInput.addEventListener('keyup',showSimilarList);//新增功能
         }else{
-            renderSearchPage();
+            const searchInputAll = document.querySelectorAll('[data-search="input"]');
+            const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+            searchBtnAll.forEach(item => item.addEventListener('click',searchAllResults));
+            searchInputAll.forEach(item => item.addEventListener('keypress',searchResultsWithKey));
         }
     }
 }
@@ -1036,15 +1078,17 @@ function searchAllResults(e){
     
         if(e.target.closest('a').dataset.search === 'btn'){
             searchName = searchInput.value.trim();
+            updateSearchNameLocalStorage();
+            
             filterData = data.filter(item =>{
                return item.title.match(searchName);
             });
     
            pageData = filterData;
     
-           updateSearchNameLocalStorage();
            updatePageDataLocalStorage();
            loadToPage('search.html');
+           console.log(searchName, filterData, pageData);
         };
     }else{
         const searchInputAll = document.querySelectorAll('[data-search="input"]');
@@ -1054,53 +1098,74 @@ function searchAllResults(e){
         let data = getDataLocalStorage();
 
         searchInputAll.forEach(inputItem =>{
+            searchName = inputItem.value.trim();
+            updateSearchNameLocalStorage();
             if(e.target.closest('a').dataset.search === 'btn'){
                 filterData = data.filter(dataItem => dataItem.title.match(inputItem.value.trim()));
             };
         })
         pageData = filterData;
-        updateSearchNameLocalStorage();
         updatePageDataLocalStorage();
         renderContentList();
+        renderSearchPage();
+        console.log(searchName, filterData, pageData);
+
     }
 }
 
 function searchResultsWithKey(e){
-    const searchInput = document.querySelector('[data-search="input"]');
-    let filterData =[];
-    let data = getDataLocalStorage();
+    if(pageName!=='search'){
+        const searchInput = document.querySelector('[data-search="input"]');
+        let filterData =[];
+        let data = getDataLocalStorage();
+    
+        if(e.key === 'Enter'){
+            searchName = searchInput.value.trim();
+            updateSearchNameLocalStorage();
+            
+            filterData = data.filter(item =>{
+               return item.title.match(searchName);
+            });
+    
+           pageData = filterData;
+    
+           updatePageDataLocalStorage();
+           loadToPage('search.html');
+           console.log(searchName, filterData, pageData);
+        };
+    }else{
+        const searchInputAll = document.querySelectorAll('[data-search="input"]');
+        // const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+        
+        let filterData=[];
+        let data = getDataLocalStorage();
 
-   if( e.key === 'Enter'){
-    searchName = searchInput.value.trim();
-    filterData = data.filter(item =>{
-        return item.title.match(searchName);
-    });
-    pageData = filterData;
+        searchInputAll.forEach(inputItem =>{
+            searchName = inputItem.value.trim();
+            updateSearchNameLocalStorage();
+            if(e.key === 'Enter'){
+                filterData = data.filter(dataItem => dataItem.title.match(inputItem.value.trim()));
+            };
+        })
+        pageData = filterData;
+        updatePageDataLocalStorage();
+        renderContentList();
+        renderSearchPage();
+        console.log(searchName, filterData, pageData);
 
-    updateSearchNameLocalStorage();
-    updatePageDataLocalStorage();
-
-    loadToPage('search.html');
-   }
+    }
 }
 
+//顯示搜尋出來的card 清單
 function renderSearchPage(){
-    if(pageName === 'search'){
-        //render 已搜尋出來的內容
-        const searchInputAll = document.querySelectorAll('[data-search="input"]');
-        const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
-        searchName = getSearchNameLocalStorage();
+    //render 已搜尋出來的內容
+    const searchInputAll = document.querySelectorAll('[data-search="input"]');
+    // const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+    searchName = getSearchNameLocalStorage();
 
-        searchInputAll.forEach((item,index)=>{
-            if(index===1){
-                item.value = searchName;
-            }
-        })
-
-        searchBtnAll.forEach(item =>{
-            item.addEventListener('click',searchAllResults);
-        })
-    }
+    searchInputAll.forEach( item=>{
+        item.value = searchName;
+    })
 }
 
 //滑到底 css back-top btn 效果
@@ -1113,5 +1178,26 @@ function getHeight(e){
     console.log(window.pageYOffset);
     if(!e.window.pageYOffset){
         console.log(e.window.pageYOffset);
+    }
+}
+
+//blogContent tags 轉到search 頁面
+function getTagKeywordsToSearch(e){
+    if(document.querySelector('[data-blog="tags"]')){
+        const blogTagsList= document.querySelector('[data-blog="tags"]');
+        let filterData =[];
+        let data = getDataLocalStorage();
+
+        if(e.target.closest('a').dataset.search==='true'){
+            searchName = e.target.closest('a').dataset.keyWords;
+
+            filterData = data.filter(item =>{
+                return item.title.match(searchName);
+            });
+            pageData = filterData;
+            updateSearchNameLocalStorage();
+            updatePageDataLocalStorage();
+            loadToPage('search.html');
+        }
     }
 }

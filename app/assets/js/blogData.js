@@ -102,7 +102,7 @@ const data =[
                 url: 'infoMap.html'
             },{
                 name:'設計',
-                url: 'searchLink.html'
+                url: 'search.html'
             }]
         },
     },
@@ -159,7 +159,7 @@ const data =[
                 url: 'infoMap.html'
             },{
                 name:'設計',
-                url: 'searchLink.html'
+                url: 'search.html'
             }]
 
         },
