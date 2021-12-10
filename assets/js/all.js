@@ -37,7 +37,7 @@ var data = [{
       url: 'infoMap.html'
     }, {
       name: '設計',
-      url: 'searchLink.html'
+      url: 'search.html'
     }]
   }
 }, {
@@ -57,7 +57,7 @@ var data = [{
       url: 'infoMap.html'
     }, {
       name: '設計',
-      url: 'searchLink.html'
+      url: 'search.html'
     }]
   }
 }, {
@@ -678,7 +678,6 @@ function renderContentList() {
 
       ;
     });
-    console.log(newestData1);
     str = newPostCardList(newestData1);
     contentList.innerHTML = str;
     str = newPostCardList(newestData2);
@@ -922,7 +921,7 @@ function normalCardList(pageData) {
   var str = '';
   pageData.forEach(function (item) {
     //要加上 item.time 排序時間
-    var content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"d-block ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" alt=\"card img\" class=\"card-img-top content-card-img-top\">\n          </a>\n          <div class=\"py-5 px-6 h-100\">\n            <h3 class=\"hide-row-2 fs-7 text-primary fw-md mb-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n            <p class=\"text-secondary hide-row-2 fs-8\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
+    var content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"d-block ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" alt=\"card img\" class=\"card-img-top content-card-img-top\">\n          </a>\n          <div class=\"py-5 px-6 h-100\">\n            <h3 class=\"hide-row-2 fs-7 text-primary fw-md mb-2\">\n                <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n                    ").concat(item.title, "</a>\n                <span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span>\n            </h3> \n            <p class=\"text-secondary hide-row-2 fs-8\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
     str += content;
   });
   return str;
@@ -935,13 +934,13 @@ function libraryCardList(pageData) {
     var content = '';
 
     if (item.tagsByContent == '文章') {
-      content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block js-blog-link\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>\n            ");
+      content = "<li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block js-blog-link\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"js-blog-link\"\n                >\n                ").concat(item.title, "\n                </a>\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>\n            ");
     } else if (item.tagsByContent == 'IG 貼文' || item.tagsByContent == '簡報') {
       //開啟 modal 的ig 文章
-      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
+      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                data-bs-toggle=\"modal\"\n                data-bs-target=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                    <a\n                    href=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n                    data-id=\"").concat(item.id, "\"\n                    class=\"d-block\"\n                    data-bs-toggle=\"modal\"\n                    data-bs-target=\"#").concat(item.tagsByContent === 'IG 貼文' ? 'libraryIGPostModal' : 'libraryPPTModal', "\"\n                    >\n                    ").concat(item.title, "\n                    </a>\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
     } else {
       //其他如心智圖網頁連結
-      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
+      content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n            <div class=\"card content-card h-100\">\n              <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n              >\n                <img\n                  src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                  alt=\"card img\"\n                  class=\"card-img-top content-card-img-top card-inside-img\"\n                />\n              </a>\n              <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"hide-row-2 fs-6 text-primary fw-bold mb-2\">\n                <a\n                href=\"").concat(item.linkUrl, "\"\n                data-id=\"").concat(item.id, "\"\n                class=\"d-block\"\n                > \n                ").concat(item.title, "\n                </a>\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n              </div>\n            </div>\n          </li>");
     }
 
     str += content;
@@ -953,7 +952,7 @@ function libraryCardList(pageData) {
 function newPostCardList(pageData) {
   var str = '';
   pageData.forEach(function (item) {
-    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-3\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"d-block ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" class=\"card-img-top content-card-img-top card-inside-img\">\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"fs-6 text-primary fw-bold mb-2 hide-row-2\">").concat(item.title, "<span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span></h3> \n            <p class=\"text-secondary hide-row-2\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
+    var content = " <li class=\"col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-5 mb-md-3\" data-tags-theme=\"".concat(item.tagsByTheme.join('_'), "\" data-tags-content=\"").concat(item.tagsByContent, "\" data-id=\"").concat(item.id, "\">\n        <div class=\"card content-card h-100\">\n          <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"d-block ").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n            <img src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\" class=\"card-img-top content-card-img-top card-inside-img\">\n          </a>\n          <div class=\"py-3 px-5 h-100\">\n            <h3 class=\"fs-6 text-primary fw-bold mb-2 hide-row-2\">\n                <a href=\"").concat(item.linkUrl, "\" data-id=\"").concat(item.id, "\" class=\"").concat(item.tagsByContent === '文章' ? 'js-blog-link' : '', "\">\n                    ").concat(item.title, "\n                </a>\n                <span class=\"text-gray-500 fw-normal fs-9 ms-3\"> ").concat(regTime(item.time), "</span>\n            </h3> \n            <p class=\"text-secondary hide-row-2\">").concat(item.description, "</p>\n          </div>\n        </div>\n      </li>");
     str += content;
   });
   return str;
@@ -1128,14 +1127,24 @@ function getBlogContentId(e) {
     ;
   });
   updateBlogLocalStorage();
-  loadToPage('blogContent.html');
+  openNewPage('blogContent.html');
+  renderBlogContent();
 } //換頁的效果
 
 
-function loadToPage(htmlPage) {
+function openNewPage(htmlPage) {
   window.open(htmlPage); //由local.assign 改為開啟新分頁
+}
 
-  renderBlogContent();
+function loadToPage(htmlPage) {
+  window.location.assign(htmlPage); //由local.assign 改為開啟新分頁
+
+  var contentList = document.querySelector('.js-content-list');
+  var str = '';
+  pageData = getPageDataLocalStorage();
+  str = renderCardsList(pageData);
+  contentList.innerHTML = str;
+  addBlogLink();
 }
 
 function renderBlogContent() {
@@ -1180,12 +1189,11 @@ function renderInnerContent() {
 
   if (subtitle.length !== 0) {
     blogSubtitle.textContent = subtitle;
-  }
-
-  {
+  } else {
     blogTitleBox.removeChild(blogSubtitle);
     blogTitle.classList.add('mb-0');
   }
+
   ;
   blogDate.forEach(function (item) {
     item.textContent = date;
@@ -1195,10 +1203,12 @@ function renderInnerContent() {
   if (tags.length !== 0) {
     var str = '';
     tags.forEach(function (item) {
-      var content = "\n            <li><a href=\"".concat(item.url, "\">").concat(item.name, "</a></li>\n            ");
+      var content = "\n            <li><a href=\"".concat(item.url, "\" class=\"js-keywords-search\" data-search=\"").concat(item.url === 'search.html' ? true : false, "\" data-keyWords=\"").concat(item.name, "\">").concat(item.name, "</a></li>\n            ");
       str += content;
     });
-    blogFooterTags.innerHTML = str;
+    blogFooterTags.innerHTML = str; //監聽tags 的按鈕們
+
+    blogFooterTags.addEventListener('mouseover', getTagKeywordsToSearch);
   } else {
     blogFooter.removeChild(blogFooterTags);
   }
@@ -1211,7 +1221,7 @@ function renderInnerContent() {
   if (hotPosts.length !== 0) {
     var _str = '';
     hotPosts.forEach(function (item) {
-      var content = "\n            <li class=\"mb-2\">\n            <a href=\"".concat(item.url, "\" class=\"link-secondary\"\n              >").concat(item.title, "\n            </a>\n          </li>\n            ");
+      var content = "\n            <li class=\"mb-2\">\n                <a href=\"".concat(item.url, "\" class=\"link-secondary\"\n                >").concat(item.title, "\n                </a>\n            </li>\n            ");
       _str += content;
     });
     blogHotPosts.innerHTML = _str;
@@ -1222,7 +1232,7 @@ function renderInnerContent() {
   if (newPosts.length !== 0) {
     var _str2 = '';
     newPosts.forEach(function (item) {
-      var content = "\n            <li class=\"mb-2\">\n            <a href=\"".concat(item.url, "\" class=\"link-secondary\"\n              >").concat(item.title, "\n            </a>\n          </li>\n            ");
+      var content = "\n            <li class=\"mb-2\">\n                <a href=\"".concat(item.url, "\" class=\"link-secondary\">").concat(item.title, "</a>\n            </li>\n            ");
       _str2 += content;
     });
     blogNewPosts.innerHTML = _str2;
@@ -1305,7 +1315,7 @@ function sortNumberList(a) {
 function renderRecommend(input) {
   var str = '';
   input.forEach(function (item) {
-    var content = "\n        <li class=\"col-md-4 mb-5 mb-md-0\">\n            <div class=\"card content-card h-100\">\n            <a href=\"blogContent.html\" class=\"d-block js-blog-link\" data-id=\"".concat(item.id, "\">\n                <img\n                src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                alt=\"card img\"\n                class=\"card-img-top content-card-img-top  content-card-img-top-sm\"\n                />\n            </a>\n            <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"fs-8 text-primary fw-bold hide-row-2 mb-2\">\n                ").concat(item.title, "\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n            </div>\n            </div>\n        </li>\n        ");
+    var content = "\n        <li class=\"col-md-4 mb-5 mb-md-0\">\n            <div class=\"card content-card h-100\">\n            <a href=\"blogContent.html\" class=\"d-block js-blog-link\" target=\"_blank\" data-id=\"".concat(item.id, "\">\n                <img\n                src=\"").concat(item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' : item.imgUrl, "\"\n                alt=\"card img\"\n                class=\"card-img-top content-card-img-top  content-card-img-top-sm\"\n                />\n            </a>\n            <div class=\"py-3 px-5 h-100\">\n                <h3 class=\"fs-8 text-primary fw-bold hide-row-2 mb-2\">\n                <a href=\"blogContent.html\" class=\"js-blog-link\" target=\"_blank\" data-id=\"").concat(item.id, "\">\n                ").concat(item.title, "\n                </a>\n                </h3>\n                <p class=\"text-secondary hide-row-2\">\n                ").concat(item.description, "\n                </p>\n            </div>\n            </div>\n        </li>\n        ");
     str += content;
   });
   return str;
@@ -1495,7 +1505,14 @@ function getSearchData() {
       searchBtn.addEventListener('click', searchAllResults);
       searchInput.addEventListener('keypress', searchResultsWithKey); // searchInput.addEventListener('keyup',showSimilarList);//新增功能
     } else {
-      renderSearchPage();
+      var searchInputAll = document.querySelectorAll('[data-search="input"]');
+      var searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+      searchBtnAll.forEach(function (item) {
+        return item.addEventListener('click', searchAllResults);
+      });
+      searchInputAll.forEach(function (item) {
+        return item.addEventListener('keypress', searchResultsWithKey);
+      });
     }
   }
 }
@@ -1511,13 +1528,14 @@ function searchAllResults(e) {
 
     if (e.target.closest('a').dataset.search === 'btn') {
       searchName = searchInput.value.trim();
+      updateSearchNameLocalStorage();
       filterData = _data.filter(function (item) {
         return item.title.match(searchName);
       });
       pageData = filterData;
-      updateSearchNameLocalStorage();
       updatePageDataLocalStorage();
       loadToPage('search.html');
+      console.log(searchName, filterData, pageData);
     }
 
     ;
@@ -1529,6 +1547,9 @@ function searchAllResults(e) {
     var _data2 = getDataLocalStorage();
 
     searchInputAll.forEach(function (inputItem) {
+      searchName = inputItem.value.trim();
+      updateSearchNameLocalStorage();
+
       if (e.target.closest('a').dataset.search === 'btn') {
         _filterData = _data2.filter(function (dataItem) {
           return dataItem.title.match(inputItem.value.trim());
@@ -1538,44 +1559,69 @@ function searchAllResults(e) {
       ;
     });
     pageData = _filterData;
-    updateSearchNameLocalStorage();
     updatePageDataLocalStorage();
     renderContentList();
+    renderSearchPage();
+    console.log(searchName, _filterData, pageData);
   }
 }
 
 function searchResultsWithKey(e) {
-  var searchInput = document.querySelector('[data-search="input"]');
-  var filterData = [];
-  var data = getDataLocalStorage();
+  if (pageName !== 'search') {
+    var searchInput = document.querySelector('[data-search="input"]');
+    var filterData = [];
 
-  if (e.key === 'Enter') {
-    searchName = searchInput.value.trim();
-    filterData = data.filter(function (item) {
-      return item.title.match(searchName);
+    var _data3 = getDataLocalStorage();
+
+    if (e.key === 'Enter') {
+      searchName = searchInput.value.trim();
+      updateSearchNameLocalStorage();
+      filterData = _data3.filter(function (item) {
+        return item.title.match(searchName);
+      });
+      pageData = filterData;
+      updatePageDataLocalStorage();
+      loadToPage('search.html');
+      console.log(searchName, filterData, pageData);
+    }
+
+    ;
+  } else {
+    var searchInputAll = document.querySelectorAll('[data-search="input"]'); // const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+
+    var _filterData2 = [];
+
+    var _data4 = getDataLocalStorage();
+
+    searchInputAll.forEach(function (inputItem) {
+      searchName = inputItem.value.trim();
+      updateSearchNameLocalStorage();
+
+      if (e.key === 'Enter') {
+        _filterData2 = _data4.filter(function (dataItem) {
+          return dataItem.title.match(inputItem.value.trim());
+        });
+      }
+
+      ;
     });
-    pageData = filterData;
-    updateSearchNameLocalStorage();
+    pageData = _filterData2;
     updatePageDataLocalStorage();
-    loadToPage('search.html');
+    renderContentList();
+    renderSearchPage();
+    console.log(searchName, _filterData2, pageData);
   }
-}
+} //顯示搜尋出來的card 清單
+
 
 function renderSearchPage() {
-  if (pageName === 'search') {
-    //render 已搜尋出來的內容
-    var searchInputAll = document.querySelectorAll('[data-search="input"]');
-    var searchBtnAll = document.querySelectorAll('[data-search="btn"]');
-    searchName = getSearchNameLocalStorage();
-    searchInputAll.forEach(function (item, index) {
-      if (index === 1) {
-        item.value = searchName;
-      }
-    });
-    searchBtnAll.forEach(function (item) {
-      item.addEventListener('click', searchAllResults);
-    });
-  }
+  //render 已搜尋出來的內容
+  var searchInputAll = document.querySelectorAll('[data-search="input"]'); // const searchBtnAll = document.querySelectorAll('[data-search="btn"]');
+
+  searchName = getSearchNameLocalStorage();
+  searchInputAll.forEach(function (item) {
+    item.value = searchName;
+  });
 } //滑到底 css back-top btn 效果
 
 
@@ -1589,6 +1635,27 @@ function getHeight(e) {
 
   if (!e.window.pageYOffset) {
     console.log(e.window.pageYOffset);
+  }
+} //blogContent tags 轉到search 頁面
+
+
+function getTagKeywordsToSearch(e) {
+  if (document.querySelector('[data-blog="tags"]')) {
+    var blogTagsList = document.querySelector('[data-blog="tags"]');
+    var filterData = [];
+
+    var _data5 = getDataLocalStorage();
+
+    if (e.target.closest('a').dataset.search === 'true') {
+      searchName = e.target.closest('a').dataset.keyWords;
+      filterData = _data5.filter(function (item) {
+        return item.title.match(searchName);
+      });
+      pageData = filterData;
+      updateSearchNameLocalStorage();
+      updatePageDataLocalStorage();
+      loadToPage('search.html');
+    }
   }
 }
 "use strict";
