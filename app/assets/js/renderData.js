@@ -648,11 +648,8 @@ function renderInnerContent(){
     let date = (blogItem[0].time).split('-').join('/');
     let content = blogItem[0].blogContent.content;
     let tags = blogItem[0].blogContent.tags;
-
     let recommendAry1=[];
     let recommendAry2=[];
-    recommendAry1.push(pageItem[0],pageItem[1],pageItem[2]);
-    recommendAry2.push(pageItem[3],pageItem[4],pageItem[5]);
 
     let hotPosts = [];
     let newPosts = [];
@@ -692,15 +689,44 @@ function renderInnerContent(){
             str += content;
         })
         blogFooterTags.innerHTML = str;
-
-        //監聽tags 的按鈕們
-        blogFooterTags.addEventListener('mouseover',getTagKeywordsToSearch);
+        getTagKeywordsToSearch();
     }else{
         blogFooter.removeChild(blogFooterTags);
     };
 
     recommendTitle.textContent = `「${getPageName(pageName) || blogItem[0].type}」`;
 
+    switch (pageItem.length){
+        case '0':
+            recommendAry1.push(allData[0],allData[1],allData[2]);
+            recommendAry2.push(allData[3],allData[4],allData[5]);
+        break;
+        case '1':
+            recommendAry1.push(pageItem[0],allData[0],allData[1]);
+            recommendAry2.push(allData[3],allData[4],allData[5]);
+        break;
+        case '2':
+            recommendAry1.push(pageItem[3],pageItem[4],allData[0]);
+            recommendAry2.push(allData[3],allData[4],allData[5]);
+        break;
+        case '3':
+            recommendAry1.push(pageItem[0],pageItem[1],pageItem[2]);
+            recommendAry2.push(allData[3],allData[4],allData[5]);
+        break;
+        case '4':
+            recommendAry1.push(pageItem[0],pageItem[1],pageItem[2]);
+            recommendAry2.push(pageItem[3],allData[4],allData[5]);
+        break;
+        case '5':
+            recommendAry1.push(pageItem[0],pageItem[1],pageItem[2]);
+            recommendAry2.push(pageItem[3],pageItem[4],allData[5]);
+        break;
+        default:
+            recommendAry1.push(pageItem[0],pageItem[1],pageItem[2]);
+            recommendAry2.push(pageItem[3],pageItem[4],pageItem[5]);
+        break;
+    }
+    
     recommendContentLists[0].innerHTML = renderRecommend(recommendAry1);
     recommendContentLists[1].innerHTML = renderRecommend(recommendAry2);
     
@@ -1184,20 +1210,31 @@ function getHeight(e){
 //blogContent tags 轉到search 頁面
 function getTagKeywordsToSearch(e){
     if(document.querySelector('[data-blog="tags"]')){
-        const blogTagsList= document.querySelector('[data-blog="tags"]');
-        let filterData =[];
-        let data = getDataLocalStorage();
+        const blogTags = document.querySelectorAll('.js-keywords-search');
 
-        if(e.target.closest('a').dataset.search==='true'){
-            searchName = e.target.closest('a').dataset.keyWords;
+        blogTags.forEach(item => {
+            if(item.dataset.search === 'true'){
+                item.addEventListener('click', function(e){
+                    e.preventDefault();
+                    searchName = e.target.closest('a').dataset.keywords;
+                    updateSearchNameLocalStorage();
 
-            filterData = data.filter(item =>{
-                return item.title.match(searchName);
-            });
-            pageData = filterData;
-            updateSearchNameLocalStorage();
-            updatePageDataLocalStorage();
-            loadToPage('search.html');
-        }
+                    let data = getDataLocalStorage();
+                    let filterData = [];
+                    data.forEach(item =>{
+                        item.tagsByTheme.forEach(tagsItem =>{
+                            if(tagsItem === searchName){
+                                filterData.push(item);
+                            }
+                        })
+                    })
+                    console.log(filterData);
+                    pageData = filterData;
+                    updatePageDataLocalStorage();
+                    
+                    loadToPage('search.html');
+                })
+            }
+        })
     }
 }

@@ -798,13 +798,120 @@ const data =[
     {
         title: "《B型選擇》你永遠都有選擇",
         description: "很多時候，我們都會認為自己只有一種選擇，比如說畢業後只能趕快找工作，找到工作之後只能趕快想辦法拚升遷、拚加薪，但除了這些選擇以外，其實還有各種不同的可能。",
-        type:["學習思考","好書推薦"],
+        type:["好書推薦"],
         time: '2021-09-23',
         imgUrl:"https://images.unsplash.com/photo-1531347118459-c3ea7a5ac61e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-        tagsByTheme:["職涯思考","學習方法"],
+        tagsByTheme:["自我成長","職涯思考"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>很多時候我們都會認為自己只有一種選擇，比如說畢業後只能趕快找工作，找到工作之後只能趕快想辦法拚升遷、拚加薪，但除了這些選擇以外，其實還有各種不同的可能。</p>
+            <p>《B型選擇》書中描述<a href="https://www.greenvines.com.tw/" target="_blank" class="text-content-link">綠藤生機</a>創辦人找尋自我價值到改變社會環境的過程。雖然是一家企業的創業故事，但其中的掙扎卻是時常發生在每個人身上的，。</p>
+            <p>「到底該選擇大家都在做的事，還是創造自己的選項？」</p>
+            <p>看完書，再回頭看看自己，我從中找到了畢業兩年間一直在尋找的一些人生解答！</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/09/4-1.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+
+            <h1 class="text-content-h1" data-title="h1" id="在改變環境以及改變自己之前應該抱有什麼樣的想法？">在改變環境以及改變自己之前應該抱有什麼樣的想法？</h1>
+            <p>綠藤生機的產品和企業理念，從結果來看，都對環境造成很大的改變，但這些改變一開始都是很小的想法、很小的嘗試，甚至是一些看似無關緊要的小事。</p>
+            <p>而改變自己也是一樣的道理，從小處著手，才有機會促成更大的改變。無論是大、是小，我們每一次的選擇，都在傳遞自身想法還有理念。</p>
+            <div class="text-content-quote">
+                <p>環境問題是每個人的問題，而答案也在每個人身上。</p>
+                <p><span>&mdash; 盧建彰《文案是…我不知道.你不知道的東西》</span></p>
+            </div>
+            <p>你不用是企業，每個人都可以透過你所做的選擇，塑造想要的環境，因為我們都是環境的一份子，我們都有機會成為改變的那個人。</p>
+            <p>不論是企業還是個人，任何改變都是從小處著手，每個人都可以為我們所相信的價值觀做出選擇。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="產品價值與行銷策略的關係是什麼？">產品價值與行銷策略的關係是什麼？</h1>
+            <p>畢業後，除了很理所當然地在準備建築師考試，我也展開了小小的行動，想探索建築產業之外的事。</p>
+            <p>我開始在社群媒體上分享自己閱讀獲得的啟發，在過程中領悟了產品價值與行銷策略的關係。</p>
+
+            <div className="d-flex flex-column flex-md-row bg-light p-5 gap-5">
+                <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/09/IMG_9890%E6%8B%B7%E8%B2%9D3.jpg?w=828&ssl=1" alt="img" class="img-fluid" />
+                <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/09/7-3.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+
+                <p>FOLLOW ➜ <a href="https://www.instagram.com/junlearning/" target="_blank" class="text-content-link">https://www.instagram.com/junlearning/</a></p>
+            </div>
+
+            <p>一開始很單純地認為，只要貼文的內容品質夠好，就會有人來追蹤，就像綠藤生機創立一開始，覺得只要產品夠好，客人就會買單。乍看之下，這是很明確的因果關係，但這之中卻忽略了別人從不認識你到認識你的過程。</p>
+            <p>萬一別人不知道你是誰，就算產品品質或是創作內容再好，別人也不會知道，就更不可能會買單。如果你很努力地設計產品或創作內容，但沒有努力讓更多人知道你，結果就是變成東西很好，但沒有人會來買、會來追蹤。</p>
+            <p>別人從認識你到買單的整個過程是，先知道你、了解你、認同你，最後才是買單。</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/09/9-1.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+            <p>所以行銷並不是一個有了產品及內容之後才要做的事情，行銷是在製作產品及內容的同時，也要一併考量的。你要讓更多人知道你，同時，你也要有好的產品，讓別人可以在更了解你之後，選擇買單。確保產品品質的同時，也絕不能忽略產品的行銷策略。</p>
+            <p>如果品質是在創造價值，行銷就是在傳遞價值，而創造價值跟傳遞價值一樣重要！</p>
+            <div class="text-content-quote">
+                <p>在創作內容或是設計產品時，要能創造價值，也要會傳遞價值。</p>
+                <p><span>&mdash; Jun</span></p>
+            </div>
+
+            <h1 class="text-content-h1" data-title="h1" id="在各種社會期待下，要用什麼心態去追尋自我價值？">在各種社會期待下，要用什麼心態去追尋自我價值？</h1>
+            <p>接著來說說關於社會期待與自我價值的平衡。</p>
+            <p>書中提到三位創辦人在符合某部分的社會期待之後，擺脫它，然後開始追尋自我價值。我以前也認為要先擺脫社會期待，然後才能開始追尋自我價值。但現實是，畢業前，社會期待是找到一份好工作，找到工作之後，社會期待變成是升遷、領高薪水，<span class="text-content-highlight">每個階段都有不同的社會期待！</span></p>
+            <p>社會期待的認可與自我價值的追尋，並不只是單純的先後關係，它們更像是<span class="text-content-highlight">左右選擇的兩種思維</span>。</p>
+            <p>我們在做每個選擇的時候，都同時受這兩個想法影響著。有時候可能會更想符合社會期待，所以選擇一個大家聽過的大公司，有時候可能會更想追尋自我價值，所以選擇一家有理念的小公司。</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/09/12-1.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+            <p>雖然擺脫社會期待看似是一件很美好的事，可是我們每個人其實都需要在群體中定義自己，所以與其追求擺脫它、甚至脫離社會，不如去用更正面的心態，學會與社會期待共存。與此同時，也要持續去追尋自我價值，尋找那些能定義你人生幸福的KPI。</p>
+            <div class="text-content-quote">
+            <p>不需要完完全全擺脫社會期待，但永遠不要放棄尋找自我價值。</p>
+            <p><span>&mdash; Jun</span></p>
+            </div>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/09/14.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+            
+            <h1 class="text-content-h1" data-title="h1" id="什麼是做自己？">什麼是做自己？</h1>
+            <p>回到畢業到現在兩年間，我不斷問自己的問題：「怎麼在社會期待下做自己？」</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/09/15-1.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+            <p>某部分的自己還是希望能符合社會期待，所以一邊準備著建築師考試，一邊尋找職涯的下一步，也開始嘗試做自媒體，接觸以前不曾碰過的事情，然後一邊尋找自己認為的成功是什麼模樣。</p>
+            <p><span class="text-content-highlight">雖然還在掙扎中前進，但也因為有過掙扎，才有成長，也才找到了一些答案，然後走成今天這個模樣。</span></p>
+            <p>現在的我認為，社會期待並不是真的指社會對你的期待，而是「你覺得」別人對你的期待是什麼。<span class="text-content-highlight">到頭來，真正要說服的人，從來都不是心中以為的那個「社會」，而是你自己！</span></p>
+            <p>真正的</p>
+            <div class="text-content-quote">
+            <p>做自己，不是指可以做什麼就做什麼，而是能不帶著任何目的去做一件事。</p>
+            <p><span>&mdash; 厭世哲學家《厭世講堂：顛覆人生的十堂莊子課》</span></p>
+            </div>
+            <p>當有一天我能夠相信自己，然後不為了說服任何人去做出選擇的時候，也許才是真的能夠做自己的時候！</p>
+            
+            <h1 class="text-content-h1" data-title="h1" id="迷茫才是人生的常態">迷茫才是人生的常態</h1>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/09/18-1.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+            <p>未來可能還是會常常找不到答案，但尋找答案與探索的過程，也許就是人生給我們的答案。比起每個時刻都有明確的解答，其實迷茫才是人生的常態。與其努力擺脫迷茫的狀態，不如勇敢提問、勇於嘗試，然後在不同的體驗中前進！</p>
+            <p>就像書中這句話所說的</p>
+            <div class="text-content-quote">
+            <p>創新的真諦，從來不是在別人的答案上發現真理，而是回到源頭，自己去尋找答案。</p>
+            <p><span>&mdash; 王維玲《B型選擇》</span></p>
+            </div>
+            <p>看別人的成功故事，為的也不是要去複製別人走過的路，而是要回到自己身上，找到自己定義成功的方式，然後走出自己的故事。</p>
+            <p>我們要做的，不是去達到山頂，而是要享受登山的過程，然後堅定做自己、成為自己。</p>
+            <p>最後用《B型選擇》這句話做為結尾：</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/09/20.jpg?resize=2048%2C1152&ssl=1" alt="img" class="img-fluid" />
+            <p>「更好」的標準不在別人眼中，怎樣才叫做更好，只有自己能去定義。</p>
+            <div class="text-content-quote">
+            <p>唯有相信自己，找到自己，才能真的成為自己。</p>
+            <p><span>&mdash; Jun</span></p>
+            </div>
+            <div class="text-content-callout bg-warning mb-12">
+                <p class="text-paragraph">喜歡這篇文章的內容的話，也歡迎追蹤我的 Instagram，看更多好書與觀點的分享喔！</p>
+                <p class="text-paragraph"><a href="https://www.instagram.com/junlearning/"  target="_blank" class="text-content-link">Jun｜職場軟實力 ✕ 學習前哨站（@junlearning）</a></p>
+            </div>
+            
+            <h1 class="text-content-h1" data-title="h1" id="延伸推薦書籍">延伸推薦書籍</h1>
+            <ul class="bulleted-list">
+                <li><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010875021?sloc=main&utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202110" class="text-content-link" target="_blank">《歡迎來到志祺七七》</a></li>
+                <li><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010895160?sloc=main&utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202110" class="text-content-link" target="_blank">《長勝心態》</a></li>
+                <li><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010811705?sloc=main&utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202110" class="text-content-link" target="_blank">《厭世講堂：顛覆人生的十堂莊子課》</a></li>
+            </ul>
+            `,
+            tags:[{
+                name:'好書推薦',
+                url: 'library.html'
+            },{
+                name:'自我成長',
+                url: 'search.html'
+            },{
+                name:'職涯思考',
+                url: 'search.html'
+            }]
+
+        },
     },
     {
         title: "《設計生意經》會做設計，還不足以讓你養活自己！",
@@ -1286,15 +1393,6 @@ const data =[
                 name:'商業筆記',
                 url: 'search.html'
             },{
-                name:'商業知識與觀察',
-                url: 'search.html'
-            },{
-                name:'商管看人生',
-                url: 'search.html'
-            },{
-                name:'數據分析',
-                url: 'search.html'
-            },{
                 name:'好書推薦',
                 url: 'library.html'
             }]
@@ -1316,7 +1414,7 @@ const data =[
             <p>商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式。</p>
             <p>以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！</p>
             <p class="ig-content-tag"><a href="#">J本好書看起來</a></p>`,
-            tagsName:['商業','商業模式','企業經營','策略', '架構', '目標', '價值', '創造', '能力','資源','網路','獲利','獲利模式','閱讀筆記']
+            tagsName:['商業筆記']
         }
     },
     {
