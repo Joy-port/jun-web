@@ -399,6 +399,42 @@ function libraryCardList(pageData) {
             </div>
           </li>`;
           
+        }else if(item.tagsByContent=='心智圖' ){
+            //開啟 modal 的ig 文章
+            content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
+            <div class="card content-card h-100">
+              <a
+                href="#libraryPPTModal"
+                data-id="${item.id}"
+                class="d-block"
+                data-bs-toggle="modal"
+                data-bs-target="#libraryPPTModal"
+              >
+                <img
+                  src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
+                  alt="card img"
+                  class="card-img-top content-card-img-top card-inside-img"
+                />
+              </a>
+              <div class="py-3 px-5 h-100">
+                <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
+                    <a
+                    href="#libraryPPTModal"
+                    data-id="${item.id}"
+                    class="d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#libraryPPTModal"
+                    >
+                    ${item.title}
+                    </a>
+                </h3>
+                <p class="text-secondary hide-row-2">
+                ${item.description}
+                </p>
+              </div>
+            </div>
+          </li>`;
+          
         }else{
             //其他如心智圖網頁連結
             content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
@@ -624,10 +660,10 @@ function loadToPage(htmlPage){
     window.location.assign(htmlPage); //由local.assign 改為開啟新分頁
     
     const contentList = document.querySelector('.js-content-list');
-    let str = '';
     pageData = getPageDataLocalStorage();
-    str = renderCardsList(pageData);
-    contentList.innerHTML = str;
+    console.log(pageData,libraryCardList(pageData) );
+
+    contentList.innerHTML = libraryCardList(pageData);
     addBlogLink();
 }
 
@@ -910,7 +946,6 @@ function renderLibraryModal(){
 //渲染ig 內容
 function renderIGContentModal(e){
     let clickId = e.target.closest('a').dataset.id;
-    console.log(clickId);
     pageData = getPageDataLocalStorage();
 
     if(IgItem.length !== 0){
@@ -1026,10 +1061,10 @@ function renderPPTContentModal(e){
     pptItem[0].pptContent.forEach((item,index) =>{
         let content = `
         <div class="carousel-item ${index===0?'active':''}">
-            <div class="ratio ratio-16x9">
+            <div class="ratio ratio-16x9 overflow-auto">
             <img src="${item.imgUrl}"
                 alt="ppt img"
-                class="card-inside-img"/>
+                class="card-inside-img card-fit-img"/>
             </div>
             <div class="px-8 py-5 border-top border-gray-500">
                 <div class="overflow-auto"  style="height: 50px;">
@@ -1040,7 +1075,7 @@ function renderPPTContentModal(e){
         `
         str += content;
     })
-    console.log(pptItem[0].pptContent);
+
     pptContentList.innerHTML = str ;
     pptSlideButton.innerHTML = renderModalButton(pptItem[0].pptContent,'carouselInPPTModal');
 }
@@ -1114,7 +1149,6 @@ function searchAllResults(e){
     
            updatePageDataLocalStorage();
            loadToPage('search.html');
-           console.log(searchName, filterData, pageData);
         };
     }else{
         const searchInputAll = document.querySelectorAll('[data-search="input"]');
@@ -1134,7 +1168,6 @@ function searchAllResults(e){
         updatePageDataLocalStorage();
         renderContentList();
         renderSearchPage();
-        console.log(searchName, filterData, pageData);
 
     }
 }
@@ -1157,7 +1190,6 @@ function searchResultsWithKey(e){
     
            updatePageDataLocalStorage();
            loadToPage('search.html');
-           console.log(searchName, filterData, pageData);
         };
     }else{
         const searchInputAll = document.querySelectorAll('[data-search="input"]');
@@ -1177,7 +1209,6 @@ function searchResultsWithKey(e){
         updatePageDataLocalStorage();
         renderContentList();
         renderSearchPage();
-        console.log(searchName, filterData, pageData);
 
     }
 }
@@ -1201,7 +1232,6 @@ function showBackTopBtn(){
 }
 
 function getHeight(e){
-    console.log(window.pageYOffset);
     if(!e.window.pageYOffset){
         console.log(e.window.pageYOffset);
     }
@@ -1228,9 +1258,9 @@ function getTagKeywordsToSearch(e){
                             }
                         })
                     })
-                    console.log(filterData);
                     pageData = filterData;
                     updatePageDataLocalStorage();
+                    
                     
                     loadToPage('search.html');
                 })

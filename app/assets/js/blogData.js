@@ -698,7 +698,11 @@ const data =[
         tagsByTheme:["學習方法"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:``,
+            tags:[{}]
+        },
     },
     {
         title: "從《機智醫生生活》看想成為的大人",
@@ -1062,17 +1066,6 @@ const data =[
         },
     },
     {
-        title: "《精準成長》",
-        description: "反思才會成長！如果沒有經過反思，所有的努力不一定能成為你學習的養分，花下的時間也不一定能讓你發揮最大的潛力。想要成長，你必須學會有意地暫停，理解經驗帶給你的啟發，才能從人生體驗當中學到東西。",
-        type:["學習思考","好書推薦"],
-        time: '2020-08-09',
-        imgUrl:"https://images.unsplash.com/photo-1537059935635-db65478670d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80",
-        tagsByTheme:["學習方法","自我成長"],
-        tagsByContent:"文章",
-        linkUrl:"blogContent.html",
-        blogContent:{},
-    },
-    {
         title: "《清單革命》",
         description: "不犯錯的秘密武器！清單不能教會我們專業知識，但清單能幫助我們免於犯錯。就像一個機器需要零件，但如果沒有好的系統，也無法讓零件發揮效用，我們光擁有知識還不夠，清單就是能幫助我們有效運用知識的系統。",
         type:["學習思考","好書推薦"],
@@ -1178,10 +1171,65 @@ const data =[
         type:["學習思考","好書推薦"],
         time: '2021-10-01',
         imgUrl:"https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-        tagsByTheme:["學習方法","自我成長"],
-        tagsByContent:"文章",
-        linkUrl:"blogContent.html",
-        blogContent:{},
+        tagsByTheme:["學習方法"],
+        tagsByContent:"心智圖",
+        linkUrl:"",
+        pptContent:[
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/10/%E6%9C%80%E9%AB%98%E5%AD%B8%E7%BF%92%E6%B3%95.jpeg?zoom=2&resize=690%2C550&ssl=1',
+                textContent:''
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/10/1.jpg?w=1922&ssl=1',
+                textContent:'文本和口語'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/2.jpg?resize=2048%2C752&ssl=1',
+                textContent:'圖像和口語'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/10/3.jpg?w=2012&ssl=1',
+                textContent:'空間'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/10/4.jpg?w=1974&ssl=1',
+                textContent:'情境／狀態'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/5-6-1.jpg?w=1555&ssl=1',
+                textContent:'多功能力'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/5-6%E6%8B%B7%E8%B2%9D.jpg?w=1555&ssl=1',
+                textContent:'交錯<br />在不同情境下提取記憶，能幫助你在各種情況都能良好的用出適當技能，而當你混搭南轅北轍的技能時，會發現它們之間有不明顯的連結，進而產生創意。<br />但交錯練習會受「相似度」影響，動作相似度越高，越需要花心力區別。花的心力越多，練到熟練的個別技能就會越靈活、越能遷移到不同情境應用。'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/10/7.jpg?resize=2048%2C1777&ssl=1',
+                textContent:'錯誤<br />如果發生某種令人震驚或意想不到的事情，腦袋會有一個像駕訓班教練一樣的機制接管你腦中的注意力，把方向盤抓回來，啟動生存的反射行為。'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/8.jpg?w=1927&ssl=1',
+                textContent:'回想'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/10/9.jpg?resize=1644%2C2048&ssl=1',
+                textContent:'促發<br />引導學員啟動的知識，會影響他們解讀之後吸收的資訊<br />如果以辯論開場，學員會傾向以批判眼光看待課程內容<br />如果以比較開啟討論，學員會從課程內容中尋找模式與連結<br />如果用記憶練習開始，學員就更容易注意課程內容細節<br />希望學員採用什麼策略，就能設計課程熱身活動，引導學員擁有更好的學習成效'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2020/10/10-1-scaled.jpg?resize=1905%2C2048&ssl=1',
+                textContent:'故事'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/11.jpg?resize=1945%2C2048&ssl=1',
+                textContent:'壓力'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/10/12.jpg?w=1548&ssl=1',
+                textContent:'分散'
+            },
+            
+            
+        ]
     },
     {
         title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
@@ -1191,44 +1239,50 @@ const data =[
         imgUrl:"https://images.unsplash.com/photo-1529158062015-cad636e205a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80",
         tagsByTheme:["工作術"],
         tagsByContent:"心智圖",
-        linkUrl:"blogContent.html",
-        blogContent:{
-            subtitle: '',
-            content: `
-            <p>一開始並沒有想看這本書，看標題的感覺是：「大概又是一本成功學的書吧！只說如何成功，不說如何避免失敗…」，但翻開來，馬上就發現我錯了！</p>
-            <p>作者把如何成功的重點放在「看待事情的角度」之上，而這些想法則是建立在科學基礎之上，是一本心態和方法並重的書，不只是用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」！</p>
-            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/05/image-18.png?w=1326&ssl=1" alt="img" class="img-fluid" />
-            <p>全書提出七大「心智」，而心智指的就是面對事情心態。</p>
-            <p>不同人會對一件事有不同看法，就是因為每個人的認知不同導致，而作者所說的「心智」，就是對事情的正向認知。有了正面認知，才能對遇到的問題提出正向的解法，進而提高工作績效與生活滿意度。</p>
-
-            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">第一部分：個人工作能力</h1>
-            <h2 class="text-content-h2" data-title="h2" id="保持雙重專注">保持雙重專注</h2>
-            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/05/image-19.png?resize=2048%2C324&ssl=1" alt="img" class="img-fluid" />
-            <h2 class="text-content-h2" data-title="h2" id="重新設計工作">重新設計工作</h2>
-            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-20.png?resize=2048%2C960&ssl=1" alt="img" class="img-fluid" />
-            <h2 class="text-content-h2" data-title="h2" id="啟動學習迴圈">啟動學習迴圈</h2>
-            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-21.png?resize=2048%2C1418&ssl=1" alt="img" class="img-fluid" />
-            <h2 class="text-content-h2" data-title="h2" id="結合熱情與使命">結合熱情與使命</h2>
-            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-22.png?resize=2048%2C1028&ssl=1" alt="img" class="img-fluid" />
-
-            <h1 class="text-content-h1" data-title="h1" id="與他人協作的能力">第二部分：與他人協作的能力</h1>
-            <h2 class="text-content-h2" data-title="h2" id="說服別人，以達成目標">說服別人，以達成目標</h2>
-            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-23.png?resize=2048%2C1082&ssl=1" alt="img" class="img-fluid" />
-            <h2 class="text-content-h2" data-title="h2" id="團隊合作要領">團隊合作要領</h2>
-            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-24.png?resize=2048%2C1365&ssl=1" alt="img" class="img-fluid" />
-            <h2 class="text-content-h2" data-title="h2" id="跨部門協作要領">跨部門協作要領</h2>
-            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-25.png?resize=2048%2C1399&ssl=1" alt="img" class="img-fluid" />
+        linkUrl:"",
+        pptContent:[
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/%E9%AB%98%E7%B8%BE%E6%95%88%E5%BF%83%E6%99%BA.jpg?zoom=2&resize=690%2C550&ssl=1',
+                textContent:'一開始並沒有想看這本書，看標題的感覺是：「大概又是一本成功學的書吧！只說如何成功，不說如何避免失敗…」，但翻開來，馬上就發現我錯了！<br />作者把如何成功的重點放在「看待事情的角度」之上，而這些想法則是建立在科學基礎之上，是一本心態和方法並重的書，不只是用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」！'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/05/image-18.png?w=1326&ssl=1',
+                textContent:'全書提出七大「心智」，而心智指的就是面對事情心態。<br />不同人會對一件事有不同看法，就是因為每個人的認知不同導致，而作者所說的「心智」，就是對事情的正向認知。有了正面認知，才能對遇到的問題提出正向的解法，進而提高工作績效與生活滿意度。'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/05/image-19.png?resize=2048%2C324&ssl=1',
+                textContent:'第一部分：個人工作能力<br />保持雙重專注'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-20.png?resize=2048%2C960&ssl=1',
+                textContent:'第一部分：個人工作能力<br />重新設計工作'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-21.png?resize=2048%2C1418&ssl=1',
+                textContent:'第一部分：個人工作能力<br />啟動學習迴圈'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-22.png?resize=2048%2C1028&ssl=1',
+                textContent:'第一部分：個人工作能力<br />結合熱情與使命'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-23.png?resize=2048%2C1082&ssl=1',
+                textContent:'第二部分：與他人協作的能力<br />說服別人，以達成目標'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/05/image-24.png?resize=2048%2C1365&ssl=1',
+                textContent:'第二部分：與他人協作的能力<br />團隊合作要領'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-25.png?resize=2048%2C1399&ssl=1',
+                textContent:'第二部分：與他人協作的能力<br />跨部門協作要領'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-27.png?resize=2048%2C1007&ssl=1',
+                textContent:'第三部分：三大策略補足七大心智的不足<br />雖說七大心智是作者經過研究整理出來的好方法，能夠幫助我們在工作上提高績效，讓我們有更多餘裕去過想要的生活，但有些心智單獨使用時，就會出現負面效果，必須靠其他方法來防範。<br />例如，充滿熱情與使命感的人，一不小心就會變成工作狂，這樣的人在工作績效與表現都會很優秀，但卻無法在工作與生活之間取得平衡，因此作者建議，必須將工作與生活分開，不讓兩者彼此干擾，才能在保有工作績效的同時，過上想要的生活。'
+            }
             
-            <h1 class="text-content-h1" data-title="h1" id="三大策略補足七大心智的不足">第三部分：三大策略補足七大心智的不足</h1>
-            <p>雖說七大心智是作者經過研究整理出來的好方法，能夠幫助我們在工作上提高績效，讓我們有更多餘裕去過想要的生活，但有些心智單獨使用時，就會出現負面效果，必須靠其他方法來防範。</p>
-            <p>例如，充滿熱情與使命感的人，一不小心就會變成工作狂，這樣的人在工作績效與表現都會很優秀，但卻無法在工作與生活之間取得平衡，因此作者建議，必須將工作與生活分開，不讓兩者彼此干擾，才能在保有工作績效的同時，過上想要的生活。</p>
-            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/05/image-27.png?resize=2048%2C1007&ssl=1" alt="img" class="img-fluid" />
-            `,
-            tags:[{
-                name: '工作術',
-                url: 'search.html'
-            }]
-        },
+        ]
     },
     {
         title: "怎麼達到工作與生活的平衡？",
@@ -1242,7 +1296,7 @@ const data =[
         blogContent:{},
     },
     {
-        title: "【讀書筆記】看完《搞定》，待辦事項就被搞定了！",
+        title: "看完《搞定》，待辦事項就被搞定了！",
         description: "遠距在家忙到生活失衡？《搞定》教你管理自己的行動，就會自然而然地做好時間管理了！",
         type:["好書推薦"],
         time: '2021-07-03',

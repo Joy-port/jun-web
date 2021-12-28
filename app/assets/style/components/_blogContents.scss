@@ -55,7 +55,6 @@
 
         &>li{
             display: block;
-            margin-bottom: 0.5rem;
             &::before{
                 counter-increment:num; 
                 content:counter(num) '. ';
@@ -63,6 +62,9 @@
             &::selection{
                 background-color: $warning;
             }
+        }
+        &>li+li{
+            margin-top: 0.5rem;
         }
     }
 
@@ -72,20 +74,24 @@
         &>li{
             list-style-type: disc;
             margin-left: 2rem;
-            margin-bottom: 0.5rem;
             &::selection{
                 background-color: $warning;
             }
+        }
+        &>li+li{
+            margin-top: 0.5rem;
         }
         &>ul{
             margin-bottom: 2rem;
             &>li{
                 list-style-type: circle;
                 margin-left: 4rem;
-                margin-bottom: 0.5rem;
                 &::selection{
                     background-color: $warning;
                 }
+            }
+            &>li+li{
+                margin-top: 0.5rem;
             }
         }
     }
@@ -96,10 +102,12 @@
         &>li{
             list-style-type: circle;
             margin-left: 4rem;
-            margin-bottom: 0.5rem;
             &::selection{
                 background-color: $warning;
             }
+        }
+        &>li+li{
+            margin-top: 0.5rem;
         }
     }
     &-link{
