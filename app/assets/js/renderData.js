@@ -19,9 +19,10 @@ function init(){
     renderBlogContent();
     renderLibraryModal();
     getSearchData();
-
+    
     //css
     showBackTopBtn();
+
 }
 
 init();
@@ -670,6 +671,10 @@ function loadToPage(htmlPage){
 function renderBlogContent() {
     if(document.querySelector('.js-blog-content')){
         renderInnerContent();
+        if(document.querySelector('#js-show-backTop-btn')){
+            const tableContentBtnList = document.querySelector('[data-blog="tableContent"]');
+            tableContentBtnList.addEventListener('click', addMarginToContent );
+        }
     };
 }
 
@@ -1266,5 +1271,16 @@ function getTagKeywordsToSearch(e){
                 })
             }
         })
+    }
+}
+
+//無關 將目錄標籤顯示出來
+function addMarginToContent(e){
+    const contentList = document.querySelector('[data-blog="content"]');
+    let linkId = e.target.getAttribute('href');
+    let el = document.querySelector(linkId);
+    if(e.target.nodeName === 'A'){
+        contentList.querySelectorAll('[data-title]').forEach(item => item.classList.remove('pt-50'));
+        el.classList.add('pt-50');
     }
 }
