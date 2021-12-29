@@ -121,16 +121,16 @@ const data =[
             <p>在製作簡報時，素材網站可以節省很多時間，救急的時候能幫上一些忙。</p>
             <p>但若真的想精進簡報設計，則需要平常累積對設計的敏感度，也需要對製作工具有一定的熟練程度。</p>
             <p>以下整理了 12 個分享簡報設計知識及技巧的部落格和 FB 粉專。</p>
-            <h2 class="text-content-h2" id="簡報設計素材" data-title="h2">簡報設計素材</h2>
+            <h1 class="text-content-h2" id="簡報設計素材" data-title="h1">簡報設計素材</h1>
             <p><a href="https://www.bfa.com.tw/tools" class="text-content-link-btn">BFA 簡報學院</a></p>
 
-            <h2 class="text-content-h2" id="專欄文章" data-title="h2">專欄文章</h2>
+            <h1 class="text-content-h2" id="專欄文章" data-title="h1">專欄文章</h1>
             <p class="text-btn-group">
             <a href="https://www.bfa.com.tw/blog" class="text-content-link-btn">BFA 簡報</a>
             <a href="https://chuckchiangppt.blogspot.com/" class="text-content-link-btn">簡報練功團</a>
             <a href="https://artofslide.blogspot.com/" class="text-content-link-btn">簡報藝術烘焙坊</a></p>
             
-            <h2 class="text-content-h2" id="Facebook粉絲專頁" data-title="h2">Facebook 粉絲專頁</h2>
+            <h1 class="text-content-h2" id="Facebook粉絲專頁" data-title="h1">Facebook 粉絲專頁</h1>
             <p class="text-btn-group"><a href="https://www.facebook.com/slideologylearner/" class="text-content-link-btn">簡報・初學者</a>
             <a href="https://www.facebook.com/easypresentation/" class="text-content-link-btn">簡報・簡單報</a>
             <a href="https://www.facebook.com/Medicalslideology" class="text-content-link-btn">歪樓藥師 翁紹恩</a>
@@ -138,15 +138,15 @@ const data =[
             <a href="https://www.facebook.com/thekeynotestar/" class="text-content-link-btn">Keynote 簡報星球</a>
             <a href="https://www.facebook.com/pptskill" class="text-content-link-btn">有Power也有Point的簡報設計</a></p>
             
-            <h2 class="text-content-h2" id="Facebook社團" data-title="h2">Facebook 社團</h2>
+            <h1 class="text-content-h2" id="Facebook社團" data-title="h1">Facebook 社團</h1>
             <p class="text-btn-group">
             <a href="https://www.facebook.com/groups/870602986442387/" class="text-content-link-btn">簡報設計新手村</a>
             <a href="https://www.facebook.com/groups/1080149785351887/" class="text-content-link-btn">10分鐘簡報交流社團</a></p>
 
-            <h2 class="text-content-h2" id="Instagram帳號" data-title="h2">Instagram 帳號</h2>
+            <h1 class="text-content-h2" id="Instagram帳號" data-title="h1">Instagram 帳號</h1>
             <p class="text-btn-group"><a href="https://www.instagram.com/ppt.note/" class="text-content-link-btn">ppt.note</a></p>
 
-            <h2 class="text-content-h2" id="線上課程" data-title="h2">線上課程</h2>
+            <h1 class="text-content-h2" id="線上課程" data-title="h1">線上課程</h1>
             <p class="text-btn-group">
             <a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">商業簡報設計與應用課｜晉升主管必備的28種職場簡報術</a>
             <a href="https://www.pressplay.cc/project/0C511D98C95EA44811DB6D08E8D20D1C/about" class="text-content-link-btn">PPT 動畫課｜動態簡報輕鬆上手</a>
@@ -173,7 +173,145 @@ const data =[
         tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <h1 class="text-content-h1" data-title="h1" id="圖表的類別">圖表的類別</h1>
+            <p>圖表分成兩種，一種是有原始數據的「數據圖表」，目的是將資料用視覺化的方式，讓人更好理解數據，並得以從數據中得出有意義的訊息；一種是有經過整理的「資訊圖表」，但可能沒有最原始的數據，目的是用圖像的方式傳遞明確的訊息。</p>
+            <p>但這兩種圖表不是黑與白的分別，只是「數據圖表」的資料比重多一點，「資訊圖表」的設計比重多一點。</p>
+            <p>以下列出的參考資料，如果以資料的呈現為主，就會列在「數據圖表」，以設計呈現為主，就會列在「資訊圖表」。</p>
+            <p>讀者也可以依據不同的使用目的，來尋找相關的參考資料：</p>
+            <ul class="bulleted-list">
+                <li>如果資訊比較多，可以在 pinterest 搜尋「data visualization」（<a href="https://relab.cc/blog/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96" target="_blank" class="text-content-link">定義</a>）</li>
+                <li>如果圖示比較多，可以在 pinterest 搜尋「infographic」（<a href="https://relab.cc/blog/%E8%B3%87%E8%A8%8A%E5%9C%96%E8%A1%A8" target="_blank" class="text-content-link">定義</a>）</li>
+            </ul>
+            <p class="text-content-callout bg-warning">有趣的小發現：在 pinterest 找圖找到後來，都會出現建築設計相關的說明圖或分析圖，我才赫然發現學生時期學過的「表現法」，其實就是在講「資訊圖表設計」，其中包含你如何呈現重點資訊、如何引導讀者進入你想營造的氛圍裡、如何透過媒材、顏色、版面來傳遞想法。然而，<strong>比起設計得好看，傳遞資訊的效率才是更優先要被考量的</strong>，可惜小時候誤以為好看就是學習「表現法」的目的，但其實美感只是建築系的門檻，真正的目的是要傳遞資訊啊！</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="數據圖表">數據圖表</h1>
+            <h2 class="text-content-h2" data-title="h1" id="Howmuch">1. <a href="https://howmuch.net/" class="align-baseline link-info">Howmuch.net</a></h2>
+            <p>跟錢有關的資料視覺化圖表</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-09.44.20-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="FlowingData">2. <a href="https://flowingdata.com/" class="align-baseline link-info">FlowingData</a></h2>
+            <ul class="bulleted-list">
+                <li>根據圖表類型搜尋（<a href="https://flowingdata.com/chart-types/"  target="_blank" class="text-content-link">Browse By Chart Types</a>）</li>
+                <li>根據資料主題搜尋（Browse By Topic）</li>
+                <li>其他資源</li>
+                    <ul class="bulleted-list">
+                    <li><a href="https://flowingdata.com/newsletter/"  target="_blank" class="text-content-link">email 訂閱</a></li>
+                    <li><a href="https://flowingdata.com/membership/"  target="_blank" class="text-content-link">付費會員</a>：製作圖表的教學</li>
+                    </ul>
+                </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-09.53.01-2.jpg?w=696&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="Visual">3. <a href="https://www.visualcapitalist.com/" class="align-baseline link-info">Visual Capitalist</a></h2>
+            <ul class="bulleted-list">
+                <li>有詳細的原始資料和文字描述</li>
+                <li>有不同社群媒體帳號，可以選擇自己適合的平台追蹤</li>
+            </ul>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-10.09.37-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="Information">4. <a href="https://www.informationisbeautifulawards.com/showcase?page=1&type=awards" class="align-baseline link-info">Information is Beautiful Awards</a></h2>
+            <ul class="bulleted-list">
+                <li>2012-2019 得獎的資訊圖表（<a href="https://www.informationisbeautifulawards.com/news/236-voting-what-our-judges-and-you-look-out-for-in-great-visualization"  target="_blank" class="text-content-link">篩選標準</a>）</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-10.25.32-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="infogram">5. <a href="https://infogram.com/examples" class="align-baseline link-info">infogram</a></h2>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-11.01.17-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+            
+            <h1 class="text-content-h1" data-title="h1" id="資訊圖表">資訊圖表</h1>
+            <h2 class="text-content-h2" data-title="h2" id="Infographic">1. <a href="https://infographicsite.com/browse-all-infographics/" class="align-baseline link-info">Infographic Website</a></h2>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-11.11.14-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="Piktochart">2. <a href="https://piktochart.com/templates/news-visualization/" class="align-baseline link-info">Piktochart</a></h2>
+            <ul class="bulleted-list">
+                <li>各種不同需求的版面範例</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-11.17.55-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="ZCOOL">3. <a href="https://www.zcool.com.cn/discover?cate=8&subCate=625" class="align-baseline link-info">ZCOOL 站酷</a></h2>
+            <ul class="bulleted-list">
+                <li>有一個類別就是「信息图表」（也可以直接搜尋「信息图」）</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-11.24.14-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="Venngage">4. <a href="https://venngage.com/templates/infographics" class="align-baseline link-info">Venngage</a></h2>
+            <ul class="bulleted-list">
+            <li>類別分得很詳細</li>
+            <li>有豐富的製作圖表教學資源</li>
+            </ul>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-11.32.40-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="Cool">5. <a href="https://coolinfographics.com/blog" class="align-baseline link-info">Cool Infographics</a></h2>
+            <ul class="bulleted-list">
+                <li>有簡短的設計說明</li>
+            </ul>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-11.43.21-scaled.jpg?resize=2048%2C1096&ssl=1" alt="img" class="img-fluid" />
+
+            <h1 class="text-content-h1" data-title="h1" id="資料視覺化工具">資料視覺化工具</h1>
+            <h2 class="text-content-h2" data-title="h2" id="Chartle">1. <a href="https://www.chartle.com/" class="align-baseline link-info">Chartle</a></h2>
+            <ul class="bulleted-list">
+                <li>不需要帳號，可以直接在線上製作圖表</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-12.05.15-scaled.jpg?resize=2048%2C1092&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="Charts">2. <a href="https://charts.hohli.com/" class="align-baseline link-info">Charts Builder</a></h2>
+            <ul class="bulleted-list">
+                <li>不需要帳號，可以直接在線上製作圖表</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-12.14.46-scaled.jpg?resize=2048%2C1132&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="easelly">3. <a href="https://www.easel.ly/" class="align-baseline link-info">easelly</a></h2>
+            <ul class="bulleted-list">
+                <li>可以直接修改現有範本</li>
+            </ul>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-14.34.49-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-14.37.27-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="ChartBlocks">4. <a href="https://www.chartblocks.com/en/features/chart-builder" class="align-baseline link-info">ChartBlocks</a></h2>
+            <ul class="bulleted-list">
+                <li>需要帳號</li>
+            </ul>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-13.48.59-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="Creately">5. <a href="https://creately.com/diagram-community/popular" class="align-baseline link-info">Creately</a></h2>
+            <ul class="bulleted-list">
+                <li>需要帳號</li>
+                <li>可以直接修改現有範本</li>
+                <li>有很多商業用圖表與框架</li>
+            </ul>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-14.42.58-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-14.43.30-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="Apache">6. <a href="https://echarts.apache.org/examples/en/index.html" class="align-baseline link-info">Apache ECharts</a></h2>
+            <ul class="bulleted-list">
+                <li>JavaScript 資料視覺化的程式碼</li>
+                <li>可以更換深淺底色</li>
+            </ul>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-14.52.28-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="AnyChart">7. <a href="https://www.anychart.com/products/anychart/gallery/" class="align-baseline link-info">AnyChart JS Charts</a></h2>
+            <ul class="bulleted-list">
+                <li>JavaScript 資料視覺化的程式碼</li>
+                <li>可以更換主題色</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/10/screenshot-2021-10-12-14.54.33-scaled.jpg?resize=2048%2C1098&ssl=1" alt="img" class="img-fluid" />
+
+            <h1 class="text-content-h1" data-title="h1" id="延伸閱讀">延伸閱讀</h1>
+            <p><a href="https://www.shutterstock.com/zh-Hant/blog/Infographic-design"  target="_blank" class="text-content-link-btn">資訊圖表必殺技 掌握五大原則練功法！</a></p>
+            `,
+            tags:[
+                {
+                    name:'資源整理',
+                    url:'infoMap.html'
+                },
+                {
+                    name:'設計',
+                    url:'search.html'
+                }
+            ]
+        },
     },
     {
         title: "線上課程、免費資源整理",
@@ -428,7 +566,7 @@ const data =[
             <a href="https://ielts-simon.com/ielts-help-and-english-pr/ielts-writing-task-1/"  target="_blank" class="text-content-link-btn">Simon｜IELTS Writing Task 1 Articles</a>
             <a href="https://ielts-simon.com/ielts-help-and-english-pr/ielts-writing-task-2/"  target="_blank" class="text-content-link-btn">Simon｜IELTS Writing Task 2 Articles</a>
             <a href="https://ielts-simon.com/ielts-help-and-english-pr/2011/05/ielts-writing-task-2-idea-explain-example.html"  target="_blank" class="text-content-link-btn">Simon｜IELTS Writing Task 2: idea, explain, example</a>
-            <p class="text-content-green">Start with an idea; Explain it in detail; Give an example.</p>
+            <p class="text-content-primary">Start with an idea; Explain it in detail; Give an example.</p>
             
             <h3 class="text-content-h2 text-gray-600" id="易讀性測試工具">易讀性測試工具</h3>
             <p class="text-btn-group">
@@ -504,12 +642,12 @@ const data =[
             <p>不要為了讀書熬夜、作息不正常，這些都會影響最後考試的表現。要讓自己一直保持在身心最佳狀態的作法就是固定作息。然後一定要好好睡覺。</p>
 
             <h2 class="text-content-h2" data-title="h2" id="原則：把重要的事情優先完成">原則：把重要的事情優先完成</h2>
-            <p class="text-content-green">意志力是一種有限的資源，會隨著思考與決策而減少，尤其當你感到猶豫不決、被強迫做選擇、不得不做決定的時候，意志力更是會迅速大幅減少。</p>
+            <p class="text-content-primary">意志力是一種有限的資源，會隨著思考與決策而減少，尤其當你感到猶豫不決、被強迫做選擇、不得不做決定的時候，意志力更是會迅速大幅減少。</p>
             <p>如果沒有好好分配意志力，例如早上先滑手機，把意志力消耗掉，就會讓自己更難放下手機去讀書。</p>
             <p>但意志力像肌肉一樣，經常鍛煉就會變強。一旦養成了正確的習慣，找到了適合的方法，就能消耗更少的意志力去達成你想要的目標。</p>
 
             <h2 class="text-content-h2" data-title="h2" id="心態：不要氣餒">心態：不要氣餒</h2>
-            <p class="text-content-green">Everything is information.</p>
+            <p class="text-content-primary">Everything is information.</p>
             <p>錯誤也是進步的來源。</p>
             <p>告訴自己：「練習的時候先錯，考試就不會錯了。」</p>
             <p>不要氣餒，也不要放棄，只有持續才能進步！加油～</p>
@@ -658,7 +796,7 @@ const data =[
     },
     {
         title: "關於口語表達，有些答案不必向外求",
-        description: "向外搜尋解答可以解決一半的問題​，還有另一半是無法透過外求解決的問題",
+        description: "向外搜尋解答可以解決一半的問題，還有另一半是無法透過外求解決的問題",
         type:["學習思考"],
         time: '2021-06-04',
         imgUrl:"https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
@@ -680,14 +818,81 @@ const data =[
     },
     {
         title: "忘形流，是架構重要還是心法重要？",
-        description: "真如期待，再加上一點意料之外​，在邊玩邊學的過程又得到新啟發​​！上完課後，整理出三個對製作簡報的反思，也分享給大家～",
+        description: "真如期待，再加上一點意料之外，在邊玩邊學的過程又得到新啟發！上完課後，整理出三個對製作簡報的反思，也分享給大家～",
         type:["學習思考"],
         time: '2021-06-15',
         imgUrl:"https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
-        tagsByTheme:["學習方法"],
+        tagsByTheme:["簡報"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>看到<a href="https://www.facebook.com/chwanshing"  target="_blank" class="text-content-link">忘形</a>，想都不想就報名了！（這就是品牌XD）</p>
+            <p>看過<a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010821525?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link">《忘形流簡報思考術》</a>，也聽過忘形在<a href="https://www.facebook.com/bfa.com.tw"  target="_blank" class="text-content-link">BFA</a>小聚的分享，但還是期待可以在這堂課當中聽到很多想法和概念。果真如期待，再加上一點意料之外，在邊玩邊學的過程又得到新啟發！上完課後，整理出 5 個對製作簡報的反思，也分享給大家～</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="「所有的知識都不重要，因為都找得到。」">「所有的知識都不重要，因為都找得到。」</h1>
+            <p>這是在聽到的當下很震撼，但思考過後也很認同的一句話。</p>
+            <p>用聽眾和講者的角度，重新看待知識，會發現：</p>
+            <p>以<span class="text-content-primary">聽眾</span>的角度來說，只有感受和深刻的記憶，才是帶得走、以後有機會用得上的東西。再多的知識，如果沒有吸收、沒有消化，那不如不要看、不要整理、也不要收集。</p>
+            <p>以<span class="text-content-primary">講者</span>的角度來說，與其分享更多的知識，不如用別人能夠吸收的方式，將價值傳遞出去。課程當中的互動環節和教學細節也都能看見老師對這項原則的實際呈現，上課音效跟直播主一樣驚喜有趣，有上課鐘、下課鐘，還有髒話消音的音效！上課氣氛也因為一句口誤「大刀面前耍關公」，增加更多趣味！</p>
+            <p>這也讓我想到《躍遷》裡提到的，比起「記得」知識，「知道怎麼找到知識」更是現在重要的能力。Google 都會幫你記得，你的記憶能力也不可能比得過 Google，那不如多花時間在學習怎麼「找到知識」！</p>
+            <p>學會找人脈、找資源，比自己找知識的效益更大，範圍可以更廣，善用人的力量，才能花更少的力氣，學到更多的東西。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="製作簡報的過程，就在執行問題分析與解決">製作簡報的過程，就在執行問題分析與解決</h1>
+            <p>常常在製作簡報之前，去預想聽眾的回饋，然後做出順序和內容的調整。但實際狀況卻常常跟預想差個十萬八千里，有可能是自己沒有準備好，有可能是設備出問題，但更有可能是沒搞清楚聽眾的需求。</p>
+            <p>
+            <span class="text-content-primary">為什麼</span>他不聽？因為他覺得跟他不相干</br>
+            <span class="text-content-primary">為什麼</span>他聽不懂？因為他沒有感覺</br>
+            <span class="text-content-primary">為什麼</span>他想聽？因為他覺得他需要</br> 
+            </p>
+            <p>每個為什麼，後面都可以再接好多個為什麼，去尋找最根本的那個原因，然後針對原因再去找出一個架構、一個呈現方式，最後才有機會讓他聽、讓他懂、讓他成為更好的自己。</p>
+            <p>好多個為什麼，其實就是問題分析與解決的過程，透過探詢觀眾的需求，去理解製作簡報的目標，最後才能夠利用各種架構、分享節奏、細節來達成目標。</p>
+            <p>假如沒有需求，沒有目標，其實怎麼做簡報都可以，唯一的基準就是「你開心就好」，但這樣就會變成一場不在乎聽眾的個人秀，你大概也可以猜到，觀眾的感受不會太好。</p>
+            <p>有了需求，有了目標，再來就是簡報架構了！</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="「只要心法通了，架構就不是那麼重要了」">「只要心法通了，架構就不是那麼重要了」</h1>
+            <p>什麼？！架構不重要？！！</p>
+            <p>我覺得架構很重要，但重要程度會隨學習階段而有所改變！</p>
+            <p>在初學的過程，目標通常很大但不明確，我們總會想在沒有足夠經驗的時候，看能不能靠著向大師學習，找到一條邁向目標的捷徑。</p>
+            <p>熟悉到一定程度後，架構學了再多，如果沒有從更上層的思維去想，架構就只能幫助你走一小段路，要走得更久更遠還是得靠自己。就像是一個標本，有基本的骨架，可以讓最後的標本有一定的擬真程度，但如果沒有填充肌肉、將毛髮上色、畫上眼睛，那也無法完整一個標本。</p>
+            <p>這是一般學習新技能的階段與順序，但學習簡報製作的過程，我是相反過來的，因為自己喜歡，所以做了很多簡報，在練習的過程，不斷上課補充製作簡報的心法，下次練習繼續用自己習慣的架構，但融入新學到的細節，一年下來，我理出了一套自己的思考邏輯與脈絡。</p>
+            <p>這個時候，當我再去學習更多不同的架構時，就發現架構真的不是重點，因為當你有了心法，打中聽眾，就不會再受架構限制。公式只能快速幫你進入三流，其他的則是靠實踐、在實踐中摸索而來。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="風格怎麼建立？">風格怎麼建立？</h1>
+            <p>記得去年10月，上了一堂線上簡報課，照著老師的方法跟著做了一份簡報，但一看就是老師的風格，</p>
+            <p>我很擔憂地跑去問老師：「怎麼有自己的風格？」</p>
+            <p>只見老師笑笑，回答我說：「學習是從模仿開始的，量變會變質變，你要專注在產出，而不是一直期待升等的瞬間。」</p>
+            <p>到了今天，我好象開始有了自己的風格，也才體會到這句話的涵義。</p>
+            <div class="text-content-quote">
+                    <p>風格不是刻意練習來的，而是時間醞釀出來的。</p>
+                    <p><span>&mdash; Jun</span></p>
+            </div>
+            <p>當時在筆記記下這段話：「風格不是突然出現的，而是隨著時間的演進，逐步形塑而成。就像山間的小徑，沒有人刻意去鋪設，但隨著登山者的造訪，自然會形成一條清晰可見的路徑。」</p>
+            <p>同一條路走久了，就會有風格了！</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="回顧，不只是用來檢討">回顧，不只是用來檢討</h1>
+            <p>只是一堂三小時的課，但好像也幫自己做了學習的總結。</p>
+            <p>有時候會不知道自己究竟要多久才能成為心中理想的自己，適時回頭一看，才會看見原來已經走了那麼久、做了那麼多！</p>
+            <p>回顧的重要，不只在反思與調整步伐，更在於給自己一點打氣！這個文字與貼文的產出總數，真的很驚人！好險有記得回頭看，不然應該會對自己的成長無感XD</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/image.png?w=748&ssl=1" alt="img" class="img-fluid" />
+            <p>先在這裡許願，希望未來的貼文可以帶入更多的故事和情境，不只是創造價值，還希望自己可以花更多力氣在傳遞價值！</p>
+            <p>新的養分注入，感覺又要 level up 啦！</p>
+            <p class="text-content-callout bg-warning">
+            想看更多簡報學習資源 ➜ <a href="https://junlearning.com/slide-resource/"  target="_blank" class="text-content-link">15 個簡報設計學習資源</a>
+            </p>
+            `,
+            tags:[
+                {
+                    name:'學習思考',
+                    url:'learning.html'
+                },
+                {
+                    name:'簡報',
+                    url:'search.html'
+                }
+            ]
+        },
     },
     {
         title: "思維框架怎麼學？",
@@ -700,8 +905,110 @@ const data =[
         linkUrl:"blogContent.html",
         blogContent:{
             subtitle:'',
-            content:``,
-            tags:[{}]
+            content:`
+            <h1 class="text-content-h1" data-title="h1" id="想學思維框架，先想想哲學三問">想學思維框架，先想想哲學三問</h1>
+            <p>
+                有這麼多好用的思維框架</br>
+                固然很吸引人</br>
+                很想一次全都學會</br>
+                但思考跟技能類的學習不同</br>
+                <span class="text-primary">「知道」並不等於「學會」</span>
+            </p>
+            <p>
+            更有效的學習方式應該是</br>
+            先想想這三個問題
+            </p>
+            <ul class="bulleted-list">
+                <li>我是誰？</li>
+                <li>我在哪裡？</li>
+                <li>我要往哪裡去？</li>
+            </ul>
+            <p>
+                先知道自己的思考慣性</br>
+                先知道自己的思考盲點</br>
+                接著設定要前進的方向</br>
+                最後才能靠著不同的思考框架</br>
+                幫助自己往目標前進
+            </p>
+            <h1 class="text-content-h1" data-title="h1" id="用正確的心態，帶動思考">用正確的心態，帶動思考</h1>
+            <p>
+            在做任何選擇的時候</br>
+            有時候不是想不到選項</br>
+            而是被自己看事情的心態困住</br>
+            所以才看不見選項就在眼前
+            </p>
+
+            <p>
+            治華老師也提到</br>
+            只要開始找出自己可以做得更好的地方</br>
+            就比較能夠以客觀的角度看待事情
+            </p>
+
+            <p>
+            任何事情都沒有絕對的對錯</br>
+            所以做錯選擇時也別太過挫敗</br>
+            試著讓錯誤成為養分</br>
+            才能從一次次的嘗試中</br>
+            <span class="text-primary">將經驗精煉成生活原則</span></br>
+            持續更新思維框架</br>
+            讓自己逐漸成為想要的樣子
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="學習，是為了改變">學習，是為了改變</h1>
+            <p>
+            不論是更有效的問題分析方式</br>
+            或是更能看清事實的思維框架</br>
+            假如不能讓本來的行為產生改變</br>
+            就不算是有效的學習
+            </p>
+            <p>
+            雖然這場讀書會的主題是思維框架</br>
+            但我從中學到最多的是<span class="text-primary">對學習的反思</span>
+            </p>
+            <p>
+            學習不全都是有效的</br>
+            記得<span class="text-primary">別把手段作為目標</span></br>
+            才不會讓自己的努力白費
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="學到新東西，然後呢？">學到新東西，然後呢？</h1>
+            <p>
+            學到的東西，能夠留在你身上多久？</br>
+            學到的東西，能夠怎麼在生活中應用？</br>
+            學到的東西，能夠怎麼改變你的生活？
+            </p>
+            <p>
+            我們積極學習</br>
+            不是只要享受學習的過程</br>
+            還希望能過改變生活</br>
+            因此怎麼去設定學習目標</br>
+            怎麼透過學習方法達成目標</br>
+            才是在學習的時候更該關注的事情
+            </p>
+            <p>
+            今天之後</br>
+            <span class="text-primary">你可以在每場參加的講座後，寫出自己的心得與學習</span></br>
+            <span class="text-primary">你可以從每本看完的書中，挑出一個可以實踐的行動</span></br>
+            <span class="text-primary">你可以在每次覺得挫敗時，試著去想怎麼讓下次更好</span>
+            </p>
+            <p>
+            只要仔細尋找</br>
+            生活中處處是學習的機會</br>
+            也處處是嘗試與實踐的機會！
+            </p>
+            <p>祝福大家都能從學習者的角色轉變為實踐者！</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="更多與學習相關的文章">更多與學習相關的文章</h1>
+            <ul>
+                <li><a href="https://junlearning.com/free-online-courses/" class="text-content-link-btn" target="_blank">線上課程、免費資源整理～不用出門就能學習</a></li>
+                <li><a href="https://junlearning.com/best-way-to-learn/" class="text-content-link-btn" target="_blank">《最高學習法》了解大腦，用最有效的方式學習</a></li>
+                <li><a href="https://junlearning.com/reflection/" class="text-content-link-btn" target="_blank">《精準成長》反思是成長的原動力</a></li>
+            </ul>
+            `,
+            tags:[{
+                name:'自我成長',
+                url: 'search.html'
+            }]
         },
     },
     {
@@ -931,12 +1238,12 @@ const data =[
             content:`
             <p>先問問你自己有沒有想過這三個問題：</p>
             <p>1. 你也曾想過要創立自己的公司嗎？你也曾想過要怎麼把自己的設計「賣出去」嗎？</p>
-            <p class="text-content-green">➜ 可惜的是，學校教的只是設計的藝術，而不是經營的技巧。</p>
+            <p class="text-content-primary">➜ 可惜的是，學校教的只是設計的藝術，而不是經營的技巧。</p>
 
             <p>2. 大家都說，「成為建築師／設計師需要滿滿的熱忱」，但僅憑對設計的熱情，真的能將作品轉化為盈利嗎？</p>
-            <p class="text-content-green">➜ 其實，建築專業是一門生意、是一項技術知識，也是一種管理技巧，而懂得經營和了解設計同等重要。</p>
+            <p class="text-content-primary">➜ 其實，建築專業是一門生意、是一項技術知識，也是一種管理技巧，而懂得經營和了解設計同等重要。</p>
             <p>3. 出社會真的會需要對自己的設計方法作出妥協，來回應客戶提出的商業需求嗎？</p>
-            <p class="text-content-green">➜ 應該這樣說，了解商業面會讓你成為更好的設計師和更優秀的專業人士，不需要對自己的設計方法作出妥協，這會形成雙贏的局勢。</p>
+            <p class="text-content-primary">➜ 應該這樣說，了解商業面會讓你成為更好的設計師和更優秀的專業人士，不需要對自己的設計方法作出妥協，這會形成雙贏的局勢。</p>
 
             <p>如果這三個問題都有點出你的疑惑，那就接著看看書中的內容吧！</p>
 
@@ -948,7 +1255,7 @@ const data =[
 
             <h1 class="text-content-h1" data-title="h1" id="CH1 設計業的基礎">CH1 設計業的基礎：開一家設計公司之前的準備</h1>
             <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2020/04/vision-of-the-studio-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
-            <p class="text-content-green">設計美麗的東西是一種藝術，但以成功而有意義的方式製成這些美麗的東西，還能從中找到獲利的空間，則是一種技能。</p>
+            <p class="text-content-primary">設計美麗的東西是一種藝術，但以成功而有意義的方式製成這些美麗的東西，還能從中找到獲利的空間，則是一種技能。</p>
             <p>學校教育卻著重在「設計」，但實務上，設計的「營運面向」比「設計」佔更大的比重！</p>
             <p>在這裡，創業的基礎指的並不是學校教的「設計」、「美感」，而是跟營運相關的準備。</p>
             <p>1. 在創立公司之前，你需要先立下公司的</p>
@@ -973,7 +1280,7 @@ const data =[
                 <li><strong>了解經營的要務</strong></li>
             </ul>
             <p>這些都是設計的基礎，要先準備好這些基礎，才去尋找客戶，不是 尋找客戶後，才在執行的過程中發現問題、回來修正。</p>
-            <p class="text-content-green">你必須體認到奠定基礎的重要性，才能真正專注於工作之上。</p>
+            <p class="text-content-primary">你必須體認到奠定基礎的重要性，才能真正專注於工作之上。</p>
             <p>就像是跑車，要先經過精密的調整後，再上跑道，才不會上了跑道後，才發現問題其實出在車子本身。</p>
 
 
@@ -983,11 +1290,11 @@ const data =[
             <p>你是不是也這樣想？</p>
             <p>但如果你看不懂財務數據、沒辦法監督公司的財務管控狀況、你能承受這些風險嗎？</p>
             <p>如果這樣的風險是你承受不起的，為什麼不信任自己，去學習好的管理工具和知識？</p>
-            <p class="text-content-green">擁有好的工具和正確的財務知識，能讓你做好財務管控，你也才能獲得自由去設計更多作品！</p>
+            <p class="text-content-primary">擁有好的工具和正確的財務知識，能讓你做好財務管控，你也才能獲得自由去設計更多作品！</p>
             <p>還有很重要的一點是，你必須理解你所創造的「價值」，價值與報酬應該要是相稱的。</p>
             <p>作者特別點出許多建築人／設計人的盲點：「我熱愛設計，所以不會以賺錢為第一優先。」</p>
             <p>因為這個想法，「做建築／設計吃不飽，能營運就很好了」的狀況在業界是常態，但這樣的觀念是不合理的，商業思維的本質就是價值的交換，你願意用熬夜換取時間去做設計，為什麼不能要求客戶用相應的報酬來買你的設計呢？</p>
-            <p class="text-content-green">公司的財務是你的命脈。只要你得負責這家公司的生計，你就必須了解如何經營生意，也就是業務和財務管理。</p>
+            <p class="text-content-primary">公司的財務是你的命脈。只要你得負責這家公司的生計，你就必須了解如何經營生意，也就是業務和財務管理。</p>
             <p>不了解的話也沒關係，趕快從下手這本書，讓作者以最淺顯易懂的方式讓你明白，財務會怎麼影響你做設計！</p>
             <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010702509?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202004"  target="_blank" class="text-content-link-btn">點此購買《設計生意經》</a></p>
             
@@ -1000,9 +1307,9 @@ const data =[
 
             <h2 class="text-content-h2" data-title="h2" id="行銷">行銷</h2>
             <p>除了一些行銷的 <strong>計畫事項</strong> ，作者還提出幾個很不直覺，但卻很重要的概念：</p>
-            <p class="text-content-green">1. 你應該在最忙的時候做行銷，把自己的名聲傳播出去。</p>
+            <p class="text-content-primary">1. 你應該在最忙的時候做行銷，把自己的名聲傳播出去。</p>
             <p>行銷很重要的就是時效性，當你忙完，別人也沒空理你了。</p>
-            <p class="text-content-green">2. 你應該教導你的每個員工一起為公司做行銷。</p>
+            <p class="text-content-primary">2. 你應該教導你的每個員工一起為公司做行銷。</p>
             <p>如果人們深以自己工作的地方為榮，就會樂於談論它，而這些談話也許會在某個地方觸及到某個潛在客戶。</p>
 
             <h3 class="text-content-h3 text-primary" data-title="h3" id="社群">社群</h3>
@@ -1011,7 +1318,7 @@ const data =[
             <p>而社群最大的資產就是人際關係。經營的過程中，你必須為付出而付出，才會真正從中受益。</p>
             <p>但社群裡該包含的哪些人？</p>
             <p>社群真正的涵義是：</p>
-            <p class="text-content-green">將具備不同技能的人們聚集起來，讓他們理解各自的才能結合之後所發揮的集體力量。</p>
+            <p class="text-content-primary">將具備不同技能的人們聚集起來，讓他們理解各自的才能結合之後所發揮的集體力量。</p>
             <p>以這點出發，就 <strong>不應該只限於設計／建築的業內人士</strong> ，也需要不同領域的人們來一起組成這個社群，這些人或許能在日後成為提供彼此資源、支援的角色也說不定。</p>
 
             <h3 class="text-content-h3 text-primary" data-title="h3" id="獨門利基">獨門利基</h3>
@@ -1024,7 +1331,7 @@ const data =[
 
             <h1 class="text-content-h1" data-title="h1" id="CH4 人力資源">CH4 人力資源</h1>
             <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2020/04/human-resources-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
-            <p class="text-content-green">設計基本上是一種服務業。</p>
+            <p class="text-content-primary">設計基本上是一種服務業。</p>
             <ol class="number-list">
                 <li>員工是公司的最大資產</li>
                 <li>保護這份資產的關鍵因素是「如何對待人」</li>
@@ -1045,12 +1352,12 @@ const data =[
 
             <h1 class="text-content-h1" data-title="h1" id="CH5 專案管理">CH5 專案管理</h1>
             <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2020/04/meeting-management-scaled.jpg?w=2560&ssl=1" alt="img" class="img-fluid" />
-            <p class="text-content-green">精通規則會創造出無拘無束的表現。了解遊戲規則將使你得以揮灑自如地運用他們，規畫出對你有利的工作流程。</p>
+            <p class="text-content-primary">精通規則會創造出無拘無束的表現。了解遊戲規則將使你得以揮灑自如地運用他們，規畫出對你有利的工作流程。</p>
             <p>從整個專案的開始、時程規劃、編列預算，到合約和技術管理，最重要的都是溝通，你必須思考要用什麼工具，才幫助你達到溝通的目的。</p>
             <p class="text-content-callout bg-light">最後的 <strong>CH6 產品開發</strong>，就留給有興趣的人去閱讀啦！</p>
             <p>這本書不只為我解答許多在學期間的疑問，也為我開啟另一個求知的大門！</p>
             <p>對書籍的介紹如果有興趣的話，就趕快買一本來看看吧！</p>
-            <p class="text-content-green">節錄自：《設計生意經》</p>
+            <p class="text-content-primary">節錄自：《設計生意經》</p>
             <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010702509?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202004/"  target="_blank" class="text-content-link-btn">點此看更多</a></p>
             `,
             tags:[{
@@ -1501,8 +1808,8 @@ const data =[
     },
     {
         title: "職場即戰力",
-        description: "職場即戰力攻略-內容：15 本好書精華​＋閱讀筆記方法分享​，超過 5000 字的內容提供",
-        type: ["資源整理"],
+        description: "職場即戰力攻略-內容：15 本好書精華＋閱讀筆記方法分享，超過 5000 字的內容提供",
+        type: ["資源整理","好書推薦"],
         time: '2021-09-01',
         imgUrl:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
         tagsByTheme:["工作術"],

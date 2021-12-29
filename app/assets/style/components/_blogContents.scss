@@ -16,7 +16,7 @@
 }
 
 .text-content{
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: 'TaipeiSansTCBeta','Josefin Sans','Nunito', sans-serif;
     font-size: 1.125rem;
     letter-spacing: 1.5px;
@@ -147,7 +147,11 @@
         }
 
     }
-    &-green{
+    &-primary{
+        color: $primary;
+        font-weight: 500;
+    }
+    &-secondary{
         color: #408080;
         font-weight: 500;
     }
@@ -320,6 +324,8 @@
     }
 }
 
-.pt-50{
-    padding-top: 50px;
+.img-fluid{
+    max-width: 100%;
+    margin-bottom: 3rem;
 }
+

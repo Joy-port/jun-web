@@ -91,9 +91,9 @@ function renderContentList(){
                 };
         });
 
-        str = newPostCardList(newestData1);
+        str = libraryCardList(newestData1);
         contentList.innerHTML = str;
-        str = newPostCardList(newestData2);
+        str = libraryCardList(newestData2);
         thoughtsList.innerHTML = str;
         addBlogLink();
        
@@ -294,10 +294,10 @@ function renderCardsList(pageData){
             <img class="btn-icon-gray-600" src="./assets/images/搜尋_無相關搜尋結果.svg" alt="no result">
             </li> `
        }else{
-           str = normalCardList(pageData);
+           str = libraryCardList(pageData);
        }
     }else{
-        str = normalCardList(pageData);
+        str = libraryCardList(pageData);
     };
     return str ;
 }
@@ -444,6 +444,7 @@ function libraryCardList(pageData) {
                 href="${item.linkUrl}"
                 data-id="${item.id}"
                 class="d-block"
+                target="_blank"
               >
                 <img
                   src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
@@ -1281,7 +1282,7 @@ function addMarginToContent(e){
     let linkId = e.target.getAttribute('href');
     let el = document.querySelector(linkId);
     if(e.target.nodeName === 'A'){
-        contentList.querySelectorAll('[data-title]').forEach(item => item.classList.remove('pt-50'));
-        el.classList.add('pt-50');
+        contentList.querySelectorAll('[data-title]').forEach(item => item.classList.remove('pt-60'));
+        el.classList.add('pt-60');
     }
 }
