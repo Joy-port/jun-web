@@ -1594,13 +1594,30 @@ const data =[
     {
         title: "怎麼達到工作與生活的平衡？",
         description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
-        type:["學習思考","好書推薦"],
+        type:["學習思考"],
         time: '2021-06-24',
         imgUrl:"https://images.unsplash.com/photo-1456244698455-10edd25dacde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-        tagsByTheme:["職涯思考","自我成長","人生思考"],
+        tagsByTheme:["職涯思考","工作術"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        pptContent:[
+            {
+                imgUrl:'https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60',
+                textContent:'商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？'
+            },
+            {
+                imgUrl:'https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+                textContent:'商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式，商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式'
+            },
+            {
+                imgUrl:'https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                textContent:'商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+            },
+            {
+                imgUrl:'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
+                textContent:'以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來，以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+            }
+        ]
     },
     {
         title: "看完《搞定》，待辦事項就被搞定了！",

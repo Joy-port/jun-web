@@ -304,7 +304,7 @@ function renderCardsList(pageData){
 
 //normal content Card list 
 //要加上ig 效果
-function normalCardList(pageData){
+/* function normalCardList(pageData){
     let str ='';
     pageData.forEach(item =>{
         //要加上 item.time 排序時間
@@ -327,7 +327,7 @@ function normalCardList(pageData){
     });
 
     return str ;
-}
+} */
 //library content Card list
 function libraryCardList(pageData) {
     let str = '';
@@ -770,8 +770,8 @@ function renderInnerContent(){
         break;
     }
     
-    recommendContentLists[0].innerHTML = renderRecommend(recommendAry1);
-    recommendContentLists[1].innerHTML = renderRecommend(recommendAry2);
+    recommendContentLists[0].innerHTML = libraryCardList(recommendAry1);
+    recommendContentLists[1].innerHTML = libraryCardList(recommendAry2);
     
 
     if(hotPosts.length !== 0){
@@ -873,7 +873,7 @@ function sortNumberList(a){
     return a
 }
 
-function renderRecommend(input){
+/* function renderRecommend(input){
     let str = '';
     input.forEach(item => {
         let content = `
@@ -902,7 +902,7 @@ function renderRecommend(input){
         str += content;
     })
     return str;
-}
+} */
 
 function getPageName(pageName){
     switch(pageName){

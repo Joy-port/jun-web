@@ -393,3 +393,353 @@ type: blogContent
     </div>
   </div>
 </div>
+
+<!-- 其他非文章版型 -->
+<!-- modal IG版型 顯示 -->
+<div
+  class="modal fade"
+  id="libraryIGPostModal"
+  tabindex="-1"
+  aria-labelledby="libraryIGPostModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+  data-bs-keyboard="true"
+>
+  <div
+    class="
+      modal-dialog
+      modal-xl
+      modal-fullscreen-md-down
+      modal-dialog-centered
+      modal-dialog-scrollable
+    "
+  >
+    <div class="modal-content w-100">
+      <div class="modal-body p-0 d-flex flex-column flex-md-row w-100 h-100">
+        <!-- pic -->
+        <div
+          id="carouselInIGModal"
+          class="carousel slide w-100 w-md-80 h-100 my-auto"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators js-carousel-button">
+            <button
+              type="button"
+              data-bs-target="#carouselInIGModal"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselInIGModal"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselInIGModal"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div
+            class="
+              carousel-inner
+              w-100
+              h-100
+              position-relative
+              js-carousel-itemList
+            "
+          >
+            <!-- close btn mobile -->
+            <div
+              class="
+                d-block d-md-none
+                text-end
+                mt-5
+                pe-5
+                position-fixed
+                top-0
+                end-0
+              "
+              style="z-index: 2001"
+            >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- data-bs-interval="1000" 用來計算auto slide duration -->
+            <div
+              class="carousel-item ratio ratio-1x1 active js-carousel-img-1"
+              data-bs-interval="1000"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="carousel-item ratio ratio-1x1" data-bs-interval="2000">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="carousel-item ratio ratio-1x1">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselInIGModal"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselInIGModal"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div
+          class="
+            d-flex
+            flex-column
+            h-100
+            border-start border-gray-500
+            position-relative
+          "
+        >
+          <div
+            class="
+              d-none d-md-block
+              text-end
+              mt-3
+              me-3
+              position-absolute
+              top-0
+              end-0
+            "
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="d-flex gap-5 p-10 h-100">
+            <img
+              class="border p-2 rounded-circle"
+              src="./assets/images/logo.png"
+              alt="ig logo"
+              style="width: 50px; height: 50px"
+            />
+            <!-- 內文區 -->
+            <div class="">
+              <!-- 主要文字內容 -->
+              <div class="text-black mb-5 ig-text-content">
+                <!-- 這邊不要改 -->
+                <!-- 從此處輸入內文 用 <br> (br + tab) 換行-->
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, suscipit?</span
+                >
+                <p>Obcaecati eum totam ea facilis ad minus id dolorem natus!</p>
+                <p>
+                  Aut, suscipit dicta? Accusantium cum accusamus illo, expedita
+                  animi distinctio!
+                </p>
+                <p>
+                  Vitae in quia vel quasi asperiores facere sequi omnis cum.
+                </p>
+                <p>
+                  Hic doloremque possimus non expedita eaque labore nulla
+                  quisquam sit.
+                </p>
+                <p>
+                  Nihil earum consequatur dicta voluptates commodi dignissimos
+                  soluta veritatis suscipit!
+                </p>
+              </div>
+              <!-- 這邊放上相關分類標籤 -->
+              <div class="ig-content-tag">
+                <a href="#" data-tag-type="ig" data-tag-name="職涯思考"
+                  >職涯思考</a
+                >
+                <a href="#" data-tag-type="ig" data-tag-name="職涯思考"
+                  >工作術</a
+                >
+                <a href="#" data-tag-type="ig" data-tag-name="職涯思考"
+                  >習慣養成</a
+                >
+              </div>
+              <p class="fs-9 text-gray-500 fw-md mb-3 js-ig-time">9 天前</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 簡報版型 顯示 -->
+<div
+  class="modal fade"
+  id="libraryPPTModal"
+  tabindex="-1"
+  aria-labelledby="libraryPPTModalLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+  data-bs-keyboard="true"
+>
+  <div
+    class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered"
+  >
+    <div class="modal-content w-100">
+      <!-- each page ppt -->
+      <div
+        id="carouselInPPTModal"
+        class="carousel slide w-100 h-100 my-auto position-relative"
+        data-bs-ride="carousel"
+      >
+      <div class="carousel-indicators js-carousel-button-ppt mb-n10">
+        <button
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+        <!-- close btn mobile -->
+        <div
+          class="position-absolute top-md-0 end-0 mt-3 me-3 me-md-n15 mt-md-n10"
+          style="z-index: 2001"
+        >
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="carousel-inner w-100 h-100 js-ppt-itemList">
+          <div class="carousel-item active">
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+              <div class="overflow-auto" style="height: 50px">
+                <p class="text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Quae dicta expedita maxime,
+                  voluptatibus ad quaerat earum dolore suscipit, libero nihil
+                  corporis eum! Et quis officia, consectetur pariatur quas non
+                  veniam molestiae. Rem, nesciunt consequuntur temporibus
+                  repellat eos inventore?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+              <div class="overflow-auto" style="height: 50px">
+                <p class="text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur
+                  dolore deserunt at, veniam cumque beatae libero. Quod delectus
+                  animi modi laboriosam reprehenderit suscipit mollitia quo
+                  voluptatem? Nihil accusamus
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://images.unsplash.com/photo-1637703279172-f44c5ed51712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="post img"
+                class="card-inside-img"
+              />
+            </div>
+            <div class="px-8 py-5 border-top border-gray-500">
+              <div class="overflow-auto" style="height: 50px">
+                <p class="text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ducimus?Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatem, dolorem. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Quae dicta expedita maxime,
+                  eos labore numquam autem dolores corrupti praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev ms-md-n10"
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide="prev"
+          style="z-index: 2000"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next me-md-n10"
+          type="button"
+          data-bs-target="#carouselInPPTModal"
+          data-bs-slide="next"
+          style="z-index: 2000"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
