@@ -1282,7 +1282,7 @@ function addMarginToContent(e){
     let linkId = e.target.getAttribute('href');
     let el = document.querySelector(linkId);
     if(e.target.nodeName === 'A'){
-        contentList.querySelectorAll('[data-title]').forEach(item => item.classList.remove('pt-60'));
-        el.classList.add('pt-60');
+        contentList.querySelectorAll('[data-title]').forEach(item => item.classList.remove('pt-16'));
+        el.classList.add('pt-16');
     }
 }

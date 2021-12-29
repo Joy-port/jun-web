@@ -767,10 +767,28 @@ const data =[
         type: ["學習思考"],
         time: '2020-06-26',
         imgUrl:"https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80",
-        tagsByTheme:["職涯思考"],
+        tagsByTheme:["職涯思考","自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:``,
+            tags:[
+                {
+                    name:"學習思考",
+                    url:"learning.html"
+                },
+                {
+                    name:"職涯思考",
+                    url:"search.html"
+                },
+                {
+                    name:"自我成長",
+                    url:"search.html"
+                }
+            ]
+
+        },
     },
     {
         title: "心智圖也能拿來探索職涯",
@@ -814,7 +832,63 @@ const data =[
         tagsByTheme:["寫作"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>從去年開始寫作，一直到最近才有一種感覺是，好像才剛開始打字，一回過神就發現文章快打完了！</p>
+            <p>去年底上<a href="https://www.facebook.com/profile.php?id=100000866081355" class="text-content-link">歐陽立中</a
+            >老師的課，之後就不固定頻率、斷斷續續地寫作。雖然不能算是認真的學生，但至少每篇都是有感而發，有感才發文。</p>
+            <p>
+            花了半年的時間，一直到現在才真的理解「能說就能寫」是什麼意思，但想的要比說的多，應該又更符合福哥《工作與生活的技術》說的「能想就能寫」。不管是哪一個，都代表著寫作對我沒那麼困難了。
+            </p>
+            <p>
+            雖然去年很熱切地想要學習各種寫作架構，看了很多寫作的書，但好像都沒有辦法吸收，於是看完就把書堆在一旁，繼續尋找其他更好的寫作方法、寫作架構。
+            </p>
+            <p>
+            直到最近上了<a href="https://www.facebook.com/TeachForReal" class="text-content-link">孫治華</a
+            >老師的寫作策略和<a href="https://www.facebook.com/karenoffice503/" class="text-content-link">凱倫</a
+            >的書摘寫作課，我才意識到那些方法不是沒有用，是<span class="text-content-primary">對「當時還沒養成寫作習慣的我」沒有用</span
+            >。那時連內容都生不出來，光是打字都百般個不願意，就算有了架構也還是寫不出文章。
+            </p>
+            <p>
+            現在架構反而像是加速器，乖乖照著架構打，文章居然可以不假思索地衝上1000字！還可以被小虎回饋文字很有力量，超級感人！這真的不是半年前預料得到的啊！應該算是繼IG經營之後（固定頻率整理書籍重點內容），第一次感受到何謂「量變產生質變」，連自己都開始期待往後的文章了！
+            </p>
+            <p>
+            如果你也想開始學習寫作，我認為最好的方式就是開始寫，什麼都可以寫，試著寫下遇見的人事物、寫下腦中混亂的想法、寫下心中的快樂和感動。當你對寫作本身感到自在，你才有餘力從其他面向切入，從主題、從架構、從文字，進而將文章提高到另一個層次。相反地，當你還不習慣寫作，學到越多，只會覺得門檻怎麼那麼高，然後更不想開始寫作XD
+            </p>
+            <p>
+            我想說的是，寫作本身不難，最難的其實是「開始」。祝福你也能透過寫作，開始寫下你所選擇的生活！
+            </p>
+            <h1 class="text-content-h1" data-title="h1" id="寫作課程與資源">寫作課程與資源</h1>
+            <p>這邊也列出我過去上過的課程和資源，希望能幫你加速寫作帶來的質變～</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="實體課程">▎實體課程</h2>
+            <p><a href="https://poword.tw/class/"  target="_blank" class="text-content-link-btn">爆文寫作班｜歐陽立中</a></p> 
+
+            <h2 class="text-content-h2" data-title="h2" id="一次性線上課">▎一次性線上課</h2>
+            <p><a href="https://www.surveycake.com/s/bZPZx"  target="_blank" class="text-content-link-btn">書摘寫作班｜少女凱倫</a></p> 
+
+            <h2 class="text-content-h2" data-title="h2" id="永久性線上課">▎永久性線上課</h2>
+            <p><a href="https://www.pressplay.cc/project/3B9754C95D1A396814A79AC92C6F52A2/about"  target="_blank" class="text-content-link-btn">高效寫作力｜少女凱倫</a></p> 
+
+            <h2 class="text-content-h2" data-title="h2" id="訂閱制">▎訂閱制</h2>
+            <p><a href="https://www.pressplay.cc/project/3B9754C95D1A396814A79AC92C6F52A2/about"  target="_blank" class="text-content-link-btn">探索文案的美：每週給你寫內容的靈感｜文案的美</a></p> 
+
+            <h2 class="text-content-h2" data-title="h2" id="書籍">▎書籍</h2>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010866832?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link-btn">讓寫作成為自我精進的武器｜師北宸</a></p>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010846006?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link-btn">精準寫作｜洪震宇</a></p>
+            <p class="text-paragraph"><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010782814?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link-btn">知識內容寫作課｜鄭國威</a></p>`,
+            tags:[
+                {
+                    name:'學習思考',
+                    url:'learning.html'
+                },
+                {
+                    name:'寫作',
+                    url:'search.html'
+                },
+            ]
+        },
     },
     {
         title: "忘形流，是架構重要還是心法重要？",
