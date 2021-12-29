@@ -726,7 +726,134 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <h1 class="text-content-h1" data-title="h1" id="離島人">離島人 Humans Offshore</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：5.0</h2>
+            <ul class="bulleted-list">
+            <li>離島人們的經驗交流播客平台</li>
+            <li>主持人楊依榛是淡江建築系畢業，因此節目初期的訪談來賓有很多也都是建築人</li>
+            <li>後期節目主題轉向各行各業離島人的經驗分享</li>
+            <li>目前已有 79 集</li>
+            <li>每週日更新</li>
+            </ul>
+            <p>
+                <a href="https://www.instagram.com/humansoffshore/"  target="_blank" class="text-content-link-btn">Instagram</a>
+                <a href="https://open.spotify.com/show/5Uka84GgxUnBy1vZJO7s2w?si=Xh2Z6BF7R7ucJvae7tiaNw"  target="_blank" class="text-content-link-btn-dark">Spotify</a>
+                <a href="https://podcasts.apple.com/us/podcast/humans-offshore-%E9%9B%A2%E5%B3%B6%E4%BA%BA/id1445322776"  target="_blank" class="text-content-link-btn-dark">Apple Podcast</a>
+                <a href="https://overcast.fm/itunes1445322776/humans-offshore"  target="_blank" class="text-content-link-btn-dark">Overcast</a>
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="建人五四三">建人五四三</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：5.0</h2>
+            <ul class="bulleted-list">
+                <li>每集長度約為 25 分鐘</li>
+                <li>已經錄製到第二季，目前有 17 集</li>
+                <li>雙週的周六晚間更新</li>
+            </ul>
+            <div class="text-content-quote">
+                <p>各位好 我們是建人五四三</p>
+                <p>在這充滿視覺圖像的世界</p>
+                <p>希望可以利用聲音帶給有興趣了解建築的聽眾們有別於視覺上的體驗</p>
+                <p>希望各位喜歡我們的節目!</p>
+                    <p><span>&mdash; 建人們</span></p>
+            </div>
+            <p>
+                <a href="https://www.instagram.com/archiman543/"  target="_blank" class="text-content-link-btn">Instagram</a>
+                <a href="https://open.spotify.com/show/3oEVprDL0rYmrQ5w5Gkw4K"  target="_blank" class="text-content-link-btn-dark">Spotify</a>
+                <a href="https://soundcloud.com/archi-543"  target="_blank" class="text-content-link-btn-dark">Soundcloud</a>
+                <a href="https://podcasts.apple.com/tw/podcast/%E5%BB%BA%E4%BA%BA%E4%BA%94%E5%9B%9B%E4%B8%89/id1479326946"  target="_blank" class="text-content-link-btn-dark">Apple Podcast</a>
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="Z剖面">Z剖面 建築談</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：5.0</h2>
+            <ul class="bulleted-list">
+                <li>每集長度 15 分鐘～ 1 小時</li>
+                <li>目前有 8 集</li>
+                <li>每週一 07:00AM 更新，兩個單元隔週播出</li>
+            </ul>
+            <div class="text-content-quote">
+                <p>是一個由兩位建築新鮮人創建的 Podcast 節目</p>
+                <p>暢聊都市、建築、設計新聞與工作生活大小事</p>
+                <p><span>&mdash; 翔仔與牛</span></p>
+            </div>
+            <p>
+                <a href="https://www.instagram.com/sectionzpodcast/"  target="_blank" class="text-content-link-btn">Instagram</a>
+                <a href="https://linktr.ee/sectionZpodcast"  target="_blank" class="text-content-link-btn-dark">收聽連結</a>
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="字型腦補">字型腦補 A Knob of Font</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：5.0</h2>
+            <ul class="bulleted-list">
+                <li>每集長度 30 分鐘</li>
+                <li>目前有 2 集</li>
+            </ul>
+            <div class="text-content-quote">
+                <p>讓 justfont 陪你字型腦補。搜刮經典字型的設計故事，融化字體書裡結冰太久的觀點知識。</p>
+                <p><span>&mdash; justfont</span></p>
+            </div>
+
+            <h1 class="text-content-h1" data-title="h1" id="嚼嚼設計">嚼嚼設計 Design chew chew</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：4.5</h2>
+            <ul class="bulleted-list">
+            <li>每集長度 10～30 分鐘</li>
+            <li>2020 年 5 月開始錄製第二季，目前有 20 集</li>
+            <li>每週一更新</li>
+            </ul>
+            <div class="text-content-quote">
+                <p>你是一個忙碌的設計人嗎？繼續你的工作！把耳朵交給我們，我們把設計讀給你聽！一個介紹設計書籍的雙人podcast組合，由Weil以及Mu每週帶來新的分享。</p>
+            </div>
+            <p>
+            <a href="https://www.instagram.com/designchewchew/"  target="_blank" class="text-content-link-btn">Instagram</a>
+            <a href="https://linktr.ee/designchewchew"  target="_blank" class="text-content-link-btn-dark">收聽連結</a>
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="WOW">WOW! 建築Amazing architecture</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：4.5</h2>
+            <ul class="bulleted-list">
+                <li>每集長度 10～15 分鐘</li>
+                <li>目前有 24 集</li>
+            </ul>
+            <div class="text-content-quote">
+                <p>每個城市當中都有一些奇特的建築，很多人可能都是匆匆一瞥，沒有留下任何印象。本節目主要是請專業建築師帶領大家欣賞國內外特色建築，藉由受訪建築師的聲音引導，讓一般民眾也都能了解這些特色建築的建築語彙，設計風格以及建築師之設計理念，使過去對於這些都會中的特色建築都是看熱鬧的人，也能成為一個懂得看門道的行家。</p>
+                    <p><span>&mdash; Amazing architecture</span></p>
+            </div>
+            <p>
+                <a href="https://open.spotify.com/show/41vssWEYSoRkgKr5QOVm8m?si=ssImwjw2StG3sJHKuoZrrQ"  target="_blank" class="text-content-link-btn-dark">Spotify</a>
+                <a href="https://soundcloud.com/amazing-architecture"  target="_blank" class="text-content-link-btn-dark">Soundcloud</a>
+                <a href="https://podcasts.apple.com/tw/podcast/wow-%E5%BB%BA%E7%AF%89amazing-architecture/id1475745767"  target="_blank" class="text-content-link-btn-dark">Apple Podcast</a>
+            </p>
+
+            <h1 class="text-content-h1" data-title="h1" id="B&D">B&D Lab</h1>
+            <h2 class="text-content-h2">Apple Podcast ★：4.5</h2>
+            <ul class="bulleted-list">
+                <li>每集長度 15～30 分鐘</li>
+                <li>目前有 4 集</li>
+            </ul>
+            <div class="text-content-quote">
+                <p>一個大學生經營的音頻節目</p>
+                <p>專訪設計領域的各式人物</p>
+                <p>有時也會胡言亂語</p>
+                <p>希望能跟大家一起設計自己未來的方向！</p>
+                <p><span>&mdash; Business & Design Lab</span></p>
+            </div>
+            <p> 
+                <a href="https://www.instagram.com/bnd_lab/"  target="_blank" class="text-content-link-btn">Instagram</a>
+                <a href="https://bndlab.contactin.bio/"  target="_blank" class="text-content-link-btn-dark">收聽連結</a>
+            </p>
+            `,
+            tags:[
+                {
+                    name:'資源整理',
+                    url:'infoMap.html'
+                },
+                {
+                    name:'建築資源',
+                    url:'architecture.html'
+                }
+            ]
+        },
     },
     {
         title: "建築相關活動的 11 個資訊來源",
@@ -737,7 +864,26 @@ const data =[
         tagsByTheme:["建築資源"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">欣講堂</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">忠泰集團</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">築生文化協會</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">台灣現代建築協會</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">高雄市建築學會</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">空總臺灣當代文化實驗場 C-LAB</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">交大建築所</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">成大建築演講股</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">實構築</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">追蹤厲害的人</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">臺北市立美術館</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">松山文創園區</h1>
+            <h1 class="text-content-h1" data-title="h1" id="個人工作能力">華山1914文化創意產業園區</h1>
+            
+            `,
+            tags:[]
+        },
     },
     {
         title: "2021 建築畢業設計展，全台各校展期彙整",
@@ -836,7 +982,59 @@ const data =[
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p class="text-content-callout bg-light">
+            今天聽到一集 podcast，<a href="https://podcasts.apple.com/tw/podcast/ep99-%E5%AA%BD%E5%AA%BD%E9%83%BD%E8%AA%AA%E9%8C%A2%E8%A6%81%E8%8A%B1%E5%9C%A8-%E5%88%80%E5%8F%A3%E4%B8%8A-%E9%82%A3-%E5%88%80%E5%8F%A3-%E5%88%B0%E5%BA%95%E5%9C%A8%E5%93%AA%E8%A3%A1%E5%91%A2/id1452688611?i=1000497671322"  target="_blank" class="text-content-link">大人的 small talk EP99</a>，標題是「媽媽都說錢要花在「刀口上」，那「刀口」到底在哪裡呢？」，雖然這是很主觀的價值觀選擇，但也給了我很多啟發，在這裡記錄一些想法分享給大家。
+            </p>
+            <p>我在開始閱讀投資理財的書籍後，學到一個記帳的技巧，就是將所有花費分成「必要」、「想要」、「投資」，盡量減少「想要」，增加「投資」，也讓我養成不過度買衣服、買3C產品的習慣，不過這樣的分類還是很概括，怎麼樣才算是投資？哪些屬於必要？</p>
+            <p>我雖然用這個方法戒掉了買衣服的習慣，卻養成了另一個壞習慣：瘋狂買書。</p>
+            <p>在用這個方式記帳的一開始，我把買書歸類為「投資」。我認為買書學到的知識或想法上的啟發，能在未來帶給我更多幫助，但我忽略的事情是，我沒有看完現有的書才去買新書，誠品會員每個月的 77 折都給我一個機會（藉口）買書，結果就是，買了一堆，但看完的大概只有 1/3，這也讓我重新思考，錢要怎麼花才是更有效率的。</p>
+            <p>在這集 podcast 的一開始，Bryan 就提到「資產」與「存貨」的差別，我自己再補上一個類別「負債」，以下簡單說明：</p>
+            <p>▶ 資產：買了之後，能持續為你帶來更多的價值／現金流／好處</p>
+            <p>▶ 存貨：買了之後，只能獲得它相應的價值</p>
+            <p>▶ 負債：買了之後，你需要為它繼續花錢、繼續付出時間</p>
+            <p>不管是產品或服務，在購買的當下，都需要想到更長遠的效益，才有辦法用一樣的錢，買到最多的好處。</p>
+            <p>其中 Bryan 提到的兩個概念讓我很有啟發：</p>
+            <ol class="number-list">
+            <li>花錢買槓桿</li>
+            <li>花錢買有限的資源</li>
+            </ol>
+            <p>雖然資產／負債的概念很簡單、很好理解，但現實中，我們需要有更明確的判斷依據，才有辦法在各式各樣的產品與服務當中，做出選擇。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="花錢買槓桿">花錢買槓桿</h1>
+            <p>錢是一項工具、一個達成目標的手段，所以如果能用錢買到更多的價值，當然再好不過，而能發揮槓桿的東西，就是其中一個「刀口」。</p>
+            <p>槓桿的其中一個方式就是買資產，像是學習資源、書籍、課程、可以出租收租金的房子……，這些都可以讓錢為你帶來更多價值。</p>
+            <p>第二個方式是買機會，買認識別人的機會、買別人認識你的機會。</p>
+            <p>人脈能為你帶來更多價值，但人脈不能買，你只能買獲取人脈的機會，像是參加講座、實體課程……，這些都能讓你有機會認識「對自己很有企圖心」的人們，這些是購買線上課程沒辦法獲得的社交性。</p>
+            <p>而讓別人認識你的機會，Bryan 用的方式則是爭取上台的機會，讓一場三小時的社交場合發揮更大效益。如果只是參加者，在會後一個一個認識、交換名片的效益，遠遠不及你上台分享、與大家建立的連結。你不用認識大家，但全場大家都認識了你。</p>
+            <p>而關於人際關係的機會，第三個 Bryan 會花錢買的是外型、形象。心理學實驗「月暈效應」指出，在觀賞月亮的時候，你不只是看見月亮本身，也會注意周遭的月暈，從而建立你對月亮的看法。意思就是，人的認知判斷往往只從局部出發而得出整體印象，常常以偏概全。如果對方呈現的是乾淨整潔的印象，就會傾向於覺得對方是個好人。因此，花一點時間及心力在外貌，其實也是一種槓桿的方法。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="花錢買有限的資源">花錢買有限的資源</h1>
+            <p>即便你再有錢，如果沒有時間與健康，你也沒辦法好好享受這些錢。所以如果能用錢買到這兩個有限的資源，應該可以說是 CP 值最高的一件事了，這就是刀口中的刀口！</p>
+            <p>如果消費的當下，不再只是用金錢衡量事物，雖然會複雜得多，但也更能釐清自己的價值觀。</p>
+            <p>Bryan 用信用卡消費舉例，他說有些人很厲害，把回饋、紅利算得很清楚，辦很多張信用卡，每次消費都選擇最優惠的那張卡，聽起來可以省下不少錢，但也花了不少時間比較、計算、對帳。每次消費多花的那 2 分鐘和對帳的時間，跟最後省下來的錢比，真的值得嗎？</p>
+            <p>最後 Bryan 選擇只用一張信用卡，將思考要刷哪一張卡的時間和對帳時間都省了下來。就當作是把沒省下來的錢，拿去買了時間，也買了一些腦容量XD</p>
+            <p>另一個有限資源是健康。</p>
+            <p>我從小就過輕，到現在還是瘦不拉機，這不是在炫耀，只是想提一下我媽從小就灌輸給我的觀念：吃的不能省。如果是為了健康，不需要為了省錢，去吃便宜的東西。</p>
+            <p>不是說每餐都一定要吃大餐，但如果可以，就三餐盡量都挑品質好一點的店去吃。雖然我還是會想吃泡麵、麥當勞，但我一定都會提醒自己，即便是外食也要多吃蔬果，貴還是要買。而這些就成了我的「必要」花費，如果要節流，也只會從「想要」的類別去省錢。</p>
+            <p>另一個例子是運動。如果運動的習慣真的很難自己養成，也找不到朋友陪你一起運動，那花錢去健身房找教練或買課程也許就會你的選擇，以前我會覺得找教練太奢侈，但經過一年自己督促自己的結果，就是一年跑步的次數不到10次，我開始覺得我需要試試看另一種方法了XD。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="省下來的錢都拿去買書，怎麼辦？">省下來的錢都拿去買書，怎麼辦？</h1>
+            <p>雖然買書是買「資產」，但需要我另外花時間去閱讀，書才會是「資產」，所以我應該要衡量自己閱讀的速度，再去買書，而不是看到喜歡就買，這樣反而會累積很多根本還沒看的書，那就只是「存貨」了！</p>
+            <p>感謝這集 <a href="https://podcasts.apple.com/tw/podcast/ep99-%E5%AA%BD%E5%AA%BD%E9%83%BD%E8%AA%AA%E9%8C%A2%E8%A6%81%E8%8A%B1%E5%9C%A8-%E5%88%80%E5%8F%A3%E4%B8%8A-%E9%82%A3-%E5%88%80%E5%8F%A3-%E5%88%B0%E5%BA%95%E5%9C%A8%E5%93%AA%E8%A3%A1%E5%91%A2/id1452688611?i=1000497671322"  target="_blank" class="text-content-link">大人的 small talk EP99</a> 讓我重新思考金錢使用的原則和依據，祝福你也能找到你的刀口，將小錢發揮最大效益！</p>`,
+            tags:[
+                {
+                    name:'學習思考',
+                    url:'learning.html'
+                },
+                {
+                    name:'自我成長',
+                    url:'search.html'
+                }
+            ]
+        },
     },
     {
         title: "關於口語表達，有些答案不必向外求",
@@ -1508,7 +1706,7 @@ const data =[
         pptContent:[
             {
                 imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/10/%E6%B8%85%E5%96%AE%E9%9D%A9%E5%91%BD.jpeg?zoom=2&resize=690%2C550&ssl=1',
-                textContent:'作者開始研究清單，是因為想解決醫生手術時常犯一些小錯誤而造成重大後果的問題。<br/>第一步要先搞懂常犯錯的原因，才有辦法知道犯錯導致的問題有哪些、怎麼解決。'
+                textContent:'作者開始研究清單，是因為想解決醫生手術時常犯一些小錯誤而造成重大後果的問題。</br>第一步要先搞懂常犯錯的原因，才有辦法知道犯錯導致的問題有哪些、怎麼解決。'
             },
             {
                 imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8702-scaled.jpeg?resize=2048%2C1152&ssl=1',
@@ -1540,7 +1738,7 @@ const data =[
             },
             {
                 imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8709-scaled.jpeg?resize=2048%2C1152&ssl=1',
-                textContent:'設計清單時，記住兩件事：<br/>1. 只靠清單你還是不會開飛機<br/>清單只是輔助，不是要把步驟一五一十地寫入，用清單的人還是必須具備專業知識，清單只是用來提醒關鍵事項和那些容易忽視的關鍵事項。<br/>2. 清單是為了讓我們腦袋更靈光<br/>怎麼讓我們腦袋更靈光？<br/>當事務性質的事項被寫入清單，代表腦袋能騰出力氣去思考、去創造，因此清單不是一種取代，也不是侷限，而是交棒腦袋的工作，讓我們能做更多發想與判斷。'
+                textContent:'設計清單時，記住兩件事：</br>1. 只靠清單你還是不會開飛機</br>清單只是輔助，不是要把步驟一五一十地寫入，用清單的人還是必須具備專業知識，清單只是用來提醒關鍵事項和那些容易忽視的關鍵事項。</br>2. 清單是為了讓我們腦袋更靈光</br>怎麼讓我們腦袋更靈光？</br>當事務性質的事項被寫入清單，代表腦袋能騰出力氣去思考、去創造，因此清單不是一種取代，也不是侷限，而是交棒腦袋的工作，讓我們能做更多發想與判斷。'
             },
             {
                 imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2020/09/%E6%8A%95%E5%BD%B1%E7%89%8710-1-scaled.jpeg?resize=2048%2C1152&ssl=1',
@@ -1731,19 +1929,19 @@ const data =[
             },
             {
                 imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/1.jpg?w=1920&ssl=1',
-                textContent:'心態是你邁向目標的過程，讓自己持續推進的動力。</br>而選擇、方法和習慣，我認為它們之間有著先後順序，先是選擇，選你要的跟不要的，再來是方法，找方法去做到你想要的事情，最後是習慣，讓前面的努力變成你的日常。<br/> 有選擇，才能聚焦。王永福《工作與生活的技術》<br/>當你做出選擇之後，才知道要在什麼地方專注，在什麼地方付出你的時間和心力。'
+                textContent:'心態是你邁向目標的過程，讓自己持續推進的動力。</br>而選擇、方法和習慣，我認為它們之間有著先後順序，先是選擇，選你要的跟不要的，再來是方法，找方法去做到你想要的事情，最後是習慣，讓前面的努力變成你的日常。</br> 有選擇，才能聚焦。王永福《工作與生活的技術》</br>當你做出選擇之後，才知道要在什麼地方專注，在什麼地方付出你的時間和心力。'
             },
             {
                 imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%878.jpeg?w=1920&ssl=1',
-                textContent:'從小地方開始，學著做出好選擇<br/>每個人的時間和精力都是有限的，但想做的事情就是這麼多，工作、家庭、休閒、運動、學習……，一定得從中選擇對你目前階段最重要的事，才能「專注」，不然就會很可能全選，但沒有一個領域能夠及格。<br/>人生領域的選擇屬於大範圍的選擇，先來說說小範圍的選擇該怎麼選。'
+                textContent:'從小地方開始，學著做出好選擇</br>每個人的時間和精力都是有限的，但想做的事情就是這麼多，工作、家庭、休閒、運動、學習……，一定得從中選擇對你目前階段最重要的事，才能「專注」，不然就會很可能全選，但沒有一個領域能夠及格。</br>人生領域的選擇屬於大範圍的選擇，先來說說小範圍的選擇該怎麼選。'
             },
             {
                 imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8710.jpeg?w=1920&ssl=1',
-                textContent:'每一次的選擇，都要讓自己下一次能更省力<br/>搭高鐵常常會遇到這三個情境：買票櫃檯要等很久、坐你旁邊的乘客很吵、出口匣門人很多'
+                textContent:'每一次的選擇，都要讓自己下一次能更省力</br>搭高鐵常常會遇到這三個情境：買票櫃檯要等很久、坐你旁邊的乘客很吵、出口匣門人很多'
             },
             {
                 imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8711.jpeg?w=1920&ssl=1',
-                textContent:'你是怎麼面對這些狀況的？是左邊還是右邊？<br/>兩個選項擺在一起的時候，你當然會覺得右邊這個選項比較好，可是我們每天都面對各式各樣的麻煩事，不會有人先提供你兩個選項，那到底要怎麼自己生出右邊的選項？<br/>關鍵就是下次能不能更省力？'
+                textContent:'你是怎麼面對這些狀況的？是左邊還是右邊？</br>兩個選項擺在一起的時候，你當然會覺得右邊這個選項比較好，可是我們每天都面對各式各樣的麻煩事，不會有人先提供你兩個選項，那到底要怎麼自己生出右邊的選項？</br>關鍵就是下次能不能更省力？'
             },
             {
                 imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8713.jpeg?w=1920&ssl=1',
@@ -1763,7 +1961,7 @@ const data =[
             },
             {
                 imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8722.jpeg?w=1920&ssl=1',
-                textContent:'另一種精力就是意志力，因為有限，所以更需要精準分配，讓意志力發揮它最大的效益。<br/>在尋找方法的部分：工作上就要讓自己的力氣用對地方、生活上就要好好充飽電、管理自己則是為了讓自己的精力可以更省力。'
+                textContent:'另一種精力就是意志力，因為有限，所以更需要精準分配，讓意志力發揮它最大的效益。</br>在尋找方法的部分：工作上就要讓自己的力氣用對地方、生活上就要好好充飽電、管理自己則是為了讓自己的精力可以更省力。'
             },
             {
                 imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8728.jpeg?w=1920&ssl=1',
@@ -1771,11 +1969,11 @@ const data =[
             },
             {
                 imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8732.jpeg?w=1920&ssl=1',
-                textContent:'而聰明跟懶的關係，不是因果，比較像是一個循環：</br>因為人性，你想要用更省力的方法做事，一開始的時候可能需要費點力去找到好方法，不過只要找到了好方法，就能讓你更省力，而省下來的時間和精力，又可以去做其他你想要的事情。<br/>不過在找好方法的過程，其實也不是什麼輕鬆的事，你可能是因為看到未來有可能可以更省力，所以去做了這個努力。雖然這過程有點辛苦，但其實</br>在尋找方法的過程，就是方法本身；在尋找答案的過程，就是答案本身。&mdash;Jun</br>雖然很少能一次就找到最好的那個答案，但也因為你不斷嘗試、尋找方法，在這個過程中，你就已經變得比過去的自己更好了。'
+                textContent:'而聰明跟懶的關係，不是因果，比較像是一個循環：</br>因為人性，你想要用更省力的方法做事，一開始的時候可能需要費點力去找到好方法，不過只要找到了好方法，就能讓你更省力，而省下來的時間和精力，又可以去做其他你想要的事情。</br>不過在找好方法的過程，其實也不是什麼輕鬆的事，你可能是因為看到未來有可能可以更省力，所以去做了這個努力。雖然這過程有點辛苦，但其實</br>在尋找方法的過程，就是方法本身；在尋找答案的過程，就是答案本身。&mdash;Jun</br>雖然很少能一次就找到最好的那個答案，但也因為你不斷嘗試、尋找方法，在這個過程中，你就已經變得比過去的自己更好了。'
             },
             {
                 imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8734.jpeg?w=1920&ssl=1',
-                textContent:'不論你現在處在什麼象限，我們的目標就是要順著人性，尋找最省力的方法，學習當個聰明的懶人。<br/>接著就要提到很消耗意志力的習慣養成，前面都在說要尋找省力的方法，可是建立習慣本身需要很費力，怎麼會省力？'
+                textContent:'不論你現在處在什麼象限，我們的目標就是要順著人性，尋找最省力的方法，學習當個聰明的懶人。</br>接著就要提到很消耗意志力的習慣養成，前面都在說要尋找省力的方法，可是建立習慣本身需要很費力，怎麼會省力？'
             },
             {
                 imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8735.jpeg?w=1920&ssl=1',
@@ -1787,15 +1985,15 @@ const data =[
             },
             {
                 imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8739.jpeg?w=1920&ssl=1',
-                textContent:'學習不等於考試<br/>你可能不會讀書、不會考試，但其實沒有關係，因為離開學校後的學習，本來就不是考試，而且學習是一輩子的事，只要一直喜歡學習，就會慢慢成長、慢慢看見改變'
+                textContent:'學習不等於考試</br>你可能不會讀書、不會考試，但其實沒有關係，因為離開學校後的學習，本來就不是考試，而且學習是一輩子的事，只要一直喜歡學習，就會慢慢成長、慢慢看見改變'
             },
             {
                 imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8740.jpeg?w=1920&ssl=1',
-                textContent:'學習有很多種可能<br/>每一種形式都只是學習的其中一個方法，你可能不愛看書，你可能沒時間上課聽講座，你可能沒有資源去考研究所，不過那都沒有關係，這些都只是不同形式的學習，而學習最立即的形式，就是生活中的觀察、感受、以及收穫。<br/>能夠從生活中有所體會，就是最立即、最深刻的學習。'
+                textContent:'學習有很多種可能</br>每一種形式都只是學習的其中一個方法，你可能不愛看書，你可能沒時間上課聽講座，你可能沒有資源去考研究所，不過那都沒有關係，這些都只是不同形式的學習，而學習最立即的形式，就是生活中的觀察、感受、以及收穫。</br>能夠從生活中有所體會，就是最立即、最深刻的學習。'
             },
             {
                 imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8742.jpeg?w=1920&ssl=1',
-                textContent:'學會面對困難與挑戰</br>待在舒適圈很舒服，但在待一陣子之後，還是要推自己一把，往更高的地方走去，因為挑戰才能淬煉你的能力。</br>再試一試看看！</br>有沒有更好的解決方法？</br>常常對自己說這兩句話，你就能越來越積極地去面對各式各樣不同的挑戰。</br>很多時候，再試一次，就能解決問題。</br>很多時候，多想一點，就能做得更好。</br>這其實跟做事的能力沒有直接相關，只要心態對了，在挑戰面前，你就能變得更勇敢。<br/>你爲什麼要學習？</br>驅動你學習的，是「害怕被別人超越」，還是「想追求自身的卓越」？</br>不得不說，害怕落後別人是一個很強的學習動力，我們想保有競爭力，想升遷、想加薪，但這不足以驅動我們去追求更長遠的目標。假如只是為了害怕落後，最後往往會變成為成長而成長、為學習而學習。</br>最後，你還是要回到自己身上，從自己的需求和目前的不足，來設定成長的目標，追求自身的卓越。</br>盡其所能地成為最好的自己。&mdash;王永福《工作與生活的技術》</br>為什麼要學習？不為了什麼，就為成為更好的自己。</br>而什麼是更好？怎樣叫成功？也全由你自己來定義。'
+                textContent:'學會面對困難與挑戰</br>待在舒適圈很舒服，但在待一陣子之後，還是要推自己一把，往更高的地方走去，因為挑戰才能淬煉你的能力。</br>再試一試看看！</br>有沒有更好的解決方法？</br>常常對自己說這兩句話，你就能越來越積極地去面對各式各樣不同的挑戰。</br>很多時候，再試一次，就能解決問題。</br>很多時候，多想一點，就能做得更好。</br>這其實跟做事的能力沒有直接相關，只要心態對了，在挑戰面前，你就能變得更勇敢。</br>你爲什麼要學習？</br>驅動你學習的，是「害怕被別人超越」，還是「想追求自身的卓越」？</br>不得不說，害怕落後別人是一個很強的學習動力，我們想保有競爭力，想升遷、想加薪，但這不足以驅動我們去追求更長遠的目標。假如只是為了害怕落後，最後往往會變成為成長而成長、為學習而學習。</br>最後，你還是要回到自己身上，從自己的需求和目前的不足，來設定成長的目標，追求自身的卓越。</br>盡其所能地成為最好的自己。&mdash;王永福《工作與生活的技術》</br>為什麼要學習？不為了什麼，就為成為更好的自己。</br>而什麼是更好？怎樣叫成功？也全由你自己來定義。'
             },
             {
                 imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8748.jpeg?w=1920&ssl=1',
