@@ -772,7 +772,33 @@ const data =[
         linkUrl:"blogContent.html",
         blogContent:{
             subtitle:'',
-            content:``,
+            content:`
+            <p>是什麼造就了今天的你？</p>
+            <p>有什麼重大的選擇讓你的生活產生巨大改變？</p>
+            <p>回想過去的日子，我好像沒辦法明確指出，是什麼單一事件讓我成為現在的樣子，但我可以說：</p>
+            <p class="text-content-callout bg-light">
+                2018 我開始養成閱讀的習慣</br>
+                2019 我開始接觸投資理財、行銷、程式語言</br>
+                2020 我開始架設網站、寫文章、創立 IG 帳號分享筆記
+            </p>
+            <p>我們常常把「重大選擇」或「單一事件」看得太重要，但其實整個「過程」才是引導你走向人生不同方向的因素。</p>
+            <div class="text-content-quote">
+                <p>人很容易高估一個決定性瞬間的重要性，也很容易低估每天都做些小改善的價值。</p>
+                <p><span>&mdash; 《原子習慣》</span></p>
+            </div>
+            <p>微小的行動不一定能 馬上 帶來巨大的改變、產生巨大的成效，但經過時間的累積。所能造成的變化會非常大。大家一定都聽過這個算法：如果每天都能進步 1%，持續 1 年，最後你會進步 3700%！透過 時間的複利效應，能讓微小的行動帶來巨大的改變。</p>
+            <h1 class="text-content-h1" data-title="h1" id="年度關鍵字">年度關鍵字</h1>
+            <p>如果平常有紀錄的習慣，回顧一整年可以讓自己知道，今年完成了哪些有趣的、開心的、幸福的、有成就感的事情。</p>
+            <p>年度關鍵字也可以用來設定年度目標，讓今年的自己在所有行為、選擇上，都有一個依據，比起實際目標，<strong>抽象的年度關鍵字</strong> 可以讓自己去思考外在成就之外，怎麼去達成內在目標。</p>
+            <h1 class="text-content-h1" data-title="h1" id="內在目標＆外在目標">內在目標＆外在目標</h1>
+            <p>如果只有外在目標，達到之後可能會因為沒有去了解自己內心的需求，而感到空虛，即使賺了一堆錢，也不知道意義在哪裡。</p>
+            <p>顧及內在目標，才能在達成外在目標的同時，感到心靈富足，不會因為忽視內在需求而迷失自己。</p>
+            <p>內在目標可以透過仔細思考這句話「你希望在人生的最後留下什麼？」去設立，以終為始，將它視為你終生追求的目標。</p>
+            <p>外在目標必須建立在內在目標的基礎上去設立，如果兩者衝突，你可能會離自己想成為的樣子越來越遠而不自知。</p>
+            <p>以我自己為例，我給自己設定的年度關鍵字是「試」，除了外在目標上，希望自己可以踏出舒適圈學習，多嘗試、多探索，也希望自己在內在目標上，找到想全心付出、並認為有價值的事情。</p>
+            <h1 class="text-content-h1" data-title="h1" id="總結">總結</h1>
+            <p>試著給自己設立年度關鍵字吧，當成是人生的階段目標，也讓自己的所作所為都更聚焦，不讓時間白白溜走，抓住每一個能慢慢改變人生的微小選擇和行動，好好掌握自己人生的每一天！</p>
+            `,
             tags:[
                 {
                     name:"學習思考",
@@ -821,7 +847,31 @@ const data =[
         tagsByTheme:["自我成長"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>很多時候，當我們自認為缺少了什麼東西，最自然的反應是向外搜尋解答，可能是 google、看書或去上課。這種方法可以解決一半的問題。但不論怎麼練習、不論怎麼實際把方法應用到日常，也只能解決一半的問題。<span class="text-primary">還有另一半是無法透過外求解決的問題，那些答案不在別人手裡，只在你自己心裡。</span></p>
+            <p>我的學習就是極力往外探索的那種，但很少看見自己的感受，就算有很多想法，通常也都是理性腦多過於感性腦，感性也必須建立在理性的前提之上。但最近遭遇到一些挫折，讓我發現好像不太能用同樣的方法繼續下去了…</p>
+            <p>上禮拜參加《蕯提爾的自我覺察練習》讀書會，整整四小時有聽沒有懂，腦袋大當機，那些從來沒運作過的迴路，就算開機了也還熱不起來，然後又參加了小虎的口語表達班，同樣的感受再來一次QAQQ</p>
+            <p>小虎的課都會讓我很不安，因為他總是會提醒我這一點：「學再多的技巧，都可能因為缺少自己內心的答案而無法完整」</p>
+            <p>學技巧、學方法的時候，往往會想追求完美。但回到自己內心，你只能，也只需要追求完整，而完美有可能讓你窒息，追求完整才能得到自由。</p>
+            <p>那種自由，是不害怕被人評斷、自有定見的自由，是不需要先被人肯定，才能肯定自己的自由，是有態度有觀點，然後能夠傳達給對方的自由。</p>
+            <p>這堂課比起以前上過的很多課程，方法不多但卻都很深刻。也許關於說話、關於表達，這才是我需要的解答。</p>
+            <h1 class="text-content-h1" data-title="h1" id="聲音訓練">聲音訓練 羅鈞鴻/小虎</h1>
+            <p class="text-content-primary">| 透過聲音，讓每個人都能更好地「成為自己」。</p>
+            <p>更多<a href="https://www.facebook.com/VoiceTaster"  target="_blank" class="text-content-link">小虎老師</a>的課 👉🏻 <a href="https://voicetaster.com/"  target="_blank" class="text-content-link">聆韵企管顧問</a></p>
+            `,
+            tags:[
+                {
+                    name:'學習思考',
+                    url:'learning.html'
+                },
+                {
+                    name:'自我成長',
+                    url:'search.html'
+                }
+            ]
+        },
     },
     {
         title: "關於寫作，應該要先學還是先寫？",
@@ -1615,11 +1665,11 @@ const data =[
     {
         title: "《高績效心智》我要好好工作，然後空出更多時間好好生活！",
         description: "作者把如何成功的重點放在「看待事情的角度」之上，是一本心態和方法並重的書，不只用扎實的理論基礎告訴你「為什麼」，也用各式各樣的例子和實踐方法告訴你「怎麼做」。書中不斷提及的「心智」，指的就是面對事情心態",
-        type:["學習思考","好書推薦"],
+        type:["學習思考"],
         time: '2021-05-28',
         imgUrl:"https://images.unsplash.com/photo-1529158062015-cad636e205a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80",
-        tagsByTheme:["工作術"],
-        tagsByContent:"心智圖",
+        tagsByTheme:["工作術","職涯思考"],
+        tagsByContent:"簡報",
         linkUrl:"",
         pptContent:[
             {
@@ -1666,7 +1716,111 @@ const data =[
         ]
     },
     {
-        title: "怎麼達到工作與生活的平衡？",
+        title: "【簡報】怎麼達到工作與生活的平衡？",
+        description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
+        type:["學習思考"],
+        time: '2021-06-24',
+        imgUrl:"https://images.unsplash.com/photo-1456244698455-10edd25dacde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        tagsByTheme:["職涯思考","工作術"],
+        tagsByContent:"簡報",
+        linkUrl:"blogContent.html",
+        pptContent:[
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/210624%E8%AE%80%E6%9B%B8%E6%9C%83.jpg?zoom=2&resize=690%2C550&ssl=1',
+                textContent:'工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？</br>我們常常只能說出「不平衡」的狀況是什麼，可能是沒有時間做想做的事情，也可能是事情都做不完。無論是什麼不平衡的狀況讓你疲憊，想要達到平衡，就要仔細去想想，平衡對自己來說，到底代表著什麼，以及怎麼衡量它。</br>在《工作與生活的技術》與《聰明懶人學》兩本書中，都有提到很重要的兩件事，就是「目標」和「選擇」。先有目標，你做出的選擇才有明確的方向，然後隨著選擇的累積，才能逐漸往目標前進。</br>但一定沒那麼簡單，中間還有好多細節需要掌握，你要有正確的心態，還要有好的方法，和好習慣，掌握這五件事情，最後才能緩步邁向你要的目標。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/1.jpg?w=1920&ssl=1',
+                textContent:'心態是你邁向目標的過程，讓自己持續推進的動力。</br>而選擇、方法和習慣，我認為它們之間有著先後順序，先是選擇，選你要的跟不要的，再來是方法，找方法去做到你想要的事情，最後是習慣，讓前面的努力變成你的日常。<br/> 有選擇，才能聚焦。王永福《工作與生活的技術》<br/>當你做出選擇之後，才知道要在什麼地方專注，在什麼地方付出你的時間和心力。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%878.jpeg?w=1920&ssl=1',
+                textContent:'從小地方開始，學著做出好選擇<br/>每個人的時間和精力都是有限的，但想做的事情就是這麼多，工作、家庭、休閒、運動、學習……，一定得從中選擇對你目前階段最重要的事，才能「專注」，不然就會很可能全選，但沒有一個領域能夠及格。<br/>人生領域的選擇屬於大範圍的選擇，先來說說小範圍的選擇該怎麼選。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8710.jpeg?w=1920&ssl=1',
+                textContent:'每一次的選擇，都要讓自己下一次能更省力<br/>搭高鐵常常會遇到這三個情境：買票櫃檯要等很久、坐你旁邊的乘客很吵、出口匣門人很多'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8711.jpeg?w=1920&ssl=1',
+                textContent:'你是怎麼面對這些狀況的？是左邊還是右邊？<br/>兩個選項擺在一起的時候，你當然會覺得右邊這個選項比較好，可是我們每天都面對各式各樣的麻煩事，不會有人先提供你兩個選項，那到底要怎麼自己生出右邊的選項？<br/>關鍵就是下次能不能更省力？'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8713.jpeg?w=1920&ssl=1',
+                textContent:'雖然這些事情看起來都很小，但是我們的生活就是這些小選擇累積而成的，</br>從小地方開始做改變，才有機會驅動更大範圍的改變。&mdash;Jun</br>選擇的大原則就是要省力！接著就要知道哪些事情讓我們費力，然後學會避開它。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8717.jpeg?w=1920&ssl=1',
+                textContent:'尋找把力氣放對地方的方法</br>比的不是你多厲害，而是你有沒有比別人更適合</br>在工作上，要一直追求能力更好這件事很費力，但職場上的競爭力，不只關乎你的做事能力，也關乎適合與不適合。</br>就像達爾文提出的天擇、地擇、性擇，有時候選對行業有時候比努力更重要；選對地方有時候比能力更重要；選對對手有時候比運氣更重要。</br>最終能存活下來的物種，不是最強的也不是最聰明的，而是最能適應改變的物種。&mdash;查爾斯・達爾文</br>與其埋頭苦幹追求能力的提升，適時回頭看看自己的個性與特質、尋找「適合」自己的位子，也許能讓你在提升工作競爭力這個面向上，更加省力。</br>'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8719.jpeg?w=1920&ssl=1',
+                textContent:'休息也是有方法的</br>在生活中，我們總希望工作之外的時間就好好休息，但卻很少了解什麼方法才能讓自己真的放鬆。</br>其實休息也是需要方法的，如果沒有身、心、靈三個面向都顧到的話，就會雖然好像有休息的時間，但又沒有真的放鬆，反而越休息越覺得心很累，或是放連假之後，覺得好像可以繼續努力了，又會覺得心裡好像缺了什麼。</br>身體的休息，就是要讓大腦和身體修復，好好睡覺也是需要練習的。</br>興趣則可以帶給你快樂，甚至會帶給你跟工作上不一樣的成就感。</br>啊認真放空是？</br>我以前不太能理解這是什麼意思，聰明的人都比我更努力，休息的話，我好好睡覺就足夠了，其他時間根本不該休息啊！</br>可是久了之後，我也慢慢發現逼自己要進步的同時，少掉了很多靜下來思考的時間，靜下來看自己到底做了些什麼的時間。</br>有留白的時間，才有進步的空間。&mdash;紀坪《聰明懶人學》</br>放空可以是任何形式的，可能是散步、可能是聽音樂，這樣的留白不只是為了休息，也是為了讓那些成長的養分，有機會可以沉澱、發酵。</br>'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8721.jpeg?w=1920&ssl=1',
+                textContent:'自律，就是管好自己要在什麼地方專注</br>自律明確來講，就是精力管理，管好自己要在什麼地方專注，包含注意力、意志力……等等，而情緒也是其中一種精力的消耗。</br>你一定有過這樣的經驗，跟朋友吵一架之後，好幾天都沒辦法認真工作，這就是情緒帶來的負面影響，意識到情緒對其他事情的影響之後，才能好好管理它。</br>不論是排解自己的負面情緒，或是避開會讓你產生負面情緒的人、事、物，都是你需要花心思去好好思考的。別讓自己被情緒牽著走，就能抱持在最好的狀態，讓能力做最大的發揮。'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8722.jpeg?w=1920&ssl=1',
+                textContent:'另一種精力就是意志力，因為有限，所以更需要精準分配，讓意志力發揮它最大的效益。<br/>在尋找方法的部分：工作上就要讓自己的力氣用對地方、生活上就要好好充飽電、管理自己則是為了讓自己的精力可以更省力。'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8728.jpeg?w=1920&ssl=1',
+                textContent:'可能會有人有一些疑問，為什麼要一直追求「省力」？也許本來做這件事就不太費力，還要一直追求效率又是為了什麼？</br>其實追求省力，除了想用更少力氣做更多的事，更重要的是你能用省下來的力氣和時間，去做其他更想做的事情。</br>聰明、不聰明，在這裡指的是，你用的是不是「好方法」。</br>先聲明，勤勞不是不好，只是你要搞清楚努力的方向；懶惰也不是美德，它只是人性，唯有循著人性做事，你才能努力得更持久。</br>'
+            },
+            {
+                imgUrl:'https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8732.jpeg?w=1920&ssl=1',
+                textContent:'而聰明跟懶的關係，不是因果，比較像是一個循環：</br>因為人性，你想要用更省力的方法做事，一開始的時候可能需要費點力去找到好方法，不過只要找到了好方法，就能讓你更省力，而省下來的時間和精力，又可以去做其他你想要的事情。<br/>不過在找好方法的過程，其實也不是什麼輕鬆的事，你可能是因為看到未來有可能可以更省力，所以去做了這個努力。雖然這過程有點辛苦，但其實</br>在尋找方法的過程，就是方法本身；在尋找答案的過程，就是答案本身。&mdash;Jun</br>雖然很少能一次就找到最好的那個答案，但也因為你不斷嘗試、尋找方法，在這個過程中，你就已經變得比過去的自己更好了。'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8734.jpeg?w=1920&ssl=1',
+                textContent:'不論你現在處在什麼象限，我們的目標就是要順著人性，尋找最省力的方法，學習當個聰明的懶人。<br/>接著就要提到很消耗意志力的習慣養成，前面都在說要尋找省力的方法，可是建立習慣本身需要很費力，怎麼會省力？'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8735.jpeg?w=1920&ssl=1',
+                textContent:'省力其實是在建立習慣之後，因為當你建立起一個習慣，行為本身就不會再消耗你有限的意志力了，它會變成自動化的模式，變成一種身體習慣。</br>用意志力培養習慣，用習慣力培養自己。&mdash;王永福《工作與生活的技術》</br>當行為變成自動化，習慣就會變成你的助力，幫助你達成許多本來看似困難的事情。'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8737.jpeg?w=1920&ssl=1',
+                textContent:'掌握心態，就能有源源不絕的成長動力</br>在尋找方法、學習的過程裡，都難免會質疑自己：</br>明明一直沒看見成果，為什麼還要繼續努力？</br>方法這麼困難，我是不是做不到？</br>別人一年看一百本書，我好像沒辦法……'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8739.jpeg?w=1920&ssl=1',
+                textContent:'學習不等於考試<br/>你可能不會讀書、不會考試，但其實沒有關係，因為離開學校後的學習，本來就不是考試，而且學習是一輩子的事，只要一直喜歡學習，就會慢慢成長、慢慢看見改變'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8740.jpeg?w=1920&ssl=1',
+                textContent:'學習有很多種可能<br/>每一種形式都只是學習的其中一個方法，你可能不愛看書，你可能沒時間上課聽講座，你可能沒有資源去考研究所，不過那都沒有關係，這些都只是不同形式的學習，而學習最立即的形式，就是生活中的觀察、感受、以及收穫。<br/>能夠從生活中有所體會，就是最立即、最深刻的學習。'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8742.jpeg?w=1920&ssl=1',
+                textContent:'學會面對困難與挑戰</br>待在舒適圈很舒服，但在待一陣子之後，還是要推自己一把，往更高的地方走去，因為挑戰才能淬煉你的能力。</br>再試一試看看！</br>有沒有更好的解決方法？</br>常常對自己說這兩句話，你就能越來越積極地去面對各式各樣不同的挑戰。</br>很多時候，再試一次，就能解決問題。</br>很多時候，多想一點，就能做得更好。</br>這其實跟做事的能力沒有直接相關，只要心態對了，在挑戰面前，你就能變得更勇敢。<br/>你爲什麼要學習？</br>驅動你學習的，是「害怕被別人超越」，還是「想追求自身的卓越」？</br>不得不說，害怕落後別人是一個很強的學習動力，我們想保有競爭力，想升遷、想加薪，但這不足以驅動我們去追求更長遠的目標。假如只是為了害怕落後，最後往往會變成為成長而成長、為學習而學習。</br>最後，你還是要回到自己身上，從自己的需求和目前的不足，來設定成長的目標，追求自身的卓越。</br>盡其所能地成為最好的自己。&mdash;王永福《工作與生活的技術》</br>為什麼要學習？不為了什麼，就為成為更好的自己。</br>而什麼是更好？怎樣叫成功？也全由你自己來定義。'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8748.jpeg?w=1920&ssl=1',
+                textContent:'到底什麼是平衡？</br>回到一開始的問題，怎樣才算工作與生活有平衡？</br>我認為平衡就是在對的時間，做對的事情。對的事情，取決於目標，而目標，取決於你怎麼定義「成功」。雖然不是一個很明確的定義，但隨著時間，我相信大家都能找到屬於自己的定義與答案。</br>There is only one success – to be able to spend your life in your own way.&mdash;Christopher Morley</br>'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E2%9F%AA%E5%B7%A5%E4%BD%9C%E8%88%87%E7%94%9F%E6%B4%BB%E7%9A%84%E6%8A%80%E8%A1%93%E2%9F%AB%EF%BC%8B%E2%9F%AA%E8%81%B0%E6%98%8E%E6%87%B6%E4%BA%BA%E5%AD%B8%E2%9F%AB-Jun-1.png?w=1422&ssl=1',
+                textContent:'讀書會記錄'
+            },
+            {
+                imgUrl:'https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E2%9F%AA%E5%B7%A5%E4%BD%9C%E8%88%87%E7%94%9F%E6%B4%BB%E7%9A%84%E6%8A%80%E8%A1%93%E2%9F%AB%EF%BC%8B%E2%9F%AA%E8%81%B0%E6%98%8E%E6%87%B6%E4%BA%BA%E5%AD%B8%E2%9F%AB-Jun-2.png?w=1422&ssl=1',
+                textContent:'讀書會選書：《工作與生活的技術》、《聰明懶人學》'
+            },
+            {
+                imgUrl:'https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E2%9F%AA%E5%B7%A5%E4%BD%9C%E8%88%87%E7%94%9F%E6%B4%BB%E7%9A%84%E6%8A%80%E8%A1%93%E2%9F%AB%EF%BC%8B%E2%9F%AA%E8%81%B0%E6%98%8E%E6%87%B6%E4%BA%BA%E5%AD%B8%E2%9F%AB-Jun-3.png?w=1422&ssl=1',
+                textContent:'其他參考書：《從A到A+》'
+            },
+            {
+                imgUrl:'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/203786329_4152033288187105_1203252428928742610_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=Cc_vukQ6tewAX_CPQMN&_nc_ht=scontent-tpe1-1.xx&oh=3dab6c5f9bf403ba1190d1e3397e0699&oe=60D93125',
+                textContent:'讀書會聽眾的整理<br />by <a href="https://www.instagram.com/whityyy29/" class="text-content-link">簡慧萱aka.知識型網美</a>｜<a href="https://www.facebook.com/kerensa.chien/posts/4152038841519883" class="text-content-link">原文連結</a>'
+            }
+        ]
+    },
+    {
+        title: "【文章】怎麼達到工作與生活的平衡？",
         description: "工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？",
         type:["學習思考"],
         time: '2021-06-24',
@@ -1674,24 +1828,188 @@ const data =[
         tagsByTheme:["職涯思考","工作術"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        pptContent:[
-            {
-                imgUrl:'https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHx3MGlQVWN0ZzJFOHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60',
-                textContent:'商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？'
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>工作與生活的平衡，是大多數人追求的，可是什麼是平衡？你如何定義「平衡」？</p>
+            <p>我們常常只能說出「不平衡」的狀況是什麼，可能是沒有時間做想做的事情，也可能是事情都做不完。無論是什麼不平衡的狀況讓你疲憊，想要達到平衡，就要仔細去想想，平衡對自己來說，到底代表著什麼，以及怎麼衡量它。</p>
+            <p>在<a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010875328?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link">《工作與生活的技術》</a>與<a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010859238?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link">《聰明懶人學》</a>兩本書中，都有提到很重要的兩件事，就是「目標」和「選擇」。先有目標，你做出的選擇才有明確的方向，然後隨著選擇的累積，才能逐漸往目標前進。</p>
+            <p>但一定沒那麼簡單，中間還有好多細節需要掌握，你要有正確的心態，還要有好的方法，和好習慣，掌握這五件事情，最後才能緩步邁向你要的目標。</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/1.jpg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>心態是你邁向目標的過程，讓自己持續推進的動力。</p>
+            <p>而選擇、方法和習慣，我認為它們之間有著先後順序，先是選擇，選你要的跟不要的，再來是方法，找方法去做到你想要的事情，最後是習慣，讓前面的努力變成你的日常。</p>
+            <div class="text-content-quote">
+                    <p>有選擇，才能聚焦。</p>
+                    <p><span>&mdash; 王永福《工作與生活的技術》</span></p>
+            </div>
+            <p>當你做出選擇之後，才知道要在什麼地方專注，在什麼地方付出你的時間和心力。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="從小地方開始，學著做出好選擇">從小地方開始，學著做出好選擇</h1>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%878.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>每個人的時間和精力都是有限的，但想做的事情就是這麼多，工作、家庭、休閒、運動、學習……，一定得從中選擇對你目前階段最重要的事，才能「專注」，不然就會很可能全選，但沒有一個領域能夠及格。</p>
+            <p>人生領域的選擇屬於大範圍的選擇，先來說說小範圍的選擇該怎麼選。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="每一次的選擇，都要讓自己下一次能更省力">每一次的選擇，都要讓自己下一次能更省力</h1>
+            <p>搭高鐵常常會遇到這三個情境：</p>
+            <ul class="bulleted-list">
+            <li>買票櫃檯要等很久</li>
+            <li>坐你旁邊的乘客很吵</li>
+            <li>出口匣門人很多</li>
+            </ul>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8710.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>你是怎麼面對這些狀況的？是左邊還是右邊？</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8711.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>兩個選項擺在一起的時候，你當然會覺得右邊這個選項比較好，可是我們每天都面對各式各樣的麻煩事，不會有人先提供你兩個選項，那到底要怎麼自己生出右邊的選項？</p>
+            <p>關鍵就是<span class="text-content-primary">下次能不能更省力？</span></p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8713.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>雖然這些事情看起來都很小，但是我們的生活就是這些小選擇累積而成的，</p>
+            <div class="text-content-quote">
+                <p>從小地方開始做改變，才有機會驅動更大範圍的改變。</p>
+                <p><span>&mdash; Jun</span></p>
+            </div>
+            <p>選擇的大原則就是要省力！接著就要知道哪些事情讓我們費力，然後學會避開它。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="尋找把力氣放對地方的方法">尋找把力氣放對地方的方法</h1>
+            <h2 class="text-content-h2" data-title="h2" id="比的不是你多厲害，而是你有沒有比別人更適合">比的不是你多厲害，而是你有沒有比別人更適合</h2>
+            <p>在工作上，要一直追求能力更好這件事很費力，但職場上的競爭力，不只關乎你的做事能力，也關乎適合與不適合。</p>
+            <p>就像達爾文提出的天擇、地擇、性擇，有時候選對行業有時候比努力更重要；選對地方有時候比能力更重要；選對對手有時候比運氣更重要。</p>
+            <div class="text-content-quote">
+                <p>最終能存活下來的物種，不是最強的也不是最聰明的，而是最能適應改變的物種。</p>
+                <p><span>&mdash; 查爾斯・達爾文</span></p>
+            </div>
+            <p>與其埋頭苦幹追求能力的提升，適時回頭看看自己的個性與特質、尋找「適合」自己的位子，也許能讓你在提升工作競爭力這個面向上，更加省力。</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8717.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="休息也是有方法的">休息也是有方法的</h2>
+            <p>在生活中，我們總希望工作之外的時間就好好休息，但卻很少了解什麼方法才能讓自己真的放鬆。</p>
+            <p>其實休息也是需要方法的，如果沒有身、心、靈三個面向都顧到的話，就會雖然好像有休息的時間，但又沒有真的放鬆，反而越休息越覺得心很累，或是放連假之後，覺得好像可以繼續努力了，又會覺得心裡好像缺了什麼。</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8719.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+
+            <p>身體的休息，就是要讓大腦和身體修復，好好睡覺也是需要練習的。</p>
+            <p>興趣則可以帶給你快樂，甚至會帶給你跟工作上不一樣的成就感。</p>
+            <p>啊認真放空是？</p>
+            <p>我以前不太能理解這是什麼意思，聰明的人都比我更努力，休息的話，我好好睡覺就足夠了，其他時間根本不該休息啊！</p>
+            <p>可是久了之後，我也慢慢發現逼自己要進步的同時，少掉了很多靜下來思考的時間，靜下來看自己到底做了些什麼的時間。</p>
+            <div class="text-content-quote">
+                <p>有留白的時間，才有進步的空間。</p>
+                <p><span>&mdash; 紀坪《聰明懶人學》</span></p>
+            </div>
+            <p>放空可以是任何形式的，可能是散步、可能是聽音樂，這樣的留白不只是為了休息，也是為了讓那些成長的養分，有機會可以沉澱、發酵。</p>
+
+            <h2 class="text-content-h2" data-title="h2" id="自律，就是管好自己要在什麼地方專注">自律，就是管好自己要在什麼地方專注</h2>
+            <p>自律明確來講，就是精力管理，管好自己要在什麼地方專注，包含注意力、意志力……等等，而情緒也是其中一種精力的消耗。</p>
+            <p>你一定有過這樣的經驗，跟朋友吵一架之後，好幾天都沒辦法認真工作，這就是情緒帶來的負面影響，意識到情緒對其他事情的影響之後，才能好好管理它。</p>
+            <p>不論是排解自己的負面情緒，或是避開會讓你產生負面情緒的人、事、物，都是你需要花心思去好好思考的。別讓自己被情緒牽著走，就能抱持在最好的狀態，讓能力做最大的發揮。</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8721.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>另一種精力就是意志力，因為有限，所以更需要精準分配，讓意志力發揮它最大的效益。</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8722.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>在尋找方法的部分，</p>
+            <ul class="bulleted-list">
+            <li>工作上就要讓自己的力氣用對地方</li>
+            <li>生活上就要好好充飽電</li>
+            <li>管理自己則是為了讓自己的精力可以更省力。</li>
+            </ul>
+            <p>可能會有人有一些疑問，為什麼要一直追求「省力」？也許本來做這件事就不太費力，還要一直追求效率又是為了什麼？</p>
+            <p>其實追求省力，除了想用更少力氣做更多的事，更重要的是你能用省下來的力氣和時間，去做其他更想做的事情。</p>
+            <p>聰明、不聰明，在這裡指的是，你用的是不是「好方法」。</p>
+            <p>先聲明，勤勞不是不好，只是你要搞清楚努力的方向；懶惰也不是美德，它只是人性，唯有循著人性做事，你才能努力得更持久。</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8728.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>而聰明跟懶的關係，不是因果，比較像是一個循環：</p>
+            <p>因為人性，你想要用更省力的方法做事，一開始的時候可能需要費點力去找到好方法，不過只要找到了好方法，就能讓你更省力，而省下來的時間和精力，又可以去做其他你想要的事情。</p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8732.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>不過在找好方法的過程，其實也不是什麼輕鬆的事，你可能是因為看到未來有可能可以更省力，所以去做了這個努力。雖然這過程有點辛苦，但其實</p>
+            <div class="text-content-quote">
+                <p>在尋找方法的過程，就是方法本身；</p>
+                <p>在尋找答案的過程，就是答案本身。</p>
+                <p><span>&mdash; Jun</span></p>
+            </div>
+            <p class="text-content-callout bg-warning">雖然很少能一次就找到最好的那個答案，但也因為你不斷嘗試、尋找方法，在這個過程中，你就已經變得比過去的自己更好了。</p>
+            <p>不論你現在處在什麼象限，我們的目標就是要<strong>順著人性，尋找最省力的方法，學習當個聰明的懶人</strong>。</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8734.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p class="text-content-callout bg-warning">接著就要提到很消耗意志力的習慣養成，前面都在說要尋找省力的方法，可是建立習慣本身需要很費力，怎麼會省力？</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8735.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>省力其實是在建立習慣之後，因為當你建立起一個習慣，行為本身就不會再消耗你有限的意志力了，它會變成自動化的模式，變成一種身體習慣。</p>
+            <div class="text-content-quote">
+                <p>用意志力培養習慣，用習慣力培養自己。</p>
+                <p><span>&mdash; 王永福《工作與生活的技術》</span></p>
+            </div>
+            <p>當行為變成自動化，習慣就會變成你的助力，幫助你達成許多本來看似困難的事情。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="掌握心態，就能有源源不絕的成長動力">掌握心態，就能有源源不絕的成長動力</h1>
+            <p>在尋找方法、學習的過程裡，都難免會質疑自己：</p>
+            <p>明明一直沒看見成果，為什麼還要繼續努力？</p>
+            <p>方法這麼困難，我是不是做不到？</p>
+            <p>別人一年看一百本書，我好像沒辦法……</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8737.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="學習不等於考試">學習不等於考試</h2>
+            <p>你可能不會讀書、不會考試，但其實沒有關係，因為離開學校後的學習，本來就不是考試，而且學習是一輩子的事，只要一直喜歡學習，就會慢慢成長、慢慢看見改變</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8739.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            
+            <h2 class="text-content-h2" data-title="h2" id="學習有很多種可能">學習有很多種可能</h2>
+            <p>每一種形式都只是學習的其中一個方法，你可能不愛看書，你可能沒時間上課聽講座，你可能沒有資源去考研究所，不過那都沒有關係，這些都只是不同形式的學習，而學習最立即的形式，就是生活中的觀察、感受、以及收穫。</p>
+            <p><strong>能夠從生活中有所體會，就是最立即、最深刻的學習。</strong></p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8740.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+
+            <h2 class="text-content-h2" data-title="h2" id="學會面對困難與挑戰">學會面對困難與挑戰</h2>
+            <p>待在舒適圈很舒服，但在待一陣子之後，還是要推自己一把，往更高的地方走去，因為挑戰才能淬煉你的能力。</p>
+            <ol class="number-list">
+                <li>再試一試看看！</li>
+                <li>有沒有更好的解決方法？</li>
+            </ol>
+            <p>常常對自己說這兩句話，你就能越來越積極地去面對各式各樣不同的挑戰。</p>
+            <p>很多時候，再試一次，就能解決問題。</br>很多時候，多想一點，就能做得更好。</p>
+            <p>這其實跟做事的能力沒有直接相關，只要心態對了，在挑戰面前，你就能變得更勇敢。</p>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8742.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+
+            <h1 class="text-content-h1" data-title="h1" id="你爲什麼要學習？">你爲什麼要學習？</h1>
+            <p class="text-content-callout bg-warning">驅動你學習的，是「害怕被別人超越」，還是「想追求自身的卓越」？</p>
+            <p>不得不說，害怕落後別人是一個很強的學習動力，我們想保有競爭力，想升遷、想加薪，但這不足以驅動我們去追求更長遠的目標。假如只是為了害怕落後，最後往往會變成<strong>為成長而成長、為學習而學習</strong>。</p>
+            <p>最後，你還是要回到自己身上，從自己的需求和目前的不足，來設定成長的目標，追求自身的卓越。</p>
+            <div class="text-content-quote">
+                <p>盡其所能地成為最好的自己。</p>
+                <p><span>&mdash; 王永福《工作與生活的技術》</span></p>
+            </div>
+            <p>為什麼要學習？不為了什麼，就為成為更好的自己。</p>
+            <p>而什麼是更好？怎樣叫成功？也全由你自己來定義。</p>
+
+            <h1 class="text-content-h1" data-title="h1" id="到底什麼是平衡？">到底什麼是平衡？</h1>
+            <p>回到一開始的問題，怎樣才算工作與生活有平衡？</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E6%8A%95%E5%BD%B1%E7%89%8748.jpeg?w=1920&ssl=1" alt="img" class="img-fluid" />
+            <p>我認為平衡就是<span class="text-content-primary">在對的時間，做對的事情</span>。對的事情，取決於目標，而目標，取決於你怎麼定義「成功」。雖然不是一個很明確的定義，但隨著時間，我相信大家都能找到屬於自己的定義與答案。</p>
+            <div class="text-content-quote">
+                <p>There is only one success – to be able to spend your life in your own way.</p>
+                <p><span>&mdash; Christopher Morley</span></p>
+            </div>
+            <h1 class="text-content-h1" data-title="h1" id="讀書會記錄">讀書會記錄</h1>
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E2%9F%AA%E5%B7%A5%E4%BD%9C%E8%88%87%E7%94%9F%E6%B4%BB%E7%9A%84%E6%8A%80%E8%A1%93%E2%9F%AB%EF%BC%8B%E2%9F%AA%E8%81%B0%E6%98%8E%E6%87%B6%E4%BA%BA%E5%AD%B8%E2%9F%AB-Jun-1.png?w=1422&ssl=1" alt="img" class="img-fluid" />
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2021/06/%E2%9F%AA%E5%B7%A5%E4%BD%9C%E8%88%87%E7%94%9F%E6%B4%BB%E7%9A%84%E6%8A%80%E8%A1%93%E2%9F%AB%EF%BC%8B%E2%9F%AA%E8%81%B0%E6%98%8E%E6%87%B6%E4%BA%BA%E5%AD%B8%E2%9F%AB-Jun-2.png?w=1422&ssl=1" alt="img" class="img-fluid" />
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2021/06/%E2%9F%AA%E5%B7%A5%E4%BD%9C%E8%88%87%E7%94%9F%E6%B4%BB%E7%9A%84%E6%8A%80%E8%A1%93%E2%9F%AB%EF%BC%8B%E2%9F%AA%E8%81%B0%E6%98%8E%E6%87%B6%E4%BA%BA%E5%AD%B8%E2%9F%AB-Jun-3.png?w=1422&ssl=1" alt="img" class="img-fluid" />
+            
+            <h1 class="text-content-h1" data-title="h1" id="讀書會選書">讀書會選書</h1>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010875328?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link-btn">《工作與生活的技術》</a></p>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010859238?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link-btn">《聰明懶人學》</a></p>
+            <h2 class="text-content-h2" data-title="h2" id="其他參考書">其他參考書</h2>
+            <p><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010845587?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202106"  target="_blank" class="text-content-link-btn">《從A到A+》</a></p>
+
+            <h1 class="text-content-h1" data-title="h1" id="讀書會聽眾的整理">讀書會聽眾的整理</h1>
+            <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/203786329_4152033288187105_1203252428928742610_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=Cc_vukQ6tewAX_CPQMN&_nc_ht=scontent-tpe1-1.xx&oh=3dab6c5f9bf403ba1190d1e3397e0699&oe=60D93125" alt="img" class="img-fluid" />
+            <p class="text-center"><span>by <a href="https://www.instagram.com/whityyy29/" class="text-content-link">簡慧萱aka.知識型網美</a>｜<a href="https://www.facebook.com/kerensa.chien/posts/4152038841519883" class="text-content-link">原文連結</a></span></p>`,
+            
+            tags:[{
+                name:'學習思考',
+                url: 'learning.html'
             },
             {
-                imgUrl:'https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-                textContent:'商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式，商業模式是一個企業經營策略的架構，其中必須包含四個要件：目標、價值、能力、獲利模式'
+                name:'職涯思考',
+                url: 'search.html'
             },
             {
-                imgUrl:'https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-                textContent:'商業模式是什麼？「商業模式」講起來好像很清楚，聽的人卻聽得很模糊。到底要怎麼去了解這四個字呢？以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
-            },
-            {
-                imgUrl:'https://images.unsplash.com/photo-1603052875357-4f7442e17f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
-                textContent:'以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來，以後聽到「商業模式」，不妨停下來想一想有沒有包含這四個要件吧！J本好書看起來'
+                name:'工作術',
+                url: 'search.html'
             }
         ]
+        }
     },
     {
         title: "看完《搞定》，待辦事項就被搞定了！",

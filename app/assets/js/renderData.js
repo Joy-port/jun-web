@@ -369,11 +369,11 @@ function libraryCardList(pageData) {
             content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
             <div class="card content-card h-100">
               <a
-                href="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal':'libraryPPTModal')}"
+                href="#"
                 data-id="${item.id}"
                 class="d-block"
                 data-bs-toggle="modal"
-                data-bs-target="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal': 'libraryPPTModal')}"
+                data-bs-target="#${(item.tagsByContent==='簡報' ? 'libraryPPTModal': 'libraryIGPostModal')}"
               >
                 <img
                   src="${item.imgUrl.length === 0 ? 'https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ': item.imgUrl}"
@@ -384,11 +384,11 @@ function libraryCardList(pageData) {
               <div class="py-3 px-5 h-100">
                 <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
                     <a
-                    href="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal':'libraryPPTModal')}"
+                    href="#"
                     data-id="${item.id}"
                     class="d-block"
                     data-bs-toggle="modal"
-                    data-bs-target="#${(item.tagsByContent==='IG 貼文' ? 'libraryIGPostModal': 'libraryPPTModal')}"
+                    data-bs-target="#${(item.tagsByContent==='簡報' ? 'libraryPPTModal': 'libraryIGPostModal')}"
                     >
                     ${item.title}
                     </a>
@@ -405,7 +405,6 @@ function libraryCardList(pageData) {
             content =` <li class="col-8 mx-auto mx-md-0 col-md-6 col-lg-4 mb-8 mb-md-13 px-lg-8" data-tags-theme="${item.tagsByTheme.join('_')}" data-tags-content="${item.tagsByContent}" data-id="${item.id}">
             <div class="card content-card h-100">
               <a
-                href="#libraryPPTModal"
                 data-id="${item.id}"
                 class="d-block"
                 data-bs-toggle="modal"
@@ -420,7 +419,6 @@ function libraryCardList(pageData) {
               <div class="py-3 px-5 h-100">
                 <h3 class="hide-row-2 fs-6 text-primary fw-bold mb-2">
                     <a
-                    href="#libraryPPTModal"
                     data-id="${item.id}"
                     class="d-block"
                     data-bs-toggle="modal"
