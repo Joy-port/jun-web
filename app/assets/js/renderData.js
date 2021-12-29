@@ -685,6 +685,7 @@ function renderInnerContent(){
     let allData = JSON.parse(localStorage.getItem('allData'));
 
     let title = blogItem[0].title;
+    document.title = title; //調整文章標題
     let subtitle = blogItem[0].blogContent.subtitle;
     let date = (blogItem[0].time).split('-').join('/');
     let content = blogItem[0].blogContent.content;
