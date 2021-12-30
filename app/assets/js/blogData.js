@@ -8,7 +8,11 @@ const data =[
         tagsByTheme:["設計"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:``,
+            tags:[]
+        },
     },
     {
         title: "色票、配色網站",
@@ -682,7 +686,308 @@ const data =[
         tagsByTheme:["建築資源","建築師考試"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
-        blogContent:{},
+        blogContent:{
+            subtitle:'',
+            content:`
+            <p>準備建築師考試，除了直接報名補習班（如實力、九華）之外好像沒有別的選擇，但真的是這樣嗎？</p>
+            <p>補習班的資料很充足，但相對的，費用也不便宜，選擇報名補習班的你花錢省下了時間，而這些錢需要未來的你（或現在的你）賣肝辛苦工作才能賺得。</p>
+            <p>我報名了補習班後，因為覺得 CP 值真的不高，所以決定把這些資訊整理給大家，希望可以幫你們省下一點時間一點錢。</p>
+            <p>文章 按照時間先後順序 將你會需要知道的資訊一一幫你整理在這裡了，也可以找自己需要的部分切換段落喔！</p>
+            <p>（文章架構請看 網頁版右側 的目錄）</p>
+            <p class="text-content-callout bg-warning">
+            <ol class="number-list">
+            <li>了解建築師考試：考試制度、科目</li>
+            <li>準備建築師考試：各科參考書籍、網路資源</li>
+            <li>報名建築師考試：報名流程</li>
+            <li>考選部針對疫情發布的公告</li>
+            </ol>
+            </p>
+            <h1 class="text-content-h1" data-title="h1" id="了解建築師考試">了解建築師考試</h1>
+            <h2 class="text-content-h2" data-title="h2" id="h2">考試制度</h2>
+            <h3 class="text-content-h3 text-content-primary" >❯ 科別及格制</h3>
+            <p>各科都要超過 60 分</p>
+            <h3 class="text-content-h3 text-content-primary" >❯ 滾動式</h3>
+            <p>只要有考及格的科目，成績都可以保留三年，各科目個別計算。</br> 舉例：109年 11月考試及格的科目，可繼續保留至 112年</p>
+            <p><hr class="bg-gray-500"></p>
+            
+            <h2 class="text-content-h2" data-title="h2" id="h2">考試科目</h2>
+            <ul class="bulleted-list">
+                <li>建築計畫與設計</li>
+                <li>敷地計畫與都市設計</li>
+                <li>營建法規與實務</li>
+                <li>建築結構</li>
+                <li>建築構造與施工</li>
+                <li>建築環境控制</li>
+            </ul>
+
+            <h1 class="text-content-h1" data-title="h1" id="準備建築師考試">準備建築師考試</h1>
+            <h2 class="text-content-h2" data-title="h2" id="考試簡章">考試簡章</h2>
+            <p>考試簡章會列出每個科目的 命題大綱 ，讓你更快掌握考試重點。</p>
+            <p><a href="https://www.examiner.com.tw/examInfo_detail.php?id=257"  target="_blank" class="text-content-link">109年專門職業及技術人員高等考試建築師考試簡章</a></p>
+            <p><hr class="bg-gray-500" /></p>
+
+            <p class="text-content-callout bg-light"> 
+            <span class="text-primary">學科：</span>
+            <a href="#營建法規與實務" class="text-content-link">營建法規與實務</a>、
+            <a href="#建築結構" class="text-content-link">建築結構</a>、
+            <a href="#建築構造與施工" class="text-content-link">建築構造與施工</a>、
+            <a href="#建築環境控制" class="text-content-link">建築環境控制</a>、
+            </p>
+
+            <h2 class="text-content-h2" data-title="h2" id="營建法規與實務">營建法規與實務</h2>
+            <p class="text-paragraph">考試時間：２小時（ 9:00～11:00 ）</p>
+            <p>題型：測驗題（1.25分Ｘ80題）</p>
+
+            <p class="text-content-callout bg-light"> 
+            <strong>這些網站有最新的法律條文：</strong></br>
+            <span>❯  <a href="https://law.moj.gov.tw/" target="_blank" class="text-content-link">全國法規資料庫</a></span></br>
+            <span>❯  <a href="http://w3.cpami.gov.tw/law/law/lawe-2/b-rule.htm" target="_blank" class="text-content-link">建築技術規則</a>（
+            <a href="https://www.cpami.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/34447-%E3%80%8C%E5%BB%BA%E7%AF%89%E6%8A%80%E8%A1%93%E8%A6%8F%E5%89%87%E3%80%8D%E7%B8%BD%E5%89%87%E7%B7%A8.html" target="_blank" class="text-content-link">總則編</a>｜
+            <a href="https://www.cpami.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/34449-%E3%80%8C%E5%BB%BA%E7%AF%89%E6%8A%80%E8%A1%93%E8%A6%8F%E5%89%87%E3%80%8D%E5%BB%BA%E7%AF%89%E8%A8%AD%E8%A8%88%E6%96%BD%E5%B7%A5%E7%B7%A8.html" target="_blank" class="text-content-link">建築設計施工編</a>｜
+            <a href="https://www.cpami.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/34448-%E3%80%8C%E5%BB%BA%E7%AF%89%E6%8A%80%E8%A1%93%E8%A6%8F%E5%89%87%E3%80%8D%E5%BB%BA%E7%AF%89%E6%A7%8B%E9%80%A0%E7%B7%A8.html" target="_blank" class="text-content-link">建築構造編</a>｜
+            <a href="https://www.cpami.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/34445-%E3%80%8C%E5%BB%BA%E7%AF%89%E6%8A%80%E8%A1%93%E8%A6%8F%E5%89%87%E3%80%8D%E5%BB%BA%E7%AF%89%E8%A8%AD%E5%82%99%E7%B7%A8.html" target="_blank" class="text-content-link">建築設備編</a>）</span></br>
+            <span>❯ 建築物無障礙設施設計規範 
+            <a href="https://www.cpami.gov.tw/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E6%B3%95%E8%A6%8F%E5%85%AC%E5%91%8A/10518-%E5%BB%BA%E7%AF%89%E7%89%A9%E7%84%A1%E9%9A%9C%E7%A4%99%E8%A8%AD%E6%96%BD%E8%A8%AD%E8%A8%88%E8%A6%8F%E7%AF%84.html" target="_blank" class="text-content-link">下載 .pdf</a>（
+            <a href="https://www.cpami.gov.tw/filesys/file/chinese/publication/law/lawdata/1070820550.pdf" target="_blank" class="text-content-link">最新全文</a>）</span>
+            </p>
+            <p>近幾年改了很多建築師考試範圍內的法規，很多市面上的書籍都來不及更新，所以還是建議大家上去 <a href="https://law.moj.gov.tw/" target="_blank" class="text-content-link">全國法規資料庫</a> 查找法律條文。</p>
+            <p>（大部分都歸類在：行政 ＞ 內政部 ＞ <a href="https://law.moj.gov.tw/Law/LawSearchLaw.aspx?TY=04051008" target="_blank" class="text-content-link">營建目</a>）</p>
+            <ul class="bulleted-list">
+            <li>【108 年修正】</li>
+            <li>國土計畫法施行細則</li>
+            <li>非都市土地使用管制規則</li>
+            <li>都市更新條例</li>
+            <li>都市更新條例施行細則</li>
+            <li>都市更新建築容積獎勵辦法</li>
+            <li>都市更新權利變換實施辦法</li>
+            <li>政府採購法</li>
+            <li>文化資產保存法施行細則</li>
+            <li>營造業法</li>
+            <li>建築物室內裝修管理辦法</li>
+            <li>建築技術規則總則編、建築設計施工編、建築設備編</li>
+            <li>建築物無障礙設施設計規範　等等……</li>
+            <li>【109 年修正】</li>
+            <li>建築法</li>
+            <li>國土計畫法</li>
+            <li>都市計畫法</li>
+            <li>非都市土地使用管制規則</li>
+            <li>住宅法施行細則</li>
+            <li>都市危險及老舊建築物加速重建條例</li>
+            <li>無障礙住宅設計基準及獎勵辦法</li>
+            <li>持續更新……</li>
+            </ul>
+            <p class="text-content-success">網站、書籍推薦</p>
+            <p class="text-success">網路上的資源最新最正確，因此不一定要買法規參考書。</br>
+            如果要買，記得看一下出版日期。</p>
+            <ul class="bulleted-list">
+            <li><a href="https://junlearning.com/regulations-gao-pu-kao"  target="_blank" class="text-content-link">高普考建築工程營建法規</a>（已絕版）</li>
+              <ul class="bulleted-list">
+                <li>出版日期：2020/01/02</li>
+              </ul>
+           <li>建築技術規則</li>
+              <ul class="bulleted-list">
+                <li><a href="https://junlearning.com/building-technical-regulations"  target="_blank" class="text-content-link">最新建築技術規則</a></br>
+                 出版日期：2020/03/11</br>
+                包含建築物無障礙設施設計規範
+                </li>
+                <li><a href="https://junlearning.com/building-technical-regulations-3d-diagram"  target="_blank" class="text-content-link">3D 圖解建築技術規則建築設計施工編</a></br>
+                出版日期：2020/03/11</br>
+                幫你把拗口的法律條文，整理成好理解的示意圖和表格</br>
+                缺點是內容只有施工編</li>
+              </ul>
+            </ul>
+            <p class="text-content-callout bg-light">我自己整理的法規心智圖筆記：<a href="https://junlearning.ck.page/lawnotes"  target="_blank" class="text-content-link">here</a>（2020/8/31更新）</p>
+            <p><hr class="bg-gray-500" /></p>
+            
+            <h2 class="text-content-h2" data-title="h2" id="建築結構">建築結構</h2>
+            <p>考試時間：２小時（ 13:00～15:00 ）</br>
+            題型：測驗題＋申論題</p>
+            <p>
+            配分比重大約是</br>
+            申論題：40分（2題～5題）</br>
+            測驗題：60分（1.5分Ｘ40題）
+            </p>
+            <p>考試內容主要可以分成 結構系統 與 結構計算：</p>
+            <h3 class="text-content-h3 text-primary" data-title="h3" id="結構系統">結構系統</h3>
+            <p class="text-content-success">書籍推薦</p>
+            <ul class="bulleted-list">
+                <li>建築結構系統 － 許茂雄（已絕版）</li>
+                <li>實力圖書</li>
+                    <ul class="bulleted-list">
+                        <li><a href="https://junlearning.com/structural-system"  target="_blank" class="text-content-link">建築結構系統(2019年版)</a></li>
+                    </ul>
+            </ul>
+            <h3 class="text-content-h3 text-primary" data-title="h3" id="結構計算">結構計算</h3>
+            <p>近幾年的 <strong>建築結構</strong> 有越來越難的趨勢。以往認為不會考太難的結構計算，108年 的題目卻出現了 <strong>靜不定結構</strong> 的計算題，所以不建議大家完全放棄這個章節。</br>
+            （ <a href="http://shi-li.cocker.com.tw/upload/national-paper/107-11/107-11-(1).pdf"  target="_blank" class="text-content-link">107年</a>、<a href="http://shi-li.cocker.com.tw/upload/national-paper/108-11/108-11-(1).pdf"  target="_blank" class="text-content-link">108年</a> 考題）</p>
+
+            <p class="text-content-success">書籍推薦</p>
+            <ul class="bulleted-list">
+            <li>實力圖書</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/structural-calculation"  target="_blank" class="text-content-link">建築結構學觀念剖析</a></li>
+                </ul>
+            </ul>
+            <p><hr class="bg-gray-500" /></p>
+
+            <h3 class="text-content-h1 text-primary bg-transparent" data-title="h3" id="隨便一台計算機都可以嗎">隨便一台計算機都可以嗎？我的計算機可以帶去考試嗎？</h3>
+            <p>已經有計算機的話，可以到這裡查 <a href="https://wwwc.moex.gov.tw/main/exam/wFrmElectronicDevice.aspx?menu_id=3727&sub_menu_id=3727"  target="_blank" class="text-content-link">國家考試電子計算器核定機型線上查詢</a> 自己的計算機有沒有在裡面。（<a href="https://wwwc.moex.gov.tw/main/content/SubMenu.aspx?menu_id=162"  target="_blank" class="text-content-link">國家考試電子計算器措施</a>）</p>
+            <p>常見的有 <a href="https://junlearning.com/CASIO-FX-82-SOLAR%E2%85%A1"  target="_blank" class="text-content-link">CASIO  fx-82SOLARⅡ</a> </br>
+            PS. 買太陽能計算機的話，考試就不用擔心考到一半計算機沒電的問題。</p>
+            <p>買的時候注意，要有考選部的識別標誌才行喔！</p>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2020/03/image-5.png?resize=233%2C216&ssl=1" alt="img" class="img-fluid" />
+            <p><hr class="bg-gray-500" /></p>
+
+            <h2 class="text-content-h2" data-title="h2" id="建築構造與施工">建築構造與施工</h2>
+            <p>
+            考試時間：２小時（ 15:40～17:40 ）</br>
+            題型：測驗題（1.25分Ｘ80題）
+            </p>
+            <p class="text-content-success">書籍推薦</p>
+            <ul class="bulleted-list">
+                <li>營造法與施工<a href="https://junlearning.com/building-construction-methods-a"  target="_blank" class="text-content-link"> (上)</a>、<a href="https://junlearning.com/building-construction-methods-b"  target="_blank" class="text-content-link">(下)</a> 冊 － 吳卓夫</br>
+                內容佔考試 80% 以上，準備這兩本就很夠了</li>
+                <li>「圖解入門」系列 － 原口秀昭</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/diagram-building-construction"  target="_blank" class="text-content-link">圖解建築施工入門</a></li>
+                    <li><a href="https://junlearning.com/diagram-building-construction-reinforced-concrete"  target="_blank" class="text-content-link">圖解RC造建築入門</a></li>
+                    <li><a href="https://junlearning.com/diagram-building-construction-steel"  target="_blank" class="text-content-link">圖解S造建築入門</a></li>
+                    <li><a href="https://junlearning.com/diagram-building-construction-wood"  target="_blank" class="text-content-link">圖解木造建築入門</a></li>
+                </ul>
+                <li><a href="https://junlearning.com/building-construction-csi"  target="_blank" class="text-content-link">CSI見築現場第二冊：營建工程施工「營造與施工流程、分項工程施工要領、施工規範於施工現場之實務運用」</a></li>
+                <li><a href="http://www.23456.tw/front/bin/ptdetail.phtml?Part=100581&Category=0"  target="_blank" class="text-content-link">3D 圖解建築構法</a></li>
+            </ul>
+            <p><hr class="bg-gray-500" /></p>
+
+            <h2 class="text-content-h2" data-title="h2" id="建築環境控制">建築環境控制</h2>
+            <p>考試時間：２小時（ 9:00～11:00 ）</p>
+            <p>
+            題型：</br>
+            申論題：40分（2題～3題）</br>
+            測驗題：60分（1.5分Ｘ40題）
+            </p>
+            <p>考試內容主要可以分成 物理環境 與 建築設備：</p>
+            <h3 class="text-content-h3 text-primary" data-title="h3" id="物理環境">物理環境</h3>
+            <p class="text-content-success">網站、書籍推薦</p>
+            <ul class="bulleted-list">
+                <li>綠建築評估手冊（<a href="https://eewh.tw/"  target="_blank" class="text-content-link">下載 .pdf</a> ）</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/eewh-bc"  target="_blank" class="text-content-link">基本型</a>（BC）</li>
+                    <li><a href="https://junlearning.com/eewh-rs"  target="_blank" class="text-content-link">住宿類</a>（RS）</li>
+                    <li><a href="https://junlearning.com/eewh-ec"  target="_blank" class="text-content-link">社區類</a>（EC）</li>
+                    <li><a href="https://junlearning.com/eewh-gf"  target="_blank" class="text-content-link">廠房類</a>（GF）</li>
+                    <li><a href="https://junlearning.com/eewh-rn"  target="_blank" class="text-content-link">舊建築改善類</a>（RN）</li>
+                    <li><a href="https://junlearning.com/eewh-os"  target="_blank" class="text-content-link">境外版</a>（OS）</li>
+                </ul>
+                <li><a href="https://junlearning.com/green-building-materials"  target="_blank" class="text-content-link">綠建材解說與評估手冊 2020 年更新版</a>（<a href="http://gbm.tabc.org.tw/"  target="_blank" class="text-content-link">綠建材標章說明</a>）</li>
+                <li><a href="https://junlearning.com/smart-building"  target="_blank" class="text-content-link">智慧建築評估手冊 2016 年版</a>（<a href="http://ib.tabc.org.tw/"  target="_blank" class="text-content-link">智慧建築標商說明</a>）</li>
+                <li>低碳建築叢書系列 － 林憲德</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/thermal-environment-of-human-habitat"  target="_blank" class="text-content-link">人居熱環境</a></li>
+                    <li><a href="https://junlearning.com/green-building-91-technologies"  target="_blank" class="text-content-link">綠建築 91 技術</a></li>
+                </ul>
+                <li>建築環境控制系列 － 陳啟中</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/building-physics"  target="_blank" class="text-content-link">建築物理概論</a></li>
+                </ul>
+            </ul>
+
+            <h3 class="text-content-h3 text-primary" data-title="h3" id="建築設備">建築設備</h3>
+            <p>空氣調節、給排水、電氣、昇降設備、消防安全</p>
+            <p class="text-content-success">書籍推薦</p>
+            <ul class="bulleted-list">
+                <li>「圖解入門」系列 － 原口秀昭</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/diagram-building-equipment"  target="_blank" class="text-content-link">圖解建築設備練習入門</a></li>
+                    <li><a href="https://junlearning.com/diagram-building-equipment-classroom"  target="_blank" class="text-content-link">建築的設備教室</a></li>
+                </ul>
+                <li>建築環境控制系列 － 陳啟中</li>
+                <ul class="bulleted-list">
+                    <li><a href="https://junlearning.com/building-equipment"  target="_blank" class="text-content-link">建築設備概論</a></li>
+                </ul>
+            </ul>
+            <p><hr class="bg-gray-500" /></p>
+
+            <p class="text-content-callout bg-light"> 
+            <span class="text-primary">術科：</span>
+            <a href="#建築計畫與設計" class="text-content-link">建築計畫與設計</a>、
+            <a href="#敷地計畫與都市設計" class="text-content-link">敷地計畫與都市設計</a>
+            </p>
+
+            <h2 class="text-content-h2" data-title="h2" id="建築計畫與設計">建築計畫與設計（大設計）</h2>
+            <p>考試時間：８小時（ 9:00～17:00 ）</p>
+            <p>
+            配分比重大約是</br>
+            建築計畫說明：30分～40分</br>
+            建築設計圖面：70分～60分
+            </p>
+            <p>
+            但有時候也會出現特別的配分方式， </br>
+            如 <a href="http://shi-li.cocker.com.tw/upload/national-paper/106-11/106-11-(6)p.pdf"  target="_blank" class="text-content-link">106</a>年 考題的評分配比：</br>
+            　回應基地人文及自然因素之需求（35 分）</br>
+            　回應法規的要求（30 分）</br>
+            　建築與空間的創意與合理性（35 分）</br>
+            </p>
+
+            <h2 class="text-content-h2" data-title="h2" id="敷地計畫與都市設計（小設計）">敷地計畫與都市設計（小設計）</h2>
+            <p>考試時間：４小時（ 13:00～17:00 ）</p>
+            <p>
+            配分比重大約是</br>
+            申論題：30分（2題～3題）</br>
+            規劃題：70分
+            </p>
+            <p>
+            但有時候也會出現特別的配分方式，</br>
+            如 <a href="http://shi-li.cocker.com.tw/upload/national-paper/105-11/105-11-(5)p.pdf"  target="_blank" class="text-content-link">105</a> 年 考題：只有四個問題，配分分別是 10分、30分、30分、30分。</p>
+
+            <p class="text-content-success">大小設計書籍推薦</p>
+            <ul class="bulleted-list">
+                <li><a href="https://junlearning.com/architectural-drawing" target="_blank" class="text-content-link">第一次建築設計就上手，術科考試入門指南</a></li>
+                <li><a href="https://junlearning.com/the-practice-of-spatial-thinking" target="_blank" class="text-content-link">建築力：空間思考的10堂修練課</a></li>
+                <li><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010872828?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202010" target="_blank" class="text-content-link">建築力最新版：空間思考的10堂修練課</a></li>
+                <li><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010867512?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202102" target="_blank" class="text-content-link">K圖會作品集-A：建築師考試-建築計畫及建築設計題解</a></li>
+                <li><a href="https://www.books.com.tw/exep/assp.php/junlearning/products/0010867515?utm_source=junlearning&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202102" target="_blank" class="text-content-link">K圖會作品集-B：建築師考試-都市設計及敷地計畫題解</a></li>
+            </ul>
+            <p><hr class="bg-gray-500" /></p>
+
+            <h2 class="text-content-h2" data-title="h2" id="考古題（歷屆考題）題目及答案下載">考古題（歷屆考題）題目及答案下載</h2>
+            <h3 class="text-content-h3 text-content-primary" >1. 考選部考畢試題查詢：<a href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"  target="_blank" class="text-content-link">here</a></h3>
+            <p>考選部的查詢頁面操作起來比較麻煩，不建議用手機操作。</br>
+            如果是使用手機，建議用下一個網站。</p>
+
+            <img src="https://i0.wp.com/junlearning.com/wp-content/uploads/2020/03/image-1.png?resize=2048%2C265&ssl=1" alt="img" class="img-fluid">
+            <p>以下提供三種找法</p>
+            <p><strong>▸ 第一種找法</strong></p>
+            <ol class="number-list">
+            <li>先選你要的 <strong>年度</strong></li>
+            <li>選擇 <strong>考試簡稱</strong></br>
+            「＿＿年專門職業及技術人員高等考試建築師、技師、第二次食品技師考試暨普通考試不動產經紀人、記帳士考試」</br>
+            （通常是在第二個，或是倒數第二個）</li>
+            <li>按 <strong>查詢</strong>，進入當年度的考題下載區</li>
+            </ol>
+            <p><strong>▸ 第二種找法</strong></p>
+            <ol class="number-list">
+            <li>先選你要的 <strong>年度</strong></li>
+            <li>直接按 <strong>查詢</strong></li>
+            <li>在網頁中 <strong>尋找</strong> (ctl + F)「專技高考_建築師」</li>
+            </ol>
+            <p><strong>▸ 第三種找法：按「查詢」旁邊的「<a href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"  target="_blank" class="text-content-link">進階查詢</a>」</strong></p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2020/03/image.png?resize=2048%2C463&ssl=1" alt="進階查詢的頁面" class="img-fluid">
+            <p><span class="text-center">進階查詢的頁面</span></p>
+            <p><hr class="bg-gray-500" /></p>
+            
+            <h3 class="text-content-h3 text-content-primary" >2. 實力建築資訊網</h3>
+            <p>這個下載頁面很容易操作，但缺點是它沒有 97年 以前的考題。</p>
+            <ul class="bulleted-list">
+            <li><a href="http://shi-li.cocker.com.tw/index.asp?au_id=13&sub_id=16"  target="_blank" class="text-content-link">歷年考古題</a></li>
+            <li><a href="http://shi-li.cocker.com.tw/index.asp?au_id=13&sub_id=106"  target="_blank" class="text-content-link">考古題答案</a></li>
+            </ul>
+
+            <h1 class="text-content-h1" data-title="h1" id="報名建築師考試">報名建築師考試</h1>
+            <h1 class="text-content-h1" data-title="h1" id="考選部針對疫情發布的公告">考選部針對疫情發布的公告</h1>
+            `,
+            tags:[]
+        },
     },
     {
         title: "台灣建築書店有哪些",
@@ -868,21 +1173,159 @@ const data =[
             subtitle:'',
             content:`
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">欣講堂</h1>
+            <ul class="bulleted-list">
+                <li>建築走讀</li>
+                <li>建築講座</li>
+                <li>都市再生、老屋活化</li>
+            </ul>
+            <p>
+            <a href="https://xinforum.xinmedia.com/collection.aspx?classmid=2"  target="_blank" class="text-content-link-btn">欣講堂｜建築・藝術</a>
+            <a href="https://www.facebook.com/xinforum/"  target="_blank" class="text-content-link-btn">FB｜欣講堂 xin forum</a>
+            </p>
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">忠泰集團</h1>
+            <h2 class="text-content-h2" data-title="h2" id="忠泰美術館">忠泰美術館</h2>
+            <ul class="bulleted-list">
+            <li>展覽</li>
+            <li>展覽推薦</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/JUTARTMUSEUM/"  target="_blank" class="text-content-link-btn">FB｜忠泰美術館</a>
+            <a href="http://jam.jutfoundation.org.tw/online-exhibition"  target="_blank" class="text-content-link-btn">展覽</a>
+            <a href="http://jam.jutfoundation.org.tw/online-activity"  target="_blank" class="text-content-link-btn">活動</a>
+            </p>
+            <h2 class="text-content-h2" data-title="h2" id="忠泰建築文化藝術基金會">忠泰建築文化藝術基金會</h2>
+            <ul class="bulleted-list">
+            <li>演講</li>
+            <li>展覽推薦</li>
+            <li>建築新聞</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/JutFoundation"  target="_blank" class="text-content-link-btn">FB｜忠泰建築文化藝術基金會</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">築生文化協會</h1>
+            <h2 class="text-content-h2" data-title="h2" id="忠泰建築文化藝術基金會">忠泰建築文化藝術基金會</h2>
+            <ul class="bulleted-list">
+            <li>講座</li>
+            <li>展覽推薦</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/archicultureforum/"  target="_blank" class="text-content-link-btn">FB｜築生文化協會</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">台灣現代建築協會</h1>
+            <ul class="bulleted-list">
+            <li>講座、文章、活動分享</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/TaiwanAllianceForArchModernity/"  target="_blank" class="text-content-link-btn">FB｜台灣現代建築協會</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">高雄市建築學會</h1>
+            <ul class="bulleted-list">
+            <li>講座</li>
+            <li>建材參訪</li>
+            <li>綠建築系列課程</li>
+            <li>建築師考試系列課程</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/%E9%AB%98%E9%9B%84%E5%B8%82%E5%BB%BA%E7%AF%89%E5%AD%B8%E6%9C%83-1733908043513321/"  target="_blank" class="text-content-link-btn">FB｜高雄市建築學會</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">空總臺灣當代文化實驗場 C-LAB</h1>
+            <ul class="bulleted-list">
+            <li>工作坊</li>
+            <li>展覽</li>
+            <li>演講</li>
+            <li>講座</li>
+            <li>電影</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/TCCLAB.ORG/"  target="_blank" class="text-content-link-btn">FB｜空總臺灣當代文化實驗場 C-LAB</a>
+            </p>
+            <p>
+            <a href="https://www.youtube.com/watch?v=1XhoQpMYJBk&list=PLXJ_MjvcL-q6XMbaG5wuv8L549_do8hVX"  target="_blank" class="text-content-link-btn">Youtube｜2020 空總實驗建築論壇</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">交大建築所</h1>
+            <ul class="bulleted-list">
+            <li>展覽</li>
+            <li>講座</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/NCTU.Architecture/"  target="_blank" class="text-content-link-btn">FB｜交大建築所</a>
+            </p>
+            <ul class="bulleted-list">
+            <li>《當代建築關鍵議題》系列講座</li>
+            </ul>
+            <p>
+            <a href="https://www.youtube.com/channel/UCO4Qkwn6VNXUXVeq4NSPOXg"  target="_blank" class="text-content-link-btn">Youtube｜Archiver GIA NCTU</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">成大建築演講股</h1>
+            <ul class="bulleted-list">
+            <li>演講</li>
+            <li>直播</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/%E6%88%90%E5%A4%A7%E5%BB%BA%E7%AF%89%E6%BC%94%E8%AC%9B%E8%82%A1-116578023052291/?__xts__[0]=68.ARDxzArbj53Dm0EzeZa0PMa-UMV3QRr0Ug7FY34rzOnClZtNs42ZkdyXpB391SSPo9XGCgsLza4ke82E05-uBSm2s6clQAEUE74Iqk5bdWaxJ66fSpln0GiThfwdbMEAhN6dFXKCoZPvzNnIK3onFxDnPSud15oqa6JWEkfibTizYpOGbAT8CMIYWp5Bu8vw_sHGENIlRVSxEoCuF37cydvD2scwB-HjNmsxteymg0bt_mggiWgBstUNi6aiW-Luj1RIs5c0j9ofywJo2J5odK_mOtDVxYYxrtMl"  target="_blank" class="text-content-link-btn">FB｜成大建築演講股</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">實構築</h1>
+            <ul class="bulleted-list">
+            <li>展覽</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/TectonicBecoming2020/"  target="_blank" class="text-content-link-btn">FB｜2020 實構築</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">追蹤厲害的人</h1>
+            <h2 class="text-content-h2" data-title="h2" id="曾成德">曾成德 教授</h2>
+            <ul class="bulleted-list">
+            <li>國立交通大學建築研究所教授，兼任人文社會學院院長</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/cdavidtseng?__tn__=%2CdlC-R-R&eid=ARBWBGooWeGrUGoXbR-I4iBl5gRFLWtk1Ym6S_6krccS_wllRCYDqreR5DeVppigrwyC0Z6koSAF5yQ5&hc_ref=ARSzAtBt7QD4i-3WuvxJ7WOhavM19vWC5kaDNGp6GJpEgD6JoSt_Kgog8W7FhpDGkmQ"  target="_blank" class="text-content-link-btn">FB｜曾成德</a>
+            </p>
+            <h2 class="text-content-h2" data-title="h2" id="吳光庭">吳光庭 教授</h2>
+            <ul class="bulleted-list">
+            <li>國立成功大學建築系教授</li>
+            </ul>
+            <p>
+            <a href="https://www.facebook.com/kwangtyng.wu"  target="_blank" class="text-content-link-btn">FB｜Wu KT</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">臺北市立美術館</h1>
+            <p>
+            <a href="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"  target="_blank" class="text-content-link-btn">當期展覽</a>
+            <a href="https://www.facebook.com/taipeifineartsmuseum"  target="_blank" class="text-content-link-btn">FB｜臺北市立美術館 Taipei Fine Arts Museum</a>
+            </p>
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">松山文創園區</h1>
+            <p>
+            <a href="https://www.songshanculturalpark.org/exhibitionlist.aspx"  target="_blank" class="text-content-link-btn">展演資訊</a>
+            <a href="https://www.facebook.com/SCCPTaipei/"  target="_blank" class="text-content-link-btn">FB｜松山文創園區 SCCP Taipei</a>
+            </p>
+
             <h1 class="text-content-h1" data-title="h1" id="個人工作能力">華山1914文化創意產業園區</h1>
-            
+            <p>
+            <a href="https://www.huashan1914.com/w/huashan1914/exhibition"  target="_blank" class="text-content-link-btn">近期活動</a>
+            <a href="https://www.facebook.com/1914CP"  target="_blank" class="text-content-link-btn">FB｜華山1914文化創意產業園區</a>
+            </p>
             `,
-            tags:[]
+            tags:[
+                {
+                    name:'資源整理',
+                    url:'infoMap.html'
+                },
+                {
+                    name:'建築專區',
+                    url:'architecture.html'
+                },
+                {
+                    name:'建築資源',
+                    url:'search.html'
+                }
+            ]
         },
     },
     {
