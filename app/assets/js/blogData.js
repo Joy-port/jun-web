@@ -683,7 +683,7 @@ const data =[
         type: ["資源整理","建築專區"],
         time: '2020-03-24',
         imgUrl:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8aGNmcTBVMHAzNWd8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
-        tagsByTheme:["建築資源","建築師考試"],
+        tagsByTheme:["建築師考試"],
         tagsByContent:"文章",
         linkUrl:"blogContent.html",
         blogContent:{
@@ -984,9 +984,123 @@ const data =[
             </ul>
 
             <h1 class="text-content-h1" data-title="h1" id="報名建築師考試">報名建築師考試</h1>
+            <h2 class="text-content-h2" data-title="h2" id="考試資訊">考試資訊</h2>
+            <h3 class="text-content-h3 text-content-primary" >❯ 時間</h3>
+            <p>報名日期：110年 8月 3日至 12日。</br>考試日期：110年 11月 20日至 22日</br>放榜日期：大約在隔年過年後（109年放榜日期：110年 1月 26日）</br></p>
+            <p class="text-content-callout bg-light"><br>考選部 <a href="https://wwwc.moex.gov.tw/main/content/SubMenu.aspx?menu_id=51"  target="_blank" class="text-content-link">應考人專區</a>（<a href="https://wwwc.moex.gov.tw/main/exam/wFrmExamDetail.aspx?c=110180"  target="_blank" class="text-content-link">建築師考試 110 年考試資訊</a>）</br>
+            <br>考選部 <a href="https://wwwc.moex.gov.tw/main/exam/FileHandler.ashx?f=110&t=P&PCode=4084&MCode=5462&File=2671"  target="_blank" class="text-content-link">110年考試期日計畫表</a>（<a href="https://wwwc.moex.gov.tw/main/exam/FileHandler.ashx?f=109&t=P&PCode=3907&MCode=4942&File=2382"  target="_blank" class="text-content-link">109年考試期日計畫表</a>）</br>
+            <br>考選部 <a href="https://www.moex.gov.tw/main/wfrmExamList.aspx"  target="_blank" class="text-content-link">最新榜單查詢</a>（放榜日期 3 天內）</br>
+            <br>考選部 <a href="https://wwwc.moex.gov.tw/main/Exam/wfrmExamList.aspx?menu_id=157"  target="_blank" class="text-content-link">歷史榜單查詢</a>（放榜日期 3 天後）</br>
+            </p>
+            <img src="https://i1.wp.com/junlearning.com/wp-content/uploads/2021/08/screenshot-2021-08-03-16.25.37.jpg?w=1374&ssl=1" alt="img" class="img-fluid">
+            <p class="mt-n15"><span class="text-center">110 年考試日程表</span></p>
+            
+            <h3 class="text-content-h3 text-content-primary" >❯ 考區</h3>
+            <p>分六個考區：臺北、臺中、臺南、高雄、花蓮、臺東</p>
+            <p class="text-content-success">不同考區有什麼不一樣嗎？</p>
+            <p>以我自身的經驗，台北國家考場的桌椅不適合擺放圖桌，很難舒適的畫圖。 </br> 國家考場的條件不太適合拿來考術科，尤其 <strong>建築計畫與設計</strong> 與 <strong>敷地計畫與都市設計</strong> 分別要考 8 小時及 4 小時，要長時間用不適當的姿勢畫圖會很辛苦。</p>
+            <p>如果報名台北考區，考場又剛好在國家考場，建議可以帶自己的折疊椅去考術科。學科影響則不大。</p>
+            <p><hr class="bg-gray-500" /></p>
+
+            <h2 class="text-content-h2" data-title="h2" id="報名流程">報名流程（適用國家考試報名，不限建築師考試）</h2>
+            <p>利用 <strong>國家考試網路報名資訊系統</strong> 線上報名：<a href="https://register.moex.gov.tw/"  target="_blank" class="text-content-link">連結一</a>／<a href="https://register.moex2.nat.gov.tw/"  target="_blank" class="text-content-link">連結二</a></p>
+            <h3 class="text-content-h3 text-content-primary" >❯ 國家考試網路報名資訊系統</h3>
+            <img src="https://register.moex.gov.tw/" alt="img" class="img-fluid">
+            <p class="text-primary">※從 上述的 <a href="https://register.moex.gov.tw/"  target="_blank" class="text-content-link link-primary">國家考試網路報名資訊系統</a> 進入「會員專區」、「我要報名」、「考試通知書」、「成績通知」、「成績查詢」。</p>
+            <ol class="number-list">
+                <li>登入／註冊帳號</li>
+                <ul class="bulleted-list">
+                    <li>點選「會員專區」</li>
+                    <li>登入／註冊</li>
+                </ul>
+                <li>線上報名</li>
+                <ul class="bulleted-list">
+                    <li>點選「我要報名」</li>
+                    <li>下載並詳細閱讀「應考須知」</li>
+                    <li>照指示登錄報名資料</li>
+                    <li>選擇繳款方式（報名費 1,800 元）</li>
+                    <li>下載並列印出「報名書表」（ <span class="text-primary">單面列印</span>）</li>
+                </ul>
+                <li>郵寄報名文件</li>
+                <ul class="bulleted-list">
+                    <li>將報名專用信封封面密實黏貼於大型標準信封</li>
+                    <li>將「報名書表」、各項應考資格證明文件影本等資料 <strong>依照表件編號順序</strong> 裝入</li>
+                    <ul class="bulleted-list">
+                    <li>最近 1 年內 1 吋正面脫帽半身照片 1 張(背面請書寫考區、姓名、報考類科，並黏貼於報名履歷表指定處)</li>
+                    <li>國民身分證正、背面影本各 1 份（黏貼於報名履歷表指定處）</li>
+                    <li>應考資格證明文件（如畢業證書或學位證書影本，<strong>應考資格之不同</strong>）</li>
+                    </ul>
+                    <li>於報名日期前（含當日， 郵戳為憑），以 <span class="text-primary">限時掛號</span> 郵寄至考選部</li>
+                </ul>
+                
+                <li>完成網路報名後，可至「報名狀態查詢」（或是<a href="https://www.instagram.com/junlearning/"  target="_blank" class="text-content-link">下載 APP</a> ）查詢報名相關資料與進度</li>
+                <li>在期限內下載列印「考試通知書」（ 108/10/31~11/18 ）</li>
+                <ul class="bulleted-list">
+                    <li>正、反面均不得錄存任何文字、圖畫、符碼或記號</li>
+                    <li>如果有需要的話，考試證明會蓋在 <strong>考試通知書</strong> 上</li>
+                </ul>
+                <li>查看考場：依照 <strong>考試通知書</strong> 上的 <strong>試區地點、試場編號、座號</strong></li>
+                <li>憑 <strong>考試通知書</strong>（即入場證）和 <strong>附有照片之身分證件</strong>（包括國民身分證或護照或我國居留證或全民健康保險卡或駕駛執照）進考場考試</li>
+                <li><i>「成績通知」＞「成績查詢」</i></li>
+            </ol>
+            <p><hr class="bg-gray-500" /></p>
+
+            <h3 class="text-content-h3 text-content-primary" >❯ 國家考試 APP：<a href="https://apps.apple.com/tw/app/%E5%9C%8B%E5%AE%B6%E8%80%83%E8%A9%A6/id1370764637"  target="_blank" class="text-content-link">iOS</a>／<a href="https://play.google.com/store/apps/details?id=com.acer.moex.examinee.p"  target="_blank" class="text-content-link">Android</a></h3>
+
+            <p>報名資料寄出後，可以<a href="https://register.moex.gov.tw/app/app.html"  target="_blank" class="text-content-link">下載 APP</a> 查看考試資訊。</p>
+            <p class="text-content-success">主要功能</p>
+            <ul class="bulleted-list">
+                <li>最新消息：各種國家考試公告</li>
+                <li>個人查詢：報名狀態</li>
+                <li>考試提醒：幫你倒數報名截止、考試日期還剩幾天</li>
+                <li>推播紀錄：繳費、報名、收件、考試通知書下載提醒、考試提醒、放榜通知</li>
+            </ul>
+            <img src="https://i2.wp.com/junlearning.com/wp-content/uploads/2020/03/1117-2.png?w=1500&ssl=1" alt="img" class="img-fluid">
+            <p class="mt-n15"><span class="text-center">國家考試 APP 畫面</span></p>
+            <p><hr class="bg-gray-500" /></p>
+
+            <h2 class="text-content-h2" data-title="h2" id="更多資訊">更多資訊</h2>
+            <p><a href="https://wwwc.moex.gov.tw/main/exam/wFrmExamDetail.aspx?c=110180"  target="_blank" class="text-content-link-btn-dark">考選部 110 年專門職業及技術人員高等考試建築師考試</a></p>
+            <p><hr class="bg-gray-500" /></p>
+
             <h1 class="text-content-h1" data-title="h1" id="考選部針對疫情發布的公告">考選部針對疫情發布的公告</h1>
+            <p class="text-content-callout bg-warning"><a href="https://wwwc.moex.gov.tw/main/news/wfrmNews.aspx?kind=3&menu_id=42&news_id=3928&fbclid=IwAR0od4aebfc4jsyw8d4uWot4mv9XYjJ50T34zmwfGnykkVbU88BWo7GzrXQ"  target="_blank" class="text-content-link-btn-dark">居家隔離、居家檢疫及自主健康管理被限制不得外出者不得應國家考試</a></p>
+            <ul class="bulleted-list">
+            <li>應考人因居家隔離、居家檢疫及自主健康管理被限制不得外出等措施，致無法參加應試，僅得檢具證明文件，於考試前後15天內申請退費。</li>
+            </ul>
+            <h2 class="text-content-h2" data-title="h2" id="國家考試防疫措施重點">國家考試防疫措施重點</h2>
+            <h3 class="text-content-h3 text-content-primary" >❯ 應考人</h3>
+            <ol class="number-list">
+                <li>居家隔離、居家檢疫者及自主健康管理被限制不得外出者不得應考。</li>
+                <li>應考人於考試期間應自備口罩並全程配戴。</li>
+                <li>切實執行體溫量測規定，凡進入試區人員一律配合體溫量測及手部消毒。</li>
+                <li>有發燒、咳嗽或呼吸道等症狀，或有「自主健康管理」仍准予外出之應考人，另開設備用試場應試。</li>
+                <li>限制陪考人陪考，若有特殊需要（例如：身障應考人），則應採取事先申請機制。</li>
+            </ol>
+            <h3 class="text-content-h3 text-content-primary" >❯ 考場</h3>
+            <ol class="number-list">
+                <li>關於試場座位間距規劃，備用試場應考人座位間距至少2公尺，其他試場則減少每試場應考人數。</li>
+                <li>試區學校全面消毒，另為使試場之通風換氣良好，將以取消冷氣開放、開啟門窗、風扇為原則，並視需要增加風扇等設施。</li>
+                <li>請中央及地方政府協助專業人力與物資需求，包括考試舉行前後，周邊公共區域清潔消毒，及提供專業護理人力，擔任各試區體溫量測複檢工作。</li>
+            </ol>
+            <h2 class="text-content-h2" data-title="h2" id="考選部最新消息">考選部最新消息</h2>
+            <p><a href="https://wwwc.moex.gov.tw/main/news/wfrmNews.aspx?kind=3&menu_id=42"  target="_blank" class="text-content-link-btn-dark">考選部｜最新消息</a></p>
+            <p><hr class="bg-gray-500" /></p>
             `,
-            tags:[]
+            tags:[
+                {
+                    name:'資源整理',
+                    url: 'infoMap.html'
+                },
+                {
+                    name:'建築專區',
+                    url: 'architecture.html'
+                },
+                {
+                    name:'建築師考試',
+                    url: 'search.html'
+                }
+            ]
         },
     },
     {
